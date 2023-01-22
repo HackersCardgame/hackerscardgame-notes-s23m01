@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="doofe-welt.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.36925856"
+     inkscape:cx="-174.67435"
+     inkscape:cy="487.46331"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g723"
+       transform="translate(3.1622406,2.4746729)">
+      <rect
+         style="fill:#ffff00;stroke:#000000;stroke-width:2.73881;stroke-linecap:round"
+         id="rect234"
+         width="246.77499"
+         height="167.78737"
+         x="21.865181"
+         y="18.546568" />
+      <rect
+         style="fill:#00ff00;stroke:#000000;stroke-width:3.07909;stroke-linecap:round"
+         id="rect236"
+         width="98.516891"
+         height="61.476097"
+         x="22.52593"
+         y="18.716709" />
+      <rect
+         style="fill:#ff0000;stroke:#000000;stroke-width:3.07909;stroke-linecap:round"
+         id="rect236-3"
+         width="98.516891"
+         height="61.476097"
+         x="170.12331"
+         y="124.85785" />
+      <text
+         xml:space="preserve"
+         style="font-size:16.9083px;line-height:0.1;font-family:monospace;-inkscape-font-specification:monospace;text-align:justify;fill:#00ff00;stroke:#000000;stroke-width:2.73881;stroke-linecap:round"
+         x="31.16897"
+         y="41.114449"
+         id="text344"><tspan
+           sodipodi:role="line"
+           id="tspan342"
+           style="fill:#000000;stroke:none;stroke-width:2.73881"
+           x="31.16897"
+           y="41.114449">Bällebad</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:14.4928px;line-height:1.1;font-family:monospace;-inkscape-font-specification:monospace;text-align:justify;fill:#00ff00;stroke:#000000;stroke-width:2.73881;stroke-linecap:round"
+         x="177.24702"
+         y="147.30173"
+         id="text344-2"><tspan
+           sodipodi:role="line"
+           id="tspan342-6"
+           style="font-size:14.4928px;fill:#000000;stroke:none;stroke-width:2.73881"
+           x="177.24702"
+           y="147.30173">Suizid-</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:14.4928px;fill:#000000;stroke:none;stroke-width:2.73881"
+           x="177.24702"
+           y="163.2438"
+           id="tspan661">Chatgruppe</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:16.9083px;line-height:0.1;font-family:monospace;-inkscape-font-specification:monospace;text-align:justify;fill:#000000;stroke:none;stroke-width:2.73881;stroke-linecap:round"
+         x="141.95352"
+         y="89.865875"
+         id="text558"><tspan
+           sodipodi:role="line"
+           id="tspan556"
+           style="stroke-width:2.73881"
+           x="141.95352"
+           y="89.865875">Doofe Welt</tspan></text>
+    </g>
+  </g>
+</svg>
