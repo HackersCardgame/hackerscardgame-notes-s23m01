@@ -187,5 +187,11 @@ https://de.wikipedia.org/wiki/Schizoide_Pers%C3%B6nlichkeitsst%C3%B6rung
 
 
 
+more thread detection
 
+more agency detection
+
+lore = überlieferung / sage
+
+loose accosiation
 
