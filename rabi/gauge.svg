@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="800"
+   height="600"
+   viewBox="0 0 800 600"
+   sodipodi:docname="gauge.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:export-filename="/home/marc/danserver/Camera_Logger_Heizung_Playground.new/gauge.jpg"
+   inkscape:export-xdpi="87.360001"
+   inkscape:export-ydpi="87.360001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.5061706"
+     inkscape:cx="443.52635"
+     inkscape:cy="264.73288"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="3840"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g8" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g8">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:3.77953;stroke-linecap:round;fill-opacity:1;opacity:1"
+       id="rect12619"
+       width="784.17389"
+       height="573.72302"
+       x="9.0590982"
+       y="10.002805"
+       inkscape:export-filename="/home/marc/danserver/Camera_Logger_Heizung_Playground.new/gauge.jpg"
+       inkscape:export-xdpi="87.360001"
+       inkscape:export-ydpi="87.360001" />
+    <circle
+       style="fill:#ffffff;stroke:#000000;stroke-width:3.77953;stroke-linecap:round"
+       id="path849"
+       cx="44.821846"
+       cy="80.033409"
+       r="23.233322" />
+    <circle
+       style="fill:#ffffff;stroke:#000000;stroke-width:3.77953;stroke-linecap:round"
+       id="path849-3"
+       cx="114.58587"
+       cy="75.073502"
+       r="23.233322" />
+    <circle
+       style="fill:#ffffff;stroke:#000000;stroke-width:3.77953;stroke-linecap:round"
+       id="path849-6"
+       cx="227.19612"
+       cy="50.378273"
+       r="23.233322" />
+    <circle
+       style="fill:#ffffff;stroke:#000000;stroke-width:3.77953;stroke-linecap:round"
+       id="path849-7"
+       cx="304.24524"
+       cy="45.439224"
+       r="23.233322" />
+    <circle
+       style="fill:#ffffff;stroke:#000000;stroke-width:3.77953;stroke-linecap:round"
+       id="path849-5"
+       cx="248.92793"
+       cy="243.00107"
+       r="23.233322" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 43.398492,80.650458 39.794291,63.904156"
+       id="path1316" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 114.44154,75.138391 14.1139,-10.687847"
+       id="path1318" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 227.83979,51.459901 -16.69074,1.091706"
+       id="path1320" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 302.63885,45.49146 -0.1535,-16.866079"
+       id="path1322" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 248.74995,242.07374 236.01334,232.05369"
+       id="path1324"
+       inkscape:export-filename="/home/marc/danserver/Camera_Logger_Heizung_Playground.new/gauge.jpg"
+       inkscape:export-xdpi="87.360001"
+       inkscape:export-ydpi="87.360001" />
+  </g>
+</svg>
