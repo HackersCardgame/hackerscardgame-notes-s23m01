@@ -7,5 +7,5 @@ for i in $letters
 do
 	echo $i = "{{"
 	./arrayFont.sh $i
-	echo }}
+	echo }};
 done
