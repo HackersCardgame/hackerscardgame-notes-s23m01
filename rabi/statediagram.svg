@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="statediagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.7652427"
+     inkscape:cx="405.75362"
+     inkscape:cy="560.60646"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="55.944786"
+       y="59.766876"
+       id="text2080"><tspan
+         sodipodi:role="line"
+         id="tspan2078"
+         style="stroke-width:0.264583"
+         x="55.944786"
+         y="59.766876">Rabie State Diagram</tspan></text>
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:1;stroke-linecap:round"
+       id="path6020"
+       cx="79.774117"
+       cy="187.34962"
+       rx="26.946156"
+       ry="26.197035" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="66.165627"
+       y="182.02141"
+       id="text7212"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="66.165627"
+         y="182.02141"
+         id="tspan7214">verletzt</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="66.165627"
+         y="195.25053"
+         id="tspan7218">eingeschnappt</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="66.165627"
+         y="208.47966"
+         id="tspan7454">=&gt; klagend, erzwingen</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="67.301384"
+       y="256.62527"
+       id="text7934"><tspan
+         sodipodi:role="line"
+         id="tspan7932"
+         style="stroke-width:0.264583"
+         x="67.301384"
+         y="256.62527">macht die anderen traurig, denn die meisten</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="67.301384"
+         y="269.8544"
+         id="tspan7936">würden sich wünschen dass es dir für immer</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="67.301384"
+         y="283.08353"
+         id="tspan7938">besser geht</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="64.273277"
+       y="118.74937"
+       id="text21267"><tspan
+         sodipodi:role="line"
+         id="tspan21265"
+         style="stroke-width:0.264583"
+         x="64.273277"
+         y="118.74937">bringt nichts hinterher zu trauern</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="64.273277"
+         y="131.97849"
+         id="tspan21269">neues aufbauen, ich bin seit vorgestern</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="64.273277"
+         y="145.20761"
+         id="tspan21271">meist im nerd.re (wenn ich wach bin) und würde</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="64.273277"
+         y="158.43674"
+         id="tspan21273">mich über gesellschaft freuen</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="61.248211"
+       y="81.965065"
+       id="text22339"><tspan
+         sodipodi:role="line"
+         id="tspan22337"
+         style="stroke-width:0.264583"
+         x="61.248211"
+         y="81.965065">es ist toller wenn viele leute da sind</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="61.248211"
+         y="95.194191"
+         id="tspan22341">dann gibt es spannendere diskussionen</tspan></text>
+  </g>
+</svg>
