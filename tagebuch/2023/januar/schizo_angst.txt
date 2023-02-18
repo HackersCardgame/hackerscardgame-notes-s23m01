@@ -196,3 +196,9 @@ lore = überlieferung / sage
 
 loose accosiation
 
+
+
+
+i see humans as some sort of state-machines. State-Machines are (normally technical) thingies, that can have different states. with specific input one can alter the current state of a state machine. so the question would be, what input do we need to switch Schizo_Angst into a better state --- and often that is trial and error, but shrinks do also trial and error, but often with less empatic attitudes that patients that suffer the same or a similiare desesase
+
+
