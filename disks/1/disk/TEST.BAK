@@ -1,0 +1,12 @@
+program Test;
+var
+  A,B: Integer;
+  Ratio: Real;
+begin
+  Write('Gib zwei Nummern ein: ');
+  Readln(A,B);
+  Ratio := A / B;
+  Writeln('The ratio is ',Ratio);
+  Write('Press <Enter>...');
+  Readln;
+end

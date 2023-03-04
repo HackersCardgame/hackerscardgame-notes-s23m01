@@ -1,0 +1,136 @@
+
+
+
+
+
+
+                                        LHMENU
+                               A Menu-driver for LHARC
+			            By:  Rick Hicks
+				    
+
+
+          LHMENU is a menu program to make viewing and working with LHARC 
+          very friendly.  In order for LHMENU to function you must
+          have Haruyasu Yoshizaki's LHARC.EXE program.
+          Please note that these programs are copyrighted and they can be
+          obtained from most BBS's.
+	  Both files should be in a directory that is part of your
+	  PATH statement (see your DOS manual for info on PATH).
+
+          
+	  Acknowledgement: This program was developed to follow the same
+	  general screen as PKARCM and users of that program will find
+	  the same structure and ease of use. I gratefully acknowledge 
+	  the author of that fine program.
+	  
+	  FILES INCLUDED WITH LHMENU.
+
+          LHMENU.EXE        The LHMENU program.
+          LHMENU.DOC        This Documentation File.
+         
+          
+
+
+                          LHMENU VERSION 1.00 USER MANUAL
+
+
+
+          QUICK START
+
+          To start-up LHMENU simply enter "LHMENU [d:\path\filespec]".
+	  You may specify wild cards in the filespec. If you use wild 
+	  cards in the filespec LHMENU will allow operations of LHARC
+	  on multiple LHARC files. Upon execution LHMENU will present
+	  a Lotus-like menu bar to perform different operations;
+	  to [L]ist the files in LHARC files, to [B]rowse files in LHARC 
+	  files, to [E]xtract files from LHARC files, to [U]pdate files
+	  to LHARC files, to [M]ove files to LHARC files, to [D]elete files
+	  from LHARC files, to [T]est the integrity of LHARC files, and to
+	  [Q]uit and return to DOS. The arrow keys may be used to 
+	  perform the different operations or the first letter of the
+	  operation to be performed can be entered.
+	  
+            
+
+          THE FOLLOWING FUNCTIONS ARE CURRENTLY SUPPORTED:
+
+          List Contents of File - L
+	      This operation will display on the screen the contents of
+	      the LHARC files chosen.
+	      
+	  Browse a file - B 
+              This operation will ask for what files you wish to view.
+	      Enter the filenames you wish to view (wildcards accepted,
+	      i.e. *.doc) and the contents of the files selected will
+	      be shown on the screen.
+
+          Extracting files - E 
+              This operation will ask for what files you wish to extract
+	      (wildcards also acceptable) and will extract files that 
+	      are selected. Extracted files will be placed on the 
+	      current disk in the current directory. 
+	      
+          Update/Add to the file - U
+	      This operation will ask for the name of the files you wish
+	      to update or add to the current LHARC archive file. Wildcards
+	      are again acceptable. If you are creating a new LHARC file
+	      the Update/Add operation will create the LHARC file.
+	      Example: LHMENU TEST will create a new file called TEST.LZH
+	      if the Update/Add operation is performed.
+	      
+	  Move files to a LHARC file - M
+	      This operation will move files to a LHARC archive file,
+	      test them for integrity and then delete the original 
+	      files from the disk.
+	      It will first ask for confirmation that you wish the
+	      original files to be deleted and then ask for what
+	      files you wish to move. Again, wildcards are acceptable.
+	      
+	  Delete a file from the LHARC file - D
+              This operation will delete the selected files from the
+	      LHARC file. Again, wildcards are acceptable.
+              	  
+	  Testing LHARC file integrity - T
+              NOTE: This is currently not supported in the LHARC
+	      program. If a future revision to LHARC supports this
+	      function, it will be added to LHMENU.
+	      
+          Quit to DOS - Q
+              This operation will exit LHMENU and return operation to
+	      the DOS prompt.
+
+          
+    ___________________________________________________________________
+    |                                                                 |
+    |                         REGISTRATION                            |
+    |                                                                 |
+    |   If you find LHMENU fast, easy, and convenient to use         |
+    |   a partial registration of $10 would be appreciated.           |
+    |                                                                 |
+    |                                                                 |
+    |   If you send $25 or more, you will receive, when available,    |
+    |   a diskette with the next version of the software.             |
+    |                                                                 |
+    |   Please state the current version number of the software you   |
+    |   are presently using.  Send check or money order to:           |
+    |                                                                 |
+    |                       RDH Softcom                               |
+    |                       820 Patmar Drive                          |
+    |                       Lebanon, PA 17042                         |
+    |_________________________________________________________________|
+
+
+
+R. D. Hicks hereby disclaims all warranties relating to this software, 
+whether express or implied, including without limitation any implied 
+warranties of merchantability or fitness for a particular purpose. 
+R. D. Hicks will not be liable for any special, incidental, 
+consequential, indirect or similar damages due to loss of data or any 
+other reason, even if R. D. Hicks has been advised of the possibility 
+of such damages.  In no event shall R. D. Hicks' liability for any 
+damages ever exceed the price paid for the use of the software, 
+regardless of the form of the claim.  The person using the software 
+bears all risk as to the quality and performance of the software.
+
+

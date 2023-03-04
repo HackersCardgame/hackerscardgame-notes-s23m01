@@ -1,0 +1,18 @@
+
+
+
+                             09Welcome to 0cmuLinux09!07
+
+0a
+   This is the muLinux "Installer/Rescue Floppy Disk", for machines running 
+   DOS-compatible operating systems. This floppy runs an instance of Linux,
+   able to format floppy-disks at 1722k. Use at your risk.
+
+   This disk is no part of the standard muLinux Floppy-disk Distribution
+   Set: please, do not confuse with BOOT and other disks.
+
+   (C)1988-2000 Rustic Software Foundation Inc.
+   (May contains fractured english inside)
+07                                       
+
+                       05[F1-Help] [F2-Notes] [F3-Contact] 07

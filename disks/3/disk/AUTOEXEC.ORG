@@ -1,0 +1,84 @@
+@ECHO OFF
+lh keyb sg
+set EXPAND=YES
+SET DIRCMD=/O:N
+set LglDrv=27 * 26 Z 25 Y 24 X 23 W 22 V 21 U 20 T 19 S 18 R 17 Q 16 P 15
+set LglDrv=%LglDrv% O 14 N 13 M 12 L 11 K 10 J 9 I 8 H 7 G 6 F 5 E 4 D 3 C
+cls
+call setramd.bat %LglDrv%
+set temp=c:\
+set tmp=c:\
+path=%RAMD%:\;%RAMD%:\net;a:\
+rem ;%CDROM%:\
+copy command.com %RAMD%:\ > NUL
+set comspec=%RAMD%:\command.com
+md %RAMD%:\net
+copy a:\pkunzjr.com %RAMD%:\net > NUL
+copy a:\net.zip %RAMD%:\net > NUL
+
+:EXT
+%RAMD%:
+cd \NET
+pkunzjr net.zip > NUL
+cd \
+echo Die Diagnoseprogramme wurden auf Laufwerk %RAMD% geladen.
+echo.
+
+LH %ramd%:\net\MSCDEX.EXE /D:HASI_01 /L:%CDROM%
+lh doskey
+echo.
+
+
+rem System.ini schreiben
+
+echo [network] > net\system.ini
+echo sizworkbuf=1498 >> net\system.ini
+echo filesharing=no >> net\system.ini
+echo printsharing=no >> net\system.ini
+echo autologon=yes >> net\system.ini
+echo computername=LOOKI >> net\system.ini
+echo lanroot=%RAMD%:\NET >> net\system.ini
+echo username=ADMINISTRATOR >> net\system.ini
+echo workgroup=CHIND-01 >> net\system.ini
+echo reconnect=no >> net\system.ini
+echo dospophotkey=N >> net\system.ini
+echo lmlogon=1 >> net\system.ini
+echo logondomain=BSL-01 >> net\system.ini
+echo preferredredir=basic >> net\system.ini
+echo autostart=basic >> net\system.ini
+echo maxconnections=8 >> net\system.ini
+echo [network drivers] >> net\system.ini
+echo netcard=EL90X.DOS >> net\system.ini
+echo transport=tcpdrv.dos,nemm.dos >> net\system.ini
+echo devdir=%RAMD%:\NET >> net\system.ini
+echo LoadRMDrivers=yes >> net\system.ini
+echo [386enh] >> net\system.ini
+echo TimerCriticalSection=5000 >> net\system.ini
+echo UniqueDosPSP=TRUE >> net\system.ini
+echo PSPIncrement=2 >> net\system.ini
+echo [Password Lists] >> net\system.ini
+echo *Shares=%RAMD%:\NET\Shares.PWL >> net\system.ini
+echo ADMINISTRATOR=%RAMD%:\net\ADMINIST.PWL >> net\system.ini
+ 
+rem System.ini schreiben fertig
+
+
+     \net\net initialize
+     \net\netbind.com
+     \net\umb.com
+     \net\tcptsr.exe
+     \net\tinyrfc.exe
+     \net\nmtsr.exe
+     \net\emsbfr.exe
+     \net\net start /YES
+     \net\net use /persistent:no
+     \net\net use g: \\tngloctu\d$
+     \net\net use h: \\tngent\e$
+     \net\net use i: \\tngent\drivers$
+
+ECHO INFO: Ramdrive= %RAMD%:     CD-ROM= %CDROM%:
+
+rem clean up environment variables
+set CDROM=
+set LglDrv=
+                                                                                                                                                                                                                                                                                n Sie die Eingabetaste, um die Hilfe anzuzeigen.

@@ -1,0 +1,448 @@
+	 
+                         INFO.TXT
+
+        Neueste Infos zum Microsoft(R) Natural Keyboard(TM)
+           und zu Microsoft IntelliType, Version 1.10
+
+	  (C) Copyright Microsoft Corporation, 1995
+
+Dieses Dokument enth„lt aktuelle Informationen zum Microsoft Natural
+Keyboard und zu Microsoft IntelliType, Version 1.1. Die Informationen in 
+diesem Dokument erg„nzen die Informationen im Benutzerhandbuch 
+und im IntelliType Online-Benutzerhandbuch.
+
+--------------------------------------
+So k”nnen Sie dieses Dokument anzeigen
+--------------------------------------
+Dieses Dokument wurde so formatiert, daá Sie es in Microsoft Write oder 
+dem MS-DOS-Editor anzeigen k”nnen. W„hlen Sie zum Drucken des Dokuments 
+in einer der Anwendungen aus dem Men "Datei" den Befehl "Drucken".
+
+******************************************************************
+INHALT
+
+   I.	Allgemeine Hinweise fr unterschiedliche Betriebssysteme
+ 	1.  Installieren Sie nicht auf einem Netzlaufwerk
+	2.  Bestimmte Tastaturtreiber k”nnen Konflikte mit IntelliType
+            verursachen
+ 	3.  Verwenden von MS-DOS-Software zur Untersttzung eines 
+            Datentr„ger-Caches w„hrend der Installation
+	4.  Ausfhren von IntelliType auf einem Computer mit mehreren
+	    Betriebssystemen
+	5.  Schtzen des Tastaturadapters
+	6.  Verwenden eines BIOS, das kein Standard-BIOS ist
+	7.  Verbinden eines Eingabeger„tes mit einem Laptop, wenn die
+	    Stromsparfunktion aktiv ist
+	8.  Starten des Task-Managers mit den Windows Logo-Tasten
+	9.  Verwenden der Tastaturmaus mit dem Endlos-Zeiger
+	10. Verwenden von IntelliType mit dem TI 710 Chip
+	11. Wenn Sie das System von einer Diskette starten
+	12. Verwenden der Zehnertastatur zum Zeichnen in 
+	    Microsoft Paintbrush
+	13. Verwenden der verbesserten Sicherheitsfunktionen in 
+	    Microsoft Mail 
+	14. Wenn sich Tastaturkl„nge wiederholen
+	15. Deaktivieren des Standardsprungs, wenn Sie mit CorelDRAW
+	    arbeiten
+	16. "Zeiger verbergen" funktioniert nicht in Anwendungen
+	    zur Tabellenkalkulation
+
+  II.	Hinweise fr Benutzer von Windows 95
+	1.  Ausfhren von IntelliType ohne das Microsoft Natural Keyboard
+	2.  Ausfhren von IntelliType auf einem Computer mit mehreren
+            Benutzerprofilen
+	3.  Einige Registerkarten fr die Tastatur sind Bestandteil des
+            Betriebssystems
+	4.  Wenn Sie ber eine Audio-Karte verfgen, w„hlen Sie nicht die
+            Option "Systemlautsprecher" aus
+	5.  Ausblenden der Task-Leiste bei der Verwendung des 
+            Endlos-Zeigers
+	6.  Konflikte zwischen der NUM-FESTSTELLTASTE von IntelliType und 
+            der CMOS-Einstellung
+            
+
+ III.	Hinweise fr Benutzer von Windows 3.1x
+	1.  Deaktivieren der FESTSTELLTASTE in einem MS-DOS-Fenster
+	2.  Der Task-Manager wird m”glicherweise nicht gestartet, wenn 
+	    wenig Arbeitsspeicher verfgbar ist
+	3.  Ersetzen des Task-Managers durch die Task-Leiste
+
+  IV. Hinweise fr Benutzer von Windows NT
+	1.  IntelliType untersttzt nur x86-Betriebssysteme
+	2.  ™ffnen der Windows NT Task-Liste
+	3.  Schlieáen von IntelliType aus dem Task-Manager
+
+   V.	Hinweise fr Benutzer, die ausschlieálich MS-DOS einsetzen
+	Verwenden von Befehlszeilenparametern in MS-DOS
+ 
+  VI. Bescheinigung des Herstellers/Importeurs
+  
+ 
+================================================================
+Teil I: Allgemeine Hinweise fr unterschiedliche Betriebssysteme
+================================================================
+
+1.  Installieren Sie nicht auf einem Netzlaufwerk
+
+    Die Installation von IntelliType auf einem Netzlaufwerk wird nicht
+    untersttzt. Benutzer, die IntelliType, Version 1.0, auf einem 
+    Netzlaufwerk installiert haben, k”nnen auf diesem Laufwerk keine
+    Aktualisierung der Software durchfhren.
+
+2.  Bestimmte Tastaturtreiber k”nnen Konflikte mit IntelliType verursachen
+
+    Wenn Sie IntelliType unter Windows 3.1x oder Windows NT installieren, 
+    ersetzt das Setup Ihren aktuellen Tastaturtreiber durch den Treiber fr
+    das Microsoft Natural Keyboard, der drei zus„tzliche Tasten untersttzt.
+    Aus diesem Grund k”nnen Probleme auftreten, wenn Software eingesetzt
+    wird, die bestimmte Tastaturtreiber ben”tigt, z.B. Fernsteuerungssoftware
+    wie pcANYWHERE und Carbon Copy, und wenn verschiedene 
+    Sprachversionen des Betriebssystems Windows verwendet werden, 
+    zum Beispiel Arabisch, Griechisch und Hebr„isch.
+
+    Sie k”nnen Fernsteuerungssoftware zusammen mit dem 
+    Microsoft Natural Keyboard verwenden, aber nicht mit der IntelliType-
+    Software. Um die Fernsteuerungssoftware einsetzen zu k”nnen, mssen
+    Sie IntelliType deinstallieren (Informationen dazu finden Sie im
+    IntelliType Online-Benutzerhandbuch). Installieren Sie dann die
+    Fernsteuerungssoftware erneut, um den Tastaturtreiber zurckzusetzen.
+
+    Wenn Sie eine Sprachversion von Windows verwenden, die einen bestimmten 
+    Tastaturtreiber ben”tigt, k”nnen Sie das Microsoft Natural Keyboard als 
+    Standard AT-Tastatur mit 101/102 Tasten verwenden. Wenn Sie IntelliType 
+    deinstallieren, wird der von Ihrem Betriebssystem bereitgestellte
+    Tastaturtreiber wiederhergestellt.
+
+    ANMERKUNG: Dieser Abschnitt bezieht sich nicht auf Windows 95, da 
+    IntelliType keine Tastaturtreiber hinzufgt, wenn Sie die Installation
+    unter Windows 95 durchfhren.
+
+3.  Verwenden von MS-DOS-Software zur Untersttzung eines 
+    Datentr„ger-Caches w„hrend der Installation
+
+    Wenn Sie ein anderes auf MS-DOS basierendes Programm zur 
+    Untersttzung eines Datentr„ger-Caches als Microsoft SMARTDrive 
+    verwenden, w„hlen Sie nach Abschluá der Installation nicht die 
+    Schaltfl„che zum Neustarten des Systems. W„hlen Sie statt dessen die 
+    Schaltfl„che zum Beenden, beenden Sie dann Windows, und starten Sie 
+    Ihren Computer manuell neu. Einige auf MS-DOS basierende Programme 
+    zur Untersttzung eines Datentr„ger-Caches verwenden ein Verfahren, 
+    bei dem Daten nicht unmittelbar geschrieben werden (Write-Behind). 
+    Wird der Cache vor dem Neustart nicht auf den Datentr„ger 
+    geschrieben, so k”nnten Datentr„gerfehler auftreten.  
+
+    Als Alternative k”nnten Sie Ihr Programm zur Untersttzung eines 
+    Datentr„ger-Caches vorbergehend deaktivieren,indem Sie die 
+    entsprechenden Zeilen in der Datei AUTOEXEC.BAT mit 'rem' 
+    auskommentieren und sie wieder aktivieren, nachdem Sie IntelliType
+    installiert haben.
+
+
+4.  Ausfhren von IntelliType auf einem Computer mit mehreren
+    Betriebssystemen
+
+    Wenn Sie Windows NT und Windows 95 auf demselben Computer
+    installiert haben und IntelliType unter beiden Betriebssystemen
+    installiert ist, k”nnen beim Deinstallieren von IntelliType von
+    einem Betriebssystem Dateien gel”scht werden, die von IntelliType
+    unter dem anderen Betriebssystem verwendet werden. Falls Sie 
+    Probleme mit IntelliType unter dem zweiten Betriebssystem haben,
+    installieren Sie es auf diesem System noch einmal.
+
+
+5.  Schtzen des Tastaturadapters
+
+    Lassen Sie ausreichend Raum zwischen Ihrem Computer und der Wand
+    dahinter, damit keiner der an der Rckseite des Computer 
+    eingesteckten Adapter eingeklemmt wird. Falls auf einen Adapter 
+    (etwa auf den 5-poligen Adapter fr PS/2 nach DIN des Microsoft 
+    Natural Keyboard) zu viel Druck ausgebt wird, kann dadurch beim 
+    Starten des Computers eine Besch„digung der Hauptplatine 
+    (Motherboard) verursacht werden. Stecken Sie den Adapter eines 
+    Ger„tes niemals ein oder aus, wenn der Computer eingeschaltet ist. 
+    Schalten Sie ihn aus, installieren Sie das Ger„t, und schalten Sie 
+    den Computer wieder ein.
+
+
+6.  Verwenden eines BIOS, das kein Standard-BIOS ist
+
+    BIOS-Versionen, die nicht dem Standard entsprechen, k”nnen Konflikte 
+    mit dem Microsoft Natural Keyboard verursachen und zu Fehlern und 
+    m”glichem Systemversagen beim Starten fhren. Falls solche Probleme
+    auftreten, sollten Sie wahrscheinlich ein BIOS eines anderen 
+    Herstellers installieren (z.B. AMI oder Phoenix). Wenden Sie sich an 
+    den BIOS-Hersteller oder Computerh„ndler, wenn Sie nach der 
+    Installation des Microsoft Natural Keyboard Probleme beim Starten 
+    des Computers haben.
+
+
+7.  Verbinden eines Eingabeger„tes mit einem Laptop, wenn die 
+    Stromsparfunktion aktiv ist
+
+    Viele Laptop-Computer sparen Strom, indem sie Maus- und 
+    Tastaturanschlsse ausschalten, wenn der Computer ber einen 
+    bestimmten Zeitraum nicht bedient wird. Wenn Sie feststellen, daá 
+    Ihr Eingabeger„t (Maus oder Tastatur) nach dem erneuten Aktivieren 
+    des Computers nicht funktioniert, lesen Sie in der Dokumentation 
+    Ihres Computers die Informationen zum Energiesparen.
+
+
+8.  Starten des Task-Managers mit den Windows Logo-Tasten
+
+    Unter Windows 3.1x und Windows NT weist IntelliType den
+    Windows Logo-Tasten das Starten des Task-Managers zu. Einige 
+    Shell-Programme fangen die Windows Logo-Tasten ab und „ndern
+    ihre Funktion und/oder erkennen sie berhaupt nicht. Drcken Sie in 
+    solchen F„llen STRG+ESC, oder doppelklicken Sie auf den Desktop,
+    um den Task-Manager zu starten.
+
+
+9.  Verwenden der Tastaturmaus mit dem Endlos-Zeiger
+
+    Wenn Sie sowohl die Option "Endloszeiger" als auch "Tastaturmaus" 
+    aktiviert haben, kann es passieren, daá der Zeiger an den 
+    Bildschirmr„ndern "steckenbleibt", wenn Sie die PFEILTASTEN fr 
+    einen l„ngeren Zeitraum gedrckt halten. Setzen Sie in diesem Fall 
+    die Einstellung der Option "Maximale Zeigergeschwindigkeit" in der 
+    Registerkarte "Tastaturmaus" auf eine langsamere Geschwindigkeit. 
+    "Endloszeiger" ist nur unter Windows 95 und Windows 3.1x verfgbar.
+    In Windows 95 ist die Tastaturmaus eine der Eingabehilfen in der 
+    Systemsteuerung.
+
+
+10.  Verwenden von IntelliType mit dem TI 710 Chip
+
+    IntelliType untersttzt den in den meisten Laptops verwendeten 
+    8042-Anschluá. Allerdings kann es zu Problemen kommen, wenn Sie 
+    IntelliType auf einem Laptop von Texas Instruments installieren, der 
+    den 710-Chip verwendet. Besonders unter Windows NT wird die Maus
+    nicht funktionieren.
+
+
+11. Wenn Sie das System von einer Diskette starten
+
+    Wenn Sie IntelliType installieren, modifiziert das 
+    Installationsprogramm die Datei AUTOEXEC.BAT auf Ihrem 
+    Festplattenlaufwerk (normalerweise C:). Wenn Sie Microsoft Windows
+    von einer Diskette starten, mssen Sie die beiden Zeilen, die in die 
+    Datei AUTOEXEC.BAT auf der Festplatte eingetragen wurden, manuell in 
+    die Datei AUTOEXEC.BAT auf Ihrer Startdiskette kopieren.
+    Es handelt sich um folgende Zeilen:
+
+  	 SET MSINPUT=C:\MSINPUT
+ 	 C:\MSINPUT\KEYBOARD\ITYPE.EXE /S
+
+    (Das Zielverzeichnis ist ein anderes, wenn Sie IntelliType in 
+    einem anderen Verzeichnis installiert haben.)
+
+
+12. Verwenden der Zehnertastatur zum Zeichnen in Microsoft Paintbrush
+
+    Wenn Sie die Funktion "Tastaturmaus" in der Registerkarte 
+    "Tastaturmaus" aktiviert haben, k”nnen Sie die Zehnertastatur zum 
+    Zeichnen in Microsoft Paintbrush verwenden. Drcken Sie zum Zeichnen 
+    (oder L”schen) die Taste 0 auf der Zehnertastatur. 
+    Dadurch wechseln Sie in den Zeichenmodus. Sie kehren zum 
+    normalen Modus zurck, indem Sie die Kommataste auf der 
+    Zehnertastatur drcken.
+
+    WICHTIG: Wenn Sie in Paintbrush mit der Zehnertastatur
+    arbeiten, kehren Sie vor dem ™ffnen des Task-Managers zum 
+    normalen Modus zurck. Wenn Sie den Task-Manager im Zeichenmodus
+    ”ffnen, kann es passieren, daá das System nicht mehr reagiert
+    und Sie Paintbrush neu starten mssen.
+
+
+13. Verwenden der verbesserten Sicherheitsfunktionen in Microsoft Mail
+
+    Microsoft Mail bietet Ihnen verbesserte Sicherheitsfunktionen fr 
+    Ihre E-Mail-Nachrichten, indem Sie angeben k”nnen, daá ein Kennwort 
+    ben”tigt wird, um eine auf Symbolgr”áe verkleinerte Mail-Anwendung 
+    wieder herzustellen. Wenn Sie diese Sicherheitsfunktion aktivieren,
+    k”nnen Sie allerdings nicht mit dem Task-Manager zu Microsoft Mail 
+    wechseln, w„hrend es auf Symbolgr”áe verkleinert ist. Drcken Sie 
+    statt dessen ALT+TAB, oder doppelklicken Sie auf das Mail-Symbol.
+
+
+14. Wenn sich Tastaturkl„nge wiederholen
+
+    Wenn Sie den Tasten Ihrer Tastatur Klangeffekte zugewiesen haben und 
+    feststellen, daá sich ein Klang nach dem Drcken einer Taste st„ndig 
+    wiederholt, handelt es sich m”glicherweise um einen IRQ- oder
+    Interrupt-Konflikt. Sie k”nnen entweder den Klangeffekt ausschalten 
+    (w„hlen Sie in der Registerkarte "Optionen" den Eintrag "Kl„nge 
+    ausschalten") oder die Interrupt-Einstellung Ihrer Audio-Karte 
+    „ndern, um dieses Problem zu l”sen.
+
+
+15. Deaktivieren des Standardsprungs, wenn Sie mit CorelDRAW arbeiten
+
+    Wenn Sie die Vergr”áerungsfunktion in CorelDRAW verwenden,
+    sollten Sie den Standardsprung in der Registerkarte 
+    "Zeigersteuerung" deaktivieren. Die Vergr”áerung funktioniert nicht, 
+    wenn der Zeigersprung aktiviert ist.
+
+
+16. "Zeiger verbergen" funktioniert nicht in Anwendungen
+    zur Tabellenkalkulation
+
+    Die Funktion "Zeiger verbergen" blendet den Zeiger in Anwendungen
+    zur Tabellenkalkulation nicht aus.
+
+
+=============================================
+Teil II. Hinweise fr Benutzer von Windows 95
+=============================================
+
+1.  Ausfhren von IntelliType ohne das Microsoft Natural Keyboard
+
+    Die IntelliType-Software wurde entwickelt, um mit dem Microsoft
+    Natural Keyboard zusammenzuarbeiten. Wenn Sie IntelliType unter
+    Windows 95 installieren, aber eine andere Tastatur an Ihren Computer
+    anschlieáen, stehen einige IntelliType-Funktionen m”glicherweise
+    nicht zur Verfgung.
+
+
+2.  Ausfhren von IntelliType auf einem Computer mit mehreren
+    Benutzerprofilen
+
+    Das Deinstallieren von IntelliType unter Windows 95 wird nicht
+    empfohlen, wenn auf dem System Benutzerprofile verwendet werden.
+    Die Deinstallation kann Instabilit„t und ungltige Einstellungen
+    fr andere Benutzer zur Folge haben, die sich ebenfalls an den
+    Computer anmelden.
+
+
+3.  Einige Registerkarten fr die Tastatur sind Bestandteil des
+    Betriebssystems
+
+    Unter Windows 95 sind die Registerkarten "Geschwindigkeit", "Sprache" und 
+    "Allgemein" standardm„áiger Bestandteil des Betriebssystems Windows 95 
+    und kein Bestandteil von IntelliType. Nur Registerkarten mit dem 
+    Microsoft IntelliType-Logo werden von IntelliType installiert.
+
+
+4.  Wenn Sie ber eine Audio-Karte verfgen, w„hlen Sie nicht die Option 
+     "Systemlautsprecher" aus
+
+    Wenn Sie ber eine Audio-Karte verfgen, erzeugt die Option
+    "Systemlautsprecher" fr "Kl„nge" keine akustischen Signale,
+    wenn Sie eine Taste auf der Tastatur drcken. W„hlen Sie
+    statt dessen eine der anderen Klangoptionen. Der
+    Systemlautsprecher ist fr Computer ohne Audio-Karte vorgesehen.
+
+5.  Ausblenden der Task-Leiste bei der Verwendung des Endlos-Zeigers
+
+    Wenn Sie den Endlos-Zeiger unter Windows 95 gleichzeitig mit der 
+    Einstellung zum Ausblenden der Task-Leiste verwenden,
+    kann es schwierig sein, auf den Rand der Task-Leiste zu zeigen.
+    Zeigen Sie in einem solchen Fall die Task-Leiste an, indem Sie
+    auf die Schaltfl„che "Start" klicken, auf "Einstellungen" zeigen 
+    und dann auf "Task-Leiste" klicken. Deaktivieren Sie das 
+    Kontrollk„stchen "Automatisch im Hintergrund".
+
+6.  Konflikte zwischen der NUM-FESTSTELLTASTE von IntelliType und 
+  der CMOS-Einstellung
+
+    Wenn Sie Ihre CMOS-Einstellungen verwenden, um die 
+    NUM-FESTSTELLTASTE beim Starten des Computers automatisch 
+    ein- oder auszuschalten, funktioniert die Einstellung fr
+    "Tastensperrung" in IntelliType u.U. nicht richtig. Wenn Sie
+    feststellen, daá die NUM-FESTSTELLTASTE beim Starten des Computers
+    falsch eingestellt ist, berprfen Sie Ihre CMOS-Einstellungen,
+    und schalten Sie die Tastensperrung fr die NUM-Taste aus.
+
+
+================================================
+Teil III. Hinweise fr Benutzer von Windows 3.1x
+================================================
+
+1  Deaktivieren der FESTSTELLTASTE in einem MS-DOS-Fenster
+
+    Unter Microsoft Windows 3.1x deaktiviert die Funktion 
+    "Feststelltaste beim Starten deaktivieren" in der Registerkarte 
+    "Optionen" die FESTSTELLTASTE nicht, wenn Sie in einem 
+    MS-DOS-Fenster arbeiten.
+
+2.  Der Task-Manager wird m”glicherweise nicht gestartet, wenn 
+    wenig Arbeitsspeicher verfgbar ist
+
+    Wenn beim Versuch, den Task-Manager zu starten, nichts passiert,
+    schlieáen Sie eine oder mehr Anwendungen, um Arbeitsspeicher
+    freizugeben, und versuchen Sie es noch einmal.
+
+3.  Ersetzen des Task-Managers durch die Task-Liste
+
+    Wenn Sie IntelliType unter Windows 3.1x oder Windows NT 
+    installieren, wird die Standard-Task-Liste durch den Task-Manager 
+    ersetzt. Sie k”nnen wieder die Task-Liste verwenden, indem Sie wie 
+    folgt vorgehen:
+
+    1. Suchen Sie in der Datei SYSTEM.INI (in Ihrem Windows-Verzeichnis) 
+       im Abschnitt [boot] folgende Zeile:
+  
+ 	   taskman.exe=tasksw16.exe
+
+
+    2. ndern Sie sie folgendermaáen ab:
+
+	   taskman.exe=taskman.exe
+
+
+=============================================
+Teil IV. Hinweise fr Benutzer von Windows NT
+=============================================
+
+1.  IntelliType untersttzt nur x86-Betriebssysteme
+
+    Diese Version von IntelliType untersttzt nur Intel-kompatible
+    x86-Plattformen. Sie k”nnen IntelliType auf keiner anderen 
+    Plattform, etwa MIPS oder Alpha, installieren. Sie k”nnen das
+    Microsoft Natural Keyboard jedoch an solchen Systemen verwenden
+    obwohl die Windows-Logo-Tasten und die Anwendungstaste 
+    m”glicherweise nicht untersttzt werden.
+
+
+2.  ™ffnen der Windows NT Task-Liste
+
+    Drcken Sie zum ™ffnen der Microsoft Windows NT Task-Liste
+    STRG+ESC, oder doppelklicken Sie auf dem Desktop.
+    Wenn Sie statt dessen den Task-Manager ”ffnen m”chten, 
+    drcken Sie die linke oder rechte Windows-Logo-Taste.
+    Sie k”nnen den Task-Manager allerdings nicht aus einem
+    MS-DOS-Fenster ”ffnen.
+
+
+3.  Schlieáen von IntelliType aus dem Task-Manager
+
+    Wenn Sie Windows NT 3.51 ausfhren, verwenden Sie nicht die 
+    Schaltfl„che "Task beenden" im Task-Manager, um IntelliType zu 
+    schlieáen, da IntelliType dann erst wieder funktioniert, 
+    nachdem Sie Windows neu gestartet haben.
+
+
+==================================================================
+Teil V. Hinweise fr Benutzer, die ausschlieálich MS-DOS einsetzen
+==================================================================
+
+    Verwenden von Befehlszeilenparametern in MS-DOS 
+
+    Wenn Sie IntelliType unter MS-DOS-Version ausfhren,
+    k”nnen Sie an der Eingabeaufforderung folgendes eingeben:
+
+	   itype.exe /?
+
+    Damit zeigen Sie eine Liste der verfgbaren Befehlszeilenparameter
+    an.
+
+
+=================================================
+Teil VI. Bescheinigung des Herstellers/Importeurs
+=================================================
+
+Hiermit wird bescheinigt, daá dieses Microsoft-Eingabeger„t in 
+šbereinstimmung mit den Bestimmungen der VFG - 243/1991 - Richtlinie 
+funkentst”rt ist. Der Deutschen Bundespost wurde das Inverkehrbringen 
+dieses Ger„tes angezeigt und die Berechtigung zur šberprfung der Serie 
+auf Einhaltung der Bestimmungen einger„umt.
+

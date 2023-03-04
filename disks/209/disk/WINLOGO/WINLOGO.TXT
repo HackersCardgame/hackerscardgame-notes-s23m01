@@ -1,0 +1,216 @@
+
+Windows Logo Changer v2.12 (WINLOGO)
+------------------------------------
+
+(c) Copyright, July 1994, Dr. A. Olowofoyeku.
+
+Documentation
+-------------
+
+This program is a utility to facilitate the process
+of making changes to the Windows start up logo. It
+is written for MS-Windows 3.1, and contains both a 
+DOS and a Windows module, all within the same
+executable WINLOGO.EXE. If run from DOS, the DOS
+module executes and if run from Windows, the Windows
+module executes.
+
+The program may or may not work correctly under Windows 3.0, and 
+will most certainly NOT work under pre-3.0 versions of Windows.
+
+The Windows startup logo is actually just a bitmap,
+(in an RLE 4 encoded format) which is written into WIN.COM 
+by Windows itself, or any other program, such as WINLOGO,
+that can make changes to the startup logo. The process 
+is a bit involved if done through Windows, and is far
+from a straightforward business.  With WINLOGO, it simply 
+involves selecting an RLE encoded bitmap from the menu,
+and the program takes care of the rest. The whole process 
+takes just about 5 seconds.
+
+
+THE LOGO FILE
+-------------
+The default logo that Windows uses is called VGALOGO.RLE 
+and exists in your Windows System directory. WINLOGO can 
+always restore this if you choose it from the menu.
+However, WINLOGO also allows you to have such things as 
+company logos, funny pictures, and the like, as your 
+Windows startup logo, instead of the boring one that is 
+supplied with Windows itself. This is because any RLE 4 
+encoded bitmap file would do just as well as the VGALOGO.RLE 
+that resides in your Windows System directory. 
+
+You would need some utility, such as WINGIF or PAINTSHOP PRO 
+(both Shareware) to convert standard Windows Paintbrush
+bitmap files into RLE 4 format. You can obtain copies
+of WINGIF and PAINTSHOP PRO from bulletin boards or by
+ANONYMOUS FTP from various ftp sites all over the world
+(e.g., "micros.hensa" in the U.K., or "garbo.uwasa.fi"
+in Finland; both are freely accessible).
+ 
+NOTE: 
+  [1] The required format for the bitmap is RLE 4 (not RLE 8)
+      and the bitmap must not contain more than 16 colours.
+  [2] The RLE file must not be bigger than 46k in size.
+      Otherwise the WINCHG.COM file that will be built will
+      not be usable. Windows will not be able to load it, or 
+      even to start at all. If an RLE file selected from the 
+      menu is too big, WINLOGO will inform you of this. 
+
+Some sample RLE 4 bitmaps are supplied for you to play with. 
+Most of them are third party bitmaps which I have simply 
+converted from other formats to the RLE 4 encoded format. 
+I personally cannot draw, so I do not have any original 
+bitmaps of my own. 
+
+
+THE NEW LOGO
+------------
+When you select a new logo, WINLOGO normally builds a
+new Windows command file, and calls it "WINCHG.COM".
+Thus to start Windows with the new logo, type "WINCHG"
+instead of the usual "WIN". At the end of installation,
+WINLOGO will ask if you want to overwrite the existing
+WIN.COM file. You should normally answer "NO" to this
+question unless you already have made a backup copy of
+WIN.COM. You can always start Windows with your new logo
+by typing "WINCHG".
+
+If you are running from DOS, you can just supply the name
+of the RLE file that you want to use as a parameter to
+Winlogo;
+
+e.g. "WINLOGO MYBABY.RLE"
+      this will use MYBABY.RLE to create the new WINCHG.COM
+      without having to load Windows first.
+
+
+REGISTRATION
+------------
+WINLOGO is NOT a free program. It is distributed as a 
+shareware program. For my purposes, this means that you get 
+the program free and if you decide that you want to keep using
+it, then you are legally and morally obliged to REGISTER your
+copy. I have distributed the program in a completely uncrippled 
+state, and there are no nagging messages. I am relying on users 
+showing good faith and playing fair. This program took me a long 
+time to develop and test, and I am not asking for much.
+
+If you find WINLOGO useful and intend to keep using it, I
+would ask you to please send the registration fee of œ7.50 
+(7.50 British Pounds Sterling) or $10.50 (U.S. dollars).
+
+Please forward the fee to me at the address below, or please
+end it to you local REGISTRATION SITE (please see REGISTER.TXT
+for a list of my world wide registration sites). Please fill in
+the form in the file ORDER.FRM (or print the "REGISTRATION FORM"
+section in the on-line help).
+
+
+Payment of this fee confers the following benefits:-
+	[a] The satisfaction of being an honest person.
+	[b] A clear conscience.
+        [c] Good vibes
+        [d] You will be very cool indeed
+
+If you feel that WINLOGO is not worth paying for, then I ask you
+to please DELETE it from your disks immediately.
+
+Please note that since this program is not crippled or disabled in
+any way (and there are no nagging messages), NO DISKS will be sent
+when you register.
+
+
+
+DISCLAIMER
+----------
+The program WINLOGO is supplied AS IS. I do not guarantee
+anything other than that it will probably not kill YOU. You
+use WINLOGO at your own risk. I accept no responsibility for
+any damage or loss, physical, financial, or otherwise, that may
+result from the use, or purported use of WINLOGO, for any
+purpose whatsoever.
+
+If these terms are not acceptable to you, then you have NO
+license to use or test WINLOGO. You should DELETE it from
+your disks IMMEDIATELY.
+
+
+For comments, bug reports, and payment, please contact;
+
+Dr. A. Olowofoyeku
+268 Horwood,
+Newcastle,
+Staffs ST5 5BQ
+England,
+U.K.
+
+
+E-mail:
+-------
+Internet:   laa12@keele.ac.uk
+	    chief@mep.com
+
+Compuserve: 100415,3414
+
+
+PRODUCTS
+--------
+Below are a list of other programs which you can obtain from me;
+
+Shareware;
+---------
+[1] Windows Command Line Processor (WCL) :-
+	This is a command line interface for Windows 3.0 and 3.1.
+	It simulates the infamous DOS "C:>" prompt, from WITHIN
+	Windows, and also duplicates most of the internal DOS
+	commands. This is a FULL Windows program, and you get a
+	prompt from which commands can be typed, just as under
+	DOS. You can run any DOS or Windows program from this prompt,
+	while at the same time having Program Manager in view for
+	clicking on other programs with the mouse.
+
+	WCL supports batch commands in Windows, and directory aliases.
+	Other commands include COPY, DELETE, RENAME, MKDIR, RMDIR, DIR,
+	TYPE, MORE, PRINT, CONCAT, TIME, DATE, HIDE, UNHIDE, TYPE-WRITE,
+	FREE, SHELL, etc., and a host of others. Many of the commands
+	behave exactly like their DOS counterparts, except that you do
+	all this WITHIN Windows. The WCL window is just tucked away in a
+	corner of the Windows desktop, and you can switch to it just by
+	clicking on any part of it.
+
+	With WCL, you may never need to invoke the "MSDOS PROMPT" again,
+	and for basic functions like file copying, deleting, and renaming,
+	creating, deleting and renaming directories, setting the system
+	date or time, you will not need to load the file manager. This is
+	a great program!
+
+	[2] AUTO-CONFIG :-
+	This is a DOS based automatic system configuration program. It
+	manages multiple AUTOEXEC.BAT and CONFIG.SYS for you, and
+	whenever you need to change the system configuration in order to
+	run a particular application, or whatever, all you need do is
+	select from a menu, and AUTO-CONFIG will do the rest - update
+	your AUTOEXEC.BAT and CONFIG.SYS files with the new configuration
+	AND reboot the computer. The program has a built in Editor to
+	facilitate editing or creation of the different configurations.
+	Every one needs this program!
+
+
+Public Domain
+-------------
+	[1] METRIX :-
+	This is a program which converts from Metric to Imperial
+	measurements, and vice versa. e.g., Metres to Feet, Kilograms
+	to Stones, etc. About 16 conversions are built into the program.
+	There is a DOS version and a Windows version. The DOS version
+	allows you to create your own conversion tables. I have not yet
+	built this feature into the Windows version, and I may never do
+	so.
+
+	[2] SIMPLE-EDITOR :-
+	This is a DOS based Text Editor for editing ASCII files of up
+	to 64k. The keystrokes are Wordstar(tm) compatible. This is the
+	same editor that it built into AUTO-CONFIG (see above).
+

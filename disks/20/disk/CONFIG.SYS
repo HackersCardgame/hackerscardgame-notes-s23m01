@@ -1,0 +1,3 @@
+device=\dos\himem.sys
+device=\dos\emm386.exe NOEMS
+device=\dos\Ramdrive.sys 4096 512 80 /E

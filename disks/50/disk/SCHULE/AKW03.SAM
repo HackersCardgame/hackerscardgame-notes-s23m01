@@ -1,0 +1,698 @@
+[ver]
+	4
+[sty]
+	
+[files]
+[charset]
+	82
+	ANSI (Windows, IBM CP 1252)
+[revisions]
+	0
+[prn]
+	HP LaserJet IIIP
+[port]
+	LPT1:
+[lang]
+	7
+[desc]
+	
+	
+	
+	
+	
+	768447422
+	1
+	768427445
+	326
+	2
+	0
+	0
+	0
+	0
+	
+	
+	
+	
+	
+	
+	1
+[fopts]
+	0
+	1
+	0
+	0
+[lnopts]
+	2
+	Text Abstand
+	1
+[docopts]
+	5
+	2
+[GramStyle]
+	
+[ParaNum]
+	1
+[tag]
+	Text
+	2
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Text
+	0
+	0
+[tag]
+	Text Abstand
+	3
+	[fnt]
+		Times New Roman
+		240
+		0
+		49152
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		277
+		2
+		0
+		277
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Text Abstand
+	0
+	0
+[tag]
+	Markierung
+	4
+	[fnt]
+		Times New Roman
+		240
+		0
+		49152
+	[algn]
+		1
+		2
+		0
+		288
+		288
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*0>
+		360
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Markierung
+	0
+	0
+[tag]
+	Markierung 1
+	5
+	[fnt]
+		Times New Roman
+		240
+		0
+		49152
+	[algn]
+		1
+		2
+		288
+		288
+		288
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*5>
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Markierung 1
+	0
+	0
+[tag]
+	Nr. Liste
+	6
+	[fnt]
+		Times New Roman
+		240
+		0
+		49152
+	[algn]
+		1
+		2
+		360
+		360
+		360
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*:>.
+		360
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Nr. Liste
+	0
+	0
+[tag]
+	Unter Titel
+	7
+	[fnt]
+		Times New Roman
+		200
+		0
+		49155
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		2
+		72
+		72
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		2
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Unter Titel
+	0
+	0
+[tag]
+	Titel
+	8
+	[fnt]
+		Arial
+		360
+		0
+		16385
+	[algn]
+		4
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		446
+		2
+		144
+		72
+		2
+		100
+	[brk]
+		16
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		1
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Titel
+	0
+	0
+[lay]
+	Standard
+	516
+	[rght]
+		16839
+		11907
+		2
+		1440
+		1440
+		2
+		1440
+		1440
+		0
+		1
+		0
+		1
+		0
+		2
+		1
+		1440
+		10465
+		12
+		1
+		720
+		1
+		1440
+		1
+		2160
+		1
+		2880
+		1
+		3600
+		1
+		4320
+		1
+		5040
+		1
+		5760
+		1
+		6480
+		1
+		7200
+		1
+		7920
+		1
+		8640
+	[hrght]
+	[lyfrm]
+		1
+		11200
+		0
+		0
+		11907
+		1440
+		0
+		1
+		3
+		1 0 0 0 0 0 0
+		0
+		0
+		1
+	[frmlay]
+		1440
+		11907
+		1
+		1440
+		73
+		2
+		623
+		1440
+		0
+		1
+		0
+		1
+		1
+		0
+		1
+		1440
+		10465
+		1
+		3
+		9360
+	[txt]
+>
+	[frght]
+	[lyfrm]
+		1
+		13248
+		0
+		15399
+		11907
+		16839
+		0
+		1
+		3
+		1 0 0 0 0 0 0
+		0
+		0
+		2
+	[frmlay]
+		16839
+		11907
+		1
+		1440
+		623
+		2
+		15472
+		1440
+		0
+		1
+		0
+		1
+		1
+		0
+		1
+		1440
+		10465
+		2
+		2
+		4680
+		3
+		9360
+	[txt]
+>
+[elay]
+[l1]
+	0
+[pg]
+	2
+	33 0 0 0 0 0 0 65535 65535 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0 0
+	51 792 15 1025 0 0 0 65535 65535 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0 0
+[edoc]
+<:#274,9025>AKW<+.><-.><+.><-.><+.><-.><+.><-.><+.><-.><+.><-.><+.><-.><+.>
+
+<:s><:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>	1. Funktion eines KKW 's
+
+<:#274,9025>	2. Was w<\|>rde passieren, wenn in G<\v>sgen der Super-Gau eintreten w<\|>rde ?
+
+<:#274,9025>	3. Tschernobil
+
+<:#274,9025>	4. Indien, der nukleare Alptraum
+
+<:#274,9025>
+
+<:s><:#274,9025>
+
+<:s><:#274,9025>
+
+<:#274,9025>	1. <+#>Wie funktioniert ein AKW<-#><+#> ?<-#>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>	3. <+#>Tschernobil<-#>
+
+<:#274,9025>
+
+<:I0,42,42,0><:R1,11,1,720,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,>Die 1. Katastrophe im KKW von Tschernobil ereignete sich nich erst 1986, sondern bereits 1982. Damals brachen duzende von Druckr<\v>ren schon damals wurden grosse Gebiete Weissrusslands und der Ukraine radioaktiv vers<\d>ucht. In der Nacht vom 26. April 198
+6 trat dann der Gau (d.h. gr<\v>sster anzunehmender Unfall) ein. Bei einer zu hohen Stralung versagt die Elektronik. Da sich in allen Maschinen elektronische teile befanden, funktionierte keine und alle aufr<\d>umarbeiten mussten von Hand durchgef<\|>hrt we
+rden. Jeder der sich nur wenige Minuten in der n<\d>he des KKW 's befanden, erlitt schwerste Verbrenugen. (ausschnitt Film) Alle die sich an den Aufr<\d>umarbeiten beteiligten starben oder noch werden noch an den Folgen der Stralung sterben.
+
+<:I0,42,42,0><:R1,11,1,720,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,>Nach Informationen der Regierung gelangten radioaktive Elemente in der Gr<\v>ssenordnung 50 MIO <[>K<\|>ry] in die Atmosph<\d>re. Tats<\d>chlich gelangten aber 6,3MIA <[>K<\|>ry] in die Atmosph<\d>re. Das 
+<\|>bertrifft bei weitem den Schaden der durch s<\d>mtliche Atombombentests und den Abwurf der beiden Atombomben 
+<\|>ber Hyroschima und Nagasaki entstand. Es wurde eine Sperrzone mit einem Radius von 30 km um des KKW errichtet. Doch eine Gefahr f<\|>r die Menschen bestand nich nur in der 30 km Zone um das KW herum, der Radius dieser Zone h<\d>tte auf 600 km um Tschern
+obil herum erweitert werden m<\|>ssen. Millionen von Menschen h<\d>tten evakuiert werden m<\|>ssen so auch die Stadt Kiew <[>kief].
+
+<:R><:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>3. <+#>Indien, der nukleare Alptraum<-#>
+
+<:s><:#274,9025>
+
+<:#1096,9025>	8 KKW, weitere 20 sollen folgen. alles streng geheim, bis 2000 9 Milliarden in KKW investieren eigene uranvorkommen Mitten im Urwald wurden mehr als 240 ha Wald planiert um Platz f<\|>r eine streng geheime Baustelle zu schaffen. Bis ende dieses Jahrhundert
+s sollen dort 6 KKW erbaut werden. 
+
+<:#274,9025>
+
+<:s><:#274,9025>
+
+<:#1096,9025>In Indien ist alles was mit KKW' s zu tun hat, nach einem Gesetz aus dem Jahre 1962 streng geheim. Es ist untersagt von KKW-Anlagen Fotos, Skizzen oder andere Aufzeichnungen zu machen. Sogar der Besitz eines Geigerz<\d>hlern ist verboten. Indien gestattet a
+uch keine Kontrolle durch die internationale Atomenergiebeh<\v>rde. 
+
+<:s><:#274,9025>
+
+<:#3836,9025>Tschadugoda ist eines der Gebiete in welchem Uran abgebaut wird. T<\d>glich werden etwa 1000 Tonnen Uran abgebaut. Die Arbeiter, welche das Uran abbauen, kommen aus l<\d>ndlichen Gegenden.Sie wissen nicht was radioaktive Stralung ist. Die Uranian Coperation
+ of India stelt den Arbeitern Baumwollkleidung, Schuhe und eine Kopfbedeckung zur Verf<\|>gung, doch keine Handschuhe und erst recht keine Schutzkleidung. Die Liste der Leute, die an Krebs starben ist Elle lang. Aber nicht nur die Arbeiter sind direkter Str
+ahlung ausgesetzt, sondern auch die Bauern der n<\d>heren Umgebung, denn die Abw<\d>sser der Erzm<\|>hlen sind hoch radioaktiv. Sie werden in spezielle Auffangbecken abgeleitet. Diese sollten immer mit Wasser gef<\|>llt sein, damit der Wind keinen radioakti
+ven Staub verteilen kann. Doch seit Jahren sind diese Becken trocken und die dortige Radioaktivit<\d>t ist 100x h<\v>her als der Normalwert. Bei uns w<\|>rde ein solches Gebiet zur Deponie f<\|>r Nuklearabf<\d>lle erkl<\d>re werden, abgedeckt, eingez<\d>unt
+ und f<\|>r hunderte von Jahren unzug<\d>nglich gemacht.
+
+<:#274,9025>
+
+<:#3014,9025>Die indische Regierung behauptete, dass Atomkraft eine ergiebige und sichere Energiequelle ist. In den KKW 's herscheten strenge Sicherheitsforschriften: jeder Arbeiter habe einen Stralenanzug und eine Sicherheitskarte, welche anzeigt ob die Stralendosis di
+e international geltenden Sicherheitewerte nicht <\|>berschreite. Die Realit<\d>t ist anders. Fast alle der Reaktoren erreichen nur 50% der geplanten Kapazit<\d>t. Die Atomkraftwerke in Indien sind alles andere als sicher. Keines der 8 KKW ist sicher. In de
+n letzten Jahren sind mehr 200 St<\v>rungen und Unf<\d>lle aufgetreten, doch der Staat hat dies bestritten. Mehr als 3000 Arbeiter sind hohen Stralungsdosen ausgesetzt, davon mussten mehr als 300 klinisch behandelt werden. In der Umgebung der KKW 's leiden 
+viele ,vorallem aber die Kinder, an Missbildungen. 
+
+>
+
+[Embedded]
+00009224

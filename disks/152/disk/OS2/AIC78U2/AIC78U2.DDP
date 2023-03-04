@@ -1,0 +1,19 @@
+**********************************************************************
+*                                                                    *
+*      AIC-78U2 device driver profile for OS/2 3.0, 4.0, 4.0SMP      *
+*                                                                    *
+**********************************************************************
+
+:PRESENCECHECK
+78U2PRES.EXE
+ 
+:TITLE
+Adaptec AIC-7890 Ultra 2 OS/2 3.0, 4.0, 4.0SMP Adapter Device Driver
+	     
+:CONFIG                 * Add the following lines to CONFIG.SYS
+BASEDEV=AIC78U2.ADD
+	    
+:FILES                  * Copy the driver into \OS2 on the boot drive
+AIC78U2.ADD \OS2\BOOT\AIC78U2.ADD
+    		     
+

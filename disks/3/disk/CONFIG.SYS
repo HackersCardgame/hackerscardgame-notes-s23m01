@@ -1,0 +1,10 @@
+device=himem.sys /testmem:off
+files=20
+buffers=10
+dos=high,umb
+device=emm386.exe noems
+stacks=9,256
+devicehigh=oakcdrom.sys /D:hasi_01
+devicehigh=ramdrive.sys /E 4096
+lastdrive=z
+devicehigh=ifshlp.sys

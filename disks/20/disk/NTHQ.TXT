@@ -1,0 +1,5 @@
+Hardware Detection Tool For Windows NT 4.0 Beta 2
+
+Master Boot Sector Virus Protection Check
+Hard Disk Boot Sector Protection: Off.
+No problem to write to MBR

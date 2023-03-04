@@ -1,0 +1,425 @@
+[ver]
+	4
+[sty]
+	_DEFAULT.STY
+[files]
+[charset]
+	82
+	ANSI (Windows, IBM CP 1252)
+[revisions]
+	0
+[prn]
+	HP LaserJet IIIP
+[port]
+	LPT1:
+[lang]
+	2
+[desc]
+	
+	
+	
+	
+	
+	789373243
+	10
+	788913365
+	639
+	5
+	0
+	0
+	0
+	0
+	
+	
+	
+	
+	
+	
+	1
+[fopts]
+	0
+	1
+	0
+	0
+[lnopts]
+	2
+	Text Abstand
+	1
+[docopts]
+	5
+	2
+[GramStyle]
+	
+[frm]
+	1
+	640
+	1982
+	5246
+	5279
+	8572
+	0
+	1
+	1
+	1 0 0 0 0 0 0
+	0
+	16777215
+	3
+	[frmlay]
+		8572
+		3297
+		1
+		144
+		144
+		1
+		5390
+		144
+		0
+		2
+		0
+		0
+		0
+		0
+		1
+		2126
+		5135
+		0
+	[txt]
+<+B>
+
+<+B>
+
+<+B>
+
+<+B>
+
+<+B>
+
+<+B>Bild von Andres
+
+
+>
+[frm]
+	1
+	640
+	6753
+	6008
+	9863
+	9075
+	0
+	1
+	1
+	1 0 0 0 0 0 0
+	0
+	16777215
+	4
+	[frmlay]
+		9075
+		3110
+		1
+		144
+		144
+		1
+		6152
+		144
+		0
+		2
+		0
+		0
+		0
+		0
+		1
+		6897
+		9720
+		0
+	[txt]
+<+B>
+
+<+B>
+
+<+B>
+
+<+B>
+
+<+B>Bild Trockendock
+
+>
+[l1]
+	0
+[pg]
+	5
+	72 0 0 0 0 0 0 65535 65535 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0 0
+	89 312 70 0 0 0 0 65534 2 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0 0
+	97 230 28 0 0 0 0 65534 252 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0 0
+	114 89 78 32 0 0 0 65534 2 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0 0
+	128 0 209 1025 0 0 0 65535 65535 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0 0
+[edoc]
+<+B><:#869,9025><-#><+#><:f720,BFutura XBlk BT,>Das Trockendock<:f>
+
+<+B><:#533,9025><:f440,BFutura XBlk BT,>von Stefan Andres<:f>
+
+<+B><:#274,9025>26. Juni 1906-29. Juni 1970
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,542>
+
+<:#274,5186>
+
+<:#274,5186>
+
+<:#274,5186>
+
+<:#274,1474>
+
+<:#274,1474>
+
+<:#274,1474>
+
+<:#274,1474>
+
+<:#274,1474>
+
+<:#274,1474>
+
+<:#274,1474>
+
+<:#274,1474>
+
+<:#274,1474>
+
+<:#274,1474>
+
+<:#274,602>
+
+<:#274,602>
+
+<:#274,602>
+
+<:#274,602>
+
+<:#274,602>
+
+<:#274,602>
+
+<:#274,602>
+
+<:#274,602>
+
+<:#274,602>
+
+<:#274,5313>
+
+<:#274,5313>
+
+<:#274,602>
+
+<:#274,602>
+
+<:#274,602>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:#274,9025>
+
+<:S+-2><:#483,9025><:f280,,><+!><+#>Worterkl<\d>rung<-#><-!>
+
+<:S+-2><:#483,9025><:f280,,>
+
+<:S+-2><:#483,9025><:f280,,>Trockendock = Anlage zum trockenlegen von Schiffen
+
+<:S+-2><:#483,9025><:f280,,>Arsenal = Zeughaus
+
+<:S+-2><:#483,9025><:f280,,>Ballustrade = Gel<\d>nder
+
+<:S+-2><:#483,9025><:f280,,>Fregatte = Kriegsschiff
+
+<:S+-2><:#483,9025><:f280,,>Nebenbuhler = <+#>Konkurenten, Gegener<-#><:f><:f280,,>
+
+<:S+-2><:#483,9025><:f280,,>
+
+<:S+-2><:#483,9025><+!><+#><:f280,,>
+
+<:S+-2><:#483,9025><+!><+#><:f280,,>
+
+<:S+-2><:#483,9025><+!><+#><:f280,,>
+
+<:S+-2><:#483,9025><+!><+#><:f280,,>Zusammenfassung<-#><-!><:f><:f280,,>
+
+<:S+-2><:#483,9025><:f280,,><:f><:f280,,>
+
+<:S+-2><:#966,9025><:f280,,>Der Ingenieur Grognard, wurde als Ehrengast zum Stapellauf eines Schiffes eingeladen.
+
+<:S+-2><:#2415,9025><:f280,,>Damals war es <\|>blich, da<+#>ss ein Galerenstr<\d>fling die letzte Hemmschwelle wegschlug bevor das Schiff ins Wasser schoss<-#>. Sobald die Schwelle weggeschlagen war musste der Gefange so schnell wie m<\v>glich dem Koloss ausweichen, gelang ihm
+ das nicht, blieb von seinem K<\v>rper nichts <\|>brig ausser einer Blutspurg. Gelang es ihm aber, war er im selben Augenblick frei.
+
+<:S+-2><:#1449,9025><:f280,,>Grognard, der zum ersten mal bei einem solchen Stapellauf dabei war, war der allgemeinen Meinung das es gut sei, einem lebensl<\d>nglich Verurteilten die Chance auf die Freiheit oder den Tod zu geben. 
+
+<:S+-2><:f280,,>Nach einer Weile wurde alles still und ein einzelner Gefangener kommt. In der Hand hatte er einen grossen Zuschlaghammer um die letzte St<\|>tze weg zu schlagen. Der Str<\d>ffling ber<\|>hrte kurz die St<\|>tze. Grognard machte die selbe Bewegung m
+it dem Silberknauf seines Stockes. Der Str<\d>fling drehte sich zu ihm um. Grognard konnte die Nummer auf der gr<\|>nen M<\|>tze lesen: 3222. Dann kehrte sich der Gefangene wieder um. Er schlug mit dem Hammer zu, einmal, zweimal dreimal und nach einigen wei
+teren Schl<\d>gen sprang das Schiff mit einem Ruck nach vorne. Der Str<\d>ffling sprang weg, doch pl<\v>tzlich bleibt er wie im Traum stehen und der Bug des Schiffes zerquetschte<:f><:f280,,> ihn. 
+<\\>brig blieb nur eine blutige Spur. Die Leute jubelten und schrien. Grognard schrie auch, mit diesem Schrei erschien ihm ein Bild, n<\d>mlich das Bild des Trockendocks. Er schwor sich, nicht eher zu ruhen, bis seine Vision in die Tat umgesetzt ist.
+
+<:S+-2><:#2415,9025><:f280,,><+#>Es begann ein Jahrelanger Kampf mit den Beh<\v>rden und Konkurenten welche keine erneuerungen wollten<-#><:f><:f280,,><:f><:f280,,>. Troz grosser Wiederst<\d>nde baute er das erste Trockendock. Doch kurz nach der Er<\v>ffnung wurde Grognard bei
+m Trockendock von einem Str<\d>ffling erschlagen weil dieser nun keine M<\v>glichkeit mehr hatte in die Freiheit zu gelangen..
+
+<:S+-2><:#483,9025><:f280,,>
+
+<:S+-2><:#483,9025><+!><+#><:f280,,>
+
+<:S+-2><:#483,9025><+!><+#><:f280,,><-!><-#><:f><+!><+#><:f280,,><-!><-#><:f><+!><+#><:f280,,>
+
+<:S+-2><:#483,9025><+!><+#><:f280,,>Biographie<-#><-!>
+
+<:S+-2><:#483,9025><:f280,,>
+
+<:S+-2><:#3864,9025><:f280,,>Stefan Andres wurde am 26. Juni 1906 <+#>in Dr<\v>hnchen (Landkreis Trier) in Deutschland  geboren.<-#> Er studierte Theologie und Germanistik. Nach der Ver<\v>ffentlichung seines ersten Romans reiste er viel in den Mittelmehrl<\`>ndern herum, bis 
+er 1937 nach Positano in Unteritalien <\|>bersiedelte (dort spielen auch einige<:f><:f280,,> seiner Werke). Erst 1950 kehrte er nach Deutschland zur<\|>ck und lebte in Unkeln am Rhein wo er eine Reihe seiner grossen Romane schrieb. Ab<:f><:f280,,> 1961 lebt
+e Stefan Andres in Rom. Dort starb er am 29. Juni 1970 im alter von 64 Jahren.
+
+<:S+-2><:#1449,9025><:f280,,><:f><:f280,,>Schl<\|>sselwerke seines Schaffens<:f><:f280,,> sind "El Greco malt den Grossinquisitor"(1936) und "Wir sind Utopia"(1942) 
+<:f><:f280,,>greifen <:f><:f280,,>politische<:f><:f280,,> und moralische<:f><:f280,,> fragen unseres Jahrhunderts auf.<:f><:f280,,>
+
+<:S+-2><:#483,9025><:f280,,>
+
+<:S+-2><:#483,9025><:f280,,>
+
+<:S+-2><:#483,9025><+#><+!><:f280,,>Textanalyse<-!><-#>
+
+<:S+-2><:#483,9025><:f280,,>
+
+<:S+-2><:#1449,9025><:f280,,>Die Geschichte spielt gegen Ende der 18. Jahrhunderts. Der Autor<:f><:f280,,> gab den Ort (Toulon eine Hafenstadt in S<\|>d-Frankreich) und den Namen des Erfinders (Grognard) an, um der Geschichte Autentit<\d>t zu verleihen.
+
+<:S+-2><:#483,9025><:f280,,><:f><:f280,,>Wir erfahren nichts  genaueres <\|>ber die Personen.
+
+<:S+-2><:#966,9025><:f280,,>Grognard hat einen silbernen Knauf an seinem Stock was darauf hindeutet, das er wohlhabend ist und Einfluss hat. 
+<:f><:f280,,>
+
+<:S+-2><:#966,9025><:f280,,>Im gegensatz dazu geh<\v>ren die Gefangene der untersten Schicht an und der Autor vergliecht sie mit stummen Ameisen.
+
+<:S+-2><:#483,9025><:f280,,>Die Musikkapelle wirkt als dramatisierendes Mittel.
+
+<:S+-2><:#1449,9025><:f280,,>Die Festgemeinschaft, welche sich zum Stapellauf eingefunden hat, findet es belustigend mitzuerleben wie der Gefangene ums Leben kommt oder ob er frei kommt.
+
+<:S+-2><:#483,9025><:f280,,>Der schwarze Schatten des Rumpfes wirkt wie eine dunkle Vorahnung.
+
+<:S+-2><:#966,9025><:f280,,>Der Strafling l<\d>sset den Hammer ein paar mal h<\d>ngen, als ob ihn der Mut vor dem Beforstehenden verlassen h<\d>tte.
+
+<:S+-2><:#966,9025><:f280,,>Grognard versetzt sich offenbar in die Lage des Gefangenen. Unmerklich f<\|>hrt auch er die Bewegungen des Gefangenen mit seinem Stock aus.
+
+<:S+-2><:#483,9025><:f280,,>
+
+<:S+-2><:#966,9025><:f280,,>Die Gr<\|>ne Farbe der M<\|>tze des Str<\d>flings 3222 weist auf die Hoffnung f<\|>r das Leben hin.<:f><:f280,,>
+
+<:S+-2><:#483,9025><:f280,,>Der Auserw<\d>hlte schl<\d>gt zu und springt filnk hin und her.
+
+<:S+-2><:#2415,9025><:f280,,>In dieser Situation wird das Schiff selbst zum Gegner des Gefangenen, scheint zu erwachen und darauf zu warten in zu zerquetschen, sein Hammer wird zu  seiner Waffe gegen den 
+<\|>berm<\d>chtigen Gegner. Noch ist ist ein lebensrettender Sprung m<\d>glich.
+
+<:S+-2><:#483,9025><:f280,,>Aber warum bleibt er stehen ? ------- 
+
+<:S+-2><:#483,9025><:f280,,>Die Menge jubelt. Jubelt sie des Stapellaufes wegen oder des Toten ?
+
+<:S+-2><:#483,9025><:f280,,>Brauchte es dieses Opfer nur als Antribskraft f<\|>r Grognards Erfindung ?
+
+<:S+-2><:#966,9025><:f280,,>Jedenfalls war es gen<\|>gend Motivation f<\|>r Grognard entgegen aller Wiederst<\d>nde seine Vision zu realisieren.
+
+<:S+-2><:#966,9025><:f280,,>Sp<\d>tre <:f><:f280,,>wird <:f><:f280,,>Grognard<:f><:f280,,> von einem Galeerenstr<\d>fling welcher auch ein gr<\|>ne Wollm<\|>tze tr<\d>gt, erschlagen. (Warum ?<:f><:f280,,>)
+
+<:S+-2><:#483,9025><:f280,,>Weil er sie der einzigen, legalen M<\v>glichkeit die Freiheit zu erlangen beraubt hat.
+
+<:S+-2><:#483,9025><:f280,,>Im Sterben begegnet Grognard dem Strafgefangenen 3222.
+
+<:S+-2><:#483,9025><:f280,,><:f><:f280,,>Hat er sich geirrt, verdankt er seinem Lebenswerk den gewaltsamen Tod ?
+
+<:S+-2><:#483,9025><:f280,,>
+
+<:#322,9025><:f280,,>
+
+<:#322,9025><:f280,,>
+
+<:#322,9025><:f280,,>
+
+<:#322,9025><:f280,,>
+
+<:#274,9025><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f><:f280,,><:f>
+
+>
+
+[Embedded]
+00010119

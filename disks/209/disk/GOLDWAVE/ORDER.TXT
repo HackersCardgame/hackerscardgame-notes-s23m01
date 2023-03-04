@@ -1,0 +1,48 @@
+		GoldWave Order Form
+
+
+Please type in the following information:
+
+Name (first & last): 
+                     -----------------------------------
+[Company]:
+           ---------------------------------------------
+Street/P.O. Box: 
+                 ---------------------------------------
+City, State/Province: 
+                      ----------------------------------
+ZIP/Postal Code: 
+                 ---------------------------------------
+Country: 
+         -----------------------------------------------
+[Telephone (with Area Code)]:  
+                              --------------------------
+Version of GoldWave you are using: 
+                                   ---------------------
+Format:
+    [ ] Standard ($25 US)
+          Password to remove shareware message and unlock
+          all future versions.
+
+    [ ] Deluxe ($45 US)
+          Password (as above).  Diskette and manual for
+          new version, when available.
+          (3.5" 1.44M format only)
+          Please include $5.00 US extra for orders outside
+          USA and Canada.
+
+Comments/Suggestions: 
+                      ------------------------------------
+
+----------------------------------------------------------
+
+----------------------------------------------------------
+
+Please mail this form along with your check or money
+order.  Be sure to make the check or money order payable
+to Chris Craig.  Thank you for your support!
+
+	Chris Craig
+	P.O. Box 51
+	St. John's, NF
+	CANADA  A1C 5H5

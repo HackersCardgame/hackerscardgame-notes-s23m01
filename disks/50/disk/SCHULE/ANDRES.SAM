@@ -1,0 +1,66 @@
+[ver]
+	4
+[sty]
+	_DEFAULT.STY
+[files]
+[charset]
+	82
+	ANSI (Windows, IBM CP 1252)
+[revisions]
+	0
+[prn]
+	HP LaserJet IIIP
+[port]
+	LPT1:
+[lang]
+	2
+[desc]
+	
+	
+	
+	
+	
+	788914078
+	1
+	788913365
+	11
+	1
+	0
+	0
+	0
+	0
+	
+	
+	
+	
+	
+	
+	1
+[fopts]
+	0
+	1
+	0
+	0
+[lnopts]
+	2
+	Text Abstand
+	1
+[docopts]
+	5
+	2
+[GramStyle]
+	
+[l1]
+	0
+[pg]
+	1
+	3 0 0 1025 0 0 0 65535 65535 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0 0
+[edoc]
+<:f400,,><+#><+!>Das Trockendock von Stefan Andres<-!><-#><:f>
+
+
+
+>
+
+[Embedded]
+00000543

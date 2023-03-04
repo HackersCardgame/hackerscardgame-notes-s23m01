@@ -1,0 +1,9 @@
+
+[Install Switches]
+DestinationDir=c:\net\
+NoInterface=False
+InterfaceOnly=False
+ModifySystemFiles=True
+Use3d=True
+
+

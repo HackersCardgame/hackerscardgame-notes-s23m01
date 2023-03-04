@@ -1,0 +1,279 @@
+PC Magazine Labs Windows Graphics Benchmark Help
+Version 2.50
+
+Version 2.50 computes the WINMARK(tm), the weighted geometric mean of twelve
+Windows graphics operations that are the most frequently used by major Windows
+applications.  In late 1991, PC Labs instrumented three classes of leading
+Windows applications (text-oriented, bitmapped graphics, and vector graphics
+applications), and found that several BitBlt, line drawing, and rectangle
+filling operations prevailed over all others.   The specific operations are:
+
+  Memory to Screen Source Copy
+  Memory to Screen Pattern Copy
+  Memory to Screen Pattern Invert
+  Memory to Screen Destination Invert
+  Memory to Screen Whiteness
+  Draw Horizontal Single Lines
+  Draw Vertical Single Lines
+  Draw Diagonal Single Lines
+  Draw Horizontal Polylines
+  Draw Vertical Polylines
+  Draw Diagonal Polylines
+  Random Rectangles
+
+When you start WINBENCH, it gives you the options of running the WINMARK tests,
+running the Advanced (detailed) tests, or exiting from the program.  The
+WINMARK result is the weighted GEOMETRIC mean of the twelve tests.  In the case
+where all the weights add up to 1.0, the weighted geometric mean is calculated
+as the product of each test result raised to the power of its weight.  In more
+mathematical terms,
+	WINMARK = (r1**w1)*(r2**w2)*...(rn**wn)
+where r1...rn are the test results, and w1...wn are the corresponding weights.
+
+you may run the WINMARK tests and/or display the results by selecting
+Options | WINMARK at any time.
+
+To manufacturers of personal computers and graphics hardware, publishers of
+Windows software drivers, and others who will publicize WINMARKs for commercial
+and non-commercial purposes:
+
+To minimize the possibility of misrepresenting the results of the PC Magazine
+WINMARK test, you should make sure that any publication or distribution of these
+results in printed or electronic form includes the brand name, clock speed, and
+processor model of the PC on which the test was run, a concise description of the
+graphics hardware used for the test, and the Windows driver name, description, and
+version used for the test.  You may choose to augment this information by specifying
+the graphics chip set, host PC cache memory, and any other pertinent information.
+The WINMARK and the other WINBENCH tests are sensitive to all of these factors.
+A sample description follows:
+
+A 37MHz White Label 80486 PC with a Generic Super VGA card running with
+Version 3.17 of VGA.DRV (640x480x16 colors) achieved a WINMARK result of
+2,366,439.
+
+The Compaq 386/25e used as a reference PC for the WINMARK was configured with
+8 megabytes of 80 nanosecond DRAM and VGA integrated onto the system board.  This
+PC was tested with the standard VGA driver packaged with Windows 3.0, Version
+3.00 of the driver VGA.DRV operating with 640x480x16 colors.
+
+PC Labs is currently doing further instrumentation and analysis of major Windows
+applications, using more sophisticated graphical device interface (GDI)
+profiling tools recently made available by Microsoft.  Subsequent releases of
+WINBENCH may reflect adjustments in both the functions used and their weights,
+depending on the results of the analysis.
+
+BENCHMARK OPTIONS
+
+You may select the following items in the Modify Options dialog box:
+
+  User Preference Options
+
+     You may enable or disable the display of the timing dialog boxes at the end of
+each set of tests via the DISPLAY RESULTS radio buttons.
+
+     You may enable or disable the output of a results file and change the file
+format via the FILE OUTPUT radio buttons.
+
+     If you do select file output, then you can enter a name for the file and a
+heading for the file into the edit boxes in the FILE OPTIONS group box.
+
+  Save Checkbox
+
+     To the left of the OK button in the Modify Options dialog box is a single
+checkbox, labeled "Save".  If you select this option, WINBENCH will remember your
+current option settings, and automatically use these settings each time WINBENCH
+runs.  WINBENCH saves the option settings in the [Version.2.0] section of the
+WINBENCH.INI file in your Windows directory.
+
+     If you use the same file name for different runs of WINBENCH, results from the
+current test are appended to the results of preceding tests.
+
+
+SUGGESTED USAGE
+
+     If this is the first time you've used the WINBENCH benchmark, you may wish to
+experiment with it.  You can select and run any individual test via the menus.
+
+     If you are timing the performance of a display card, you should run all of the
+detailed tests.  The fastest way to run all of the tests is to disable the display
+of results, and then enable the file options.  Running in this mode allows the
+benchmark to proceed without intervention, and to record its results in a file.
+
+     To run all detailed tests automatically:
+
+	  Select "Modify Options" from the OPTIONS menu.
+	  Select "No" for Display Results.
+	  Select "Yes" for File Output.
+	  Enter a name for the results file.
+	  Enter a file heading for the results file.
+	  Select OK.
+	  Select "Run All Tests" from the OPTIONS menu.
+
+     You may interrupt any sequence of tests by pressing ESC.  If ESC is pressed, the
+test currently running will complete, and you will be asked if you wish to cancel or
+continue.
+
+
+DESCRIPTIONS OF THE TESTS
+
+BitBlt
+     The BIT BLock Transfer operation (BITBLT) with all of its variations is the
+single graphics operation most used within the Windows environment.
+
+	  The BitBlt Alignment tests perform a set of BitBlt copy operations of
+     various sizes from one area of the client window to another.  Aligned and
+     unaligned areas show the differences in throughput for video cards that perform
+     best when the data is aligned on an eight-pixel horizontal boundary.
+
+	  The BitBlt Overlap tests exercise the ability of a video card and Windows
+     driver to perform BitBlt copy operations where the source and destination
+     overlap in the window.
+
+	  The BitBlt ROPS tests are a series of 48 tests of the most frequently used
+     BitBlt operations for three combinations of source and destination: memory to
+     screen, screen to screen, and memory to memory.
+
+	  The BitBlt Screen/Memory tests copy source images in memory and on screen
+     to random destinations in the client window.
+
+Curves
+     The Curves tests show the difference in performance between video cards that
+have hardware curve drawing operations and those cards that do not.
+
+	  The Partial Arcs tests draw arc shaped lines.
+
+	  The Ellipses test draw and fill ellipses.
+
+Lines
+     The Lines tests are the second most frequently used group Windows graphics
+operations.  They show the difference in performance between video cards that have
+hardware line drawing operations and those cards that do not.
+
+	  The Single Lines tests draw single horizontal, vertical, and diagonal lines
+     across the window.  Drawing lines in different directions shows that various
+     video cards and drivers draw lines faster in one direction than another.  With
+     many video cards, horizontal line drawing is fastest, followed by vertical, then
+     diagonal.
+
+	  The PolyLines tests draw many horizontal, vertical, and diagonal lines
+     across the window with a single Windows graphics operation.  Interpretation of
+     results is similar to the Single Lines tests.
+
+	  The All Directions test draws lines at every possible angle.  The results
+     represent a composite of the line drawing capabilities of a video card and
+     driver.
+     
+          The Wide Lines tests draw lines of varying width in random directions and
+     random lengths.
+
+Polygons
+     The Polygons tests exercise operations used by business graphics and drawing
+software.
+
+          The Alternate Fill test fills the area between the odd-numbered and the
+     even-numbered sides of a polygon.
+     
+	  The Winding Fill test draws a border that encloses a polygon but does not
+     overlap, then fills the shape defined by the border.
+
+Rectangles
+     The Rectangles tests are the third most frequently used group Windows graphics
+operations.  They show the difference in performance between video cards that have
+rectangular area filling operations and those cards that do not.
+
+          The Boxes tests fill concentric rectangles of various sizes.  One test
+     fills square rectangles and the other fills rectangles with rounded corners.
+     
+          The Random test draws and fills rectangles of random size and placement on
+     the screen.  It uses different colors and fill patterns for each rectangle.
+
+          The Patterns test fills the client window with rectangles using various
+     shades from black to white, and using the standard Windows cross-hatching
+     patterns.
+
+Text
+     The Text tests exercise Windows operations that are used by Windows itself and
+by word processors, desktop publishing software, spreadsheets, and other software
+that makes extensive use of different fonts in different sizes.
+
+          The Image Fonts tests repeatedly fills the client window with the system
+     font, and two sizes each of the Roman and Helvetica fonts.
+     
+	  The Scroll Fonts tests repeatedly scroll the client window upward and fill
+     the bottom of the screen with text.  There are five tests using the system font,
+     and two sizes each of the Roman and Helvetica fonts.  These tests are typical of
+     the scrolling operations done by word processors and desktop publishing
+     software.
+     
+          The Background Mix tests display the system font against opaque and
+     transparent backgrounds.
+     
+          The Greyed Text test displays the system font in grey at random positions
+     and angles on the screen.
+     
+	  The Mixed Fonts test displays the Courier font in normal, italic,
+     underline, and bold faces.
+
+Misc
+     The Misc tests perform miscellaneous graphics operations done by Windows.
+
+          The Stretch tests display the PC Magazine logo in different sizes,
+     stretching or shrinking it to eleven different dimensions.
+     
+	  The Image Data test displays the PC Magazine logo in 256 combinations of
+     foreground and background colors.
+
+User Interface
+     The User Interface tests exercise high-level functions that are part of the
+Windows user interface.
+
+	  The Dialogue Boxes test draws a dialogue box on screen, then restores the
+     part of the client window covered by the dialog box.
+     
+          The Rubber Banding test varies the size of a rectangle, an operation used
+     in drawing packages and by software that supports the Windows clipboard
+     
+          The Scroll Window tests scroll text inside a window, an operation used by
+     list boxes and combo boxes.  One test scrolls with the window aligned on an
+     eight-pixel horizontal boundary, and the other uses an unaligned boundary.
+     Aligned and unaligned scrolling show the differences in throughput for video
+     cards that perform best when the data is aligned on an eight-pixel horizontal
+     boundary.
+
+	  The Clear Window test clears the client window.
+
+Clipping
+     The Clipping tests show the effect of graphics operations performed through a
+combination of four rectangular clipping areas.
+
+	  The BitBlt Clipping test displays the PC Magazine logo at random points in
+     the client window.
+
+	  The Line Clipping test draws lines in all direction.
+
+	  The Text Clipping test repeatedly fills the client window with text.
+
+Options
+     The Options menu allows you to select different options and to view test
+information.
+
+	  The System Information menu choice displays information about the current
+     combination of video card, video driver, and PC being tested.
+     
+          The Modify Options menu choice allows you to change the options for running
+     tests.  It is described above.
+     
+	  The Run All Tests menu choice runs all of the tests using the current
+     options.
+
+	  The WINMARK menu choice runs the tests used to calculate the WINMARK value,
+     the weighted geometric mean for the combination of graphics adapter and PC
+     system on which the tests are run.
+
+	  The Demo Mode runs all of the tests but neither displays test results nor
+     produces a file containing test results.
+
+	  The Compare Results menu choice allows you to select another set of test
+     results to compare with the results run to date for the current test
+     configuration.  You may select test results only from files written by WINBENCH
+     in XLS format into the directory from which you have launched WINBENCH.

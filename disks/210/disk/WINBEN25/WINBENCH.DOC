@@ -1,0 +1,248 @@
+                               WINBENCH
+                  PC Labs Windows Graphics Benchmark
+                       Version 2.50 - 02 Mar 92
+
+1. This release of WINBENCH adds the WINMARK, the geometric mean of twelve
+frequently used Windows graphics operations.
+
+Contents of this release:
+
+WINBENCH.EXE   WINBENCH executable, all tests enabled
+WINBENCH.HLP   Help file
+WINBENCH.DOC   This file in ASCII text format
+*.XLS          Sample reports used by the Compare Results menu
+
+2. Installation and Use
+
+Copy all files from the WINBENCH diskette to the same directory.  Run
+WINBENCH like any Windows application.  For example, the DOS command
+"win winbench" will launch WINBENCH from the current directory.
+
+WINBENCH writes the files containing test results to the directory
+from which it was launched.  Generally, you should launch WINBENCH
+every time from the directory in which it is installed.  This avoids
+having test results scattered all over your hard disk.
+
+For other information about WINBENCH, see the help dialogue box.
+
+3. A Summary of the Differences in WINBENCH 2.50 from WINBENCH 1.1
+
+3.1. New Features in WINBENCH 2.50
+
+-    WINBENCH 2.5 introduces the graphics WINMARK, the geometric mean
+of eleven graphics benchmark tests.  PC Labs profiled the major
+Windows 3.0 applications in November 1991, and determined that these
+eleven functions were the most frequently used.  The weights shown in
+the WINMARK results screen show the approximate proportions in which
+these functions are used.  Windows applications also use other
+graphics functions, but for much less time.  Because the software
+available to profile Windows applications at the time was not very
+sophisticated, the weights assigned are subject to change when better
+Windows profiling and instrumentation software becomes available.
+
+-    When WINBENCH starts up, you now have the choice to run the
+graphics WINMARK tests, to run detailed tests, or to exit from
+WINBENCH.  WINBENCH now has other push buttons and menu choices for
+the graphics WINMARK.
+
+3.2. Corrected Defect in WINBENCH 2.04
+
+-    WINBENCH 2.04 corrects an error in calculating the result of the
+Rectangles|Patterns|Hatched Patterns test.  Previously, the result had
+been stated as 20% greater than what it actually was.
+
+-    WINBENCH 2.04 corrects several minor internal logic errors that
+caused it to fail when compiled with other compilers.  None of these
+changes have any effect on results.
+
+3.2. Corrected Defect in WINBENCH 2.03
+
+-    WINBENCH 2.03 displays an informational dialog box when no .XLS
+files are available for comparison.  Previous versions of WINBENCH
+presented an empty dialog box if no .XLS files were available for
+comparison, and clicking on OK would have no effect.  The only
+resolution to this problem was to change the Windows focus and
+terminate Windows.
+
+3.3. Corrected Defects and Improvements in WINBENCH 2.02
+
+-    Corrected the processing of files written in Lotus 1-2-3 .WKS
+format.  WINBENCH 2.00 or 2.01 failed with a UAE when writing a file
+in Lotus 1-2-3 format.
+
+-    Corrected the Select Results dialog box so that a double mouse
+click selects a file.  Previously, a double click only highlighted the
+file, and a click on the OK button was required to confirm the choice.
+
+     Corrected the Compare Results dialog box so that it would fit
+completely on a 640x480 VGA screen.  Previously WINBENCH displayed it
+in a format that was too wide for VGA.
+
+     Changed the Modify Options dialog box, so that the optional field
+"File Header" is now the mandatory field "Test Description".
+
+     Changed the report file formats so that the test description
+information and test date/time appear in a structured format.  This
+gives the user more useful information when either viewing results in
+the Compare Results dialog box or comparing report files.  This added
+information is also displayed by the System Information menu choice.
+
+3.4. Corrected Defects in WINBENCH 2.01
+
+-    Corrected the Select Results dialog box so that it does not show
+the current report file as a choice.  Also, the Select Results dialog
+box is wider, allowing twelve character file names to display
+completely.
+
+-    Eliminated the possibility of a UAE from the System Information
+Option caused by a rapid sequence of many Ctrl-I keystrokes in
+succession, typically 100 or more, and only under Windows 3.0, not
+Windows 3.1.  Under these circumstances, Windows 3.0 exhausts its use
+of system memory.
+
+-    Added a message box to the View Results dialog box to inform user
+that file being compared contains results from more than one test run.
+Also, added logic to choose only the first information with a given
+text key from a file.
+
+-    Added a string resource to change the minimum test duration, with
+a minimum of two seconds.
+
+-    The Bitblt Align test dialog box now displays results correctly.
+Previously, the displayed results were transposed between lower left
+and upper right cells, but the information contained in report files
+was correct.
+
+3.5. New Features in WINBENCH 2.0
+
+-    System Information adds the processor type and clock speed,
+presence of math coprocessor, Windows version number and operating
+mode, video driver file name and description, video driver file date,
+video driver version, X-Width Aspect Ratio, Y-Width Aspect Ratio,
+height of the system font, and average character width of the system
+font.  All system information is written to the report file.
+
+-    All tests now run for a minimum of five seconds, and report
+throughput, rather than elapsed time.  There is no method to convert
+results from WINBENCH 1.1 into the format for the results used by
+WINBENCH 2.0.  Many of the tests are upgraded to be consistent with
+Windows 3.0 and/or Windows 3.1.
+
+-    All tests display text centered in the benchmark window to
+identify the current test being run in a series of tests.  Identifying
+the test when it is running keeps you better informed about what is
+going on, and helps to debug WINBENCH and/or Windows should WINBENCH
+terminate with an Unrecoverable Application Error (UAE).
+
+-    Many tests change the color being displayed to give a better
+visual indication that something is actually being done while the test
+runs.
+
+-    Where possible, throughput is either calculated or estimated as
+"pixels/sec".  Results of text handling benchmarks are reported in
+"characters/sec".  Results for some other tests are reported in
+"operations/sec".
+
+-    The Ellipse (Curves) test renames the WINBENCH 1.1 Full Arcs
+test, which drew ellipses on the screen then filled the ellipse with
+the current brush.  The Ellipse test also draws ellipses on the
+screen, but it varies the brush color used to fill the ellipse.
+
+-    The Patterns (Rectangles) test now runs ten tests, using a black
+fill pattern, seven grey patterns, a white pattern, and a set of
+hatched patterns.
+
+-    The Scroll Text (Text) tests are new.  They display and scroll a
+full screen of text using the same five fonts as displayed by the
+Image Text (Text) tests.
+
+-    The Mixed Fonts (Text) test uses Courier fonts rather than System
+fonts.  With Windows 3.0, it is not possible to display a system font
+with a bold attribute.
+
+-    The Help dialogue box provides a complete description of all
+tests.
+
+-    The Modify Options menu writes to the WINBENCH.INI file in a
+section called [Version.2.0] when you choose to save selected
+parameters.  WINBENCH 1.1 used the [Bench] section of WIN.INI for the
+same purpose.
+
+-    The ASCII text report file now lines up data in vertical columns.
+The "1-2-3" format for a report file produces comma-separated data,
+and non-numeric literals are bounded by double quotes, e.g. "sample
+text".  The Excel format produces tab-separated data.
+
+-    Because all tests run for at least five seconds, there is no need
+to use radio buttons to select the number of test iterations.  These
+radio buttons are removed from WINBENCH 2.0.
+
+-    If you run all tests or run in demo mode, WINBENCH displays an
+appropriate message on screen when it is done, or after running of
+tests has been interrupted.
+
+-    If WINBENCH is run in real mode and there is enough memory to
+load it, it displays the initial dialog box, then a message box saying
+that it does not run in real mode, and terminates.  If there is not
+enough memory to load it, then Windows displays a message box with an
+application error.
+
+-    The Compare Results menu choice presents a pair of dialog boxes.
+The first one displays a list of existing .XLS files, from which one
+is selected to compare with the results of testing for the current
+video card and driver.  The second dialog box displays test results
+for the current card and the selected card.  The results of each test
+written to the report file now all have unique names or keys so that
+the Compare Results dialog box can select them properly from files
+that contain the results of previous tests.
+
+-    WINBENCH 2.50 was compiled with Borland C++ Release 3.0 and its
+resources edited with Borland's Resource Workshop editor.  Tests
+between versions of WINBENCH compiled with various compilers show less
+than one percent difference in test results.  The source code for
+WINBENCH is fully compatible with the following:
+
+     Borland C++3.0 Professional
+     Microsoft C6.0a and SDK
+     Symantec/Zortech C++3.0 (requires Microsoft LINK instead of
+Zortech ZLINK)
+     Watcom C8.5 (requires Microsoft LINK rather than Watcom WLINK,
+due to a defect in WLINK)
+     JPI TopSpeed C3.02 (requires compilation for math coprocessor
+rather than math emulation, due to defect in TopSpeed Windows math
+emulation library)
+
+4. Problems and Suggestions for Improvements
+
+-    Please note and report any test results that seem to be
+incorrect, including zero and negative results.  These indicate that
+the test being run uses an incorrect throughput calculation, either
+roundoff or overflow.
+
+-    Please provide hard copy or electronic copy of test results with
+any problems, and describe the video graphics adapter being used
+particularly if the System Information are not completely self-
+descriptive.
+
+-    If you have suggestions for improvements to WINBENCH, please
+call, write, or send an electronic mail message explaining what you
+require.  There is no guarantee that it will be added to the next
+version of WINBENCH, but it WILL be added to the list of enhancements
+that will be evaluated and prioritized for subsequent versions.
+
+Thank you.
+
+Ben Myers
+Spirit of Performance, Inc.
+73 Westcott Road
+Harvard, MA  01451-1821
+tel. 508/456-3889
+MCI  357-1400
+
+Jim Galley
+Director, PC Labs
+PC Magazine
+One Park Avenue
+New York, NY  10016
+tel. 212/503-5587
+

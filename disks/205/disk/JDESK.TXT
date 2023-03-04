@@ -1,0 +1,24 @@
+           
+
+Dateinameübergabe -> String (String[])
+
+// Überprüfen des Stirngs:
+	1. class datei                   
+		-main -> starten des programmes
+		classinspector - konstruktoren - methoden - variablen...
+		
+	2. jar archif
+	3. zip datei
+	4. html datei
+
+prozesse:
+	abwürgen können
+	starten von programmen - java oder andere
+
+Hilfsprogramme:
+	autostart
+	memory-anzeige
+	uhr
+	freudeleien
+	prozessanzeige
+	                            	

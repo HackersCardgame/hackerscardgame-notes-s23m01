@@ -1,0 +1,1490 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Eric Rutlin">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (WinNT; I) [Netscape]">
+   <title>sample readme html</title>
+</head>
+<body>
+<font face="Times New Roman,Times"></font>&nbsp;
+<br>
+<hr WIDTH="100%">
+<center><b><i><font face="Times New Roman,Times"><font size=+2>Adaptec
+7800 Family Manager Set v3.02.2</font></font></i></b><font face="Times New Roman,Times"></font>
+<p><b><i><font face="Times New Roman,Times"><font size=+2>README for Novell
+NetWare</font></font></i></b></center>
+
+<hr WIDTH="100%"><font face="Times New Roman,Times"></font>
+<p><b><font face="Times New Roman,Times">The following information is available
+in this README file:</font></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Supported Hardware">Supported
+Hardware</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Changes From Prior Release">Changes
+From Prior Release</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Installation Instructions">Installation
+Instructions</a></font>
+<blockquote><font face="Times New Roman,Times"><a href="#Installing an Ultra2 Host Adapter and NetWare v3">Installing
+an Ultra2 Host Adapter and NetWare v3.12 for the First Time</a></font>
+<br><font face="Times New Roman,Times"><a href="#Installing an Ultra2 Host Adapter and NetWare v4">Installing
+an Ultra2 Host Adapter and NetWare v4.xx for the First Time</a></font>
+<br><font face="Times New Roman,Times"><a href="#Installing the DSK Driver When Installing NetWare v3">Installing
+the DSK Driver When Installing NetWare v3.12 for the First Time</a></font>
+<br><font face="Times New Roman,Times"><a href="#Installing an Ultra2 Host Adapter in an existing v3">Installing
+an Ultra2 Host Adapter in an Existing NetWare v3.12 Installation</a></font>
+<br><font face="Times New Roman,Times"><a href="#Installing the Driver in an Existing NetWare v4.xx">Installing
+the Driver in an Existing NetWare v4.xx Installation</a></font>
+<br><font face="Times New Roman,Times"><a href="#Loading the Driver at Server">Loading
+the Driver at Server Bootups</a></font></blockquote>
+<font face="Times New Roman,Times"><a href="#Known Issues">Known Issues</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Additional Notes">Additional
+Notes</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Adaptec Driver Command Line">Command
+Line Options</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Bit Mask Options">Bit Mask
+Options</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Diskette Contents">Diskette
+Contents</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Contacting Adaptec">Contacting
+Adaptec</a></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Supported Hardware"></a><b><u><font face="Times New Roman,Times"><font size=+1>Supported
+Hardware</font></font></u></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">The following Adaptec SCSI Host Adapters
+are supported by the 7800 FMS v3.02.2.&nbsp; The first list (Fast/Ultra
+Adapters) is supported by the AIC78xx.MPD driver, while the second list
+(Ultra2 Adapters) is supported by the AIC78U2.MPD driver.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><u>Fast/Ultra Adapters</u>&nbsp;&nbsp;
+<u>Description</u></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="75%" >
+<tr>
+<td><font face="Times New Roman,Times">AHA-2910C</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast SCSI (non-bootable)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2915C</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast SCSI (non-bootable)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2920C</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2930C</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Single-ended SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940W</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast and Wide Single-ended
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940AU</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Single-ended SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940U</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Single-ended SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940U Dual</font></td>
+
+<td><font face="Times New Roman,Times">DualChannel PCI-to-Ultra Wide Internal
+Single-ended SCSI with 50-pin external connector</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940UW</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Wide Single-ended SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940UW Pro</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Wide Single-ended SCSI
+(See Changes From Prior Release Section)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940UW Dual</font></td>
+
+<td><font face="Times New Roman,Times">DualChannel PCI-to-Ultra Wide Single-ended
+SCSI with 68-pin external connector</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2944W</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast and Wide Differential
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2944UW</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Wide Differential SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940W</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Fast and Wide
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940U</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940UW</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940UWD</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide SCSI
+with dual external VHD connectors</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3944UWD</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide Differential
+SCSI with dual external VHD connectors</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940AU</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940AUW</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940AUWD</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide SCSI
+with dual VHD external connectors</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3944AUWD</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide Differential
+SCSI with dual external VHD connectors</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-4944W</font></td>
+
+<td><font face="Times New Roman,Times">Quad Channel PCI-to-Fast and Wide
+Differential SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-4944UW</font></td>
+
+<td><font face="Times New Roman,Times">Quad Channel PCI-to-Ultra Wide Differential
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times"></font></td>
+
+<td><font face="Times New Roman,Times"></font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">APA-1480</font></td>
+
+<td><font face="Times New Roman,Times">CardBus-to-Ultra Single-ended SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times"></font></td>
+
+<td><font face="Times New Roman,Times"></font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7850</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7855</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7856</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7860</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Ultra SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7870</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Fast and Wide
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7880</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Ultra Wide SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7895</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-MultiChannel
+Ultra Wide SCSI</font></td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><u>Ultra2 Adapters</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<u>Description</u></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="75%" >
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940U2 OEM</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra2 Wide LVD/Single-ended
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940U2B</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra2 Wide LVD SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940U2W</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra2 Wide LVD/Single-ended
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2950U2B</font></td>
+
+<td><font face="Times New Roman,Times">64-bit PCI-to-Ultra2 Wide LVD SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3950U2B</font></td>
+
+<td><font face="Times New Roman,Times">64-bit PCI-to-MultiChannel Ultra2
+Wide LVD SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3950U2D</font></td>
+
+<td><font face="Times New Roman,Times">64-bit PCI-to-MultiChannel Ultra2
+Wide LVD SCSI with dual external VHD connectors</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times"></font></td>
+
+<td><font face="Times New Roman,Times"></font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7890</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Ultra2 SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7891</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip 64-bit PCI-to-Ultra2
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7896</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-MultiChannel
+Ultra2 SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7897</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip 64-bit PCI-to-MultiChannel
+Ultra2 SCSI</font></td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<p><a NAME="Changes From Prior Release"></a><b><font face="Times New Roman,Times"><font size=+1>Changes
+From Prior Release</font></font></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">This release of the Adaptec 7800
+Family Manager Set v3.02.2 adds the following support from the previous
+v3.02 release:</font>
+<blockquote><font face="Times New Roman,Times">- Support for the AHA-2940UW
+Pro</font>
+<blockquote><font face="Times New Roman,Times">1) Adds the ability to use
+all three connectors at the same time</font>
+<br><font face="Times New Roman,Times">2) Current Sensing Circuit checks
+for improper termination</font></blockquote>
+<font face="Times New Roman,Times">- Support for the AHA-3950U2D</font>
+<blockquote><font face="Times New Roman,Times">1) Adds two external VHD
+connectors instead of one wide external connector</font></blockquote>
+</blockquote>
+<font face="Times New Roman,Times"></font>
+<p><br><a NAME="Installation Instructions"></a><b><font face="Times New Roman,Times"><font size=+1>Installation
+Instructions</font></font></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">This section explains how to install
+the Adaptec 7800 Family Manager Set v3.02.2 Driver AIC7870.DSK (UltraSCSI)
+or AIC78U2.HAM (Ultra2SCSI) for Novell NetWare - NetWare v3.1x, v4.0, and
+v4.1x.&nbsp; For other installation issues, please refer to <a href="http://developer.novell.com/devres/sas/certinfo.htm">http://developer.novell.com/devres/sas/certinfo.htm</a>,
+and follow the appropriate "NWPA Update Package installation instructions"
+link.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Installing an Ultra2 Host Adapter and NetWare v3"></a><u><font face="Times New Roman,Times">Installing
+an Ultra2 Host Adapter and NetWare v3.12 for the First Time</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. Create the DOS partition and/or
+install DOS from the Setup diskette.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. Insert EZ-SCSI v4.03 (or greater)
+for Windows 3.1x and DOS Setup diskette in drive A.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">3. Go to drive A: and type DOSINST.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">4. Install the EZ-SCSI software to
+access the CD-ROM.&nbsp; You will need a DOS version of MSCDEX.EXE and
+will be prompted to install the file if it is not in your DOS directory.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">5. Reboot your system after install.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">6. Start the NetWare 3.12 installation.
+(i.e., D:\netware.312\english\install)</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">7. After NetWare installs the DOS
+portion of the software, DOWN and EXIT to DOS from the server prompt.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">8. Copy the AIC78U2.HAM and AIC78U2.DDI
+from the NETWARE directory of the 7800 Family Manager Set diskette to the
+C:\server.312 directory.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">9. Obtain the NWPA_UP.EXE patch from
+the Novell Web site <a href="http://developer.novell.com/devres/sas/certinfo.htm">http://developer.novell.com/devres/sas/certinfo.htm</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">10. Change directory to c:\server.312,
+and copy the patch file NWPA_UP.EXE to the directory.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">11. Run NWPA_UP.EXE&nbsp; (note:
+this will create another file, 312PTC.EXE.&nbsp; Answer Y to the prompt
+to overwrite CDROM.NLM.)</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">12. Run 312PTC.EXE.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">13. Create the directory c:\server.312\CDSAVE</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">14. Copy CDROM.NLM to c:\server.312\CDSAVE</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">15. Update the server with the following
+command from the DOS prompt: [312PTC\native\loader\lswap c:\server.312\312PTC\native\loader\loader.exe
+c:\server.312\server.exe]</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">16. Create the file Startup.ncf in
+the c:\server.312 directory using EDIT or a text editor with the following
+lines:</font>
+<blockquote><font face="Times New Roman,Times">load c:\server.312\312PTC\native\start\npapatch</font>
+<br><font face="Times New Roman,Times">load c:\server.312\mmattrfx</font>
+<br><font face="Times New Roman,Times">load c:\server.312\nbi31x</font>
+<br><font face="Times New Roman,Times">load c:\server.312\AIC78U2</font></blockquote>
+<font face="Times New Roman,Times">17. Run SERVER.EXE.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">18. Note the slot number detected
+for the Ultra2 adapter.&nbsp; This can be added to the Startup.ncf load
+AIC78U2 statement to automate driver load using the parameter: SLOT=x&nbsp;
+(x is the detected slot number).</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">19. Load Install.&nbsp; Create the
+NetWare partition, SYS volume, and mount the volume. Complete the installation
+of the System and Public Files.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">20. Create the Autoexec.NCF file.&nbsp;
+Add the following lines:</font>
+<blockquote><font face="Times New Roman,Times">load after311</font>
+<br><font face="Times New Roman,Times">load c:\server.312\nwpaload</font>
+<br><font face="Times New Roman,Times">search add 1 c:\server.312\cdsave</font>
+<br><font face="Times New Roman,Times">load cdrom</font></blockquote>
+<font face="Times New Roman,Times">21. Load, from the console prompt, the
+following command</font>
+<blockquote><font face="Times New Roman,Times">load c:\server.312\312PTC\patch312</font></blockquote>
+<font face="Times New Roman,Times">22. Install the patches from the c:\server.312\312PTC
+directory</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">23. DOWN and EXIT the server</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">24. Run SERVER.EXE</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">25. Installation of the Ultra2 adapter
+for NetWare 3.12 is complete.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Installing an Ultra2 Host Adapter and NetWare v4"></a><u><font face="Times New Roman,Times">Installing
+an Ultra2 Host Adapter and NetWare v4.xx for the First Time</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">Follow these instructions only if
+you are installing NetWare 4.0 or v4.1x for the first time:</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. Begin installation of NetWare
+v4.0 or v4.1x on your server as instructed in your NetWare documentation.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. When a screen appears that asks
+you to select a disk driver, press INS.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">3. Insert the Adaptec 7800 Family
+Manager Set v3.02.2 diskette for NetWare into your floppy drive.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">4. Press F3 and specify the path
+to the AIC78U2.HAM driver for NetWare (e.g., a:\netware on the diskette).</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">5. Select AIC78U2.HAM and press ENTER.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">6. When "Choose the Server Driver
+- Disk Driver Parameters" appears, select "Save Parameters and Continue".</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">7. When "Install addition driver"
+appears, select "YES" if installing more than one host adapter or installing
+a dual-channel host adapter, and repeat step 5 &amp; 6 until one driver
+is chosen for each host adapter; otherwise, select "NO".</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">8. Select "Continue with Installation"
+to continue the installation.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">9. You will be prompted to confirm
+slot option, press "Enter" to select the slot number. Repeat until all
+slot options are loaded.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">10. Select "Continue with Installation"
+to complete the installation.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: To load the driver automatically
+at server bootup, make sure the STARTUP.NCF file includes the load command
+line for your host adapter.&nbsp; See "Loading the Driver at Server Bootup",
+below.</font></i>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Installing the DSK Driver When Installing NetWare v3"></a><u><font face="Times New Roman,Times">Installing
+the DSK Driver When Installing NetWare v3.12 for the First Time</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">Follow these instructions only if
+you are installing NetWare v3.1x for the first time:</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. Follow the procedures in your
+NetWare documentation for installing a new server.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. When you see the NetWare colon
+prompt (:), use the load command to install the driver from the Adaptec
+7800 Family Manager Set v3.02.2 diskette for NetWare.&nbsp; The correct
+syntax to load the 7800 Family driver is ":load [pathname]aic7870 [options]".&nbsp;
+The command line options are not case sensitive.&nbsp; Placing commas between
+command line options is optional.&nbsp; See Command Line Options below
+for possible values.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: The ASPITRAN.DSK file must
+reside in the same path as AIC7870.DSK, because NetWare attempts to load
+the file automatically.</font></i><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: To load the driver automatically
+at server bootup, copy the driver to the server's startup directory and
+modify the STARTUP.NCF file. See Installing the Driver When NetWare is
+Already Installed and Loading the Driver at Server Bootup, below.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">3. Load the NetWare install program
+from the NetWare colon prompt (:load install).&nbsp; Follow the instructions
+in the NetWare documentation to complete the installation (e.g., creating
+disk partitions, system volumes, etc.) of your server.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Installing the DSK Driver When Installing NetWarev4"></a><u><font face="Times New Roman,Times">Installing
+the DSK Driver When Installing NetWare v4.xx for the First Time</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">Follow these instructions only if
+you are installing NetWare 4.0 or v4.1x for the first time:</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. Begin installation of NetWare
+v4.0 or v4.1x on your server as instructed in your NetWare documentation.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. When a screen appears that asks
+you to select a disk driver, press F10.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">3. When "Choose the Server Drivers
+- Summary" appears, press Enter.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">4. Move highlight to "Disk and CD-ROM
+Drivers" and press Enter.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">5. Deselect all "AIC7870" drivers
+that are picked up by Netware.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">6. Highlight "Select an additional
+driver" and press Enter.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">7. When a screen appears that asks
+you to select a disk driver, press Ins.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">8. Insert the Adaptec 7800 Family
+Manager Set v3.02.2 diskette for NetWare into your floppy drive.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">9. Press F3 and specify the path
+to the AIC7870.DSK driver for NetWare (e.g., a:\netware\v4_xx on the diskette).</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">10. Select AIC7870.DSK and press
+ENTER.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">11. Select "Continue installation"
+to complete the installation.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: To load the driver automatically
+at server bootup, make sure the STARTUP.NCF file includes the load command
+line for your host adapter.&nbsp; See "Loading the Driver at Server Bootup",
+below.</font></i>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Installing an Ultra2 Host Adapter in an existing v3"></a><u><font face="Times New Roman,Times">Installing
+an Ultra2 Host Adapter in an existing NetWare v3.12 installation</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. Download NWPA_UP.exe from this
+site: <a href="http://developer.novell.com/devres/sas/certinfo.htm">http://developer.novell.com/devres/sas/certinfo.htm</a>.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. Copy NWPA_UP.EXE to c:\Server.312
+directory.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">3. Change to that directory.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">4. Run NWPA_UP.EXE from the same
+directory.&nbsp; Answer Y when prompted to overwrite CDROM.NLM.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE:&nbsp; If NetWare has already
+been updated with the latest patch file, 312PTC.EXE, you will be prompted
+to overwrite the file.&nbsp; Answer N.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">5. Delete NBI.NLM from the c:\server.312
+directory.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">6. If 312PTC has not been installed
+previously, run 312PTC.EXE from the same directory.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">7. Create the directory c:\Server.312\CDSAVE</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">8. Copy the CDROM.NLM to the C:\Server.312\CDSAVE</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">9. Copy the AIC78U2.HAM and AIC78U2.DDI
+file to the C:\Server.312 directory from the 7800 Family Manager Set NetWare
+directory.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">10. Update the Server with the following
+command:&nbsp; [312PTC\native\loader\lswap c:\server.312\312PTC\native\loader\loader.exe
+c:\server.312\server.exe]</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">11. From the prompt type: server</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">12. Load install</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">13. Edit the STARTUP.NCF file.&nbsp;
+Remark out "Load CDROM" statement.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">14. Enter the following lines after
+lines already present and save:</font>
+<blockquote><font face="Times New Roman,Times">load \native\start\npapatch</font>
+<br><font face="Times New Roman,Times">load mmattrfx</font>
+<br><font face="Times New Roman,Times">load nbi31x</font>
+<br><font face="Times New Roman,Times">load AIC78U2</font></blockquote>
+<font face="Times New Roman,Times">15. Edit the AUTOEXEC.NCF file, add
+the following lines after lines already present, then save the file:</font>
+<blockquote><font face="Times New Roman,Times">load after311</font>
+<br><font face="Times New Roman,Times">load c:\server.312\nwpaload</font>
+<br><font face="Times New Roman,Times">search add 1 c:\server.312\cdsave</font>
+<br><font face="Times New Roman,Times">load cdrom</font></blockquote>
+<font face="Times New Roman,Times">16. At the console prompt enter the
+following command.</font>
+<blockquote><font face="Times New Roman,Times">load c:\server.312\312PTC\Patch312</font></blockquote>
+<font face="Times New Roman,Times">17. Install the patches from the c:\server.312\312PTC
+directory</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">18. Down and EXIT the server.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">19. Reboot the server.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">Note:&nbsp; Note the slot number
+prompt of the AIC78U2.&nbsp; Edit the Startup.NCF file load AIC78U2 command
+with the parameter "slot=x (x is the slot number) for autoload of the driver".</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">20. Installation complete.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Installing the Driver in an Existing NetWare v4.xx"></a><u><font face="Times New Roman,Times">Installing
+the Driver in an Existing NetWare v4.xx Installation</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">To update or install the AIC7870.DSK
+or AIC78U2.HAM driver when NetWare v4.xx is already installed, follow the
+instructions in this section.&nbsp; The procedures are similar for all
+versions of NetWare.&nbsp; Procedures that are specific to a NetWare version
+are noted when necessary.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. Make a backup copy of the old
+driver (if it exists) before installing the new driver.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. Copy the AIC7870.DSK or AIC78U2.HAM
+driver from the 7800 Family Manager Set v3.02.2 diskette for NetWare into
+the server's startup directory (e.g. c:\nwserver, c:\server.40, etc.) on
+your hard disk.&nbsp; This overwrites any existing version of the driver
+in the directory.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: For NetWare v4.xx, the driver
+file is located in the \netware\v4_xx directory on the diskette.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">3. If necessary, modify the load
+command line in the STARTUP.NCF so that the proper path to the driver and
+all appropriate command line options are specified.&nbsp; See the "Loading
+the Driver at Server Bootup and Command Line Options sections, below.)</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">The correct syntax to load the 7800
+Family Manager driver is:</font>
+<blockquote><font face="Times New Roman,Times">load [pathname]aic7870 [options]</font>
+<br><font face="Times New Roman,Times">or</font>
+<br><font face="Times New Roman,Times">load [pathname]aic78u2 [options]</font></blockquote>
+<font face="Times New Roman,Times">Command line options are not case sensitive.&nbsp;
+Placing commas between command line options is optional.&nbsp; See "Command
+Line Options", below, for possible values.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Loading the Driver at Server"></a><u><font face="Times New Roman,Times">Loading
+the Driver at Server Bootup</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">To automatically load the AIC7870.DSK
+or AIC78U2.HAM at server bootup, the STARTUP.NCF file (usually located
+in your server's startup directory) must contain a load command line that
+specifies the location of the driver and any appropriate command line options
+(see Command Line Options, below).&nbsp; For additional information on
+the STARTUP.NCF file, refer to your NetWare documentation.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: To load the driver from
+your hard disk, the AIC7870.DSK driver and ASPITRAN.DSK module must be
+copied from the Adaptec 7800 Family Manager Set v3.02.2 diskette for NetWare
+to a directory on your hard disk [usually the server's startup directory
+(e.g., c:\nwserver)].</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">The correct syntax to load the driver
+is:</font>
+<blockquote><font face="Times New Roman,Times">load [pathname]aic7870 [options]</font>
+<br><font face="Times New Roman,Times">or</font>
+<br><font face="Times New Roman,Times">load [pathname]aic78u2 [options]</font></blockquote>
+<font face="Times New Roman,Times">For example, the command line to load
+the driver from the c:\nwserver directory, with the "verbose=" option on
+is:</font>
+<blockquote><font face="Times New Roman,Times">load c:\nwserver\aic7870
+verbose=y</font>
+<br><font face="Times New Roman,Times">or</font>
+<br><font face="Times New Roman,Times">load c:\nwserver\aic78u2 verbose=y</font></blockquote>
+<font face="Times New Roman,Times">Command line options are not case sensitive.&nbsp;
+Placing commas between command line options is optional.&nbsp; See Command
+Line Options, below,&nbsp; for possible values.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">To modify the STARTUP.NCF file, follow
+these steps:</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: You can also use your DOS
+text editor to modify the STARTUP.NCF file.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. Type load install at the NetWare
+prompt and press ENTER.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. Select the appropriate menu choice
+that allows you to edit the STARTUP.NCF file.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">3. Make the necessary changes.&nbsp;
+When you are done, press ESC.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Known Issues"></a><b><font face="Times New Roman,Times"><font size=+1>Known
+Issues</font></font></b>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<ul>
+<li>
+<font face="Times New Roman,Times">There is a known problem which occurs
+during the installation of Netware 4.0x, that involves the DDI file used
+during the initialization of the host adapter device driver. The DDI file
+does not contain all the possible slot number options available on all
+PCI systems, as there are too many combinations. As a result, during the
+installation procedure, NetWare will report that it is unable to load the
+driver in the given amount of time.&nbsp; This is because the DDI file
+does not contain any slot options, which causes NetWare not to load the
+driver. Note, however, that this is not an error. The user simply needs
+to go to the console screen and manually enter in the correct slot number
+and installation will continue.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">A second known problem exists that will
+hang the server after loading the host adapter device driver. This problem
+involves targets that do not support scanning of multiple luns, with the
+command line option lun_enable.&nbsp; The user simply needs to set the
+command line option multlun_targets to only scan targets that support multiple
+luns.&nbsp; This problem is known to occur with Quantum Empire 540S drives.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">Novell recommends not using IRQ 15 for
+host adapters.&nbsp; If your system bios allows the assignment of IRQs,
+change your adapters IRQ to a value other than 15.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">On NetWare 4.11, without media in the
+CD-ROM drive, and using built in driver support for CD-ROMs, the message
+"No CD-ROM Devices Registered with NetWare." is reported, if "cd device
+list" is issued.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">There is a known problem with some hard
+drives that are less than or equal to 1 GB. If these drives were previously
+formatted using the Adaptec 7800 Family Manager Set v2.1x driver for Netware,
+and are now being upgraded to the 7800 Family Manager Set v3.02.2 driver,
+the user may have problems in finding the device during initialization.
+If this occurs, use the following command line option in your STARTUP.NCF
+file:&nbsp; ext_tran=n</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">On some system configurations and during
+a first time installation or when upgrading to the 7800 Family Manager
+Set v3.02.2 driver, the user may see a window with the following warning
+message:</font></li>
+
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<ul><font face="Times New Roman,Times">"One or more partitions on drive
+0 are inconsistent with the driver geometries (xxx heads, xx sectors, and
+xxx cylinders) that NetWare is using. You may continue and edit the partition
+anyway, although this inconsistency could create problems later on."</font></ul>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">This message is shown when the "Installation
+Options" window appears, and the user highlights and selects "Disk Options",
+followed by "Modify Disk Partitions and Hot Fix". The user should simply
+continue to the "Disk Partitions Options" window to edit the partition,
+and installation will complete successfully.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">The AIC78U2.HAM driver will not load
+if older versions of the NWPA.NLM file have been used. To fix this problem,
+use the updated version of the NWPA.NLM file that is included in this diskette.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">The AIC78U2.HAM driver requires a minimum
+of 16 MB of memory.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">When starting a NetWare server with
+two Ultra2 host adapters, the error message "Unbound Device Object" might
+appear.&nbsp; Manually unloading and reloading the driver will fix the
+problem, as well as removing the "slot=xx" option in the STARTUP.NCF file
+(and then selecting the default slot number(s)).&nbsp; This is being addressed
+by Novell.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">When loading server.exe with the ""load
+aic78u2.ham slot=# lun_enable"" switch, the server locks up while scanning
+the LUNs.&nbsp; This is being addressed by Novell.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">On some SMP systems, if the IRQ setting
+is set to "Auto" in the system's BIOS then NW 4.11 installation will hang
+at loading a NIC driver.&nbsp; This problem was tested with a Tyan P5 SMP,
+and it did show up.&nbsp; The problem did not show up on the DEC SMP system.&nbsp;
+This is being addressed by Novell.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">Certain systems will not run Sbackup
+under NetWare v3.12.&nbsp; NetWare v4.11 runs it with no problems.&nbsp;
+This is an issue which is currently being addressed by Novell.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">Some systems experienced problems loading
+NetWare when loading the AIC7870.DSK and ASPICD.DSK drivers after the AIC78U2.HAM
+driver.&nbsp; The workaround is to load the DSK drivers before the HAM
+driver.</font></li>
+</ul>
+<a NAME="Additional Notes"></a><b><font face="Times New Roman,Times"><font size=+1>Additional
+Notes</font></font></b>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<ul>
+<li>
+<font face="Times New Roman,Times">All of Adaptec's NetWare drivers have
+full support for standard SCSI disk drives, "NetWare Ready" drives, and
+removable media disk drives (including optical drives).</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">For NetWare patches and other latest
+information, reference the Novell website at <a href="http://developer.novell.com/">http://developer.novell.com/</a></font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">The AIC7870.DSK driver also contains
+a built-in ASPI manager.&nbsp; This allows for other NetWare Loadable Modules
+(NLMs) to gain access to the host adapter. Given the flexibility of ASPI,
+several companies are currently providing server-based tape backup solutions
+through ASPI.&nbsp; SBackup is a server based tape backup solution which
+is shipped by Novell with NetWare.&nbsp; SBackup supports the ASPI interface.&nbsp;
+There are other ASPI modules already developed or under development.&nbsp;
+A programming specification is available from Adaptec if you are interested
+in writing your own NetWare 386 ASPI module.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">The AIC78U2.HAM driver also supports
+applications that use the ASPI interface to access devices on a NetWare
+Server, through NWASPI.CDM.&nbsp; This CDM is not included with the current
+release, but can be downloaded from <a href="http://developer.novell.com/engsup/sample/areas/smsi.htm">http://developer.novell.com/engsup/sample/areas/smsi.htm</a>.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">If your file server does a lot of IO
+operations and you want to try optimizing its performance, you can adjust
+the "max_tags=?" command line switch.&nbsp; This switch controls the maximum
+number of tagged commands outstanding at a given device.&nbsp; Refer to
+your disk-drive's documentation to determine if tagged-queuing is supported,
+and the maximum number of outstanding commands supported. Its default value
+is 16.</font></li>
+</ul>
+
+<blockquote><font face="Times New Roman,Times">The following are examples
+of how to change this feature:</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">For all 7800 Manager Set
+host adapters:&nbsp; :load aic7870 max_tags=2</font>
+<br><font face="Times New Roman,Times">For UltraSCSI or earlier only host
+adapters:&nbsp; :load aic7870 tag_disable=ffff</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">The first example shows
+how to use the max_tags command line option.&nbsp; The max_tags parameter
+can be set between 1 and 128.&nbsp; Larger values give the drives more
+opportunity for optimization, but take up more memory in the server.</font></blockquote>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">For several reasons, you may want to
+use a lower value of max_tags.&nbsp; For some drives, maximum performance
+is achieved with a max_tags less than the maximum supported by the drive.&nbsp;
+Also, some drives may not support the driver's maximum count of 128, or
+may suffer starvation problems with large counts, leading to drive deactivation.&nbsp;
+The latter issue applies only to the AIC7870.DSK driver. It turns off tagged-queuing
+for all devices. This may be necessary for starvation-prone drives.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">The Adaptec 7800 Family Manager Set
+v3.02.2 NetWare driver no longer supports the slot=0 command line option.
+For the AIC7870.DSK driver, if no slot is mentioned on the command line,
+the driver is loaded for all host adapters present in the system. For the
+Ultra2SCSI AIC78U2.HAM driver, if no slot is mentioned on the command line,
+the driver prompts you for a valid slot number.</font></li>
+</ul>
+<a NAME="Adaptec Driver Command Line"></a><b><font face="Times New Roman,Times"><font size=+1>Command
+Line Options</font></font></b><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: Possible values for command
+line options can be enabled with ON, Y, or 1 without distinction, or can
+be disabled with OFF, N, or 0.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">The following table shows driver
+command line options:</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: Those command line options
+indicated with an asterisk (*) are specific only for the AIC7870.DSK driver.</font></i>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="100%" >
+<tr>
+<td><b><font face="Times New Roman,Times">Option</font></b></td>
+
+<td><b><font face="Times New Roman,Times">Definition</font></b></td>
+
+<td><b><font face="Times New Roman,Times">Possible Values</font></b></td>
+
+<td><b><font face="Times New Roman,Times">Default Values</font></b></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">auto_bus_fairness=</font></td>
+
+<td><font face="Times New Roman,Times">Enable/disable auto SCSI bus fairness
+algorithm</font></td>
+
+<td><font face="Times New Roman,Times">OFF, ON</font></td>
+
+<td><font face="Times New Roman,Times">ON</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">auto_disable_tagq=</font></td>
+
+<td><font face="Times New Roman,Times">Enable/disable auto disable tag
+queuing algorithm</font></td>
+
+<td><font face="Times New Roman,Times">OFF, ON</font></td>
+
+<td><font face="Times New Roman,Times">ON</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">auto_flush_diskreq=</font></td>
+
+<td><font face="Times New Roman,Times">Enable/disable auto disk flush algorithm</font></td>
+
+<td><font face="Times New Roman,Times">OFF, ON</font></td>
+
+<td><font face="Times New Roman,Times">ON</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">bus_release= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Passed to HIM</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">cdrom= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Indicate if CDROM devices are controlled
+by driver or ASPI</font></td>
+
+<td><font face="Times New Roman,Times">OFF (ASPI), ON (Driver)</font></td>
+
+<td><font face="Times New Roman,Times">ON</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">dev_enable=</font></td>
+
+<td><font face="Times New Roman,Times">Bitmask which enables scanning on
+selected targets</font></td>
+
+<td><font face="Times New Roman,Times">Hexadecimal 0-FFFF</font></td>
+
+<td><font face="Times New Roman,Times">FFFF (Scan all targets)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">edge_or_level= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Determines edge or level triggered
+interrupt</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">ext_tran= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Determine translation method for
+a new drive in the system; extended or standard</font></td>
+
+<td><font face="Times New Roman,Times">Y (extended), N (standard)</font></td>
+
+<td><font face="Times New Roman,Times">Standard (unless set otherwise by
+SCSI Select)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">fixed_disk= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Indicate if fixed disks are controlled
+by driver or ASPI</font></td>
+
+<td><font face="Times New Roman,Times">OFF (ASPI), ON (Driver)</font></td>
+
+<td><font face="Times New Roman,Times">ON</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">flush_diskreq=</font></td>
+
+<td><font face="Times New Roman,Times">Send occasionally ordered tags to
+targets</font></td>
+
+<td><font face="Times New Roman,Times">Hexadecimal 0-FFFF</font></td>
+
+<td><font face="Times New Roman,Times">0 (Disabled for all targets)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">instr= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Enable/disable recording of I/O
+statistics and errors</font></td>
+
+<td><font face="Times New Roman,Times">OFF (Disable), ON (Enable)</font></td>
+
+<td><font face="Times New Roman,Times">OFF</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">int (*)</font></td>
+
+<td><font face="Times New Roman,Times">Required by NetWare</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">interrupt_level (*)</font></td>
+
+<td><font face="Times New Roman,Times">Sets interrupt level.&nbsp; Used
+if PCI config space is not set up correctly by BIOS</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">io_combine= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Maximum number of I/Os that will
+by combined into one using scatter/gather</font></td>
+
+<td><font face="Times New Roman,Times">1-64 (1-32 for AIC7870.DSK)</font></td>
+
+<td><font face="Times New Roman,Times">16</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">lun_enable=</font></td>
+
+<td><font face="Times New Roman,Times">LUN scan enable mask on all targets</font></td>
+
+<td><font face="Times New Roman,Times">Hexadecimal 0-FF</font></td>
+
+<td><font face="Times New Roman,Times">1 (scan LUN 0 only)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">max_nontags= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Maximum number of non-tagged I/Os
+that will be active per device</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">max_sectors= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Maximum number of sectors that will
+be combined using scatter/gather.&nbsp; Max value is MaxRequestSize (128)
+x IOCombine (64)</font></td>
+
+<td><font face="Times New Roman,Times">1-256</font></td>
+
+<td><font face="Times New Roman,Times">256</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">max_tags=</font></td>
+
+<td><font face="Times New Roman,Times">Maximum number of tagged I/Os which
+will be active per device</font></td>
+
+<td><font face="Times New Roman,Times">1-128</font></td>
+
+<td><font face="Times New Roman,Times">16</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">mem (*)</font></td>
+
+<td><font face="Times New Roman,Times">Required by NetWare</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">multlun_targets=</font></td>
+
+<td><font face="Times New Roman,Times">Bit mask that enables LUNs on selected
+targets</font></td>
+
+<td><font face="Times New Roman,Times">Hexadecimal 0-FFFF</font></td>
+
+<td><font face="Times New Roman,Times">FFFF (LUNs of all targets)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">pcimech (*)</font></td>
+
+<td><font face="Times New Roman,Times">Selects hardware mechanism to address
+PCI registers</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+
+<td><font face="Times New Roman,Times">N/A</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">prompt= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Prompt all available slots to load
+the driver on</font></td>
+
+<td><font face="Times New Roman,Times">Y, N</font></td>
+
+<td><font face="Times New Roman,Times">N</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">read_after_write= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Enable write with verify for writes</font></td>
+
+<td><font face="Times New Roman,Times">0 (OFF), 1 (ON)</font></td>
+
+<td><font face="Times New Roman,Times">1</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">read_after_write= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Indicate if removable media is ccontrolled
+by driver or ASPI</font></td>
+
+<td><font face="Times New Roman,Times">OFF (ASPI), ON (Driver)</font></td>
+
+<td><font face="Times New Roman,Times">ON</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">start_unit= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Target ID mask to send start unit
+SCSI command</font></td>
+
+<td><font face="Times New Roman,Times">Hexadecimal 0-FFFF</font></td>
+
+<td><font face="Times New Roman,Times">0 (No start unit command to any
+target)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">start_unit= (*)</font></td>
+
+<td><font face="Times New Roman,Times">Target tag queuing disable mask</font></td>
+
+<td><font face="Times New Roman,Times">Hexadecimal 0-FFFF</font></td>
+
+<td><font face="Times New Roman,Times">0 (Enabled for all targets)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">verbose=</font></td>
+
+<td><font face="Times New Roman,Times">Display host adapter settings</font></td>
+
+<td><font face="Times New Roman,Times">Y, N</font></td>
+
+<td><font face="Times New Roman,Times">N</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">slot=</font></td>
+
+<td><font face="Times New Roman,Times">Obtain a physical slot number for
+the host adapter</font></td>
+
+<td><font face="Times New Roman,Times">Dependent on system configuration</font></td>
+
+<td><font face="Times New Roman,Times">If none specified, driver loaded
+for all available slots (AIC78U2.HAM - NetWare prompts user to choose)</font></td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Bit Mask Options"></a><b><font face="Times New Roman,Times"><font size=+1>Bit
+Mask Options</font></font></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">Use this example to aid in calculating
+bit mask options hex values.&nbsp; Each SCSI device ID 0-7 (or 0-15 for
+wide host adapters) is enabled by a 1 in its corresponding bit position.&nbsp;
+In this example, lun_enable=05 (05h) enables scanning for LUNs 0 and 2
+on all targets.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="100%" >
+<tr>
+<td><font face="Times New Roman,Times">SCSI ID:</font></td>
+
+<td><font face="Times New Roman,Times">15&nbsp; 14&nbsp; 13&nbsp; 12</font></td>
+
+<td><font face="Times New Roman,Times">11&nbsp; 10&nbsp; 09&nbsp; 08</font></td>
+
+<td><font face="Times New Roman,Times">07&nbsp; 06&nbsp; 05&nbsp; 04</font></td>
+
+<td><font face="Times New Roman,Times">03&nbsp; 02&nbsp; 01&nbsp; 00</font></td>
+
+<td><font face="Times New Roman,Times"></font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">0, 2</font></td>
+
+<td><font face="Times New Roman,Times">0&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp; 0</font></td>
+
+<td><font face="Times New Roman,Times">0&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp; 0</font></td>
+
+<td><font face="Times New Roman,Times">0&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp; 0</font></td>
+
+<td><font face="Times New Roman,Times">0&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp; 1&nbsp;</font></td>
+
+<td><font face="Times New Roman,Times"></font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">Converted binary to hex:</font></td>
+
+<td>
+<div align=right><font face="Times New Roman,Times">0</font></div>
+</td>
+
+<td>
+<div align=right><font face="Times New Roman,Times">0</font></div>
+</td>
+
+<td>
+<div align=right><font face="Times New Roman,Times">0</font></div>
+</td>
+
+<td>
+<div align=right><font face="Times New Roman,Times">5</font></div>
+</td>
+
+<td>
+<div align=right><font face="Times New Roman,Times">=05h</font></div>
+</td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<p><a NAME="Diskette Contents"></a><b><font face="Times New Roman,Times"><font size=+1>Diskette
+Contents</font></font></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">In the \NETWARE directory:</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="86%" >
+<tr>
+<td><font face="Times New Roman,Times">AIC78U2.HAM</font></td>
+
+<td><font face="Times New Roman,Times">7800 Family of Ultra2 SCSI Host
+Adapters Driver for NetWare NWPA</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC78U2.DDI</font></td>
+
+<td><font face="Times New Roman,Times">Driver definition information file
+for NetWare NWPA</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">NBI.NLM</font></td>
+
+<td><font face="Times New Roman,Times">File required by the NetWare Bus
+Interface</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">NWPA.NLM</font></td>
+
+<td><font face="Times New Roman,Times">File required by the NetWare Bus
+Interface</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">CDROM.NLM</font></td>
+
+<td><font face="Times New Roman,Times">File required by the NetWare Bus
+Interface</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">NWPALOAD.NLM</font></td>
+
+<td><font face="Times New Roman,Times">File required by the NetWare Bus
+Interface</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">README.TXT</font></td>
+
+<td><font face="Times New Roman,Times">Readme file for Novell NetWare</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">README.HTM</font></td>
+
+<td><font face="Times New Roman,Times">HTML version of README.TXT (this
+file)</font></td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">In the \NETWARE\v3_1x directory:</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="100%" >
+<tr>
+<td><font face="Times New Roman,Times">AIC7870.DSK</font></td>
+
+<td><font face="Times New Roman,Times">AIC-78xx Family of Host Adapters
+Driver For NetWare 386 v3.1x.</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">ASPITRAN.DSK</font></td>
+
+<td><font face="Times New Roman,Times">ASPI Transport Layer Manager Driver
+for NetWare v3.1x</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">ASPICD.DSK</font></td>
+
+<td><font face="Times New Roman,Times">CD-ROM Driver for NetWare v3.1x</font></td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">In the \NETWARE\v4_xx directory:</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="100%" >
+<tr>
+<td><font face="Times New Roman,Times">AIC7870.DSK</font></td>
+
+<td><font face="Times New Roman,Times">AIC-78xx Family of Host Adapters
+Driver For NetWare 386 v4.xx</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC7870.DDI</font></td>
+
+<td><font face="Times New Roman,Times">Driver definition information file
+for NetWare v4.xx only</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">ASPITRAN.DSK</font></td>
+
+<td><font face="Times New Roman,Times">ASPI Transport Layer Manager Driver
+for NetWare v4.xx</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">ASPITRAN.DDI</font></td>
+
+<td><font face="Times New Roman,Times">Driver definition information file
+for NetWare v4.xx only</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">ASPICD.DSK</font></td>
+
+<td><font face="Times New Roman,Times">CD-ROM Driver for NetWare v4.xx</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">ASPICD.DDI</font></td>
+
+<td><font face="Times New Roman,Times">Driver definition information file
+for NetWare v4.xx only</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">NWPALOAD.NLM</font></td>
+
+<td><font face="Times New Roman,Times">File required by the NetWare Bus
+Interface</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">NWPA.NLM</font></td>
+
+<td><font face="Times New Roman,Times">File required by the NetWare Bus
+Interface</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">NBI.NLM</font></td>
+
+<td><font face="Times New Roman,Times">File required by the NetWare Bus
+Interface</font></td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Contacting Adaptec"></a><b><font face="Times New Roman,Times"><font size=+1>Contacting
+Adaptec</font></font></b><font face="Times New Roman,Times"></font>
+<p><u><font face="Times New Roman,Times">Electronic Support</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">Technical information, including
+product literature, answers to commonly asked questions, information on
+software upgrades and other topics is available electronically through
+the following:</font>
+<ul>
+<li>
+<font face="Times New Roman,Times">Adaptec World Wide Web (WWW) site at
+<a href="http://www.adaptec.com">http://www.adaptec.com</a>.</font></li>
+
+<li>
+<font face="Times New Roman,Times">File Transfer Protocol (FTP) server
+at <a href="ftp://ftp.adaptec.com">ftp://ftp.adaptec.com</a>.</font></li>
+
+<li>
+<font face="Times New Roman,Times">To submit your electronic mail message
+to Adaptec Technical Support use the product support information Webmail
+form at: <a href="http://www.adaptec.com/support/webmail.html">http://www.adaptec.com/support/webmail.html</a>.</font></li>
+
+<li>
+<font face="Times New Roman,Times">Adaptec USA Bulletin Board Service (BBS)
+at 408-945-7727; supports up to 28,800 bps (bits per second), 8 data bits,
+1 stop bit, no parity. No product literature is available on the Adaptec
+BBS.</font></li>
+
+<li>
+<font face="Times New Roman,Times">Interactive Fax System at 303-684-3400;
+available 23 hours a day, 7 days a week. The fax system is out of service
+1 hour each day.</font></li>
+</ul>
+<u><font face="Times New Roman,Times">Technical and Product Support</font></u>
+<ul>
+<li>
+<font face="Times New Roman,Times">To speak with a product support representative,
+call 408-934-SCSI (7274), M-F, 6:00 a.m. to 5:00 p.m., Pacific Time. After
+hours, on weekends, and on holidays, product support is also available
+for a fee at 800-416-8066.</font></li>
+
+<li>
+<font face="Times New Roman,Times">For electronic technical support and
+information about many of Adaptec's other electronic support services,
+or to use the Adaptec Interactive Support System call 800-959-SCSI (7274)
+or 408-945-2550, 24 hours a day, 7 days a week.&nbsp; The system prompts
+you with questions regarding your problem and then provides step-by-step
+troubleshooting instructions.</font></li>
+</ul>
+<u><font face="Times New Roman,Times">Sales and Ordering Information</font></u>
+<ul>
+<li>
+<font face="Times New Roman,Times">For sales information, call 800-442-SCSI
+(7274), M-F, 6:00 a.m. to 5:00 p.m., Pacific Time, or 408-945-8600 and
+ask for Inside Sales, M-F, 8:00 a.m. to 5:00 p.m., Pacific Time.</font></li>
+
+<li>
+<font face="Times New Roman,Times">To order Adaptec software and SCSI cables,
+call 800-442-SCSI (7274), M-F, 6:00 a.m. to 5:00 p.m., Pacific Time.</font></li>
+
+<li>
+<font face="Times New Roman,Times">To request additional documentation
+for Adaptec products, call 800-934-2766 or 510-732-3829, M-F, 6:00 a.m.
+to 5:00 p.m., Pacific Time.</font></li>
+</ul>
+<font face="Times New Roman,Times"></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+</body>
+</html>

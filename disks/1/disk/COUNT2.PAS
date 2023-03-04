@@ -1,0 +1,24 @@
+program Counter;
+var
+  Count: Integer;
+  N    : longInt;
+begin
+  Count := 1;
+  Write('Enter a number: ');
+  Readln (N);
+  while Count <= 1000 do
+  begin
+    if N mod 2 = 0 then
+    begin
+      N := N div 2;
+    end
+    else
+    begin
+      N := 3 * N + 1;
+    end;
+    Count := Count + 1;
+    Write('N=');
+    Writeln(N);
+  end;
+  Writeln('This is the answer...');
+end.

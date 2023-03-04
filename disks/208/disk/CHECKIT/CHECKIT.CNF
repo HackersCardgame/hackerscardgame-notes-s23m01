@@ -1,0 +1,60 @@
+file_format	900716
+use_color	1
+use_graphics	0
+activity_log	4
+
+# Saved Batch Settings:
+	b_serial	1 1 0 0
+	b_comloop	1 1 0 0
+	b_parallel	1 0 0
+	b_lptloop	1 0 0
+	b_floppy	0 0 0 0
+	b_flopwrite	0 0 0 0
+	b_fixed	0 0
+	b_sysboard	1
+	b_rtclock	1
+	b_base	1 0x0000000 0x009FFFF
+	b_ext	0 0x 0x
+	b_ems	0 0x 0x
+	b_memquick	1
+	b_vidmem	1
+	b_vidtext	0
+	b_vidgraph	0
+	b_printer	0 None None
+	b_keyboard	0 None
+	b_mouse	0
+	b_joystick	0
+	b_logtype	Display Only
+	b_passes	1
+	b_mem_passes	1
+	b_pause	1
+
+# Tools List:
+	t_entry	Coretest
+	t_cmds	coretest
+
+	t_entry	Format AT-BUS HD
+	t_cmds	fdisk
+
+	t_entry	Landmark 1.14
+	t_path	a:\
+	t_cmds	landmark
+
+	t_entry	Virus Scan Drive A:
+	t_cmds	COMMAND /C VIR_SCAN A:
+	t_note1	Scan floppy drive A: for all known computer viruses.
+
+	t_entry	Virus Scan Drive C:
+	t_cmds	COMMAND /C VIR_SCAN C:
+	t_note1	Scan hard drive C: for all known computer viruses.
+
+# Benchmarks:
+	bm_dstones	   9207.68 2 386DX/33 O
+	bm_wstones	 170214.08 1 386DX/33 O
+	bm_bvideo	  25565.84 2 486DX/33wd
+	bm_dvideo	 204436.94 2 486DX/33wd
+	bm_transfer	    436.26 1 386DX/33
+	bm_aveseek	     17.11 0 386DX/33
+	bm_trkseek	      7.54 0 386DX/33
+
+

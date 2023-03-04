@@ -1,0 +1,774 @@
+; This is the Connect install script for hardware upgrade, to preserve
+; RNS backward compatibility.
+; It supports a local 3X->remote 3X or local 4X->remote 4X upgrade.
+; On the Connect 1.0 server:
+;    1) upgrade it to Connect 2.0
+;    2) complete the configuration
+;    3) run pinstall to the remote server (hardware upgrade),
+;       using the upgraded local Connect server as the source.
+;       <upgrade Connect 2.0 server>/sys:\system\connect
+;       This script will copy all Connect files together with the completed
+;       configuration information.
+; For local 3X->remote 4X, it should first upgrade the local OS 3X->4X
+; before executing the above 3 steps.
+;
+; Filename: connect.001    CONNECT install files, remote node client files
+BackupPath=SYS:\SYSTEM\BACKUP;
+
+
+NetworkPath=SYS:\SYSTEM;
+
+If (EXIST:NASU.NLM) Message=If this is a Connect 1.0 to 2.0 update  please reboot the target server.;
+
+;cleanup Connect 1.0 files that are no longer used
+If (UPDATE) Remove=AIOCON.HLP;
+If (UPDATE) Remove=AIOMON.HLP;
+If (UPDATE) Remove=AIOMON.NLM;
+If (UPDATE) Remove=ARASCON.HLP;
+If (UPDATE) Remove=CSAUDIT.HLP;
+If (UPDATE) Remove=CSINSTAL.HLP;
+If (UPDATE) Remove=NASS.NLM;
+If (UPDATE) Remove=NASU.NLM;
+If (UPDATE) Remove=NCSCNVRT.NLM;
+If (UPDATE) Remove=NCSCON.HLP;
+If (UPDATE) Remove=NWCCLEAN.NLM;
+If (UPDATE) Remove=NWCCNFG.TXT;
+If (UPDATE) Remove=NWCCNVRT.NLM;
+If (UPDATE) Remove=NWCCON.HLP;
+If (UPDATE) Remove=NWCLIC.HLP;
+If (UPDATE) Remove=NWCNCF.HLP;
+If (UPDATE) Remove=NWCNCF.NLM;
+If (UPDATE) Remove=NWCNCFRM.NLM;
+If (UPDATE) Remove=NWCSTAT.HLP;
+If (UPDATE) If (NOTEXIST:RNS.LAN[2.0.0]) Remove=RNS.LAN;
+NetworkPath=SYS:\SYSTEM\CONNECT;
+If (UPDATE) Remove=CSINSTAL.HLP;
+NetworkPath=SYS:\SYSTEM\NCS;
+If (UPDATE) Remove=INT14MGR.CWA;
+If (UPDATE) Remove=INT14MGR.HLP;
+If (UPDATE) Remove=NASIDIAG.HLP;
+If (UPDATE) Remove=SYS_ERR.DTA;
+If (UPDATE) Remove=SYS_HELP.DTA;
+If (UPDATE) Remove=SYS_MSG.DTA;
+
+;NetworkPath=SYS:\SYSTEM\AIO;
+;If (EXIST:AIONAMES.AIO) Ask=Do you want to delete the AIONAMES.AIO file? 'No' may prevent automatic detection of ports.;
+;If (YESResponse) Remove=AIONAMES.AIO;
+
+NetworkPath=SYS:\SYSTEM\CONNECT;
+Copy=PRODUCT.DEF;
+Copy=CONNECT.001;
+Copy=CONNECT.RMV;
+Copy=PIREADME.TXT;
+
+NetworkPath=SYS:\SYSTEM\REMOTE;
+Copy=..\REMOTE\CMPQ_RUN.OVL;
+Copy=..\REMOTE\CONNECT.BAT;
+Copy=..\REMOTE\CONNECT.INS;
+Copy=..\REMOTE\IBM_RUN.OVL;
+Copy=..\REMOTE\INS0762.LIB;
+Copy=..\REMOTE\INSTALL.EXE;
+Copy=..\REMOTE\NWUNPACK.EXE;
+Copy=..\REMOTE\PACK.EXE;
+Copy=..\REMOTE\PACKING.LST;
+Copy=..\REMOTE\SETUP.EXE;
+Copy=..\REMOTE\SETUP.INS;
+Copy=..\REMOTE\TEXTUTIL.IDX;
+Copy=..\REMOTE\USER.RSP;
+Copy=..\REMOTE\_RUN.OVL;
+
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:CSSYSMSG.NLM[1.0.21]{03-07-95})  Copy=..\CSSYSMSG.NLM, NetworkPath=SYS:SYSTEM\NLS\4, Copy=..\NLS\4\CSSYSMSG.HLP, Copy=..\NLS\4\CSSYSMSG.MSG;
+
+NetworkPath=SYS:\SYSTEM\CONNECT\NLS\4;
+Copy=NLS\4\PINSTALL.HLP;
+Copy=NLS\4\PINSTALL.MSG;
+
+NetworkPath=SYS:\SYSTEM\REMOTE\NLS\ENGLISH;
+Copy=..\REMOTE\NLS\ENGLISH\INSTALL.MSG;
+Copy=..\REMOTE\NLS\ENGLISH\TEXTUTIL.HEP;
+Copy=..\REMOTE\NLS\ENGLISH\TEXTUTIL.MSG;
+
+; Filename: connect.002         remote node client files
+NetworkPath=SYS:\SYSTEM\REMOTE;
+Copy=..\REMOTE\DISK2;
+
+NetworkPath=SYS:\SYSTEM\REMOTE\BIN;
+Copy=..\REMOTE\BIN\CMPQ_RUN.OV_;
+Copy=..\REMOTE\BIN\DIALER.EX_;
+Copy=..\REMOTE\BIN\DIALER.HL_;
+Copy=..\REMOTE\BIN\DIAL_CFG.EX_;
+Copy=..\REMOTE\BIN\DIAL_CFG.HL_;
+Copy=..\REMOTE\BIN\DOSDIAL.EX_;
+Copy=..\REMOTE\BIN\IBM_RUN.OV_;
+Copy=..\REMOTE\BIN\IPXPING.EX_;
+Copy=..\REMOTE\BIN\IPXPING.PI_;
+Copy=..\REMOTE\BIN\LWPICON.DL_;
+Copy=..\REMOTE\BIN\LWPUTIL.DL_;
+Copy=..\REMOTE\BIN\MDMAPI.DL_;
+Copy=..\REMOTE\BIN\NETWARN.CO_;
+Copy=..\REMOTE\BIN\NOVASYNC.EX_;
+Copy=..\REMOTE\BIN\PING.EX_;
+Copy=..\REMOTE\BIN\PING.MS_;
+Copy=..\REMOTE\BIN\PING.PI_;
+Copy=..\REMOTE\BIN\SETREMPW.EX_;
+Copy=..\REMOTE\BIN\SLPAPI.DL_;
+Copy=..\REMOTE\BIN\SLPMON.EX_;
+Copy=..\REMOTE\BIN\TCPIP.EX_;
+Copy=..\REMOTE\BIN\TEXTUTIL.ID_;
+Copy=..\REMOTE\BIN\VERREAD.EX_;
+Copy=..\REMOTE\BIN\VTCPIP.38_;
+Copy=..\REMOTE\BIN\WINSOCK.DL_;
+COpy=..\REMOTE\BIN\WLIBSOCK.DL_;
+Copy=..\REMOTE\BIN\YESNO.EX_;
+Copy=..\REMOTE\BIN\YESNO.MS_;
+Copy=..\REMOTE\BIN\_RUN.OV_;
+
+NetworkPath=SYS:\SYSTEM\REMOTE\BIN\NLS\ENGLISH;
+Copy=..\REMOTE\BIN\NLS\ENGLISH\DOSDIAL.HE_;
+Copy=..\REMOTE\BIN\NLS\ENGLISH\DOSDIAL.MS_;
+Copy=..\REMOTE\BIN\NLS\ENGLISH\IPXPING.MS_;
+Copy=..\REMOTE\BIN\NLS\ENGLISH\SETREMPW.MS_;
+Copy=..\REMOTE\BIN\NLS\ENGLISH\TEXTUTIL.HE_;
+Copy=..\REMOTE\BIN\NLS\ENGLISH\TEXTUTIL.MS_;
+
+NetworkPath=SYS:\SYSTEM\REMOTE\HSTACC;
+Copy=..\REMOTE\HSTACC\AIOMDMS.MD_;
+Copy=..\REMOTE\HSTACC\CODES.DL_;
+Copy=..\REMOTE\HSTACC\DRIVER.LS_;
+Copy=..\REMOTE\HSTACC\MODEMS.IN_;
+
+NetworkPath=SYS:\SYSTEM\REMOTE\NWCLIENT;
+Copy=..\REMOTE\NWCLIENT\CMPQ_RUN.OV_;
+Copy=..\REMOTE\NWCLIENT\NCOMX.CO_;
+Copy=..\REMOTE\NWCLIENT\NWREMOTE.CO_;
+Copy=..\REMOTE\NWCLIENT\VNCOMX.38_;
+
+NetworkPath=SYS:\SYSTEM\REMOTE\WINDOWS\SYSTEM;
+Copy=..\REMOTE\WINDOWS\SYSTEM\CTL3DV2.DL_;
+Copy=..\REMOTE\WINDOWS\SYSTEM\NETWARE.DR_;
+
+; Filename: connect.003        remote node client files
+
+NetworkPath=SYS:\SYSTEM;
+If (NW4X) If (NOTEXIST:IPXCFG.NLM[3.1.2]{02-02-95}) Backup=IPXCFG.NLM, Copy=..\IPXCFG.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=IPXCFG.HLP, Backup=IPXCFG.MSG, Copy=..\NLS\4\IPXCFG.HLP, Copy=..\NLS\4\IPXCFG.MSG;
+
+NetworkPath=SYS:\SYSTEM\REMOTE;
+
+Copy=..\REMOTE\DISK3;
+
+NetworkPath=SYS:\SYSTEM\REMOTE\NWCLIENT;
+
+Copy=..\REMOTE\NWCLIENT\ATTACH.BA_;
+Copy=..\REMOTE\NWCLIENT\CX.EX_;
+Copy=..\REMOTE\NWCLIENT\DOSV_RUN.OV_;
+Copy=..\REMOTE\NWCLIENT\IBM_RUN.OV_;
+Copy=..\REMOTE\NWCLIENT\LOGIN.EX_;
+Copy=..\REMOTE\NWCLIENT\LOGOUT.EX_;
+Copy=..\REMOTE\NWCLIENT\MAP.EX_;
+Copy=..\REMOTE\NWCLIENT\NLIST.EX_;
+Copy=..\REMOTE\NWCLIENT\SLIST.BA_;
+Copy=..\REMOTE\NWCLIENT\TEXTUTIL.ID_;
+Copy=..\REMOTE\NWCLIENT\TYPEMSG.EX_;
+Copy=..\REMOTE\NWCLIENT\_RUN.OV_;
+
+NetworkPath=SYS:\SYSTEM\REMOTE\NWCLIENT\NLS;
+Copy=..\REMOTE\NWCLIENT\NLS\1252_UNI.001;
+Copy=..\REMOTE\NWCLIENT\NLS\437_UNI.001;
+Copy=..\REMOTE\NWCLIENT\NLS\850_UNI.001;
+Copy=..\REMOTE\NWCLIENT\NLS\UNI_1252.001;
+Copy=..\REMOTE\NWCLIENT\NLS\UNI_437.001;
+Copy=..\REMOTE\NWCLIENT\NLS\UNI_850.001;
+Copy=..\REMOTE\NWCLIENT\NLS\UNI_COL.001;
+Copy=..\REMOTE\NWCLIENT\NLS\UNI_MON.001;
+
+NetworkPath=SYS:\SYSTEM\REMOTE\NWCLIENT\NLS\ENGLISH;
+
+Copy=..\REMOTE\NWCLIENT\NLS\ENGLISH\CX.MS_;
+Copy=..\REMOTE\NWCLIENT\NLS\ENGLISH\LOGIN.MS_;
+Copy=..\REMOTE\NWCLIENT\NLS\ENGLISH\LOGOUT.MS_;
+Copy=..\REMOTE\NWCLIENT\NLS\ENGLISH\MAP.MS_;
+Copy=..\REMOTE\NWCLIENT\NLS\ENGLISH\NLIST.MS_;
+Copy=..\REMOTE\NWCLIENT\NLS\ENGLISH\SCHEMA.XL_;
+Copy=..\REMOTE\NWCLIENT\NLS\ENGLISH\TEXTUTIL.HE_;
+Copy=..\REMOTE\NWCLIENT\NLS\ENGLISH\TEXTUTIL.MS_;
+Copy=..\REMOTE\NWCLIENT\NLS\ENGLISH\TYPEMSG.MS_;
+
+; Filename: connect.004         CONNECT system files, NM files
+NetworkPath=SYS:\SYSTEM;
+
+If (NW3X) If (NOTEXIST:A3112.NLM[4.10.1]{03-29-94}) Backup=A3112.NLM, Copy=..\A3112.NLM;
+If (NW3X) If (NOTEXIST:AFTER311.NLM[4.10.1]{03-29-94}) Backup=AFTER311.NLM, Copy=..\AFTER311.NLM;
+If (NW3X) If (NOTEXIST:MSM31X.NLM[2.32.0]{08-23-94}) Backup=MSM31X.NLM, Copy=..\MSM31X.NLM;
+If (NW3X) If (NOTEXIST:NWSNUT.NLM[4.11.0]{10-17-94}) Backup=NWSNUT.NLM, Copy=..\NWSNUT.NLM;
+
+If (NW3X) If (NOTEXIST:IPXS.NLM[3.12.0]{04-19-93}) Backup=IPXS.NLM, Copy=..\IPXS.NLM;
+If (NW3X) If (NOTEXIST:TLI.NLM[3.12.0]{04-19-93}) Backup=TLI.NLM, Copy=..\TLI.NLM;
+
+
+Copy=..\NVALTDB.NLM;
+Copy=..\NWC_NV.CPG;
+
+;Check version and backup opennv.nlm since it is a common module between NWC and NWSAA
+IF (NOTEXIST:OPENNV.NLM[2.0.0]) NETWORKPATH=SYS:\SYSTEM\NLS\4, BACKUP=OPENNV.MSG, COPY=..\NLS\4\OPENNV.MSG, NETWORKPATH=SYS:SYSTEM, BACKUP=OPENNV.NLM, COPY=..\OPENNV.NLM;
+
+
+NetworkPath=SYS:\SYSTEM\WIN2NCS;
+Copy=..\WIN2NCS\ATTNASI.EX_;
+Copy=..\WIN2NCS\CTL3DV2.DL_;
+Copy=..\WIN2NCS\DIRNASI.DL_;
+Copy=..\WIN2NCS\INTNASI.DL_;
+Copy=..\WIN2NCS\MAPNASI.EX_;
+Copy=..\WIN2NCS\MAPNASI.HL_;
+Copy=..\WIN2NCS\MSCOMSTF.DL_;
+Copy=..\WIN2NCS\MSDETECT.IN_;
+Copy=..\WIN2NCS\MSDETSTF.DL_;
+Copy=..\WIN2NCS\MSINSSTF.DL_;
+Copy=..\WIN2NCS\MSREGDB.IN_;
+Copy=..\WIN2NCS\MSSHARED.IN_;
+Copy=..\WIN2NCS\MSSHLSTF.DL_;
+Copy=..\WIN2NCS\MSUILSTF.DL_;
+Copy=..\WIN2NCS\NASI.DL_;
+Copy=..\WIN2NCS\NOTNASI.EX_;
+Copy=..\WIN2NCS\NSETUP.DL_;
+Copy=..\WIN2NCS\NSETUP.IN_;
+Copy=..\WIN2NCS\NSETUP.MS_;
+Copy=..\WIN2NCS\NSETUPH.IN_;
+Copy=..\WIN2NCS\NWCALLS.DL_;
+Copy=..\WIN2NCS\NWIPXSPX.DL_;
+Copy=..\WIN2NCS\README.WRI;
+Copy=..\WIN2NCS\SETUP.EXE;
+Copy=..\WIN2NCS\SETUP.LST;
+Copy=..\WIN2NCS\SETUPAPI.IN_;
+Copy=..\WIN2NCS\_MSSETUP.EX_;
+Copy=..\WIN2NCS\_MSTEST.EX_;
+
+NetworkPath=SYS:\SYSTEM\AIO\MODEM\DOS;
+Copy=..\AIO\MODEM\DOS\MDMMGR.EXE;
+Copy=..\AIO\MODEM\DOS\MDMMGR.HLP;
+Copy=..\AIO\MODEM\DOS\SYS_ERR.DTA;
+Copy=..\AIO\MODEM\DOS\SYS_HELP.DTA;
+Copy=..\AIO\MODEM\DOS\SYS_MSG.DTA;
+
+NetworkPath=SYS:\SYSTEM\AIO\MODEM\WINDOWS;
+Copy=..\AIO\MODEM\WINDOWS\MDMWIN.EXE;
+Copy=..\AIO\MODEM\WINDOWS\MDMWIN.HLP;
+
+; Filename: connect.005         MPR files
+
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:CSL.NLM[2.1.1]{12-14-94}) Backup=CSL.NLM, Copy=..\CSL.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=CSL.MSG, Copy=..\NLS\4\CSL.MSG;
+NetworkPath=SYS:\SYSTEM;
+
+If (NOTEXIST:DMGMT.NLM[3.0.0]{02-01-95}) Backup=DMGMT.NLM, Copy=..\DMGMT.NLM;
+
+If (NOTEXIST:ICM_SPX.NLM[1.1.0]{11-21-94}) Backup=ICM_SPX.NLM, Copy=..\ICM_SPX.NLM;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:IPCLINFO.NLM[1.0.0]{05-10-95}) Backup=IPCLINFO.NLM, Copy=..\IPCLINFO.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=IPCLINFO.MSG, Copy=..\NLS\4\IPCLINFO.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:IPXPING.NLM[3.0.0]{05-10-95}) Backup=IPXPING.NLM, Copy=..\IPXPING.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=IPXPING.HLP, Backup=IPXPING.MSG, Copy=..\NLS\4\IPXPING.HLP, Copy=..\NLS\4\IPXPING.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:IPXRTR.NLM[5.2.0]{05-10-95}) Backup=IPXRTR.NLM, Copy=..\IPXRTR.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=IPXRTR.MSG, Copy=..\NLS\4\IPXRTR.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:IPXRTRNM.NLM[3.0.0]{05-10-95}) Backup=IPXRTRNM.NLM, Copy=..\IPXRTRNM.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=IPXRTRNM.MSG, Copy=..\NLS\4\IPXRTRNM.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:NWCBOOTP.NLM[1.0.0]{05-10-95}) Backup=NWCBOOTP.NLM, Copy=..\NWCBOOTP.NLM;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:PING.NLM[1.2.0]{05-10-95}) Backup=PING.NLM, Copy=..\PING.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=PING.HLP, Backup=PING.MSG, Copy=..\NLS\4\PING.HLP, Copy=..\NLS\4\PING.MSG;
+
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:PPPCON.NLM[1.0.0]{11-21-94}) Backup=PPPCON.NLM, Copy=..\PPPCON.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=PPPCON.HLP, Backup=PPPCON.MSG, Copy=..\NLS\4\PPPCON.HLP, Copy=..\NLS\4\PPPCON.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:PPPTRACE.NLM[3.0.0]{11-22-94}) Backup=PPPTRACE.NLM, Copy=..\PPPTRACE.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=PPPTRACE.HLP, Backup=PPPTRACE.MSG, Copy=..\NLS\4\PPPTRACE.HLP, Copy=..\NLS\4\PPPTRACE.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:PPPTSM.NLM[3.1.0]{05-10-95}) Backup=PPPTSM.NLM, Backup=PPPTSM.TDI, Copy=..\PPPTSM.NLM, Copy=..\PPPTSM.TDI, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=PPPTSM.MSG, Copy=..\NLS\4\PPPTSM.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:SNMP.NLM[3.2.0]{11-22-94}) Backup=SNMP.NLM, Copy=..\SNMP.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=SNMP.MSG, Copy=..\NLS\4\SNMP.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:TUI.NLM[1.4.0]{11-22-94}) Backup=TUI.NLM, Copy=..\TUI.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=TUI.MSG, Copy=..\NLS\4\TUI.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:WSM.NLM[3.0.0]{11-22-94}) Backup=WSM.NLM, Copy=..\WSM.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=WSM.MSG, Copy=..\NLS\4\WSM.MSG;
+
+;required by ipxrtr on NW3X
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:IPXSTACK.NLM[3.0.1]{05-10-95}) Backup=IPXSTACK.NLM, Copy=..\IPXSTACK.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=IPXSTACK.MSG, Copy=..\NLS\4\IPXSTACK.MSG;
+
+; Filename: connect.006         MPR files
+
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:IPXCON.NLM[3.0.0]{05-10-95}) Backup=IPXCON.NLM, Copy=..\IPXCON.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=IPXCON.HLP, Backup=IPXCON.MSG, Copy=..\NLS\4\IPXCON.HLP, Copy=..\NLS\4\IPXCON.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:TCPCON.NLM[3.1.0]{05-10-95}) Backup=TCPCON.NLM, Copy=..\TCPCON.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=TCPCON.HLP, Backup=TCPCON.MSG, Copy=..\NLS\4\TCPCON.HLP, Copy=..\NLS\4\TCPCON.MSG;
+
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:TCPIP.NLM[3.1.0]{05-10-95}) Backup=TCPIP.NLM, Copy=..\TCPIP.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=TCPIP.MSG, Copy=..\NLS\4\TCPIP.MSG;
+
+
+; Filename: connect.007         AppleTalk, CLIB, NMS
+
+NetworkPath=SYS:\SYSTEM;
+
+;***************************************************************************
+;                       SUPPORTED MODULES FOR APPLETALK
+;***************************************************************************
+
+IF (NW312) IF (NOTEXIST:ADSP.NLM[5.0.2]{01-13-95}) Backup=ADSP.NLM, COPY=..\ADSP.NLM;
+IF (NW312) IF (NOTEXIST:APPLETLK.NLM[4.50.3]{12-16-94}) Backup=APPLETLK.NLM, Copy=..\APPLETLK.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=APPLETLK.MSG, Copy=..\NLS\4\APPLETLK.MSG;
+
+NetworkPath=SYS:\SYSTEM;
+IF (NW312) IF (NOTEXIST:ATCON.NLM[5.0.0]{07-07-94}) Backup=ATCON.NLM, COPY=..\ATCON.NLM;
+IF (NW312) IF (NOTEXIST:MADGEODI.LAN[4.6.0]{11-01-94}) Backup=MADGEODI.LAN, COPY=..\MADGEODI.LAN;
+IF (NW312) IF (NOTEXIST:NTR2000.LAN[3.33.0]{11-01-94}) Backup=NTR20000.LAN, COPY=..\NTR2000.LAN;
+IF (NW312) IF (NOTEXIST:TOKEN.LAN[3.24.0]{09-09-94}) Backup=TOKEN.LAN, COPY=..\TOKEN.LAN;
+
+
+NetworkPath=SYS:\SYSTEM;
+IF (NW4X) IF (NOTEXIST:ADSP.NLM[5.0.2]{01-13-95}) Backup=ADSP.NLM, COPY=..\ADSP.NLM, NETWORKPATH=SYS:\SYSTEM\NLS\4, BACKUP=ADSP.MSG, COPY=..\NLS\4\ADSP.MSG;
+;NetworkPath=SYS:\SYSTEM;
+;IF (NW4X) IF (NOTEXIST:CLIB.NLM[4.10.0]{02-23-95}) Backup=CLIB.NLM, COPY=..\CLIB.NLM;
+
+NetworkPath=SYS:\SYSTEM\NWCNMS;
+Copy=..\NWCNMS\AIOMIB.MIB;
+Copy=..\NWCNMS\NCMIB.MIB;
+Copy=..\NWCNMS\NWCTRAP.MIB;
+Copy=..\NWCNMS\NWCTRAP.HLP;
+
+NetworkPath=SYS:\SYSTEM;
+Copy=..\MIB12C;
+Copy=..\MIB12C.STR;
+Copy=..\NCMA.NLM;
+
+NetworkPath=SYS:\SYSTEM\NLS\4;
+Copy=..\NLS\4\MIB12C.MSG;
+Copy=..\NLS\4\NCMA.MSG;
+
+; Filename: connect.008         Connect Services files
+
+;If (UPDATE) Copy=RNS.DEF;
+NetworkPath=SYS:\SYSTEM\CONNECT\SCRIPTS;
+Copy=SCRIPTS\CONNECT.LDF;
+Copy=SCRIPTS\CONNECT.ULF;
+Copy=SCRIPTS\NCS.LDF;
+Copy=SCRIPTS\NCS.ULF;
+NetworkPath=SYS:\SYSTEM, Copy=..\RNSNCF.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Copy=..\NLS\4\RNSNCF.HLP, Copy=..\NLS\4\RNSNCF.MSG;
+;If (UPDATE) If (EXIST:RNS.LAN[2.0.0]) NetworkPath=SYS:\SYSTEM, Copy=..\RNS.LAN;
+NetworkPath=SYS:\SYSTEM;
+Copy=..\NWCSTART.NCF;
+Copy=..\NWCSTOP.NCF;
+Spawn=rnsncf.nlm CONVERT RNS sys:\system\connect\scripts\rns.ldf sys:\system\connect\scripts\rns.ulf;
+;If (UPDATE) If (NOTEXIST:RNS.LAN[2.0.0]) If (EXIST:RNSCOPY) If (NW3X) Agent=RNS,Object=0257,DGNCount=0;
+;If (UPDATE) If (NOTEXIST:RNSCOPY) Remove=RNS.DEF;
+NetworkPath=SYS:\SYSTEM\CONNECT;
+If (EXIST:RNSCOPY) NetworkPath=SYS:\SYSTEM, Copy=..\RNS.LAN;
+
+;The copy svcs.def is done after spawning rnsncf.nlm (it is deleted in rnsncf)
+NetworkPath=SYS:\SYSTEM\CONNECT;
+Copy=SVCS.DEF;
+
+NetworkPath=SYS:\SYSTEM;
+
+If (INSTALL) If (NW3X) Agent=ARAS,Object=0257,DGNCount=0;
+If (INSTALL) If (NW3X) Agent=NCS,Object=0257,DGNCount=0;
+If (INSTALL) If (NW3X) Agent=PPPRNS,Object=0257,DGNCount=0;
+
+Copy=..\ARAS.LAN;
+Copy=..\ARASCHK.NLM;
+Copy=..\ARASCON.NLM;
+Copy=..\ARASNCF.NLM;
+Copy=..\NCS.NLM;
+Copy=..\NCSCON.NLM;
+Copy=..\NCSSTAT.NLM;
+Copy=..\PPPRNCON.NLM;
+Copy=..\PPPRNCHK.NLM;
+Copy=..\PPPNCF.NLM;
+Copy=..\PPPRNS.LAN;
+Copy=..\SHMEM.NLM;
+
+NetworkPath=SYS:\SYSTEM\NLS\4;
+Copy=..\NLS\4\ARASCHK.MSG;
+Copy=..\NLS\4\ARASCON.HLP;
+Copy=..\NLS\4\ARASCON.MSG;
+Copy=..\NLS\4\ARASNCF.HLP;
+Copy=..\NLS\4\ARASNCF.MSG;
+Copy=..\NLS\4\NCSCON.HLP;
+Copy=..\NLS\4\NCSCON.MSG;
+Copy=..\NLS\4\NCSSTAT.HLP;
+Copy=..\NLS\4\NCSSTAT.MSG;
+Copy=..\NLS\4\PPPNCF.HLP;
+Copy=..\NLS\4\PPPNCF.MSG;
+Copy=..\NLS\4\PPPRNCON.HLP;
+Copy=..\NLS\4\PPPRNCON.MSG;
+Copy=..\NLS\4\PPPRNCHK.MSG;
+Copy=..\NLS\4\PPPRNS.MSG;
+
+
+NetworkPath=SYS:\SYSTEM;
+Spawn=arasncf.nlm CONVERT ARAS sys:\system\connect\scripts\aras.ldf sys:\system\connect\scripts\aras.ulf;
+
+NetworkPath=SYS:\SYSTEM\NCS;
+Copy=..\NCS\GETPORT.EXE;
+Copy=..\NCS\INT14MGR.EXE;
+Copy=..\NCS\INT14MGR.HEP;
+Copy=..\NCS\INT14MGR.MSG;
+Copy=..\NCS\NASI.EXE;
+Copy=..\NCS\NASI.MSG;
+Copy=..\NCS\NASIDIAG.EXE;
+Copy=..\NCS\NASIDIAG.HEP;
+Copy=..\NCS\NASIDIAG.MSG;
+Copy=..\NCS\NINT14.COM;
+Copy=..\NCS\NINT14.MSG;
+
+Copy=..\NCS\_RUN.OVL;
+Copy=..\NCS\CMPQ_RUN.OVL;
+Copy=..\NCS\IBM_RUN.OVL;
+Copy=..\NCS\TEXTUTIL.HEP;
+Copy=..\NCS\TEXTUTIL.IDX;
+Copy=..\NCS\TEXTUTIL.MSG;
+
+
+;NetworkPath=SYS:\SYSTEM\NRN;
+;Copy=NRN\AIOMDMS.MDC;
+;Copy=NRN\NETX.EXE;
+;Copy=NRN\NRN.COM;
+;Copy=NRN\IPXODI.COM;
+;Copy=NRN\LSL.COM;
+;Copy=NRN\DIALCON.EXE;
+;Copy=NRN\DIALCON.HLP;
+;Copy=NRN\SYS_HELP.DTA;
+;Copy=NRN\SYS_MSG.DTA;
+;Copy=NRN\SYS_ERR.DTA;
+;Copy=NRN\README.NRN;
+;Copy=NRN\NETWARN.COM;
+
+; Filename: connect.009         CONNECT system files
+NetworkPath=SYS:\SYSTEM;
+
+;DGNCount to specify Connect version
+If (INSTALL) If (NW3X) Agent=CONNECT,Object=0258,DGNCount=2;  
+
+
+NetworkPath=SYS:\SYSTEM;
+Copy=..\CSAUDIT.NLM;
+Copy=..\NWCCCFG3.NLM;
+Copy=..\NWCCLEAN.NLM;
+If (NW4X) Copy=..\NWCCLNDS.NLM;
+Copy=..\NWCCON.NLM;
+Copy=..\NWCEXTDS.NLM;
+If (NEWVERSION) Copy=..\NWCINST.TXT;
+Copy=..\NWCLIC.NLM;
+Copy=..\NWCRPAIR.NCF;
+Copy=..\NWCSS.NLM;
+Copy=..\NWCSSSMX.NLM;
+Copy=..\NWCSTAT.NLM;
+Copy=..\NWCU1034.NLM;
+Copy=..\NWCUCFG3.NLM;
+Copy=..\NWCUCFG4.NLM;
+Copy=..\NWCUPDAT.NLM;
+Copy=..\PRODVER.NLM;
+;Copy=..\SHMEM.NLM;
+
+If (NW3X) Copy=..\SVCDEF.NLM, Copy=..\NWCSU.NLM;
+If (NW4X) Copy=..\SVCDEF.NLM, Copy=..\NWCSU.NLM;
+
+;If (NEWVERSION) Copy=CONNECT\SCRIPTS\NWCSTART.NCF;
+;If (NEWVERSION) Copy=CONNECT\SCRIPTS\NWCSTOP.NCF;
+
+NetworkPath=SYS:\SYSTEM\CONNECT;
+Copy=MODEMS.INF;
+
+; Copy troubleshooting info files
+NetworkPath=SYS:\SYSTEM\CONNECT\TROUBLE;
+Copy=TROUBLE\ADAPTERS.TSF;
+Copy=TROUBLE\ARAS.TSF;
+Copy=TROUBLE\CABLING.TSF;
+Copy=TROUBLE\DOSDIALR.TSF;
+Copy=TROUBLE\HRDWARE.TSF;
+Copy=TROUBLE\INT14RE.TSF;
+Copy=TROUBLE\MAC2NCS.TSF;
+Copy=TROUBLE\MODEM.TSF;
+Copy=TROUBLE\NASI.TSF;
+Copy=TROUBLE\NCS.TSF;
+Copy=TROUBLE\PORTS.TSF;
+Copy=TROUBLE\PPPRNS.TSF;
+Copy=TROUBLE\REMOTE.TSF;
+Copy=TROUBLE\SERVER.TSF;
+Copy=TROUBLE\TCHSPPRT.TSF;
+Copy=TROUBLE\WINDIALR.TSF;
+
+NetworkPath=SYS:\SYSTEM\CSLIB;
+; Only needed when audittrail format changes
+; remove next 3 cmds in final release
+Remove=*.LOG;
+Remove=*.ARC;
+Remove=AUDCTRL;
+
+
+NetworkPath=SYS:\SYSTEM\NLS\4;
+Copy=..\NLS\4\CSAUDIT.HLP;
+Copy=..\NLS\4\CSAUDIT.MSG;
+Copy=..\NLS\4\NWCCCFG3.MSG;
+Copy=..\NLS\4\NWCCON.HLP;
+Copy=..\NLS\4\NWCCON.MSG;
+Copy=..\NLS\4\NWCEXTDS.HLP;
+Copy=..\NLS\4\NWCEXTDS.MSG;
+Copy=..\NLS\4\NWCLIC.HLP;
+Copy=..\NLS\4\NWCLIC.MSG;
+Copy=..\NLS\4\NWCSS.MSG;
+Copy=..\NLS\4\NWCSSSMX.MSG;
+Copy=..\NLS\4\NWCSTAT.HLP;
+Copy=..\NLS\4\NWCSTAT.MSG;
+Copy=..\NLS\4\NWCSU.HLP;
+Copy=..\NLS\4\NWCSU.MSG;
+Copy=..\NLS\4\NWCU1034.MSG;
+Copy=..\NLS\4\NWCUCFG3.MSG;
+Copy=..\NLS\4\NWCUCFG4.MSG;
+Copy=..\NLS\4\NWCUPDAT.MSG;
+Copy=..\NLS\4\SVCDEF.MSG;
+
+NetworkPath=SYS:\SYSTEM;
+;If (INSTALL) NextDisk;
+;If (NEWVERSION) NextDisk;
+; If we get here, it must be a 2.0.X -> 2.0.Y update
+; Always skip the automated setup
+ReadOnly=..\NWCINST.TXT;
+
+; Filename: connect.010         BTRIEVE 6.10c files for NW3X
+
+;There is only 1 "disk", need to add If (NW3X) in the following Cmds
+;If (NW4X) NextDisk;
+
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:BROUTER.NLM[6.10.5]) Backup=BROUTER.NLM, Copy=..\BROUTER.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Copy=..\NLS\4\BROUTER.MSG;
+
+NetworkPath=SYS:\SYSTEM;
+
+;There is only 1 "disk", need to add If (NOTEXIST...) in the following Cmds
+;If (EXIST:btrieve.nlm[6.10.3][11-19-93]) NextDisk;
+
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=brebuild.nlm, Copy=..\brebuild.nlm;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=btrvstub.nlm, Copy=..\btrvstub.nlm;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=butil.nlm,    Copy=..\butil.nlm;
+
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=brequest.exe, NetworkPath=sys:\public, Copy=..\..\public\brequest.exe;
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=brequtil.exe, NetworkPath=sys:\public, Copy=..\..\public\brequtil.exe;
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=brollfwd.exe, NetworkPath=sys:\public, Copy=..\..\public\brollfwd.exe;
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=pbroll.exe,   NetworkPath=sys:\public, Copy=..\..\public\pbroll.exe;
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=ndbcomm.dll,  NetworkPath=sys:\public, Copy=..\..\public\ndbcomm.dll;
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=pbtrvres.dll, NetworkPath=sys:\public, Copy=..\..\public\pbtrvres.dll;
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=wbrollrs.dll, NetworkPath=sys:\public, Copy=..\..\public\wbrollrs.dll;
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=wbroll.exe,   NetworkPath=sys:\public, Copy=..\..\public\wbroll.exe;
+
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=brequtil.msg, NetworkPath=sys:\public, Copy=..\..\public\brequtil.msg;
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=brollfwd.msg, NetworkPath=sys:\public, Copy=..\..\public\brollfwd.msg;
+
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:btrieve.nlm[6.10.3][11-19-93]) Backup=btrieve.nlm,  Copy=..\btrieve.nlm;
+
+;Message=BTRIEVE version 6.10C has been installed. The original files are saved at SYS:\SYSTEM\BACKUP. You need to down and restart the server after the NetWare Connect installation.;
+
+; Filename: connect.011         AIO files/drivers, AIOPAD support and X.25 
+
+NetworkPath=SYS:\SYSTEM;
+Backup=AIO.NLM, Copy=..\AIO.NLM;
+Copy=..\AIOCOMX.NLM;
+Copy=..\AIOCON.NLM;
+
+
+;
+;Copy AIO drivers
+; Every AIO driver should have a matching .ADI file copied below...
+;
+;Check the version # for the following drivers
+If (NOTEXIST:AIOACI.NLM[1.0.20]{06-08-94}) Backup=AIOACI.NLM, Copy=..\AIOACI.NLM;
+If (NOTEXIST:AIOCUBIX.NLM[1.2.0]{05-16-95}) Backup=AIOCUBIX.NLM, Copy=..\AIOCUBIX.NLM;
+If (NOTEXIST:AIODGMEM.NLM[1.1.0]{04-11-94}) Backup=AIODGMEM.NLM, Copy=..\AIODGMEM.NLM;
+If (NOTEXIST:AIODGXI.NLM[1.11.1]{05-19-95}) Backup=AIODGXI.NLM, Copy=..\AIODGXI.NLM;
+If (NOTEXIST:AIODGXEM.NLM[1.10.0]{05-01-95}) Backup=AIODGXEM.NLM, Copy=..\AIODGXEM.NLM;
+If (NOTEXIST:AIOEQNX.NLM[1.10.0]{03-30-95}) Backup=AIOEQNX.NLM, Copy=..\AIOEQNX.NLM;
+If (NOTEXIST:AIORCKT.NLM[2.1.0]{05-02-95}) Backup=AIORCKT.NLM, Copy=..\AIORCKT.NLM;
+If (NOTEXIST:AIOTCL.NLM[1.4.0]{04-19-95}) Backup=AIOTCL.NLM, Copy=..\AIOTCL.NLM;
+If (NOTEXIST:AIOWNIM3.NLM[1.1.0]{06-24-94}) Backup=AIOWNIM3.NLM, Copy=..\AIOWNIM3.NLM;
+
+If (NOTEXIST:TCALMBX.NLM[1.0.0]{11-09-94}) Backup=TCALMBX.NLM, Copy=..\TCALMBX.NLM;
+If (NOTEXIST:TCALOAD.NLM[1.1.0]{04-19-95}) Backup=TCALOAD.NLM, Copy=..\TCALOAD.NLM;
+
+NetworkPath=SYS:\SYSTEM\AIO;
+Copy=..\AIO\AIOACI.ADI;
+Copy=..\AIO\AIOCOMX.ADI;
+Copy=..\AIO\AIOCUBIX.ADI;
+Copy=..\AIO\AIODGXEM.ADI;
+Copy=..\AIO\AIODGXI.ADI;
+Copy=..\AIO\AIOEQNXE.ADI;
+Copy=..\AIO\AIOEQNXI.ADI;
+Copy=..\AIO\AIOEQNXM.ADI;
+Copy=..\AIO\AIOPAD.ADI;
+Copy=..\AIO\AIORCKT.ADI;
+Copy=..\AIO\AIOTCL.ADI;
+Copy=..\AIO\AIOWNIM3.ADI;
+
+Copy=..\AIO\AIOHWTYP.TXT;
+Copy=..\AIO\AIOMDMS.MDC;
+Copy=..\AIO\AIOPAD.MDC;
+Copy=..\AIO\VIEWTRC.EXE;
+
+
+NetworkPath=SYS:\SYSTEM\NLS\4;
+Copy=..\NLS\4\AIOCON.HLP;
+Copy=..\NLS\4\AIOCON.MSG;
+
+
+;
+;install AIOPAD
+;need to check for NW3X and MPR 2.0
+;If (NW3X) Abort;
+
+;Ask=Do you want to install X.25 support?;
+
+NetworkPath=SYS:\SYSTEM;
+Copy=..\AIOPAD.NLM;
+;always copy aiopdcon.dat as part of the config copy
+Copy=..\AIOPDCON.DAT;
+Copy=..\AIOPDCON.NLM;
+Copy=..\AIOPCONV.NLM;
+
+
+NetworkPath=SYS:\SYSTEM\NLS\4;
+Copy=..\NLS\4\AIOPAD.MSG;
+Copy=..\NLS\4\AIOPCONV.MSG;
+Copy=..\NLS\4\AIOPDCON.HLP;
+Copy=..\NLS\4\AIOPDCON.MSG;
+
+
+;
+;install X.25 disks.
+;
+;SrcDisk=LNKX25_1 LNKX25_1 of the X.25 product;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:MPRDINST.NLM[1.2.0]{11-22-94}) Backup=MPRDINST.NLM, Copy=..\MPRDINST.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=MPRDINST.MSG, Copy=..\NLS\4\MPRDINST.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:PSCRIPT.DAT{12-13-94}) Backup=PSCRIPT.DAT, Copy=..\PSCRIPT.DAT;
+
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:CONVINET.NLM[1.0.2]{11-21-94}) Backup=CONVINET.NLM, Copy=..\CONVINET.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=CONVINET.MSG, Copy=..\NLS\4\CONVINET.MSG;
+NetworkPath=SYS:\SYSTEM;
+;If (NOTEXIST:CSL.NLM[2.1.1]{12-14-94}) Backup=CSL.NLM, Copy=..\CSL.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=CSL.MSG, Copy=..\NLS\4\CSL.MSG;
+;NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:CSLCNVRT.NLM[1.0.0]{11-21-94}) Backup=CSLCNVRT.NLM, Copy=..\CSLCNVRT.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=CSLCNVRT.MSG, Copy=..\NLS\4\CSLCNVRT.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:PROFILES.EXP{11-03-94}) Backup=PROFILES.EXP, Copy=..\PROFILES.EXP;
+If (NOTEXIST:PROFINST.NLM[1.0.1]{05-10-95}) Backup=PROFINST.NLM, Copy=..\PROFINST.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=PROFINST.MSG, Copy=..\NLS\4\PROFINST.MSG;
+NetworkPath=SYS:\SYSTEM;
+;If (NOTEXIST:SNMP.NLM[3.2.0]{11-22-94}) Backup=SNMP.NLM, Copy=..\SNMP.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=SNMP.MSG, Copy=..\NLS\4\SNMP.MSG;
+;NetworkPath=SYS:\SYSTEM;
+;If (NOTEXIST:TUI.NLM[1.4.0]{11-22-94}) Backup=TUI.NLM, Copy=..\TUI.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=TUI.MSG, Copy=..\NLS\4\TUI.MSG;
+;NetworkPath=SYS:\SYSTEM;
+
+If (NOTEXIST:CALLMGR.NLM[3.0.1]{11-22-94}) Backup=CALLMGR.NLM, Copy=..\CALLMGR.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=CALLMGR.HLP, Backup=CALLMGR.MSG, Copy=..\NLS\4\CALLMGR.HLP, Copy=..\NLS\4\CALLMGR.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:INETCFG.NLM[3.10.2]{11-21-94}) Backup=INETCFG.NLM, Copy=..\INETCFG.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=INETCFG.HLP, Backup=INETCFG.MSG, Copy=..\NLS\4\INETCFG.HLP, Copy=..\NLS\4\INETCFG.MSG;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:X25CFG.NLM[3.0.1]{11-21-94}) Backup=X25CFG.NLM, Copy=..\X25CFG.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=X25CFG.HLP, Backup=X25CFG.MSG, Copy=..\NLS\4\X25CFG.HLP, Copy=..\NLS\4\X25CFG.MSG;
+
+;SrcDisk=LNKX25_2 LNKX25_2 of the X.25 product;
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:WNICSMEM.NLM[3.12.0]{11-22-94}) Backup=WNICSMEM.NLM, Copy=..\WNICSMEM.NLM;
+;If (NOTEXIST:WSM.NLM[3.0.0]{11-22-94}) Backup=WSM.NLM, Copy=..\WSM.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=WSM.MSG, Copy=..\NLS\4\WSM.MSG;
+;NetworkPath=SYS:\SYSTEM;
+
+If (NOTEXIST:SYNCPLUS.LAN[3.0.0]{02-01-95}) Backup=SYNCPLUS.LAN, Backup=SYNCPLUS.LDI, Copy=..\SYNCPLUS.LAN, Copy=..\SYNCPLUS.LDI;
+NetworkPath=SYS:\SYSTEM;
+
+If (NOTEXIST:X25CON.NLM[1.0.0]{05-10-95}) Backup=X25CON.NLM, Copy=..\X25CON.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=X25CON.HLP, Backup=X25CON.MSG, Copy=..\NLS\4\X25CON.HLP, Copy=..\NLS\4\X25CON.MSG;
+;Backup=X25CON.NLM, Copy=..\X25CON.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=X25CON.HLP, Backup=X25CON.MSG, Copy=..\NLS\4\X25CON.HLP, Copy=..\NLS\4\X25CON.MSG;
+NetworkPath=SYS:\SYSTEM;
+
+If (NOTEXIST:X25SINK.NLM[1.0.0]{05-10-95}) Backup=X25SINK.NLM, Copy=..\X25SINK.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=X25SINK.MSG, Copy=..\NLS\4\X25SINK.MSG;
+;Backup=X25SINK.NLM, Copy=..\X25SINK.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=X25SINK.MSG, Copy=..\NLS\4\X25SINK.MSG;
+NetworkPath=SYS:\SYSTEM;
+
+If (NOTEXIST:X25SNMP.NLM[1.0.0]{05-10-95}) Backup=X25SNMP.NLM, Copy=..\X25SNMP.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=X25SNMP.MSG, Copy=..\NLS\4\X25SNMP.MSG;
+;Backup=X25SNMP.NLM, Copy=..\X25SNMP.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=X25SNMP.MSG, Copy=..\NLS\4\X25SNMP.MSG;
+NetworkPath=SYS:\SYSTEM;
+
+If (NOTEXIST:X25TRACE.NLM[1.0.0]{05-10-95}) Backup=X25TRACE.NLM, Copy=..\X25TRACE.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=X25TRACE.HLP, Backup=X25TRACE.MSG, Copy=..\NLS\4\X25TRACE.HLP, Copy=..\NLS\4\X25TRACE.MSG;
+;Backup=X25TRACE.NLM, Copy=..\X25TRACE.NLM, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=X25TRACE.HLP, Backup=X25TRACE.MSG, Copy=..\NLS\4\X25TRACE.HLP, Copy=..\NLS\4\X25TRACE.MSG;
+NetworkPath=SYS:\SYSTEM;
+
+If (NOTEXIST:X25TSM.NLM[1.0.0]{05-10-95}) Backup=X25TSM.NLM, Backup=X25TSM.TDI, Copy=..\X25TSM.NLM, Copy=..\X25TSM.TDI, NetworkPath=SYS:\SYSTEM\NLS\4, Backup=X25TSM.MSG, Copy=..\NLS\4\X25TSM.MSG;
+
+
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:ETHERTSM.NLM[2.32.0]{08-23-94}) Backup=ETHERTSM.NLM, Copy=..\ETHERTSM.NLM;
+If (NOTEXIST:FDDITSM.NLM[2.32.0]{08-23-94}) Backup=FDDITSM.NLM, Copy=..\FDDITSM.NLM;
+If (NOTEXIST:TOKENTSM.NLM[2.32.0]{08-23-94}) Backup=TOKENTSM.NLM, Copy=..\TOKENTSM.NLM;
+
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) If (NOTEXIST:NWSNUT.NLM[4.11.0]{10-17-94}) Backup=NWSNUT.NLM, Copy=..\NWSNUT.NLM;
+If (NW3X) If (NOTEXIST:AFTER311.NLM[4.10.1]{03-29-94}) Backup=AFTER311.NLM, Copy=..\AFTER311.NLM;
+If (NW3X) If (NOTEXIST:A3112.NLM[4.10.1]{03-29-94}) Backup=A3112.NLM, Copy=..\A3112.NLM;
+If (NW3X) If (NOTEXIST:MSM31X.NLM[2.32.0]{08-23-94}) Backup=MSM31X.NLM, Copy=..\MSM31X.NLM;
+
+NetworkPath=SYS:\SYSTEM;
+Spawn=prodver.nlm pscript.dat;
+
+; REPLACE the following spawn commands with COPY config files commands
+;
+;If (UPDATE) Spawn=nwcupdat.nlm;
+
+;If (INSTALL) Spawn=svcdef sys:\system\connect\svcs.def;
+;If (INSTALL) Spawn=svcdef sys:\system\3ps\*.def;
+;if update, svcdef has to be run after the config update program so
+;that the btrieve files are the right format. In some cases (installing on
+;remote existing 3X/4X or upgrade NW4X), the config update program will be
+;run at run time, and so will the svcdef.nlm.
+;NetworkPath=SYS:\SYSTEM\CONNECT;
+;If (UPDATE) If (NW3X) If (NOTEXIST:NWCUCFG3.NLM) NetworkPath=SYS:\SYSTEM, Spawn=svcdef sys:\system\connect\svcs.def;
+;NetworkPath=SYS:\SYSTEM\CONNECT;
+;If (UPDATE) If (NW4X) If (NOTEXIST:NWCUCFG4.NLM) If (NOTEXIST:NWCU1034.NLM) NetworkPath=SYS:\SYSTEM, Spawn=svcdef sys:\system\connect\svcs.def;
+
+If (NW4X) Copy=..\NWCRSRC.BTR;
+If (NW4X) Copy=..\NWCRGRP.BTR;
+If (NW4X) Copy=..\NWCMEM.BTR;
+If (NW4X) Copy=..\NWCUACL.BTR;
+If (NW4X) Copy=..\NWCPACL.BTR;
+If (NW4X) Copy=..\NWCITEM.BTR;
+
+;Spawn the 3X copy config utility
+If (NW3X) Spawn=nwcccfg3.nlm;
+NetworkPath=SYS:\SYSTEM\CONNECT;
+If (NW3X) If (EXIST:PRNSCOPY) NetworkPath=SYS:\SYSTEM\CONNECT\SCRIPTS, Copy=SCRIPTS\PPPRNS.LDF, Copy=SCRIPTS\PPPRNS.ULF;
+
+;3rd party stuff: only need to do this for 3X; for 4X, info is in DB files.
+NetworkPath=SYS:\SYSTEM;
+If (NW3X) Spawn=svcdef sys:\system\3ps\*.def;
+
+;Copy the csaudit config info
+NetworkPath=SYS:\SYSTEM\CSLIB;
+Copy=..\CSLIB\CSAUDIT.DAT;
+
+NetworkPath=SYS:\SYSTEM\AIO;
+If (EXIST:AIONAMES.AIO) Backup=AIONAMES.AIO;
+Copy=..\AIO\AIONAMES.AIO;
+NetworkPath=SYS:\ETC;
+Backup=CSL.CFG, Copy=..\..\ETC\CSL.CFG;
+Backup=NLSP.CFG, Copy=..\..\ETC\NLSP.CFG;
+Backup=NETINFO.CFG, Copy=..\..\ETC\NETINFO.CFG;
+
+;DisplayFile=README.NWC;
+
+NetworkPath=SYS:\SYSTEM;
+If (NEWVERSION) If (NOTMINSTALL) Spawn=nwclic.nlm;
+
+END;
+
+
+

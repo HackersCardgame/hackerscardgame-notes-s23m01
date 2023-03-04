@@ -1,0 +1,154 @@
+[Disks]
+
+d1 = "Promise Ultra Series Driver Diskette", \ultra, \
+d2 = "Promise Ultra Series Driver Diskette", \ultra, \nt4
+d3 = "Promise Ultra Series Driver Diskette", \ultra, \Win2000
+d4 = "Promise Ultra Series Driver Diskette", \ultra, \WinXP
+
+[Defaults]
+
+scsi = Ultra133TX2_xp
+
+[scsi]
+Ultra133TX2_xp  = "WinXP Promise ULTRA133 TX2 (tm) Controller", Ultra
+Ultra100TX2_xp  = "WinXP Promise ULTRA100 TX2 (tm) Controller", Ultra
+Ultra100_xp     = "WinXP Promise ULTRA100 (tm) Controller", Ultra
+Ultra100_xp_2   = "WinXP Promise ULTRA100 (tm) Controller (PDC20265)", Ultra
+Ultra66_xp      = "WinXP Promise ULTRA66 (tm) Controller", Ultra
+Ultra33_xp      = "WinXP Promise ULTRA33 (tm) Controller", Ultra
+Ultra133TX2_nt5 = "Win2000 Promise ULTRA133 TX2 (tm) Controller", Ultra
+Ultra100TX2_nt5 = "Win2000 Promise ULTRA100 TX2 (tm) Controller", Ultra
+Ultra100_nt5    = "Win2000 Promise ULTRA100 (tm) Controller", Ultra
+Ultra100_nt5_2  = "Win2000 Promise ULTRA100 (tm) Controller (PDC20265)", Ultra
+Ultra66_nt5     = "Win2000 Promise ULTRA66 (tm) Controller",  Ultra
+Ultra33_nt5     = "Win2000 Promise ULTRA33 (tm) Controller",  Ultra
+Ultra133TX2     = "WinNT Promise ULTRA133 TX2 (tm) Controller", Ultra
+Ultra100TX2     = "WinNT Promise ULTRA100 TX2 (tm) Controller", Ultra
+Ultra100        = "WinNT Promise ULTRA100 (tm) Controller (PDC20267)", Ultra
+Ultra100_2      = "WinNT Promise ULTRA100 (tm) Controller (PDC20265)", Ultra
+Ultra66         = "WinNT Promise ULTRA66 (tm) Controller",  Ultra
+Ultra33         = "WinNT Promise ULTRA33 (tm) Controller",  Ultra
+
+[Files.scsi.Ultra133TX2]
+driver = d2, Ultra.sys, Ultra
+inf    = d2, Ultra.inf
+
+[Files.scsi.Ultra100TX2]
+driver = d2, Ultra.sys, Ultra
+inf    = d2, Ultra.inf
+
+[Files.scsi.Ultra100]
+driver = d2, Ultra.sys, Ultra
+inf    = d2, Ultra.inf
+
+[Files.scsi.Ultra100_2]
+driver = d2, Ultra.sys, Ultra
+inf    = d2, Ultra.inf
+
+[Files.scsi.Ultra66]
+driver = d2, Ultra.sys, Ultra
+inf    = d2, Ultra.inf
+
+[Files.scsi.Ultra33]
+driver = d2, Ultra.sys, Ultra
+inf    = d2, Ultra.inf
+
+[Files.scsi.Ultra133TX2_nt5]
+driver = d3, Ultra.sys, Ultra
+inf    = d3, Ultra.inf
+catalog = d3, Ultra.cat
+
+[HardwareIds.scsi.Ultra133TX2_nt5]
+id = "PCI\VEN_105A&DEV_4D69","Ultra"
+
+[Files.scsi.Ultra100TX2_nt5]
+driver = d3, Ultra.sys, Ultra
+inf    = d3, Ultra.inf
+catalog = d3, Ultra.cat
+
+[HardwareIds.scsi.Ultra100TX2_nt5]
+id = "PCI\VEN_105A&DEV_4D68","Ultra"
+
+[Files.scsi.Ultra100_nt5]
+driver = d3, Ultra.sys, Ultra
+inf    = d3, Ultra.inf
+catalog = d3, Ultra.cat
+
+[HardwareIds.scsi.Ultra100_nt5]
+id = "PCI\VEN_105A&DEV_4D30&SUBSYS_4D33105A","Ultra"
+
+[Files.scsi.Ultra100_nt5_2]
+driver = d3, Ultra.sys, Ultra
+inf    = d3, Ultra.inf
+catalog = d3, Ultra.cat
+
+[HardwareIds.scsi.Ultra100_nt5_2]
+id = "PCI\VEN_105A&DEV_0D30&SUBSYS_4D33105A","Ultra"
+
+[Files.scsi.Ultra66_nt5]
+driver = d3, Ultra.sys, Ultra
+inf    = d3, Ultra.inf
+catalog = d3, Ultra.cat
+
+[HardwareIds.scsi.Ultra66_nt5]
+id = "PCI\VEN_105A&DEV_4D38&SUBSYS_4D33105A","Ultra"
+
+[Files.scsi.Ultra33_nt5]
+driver = d3, Ultra.sys, Ultra
+inf    = d3, Ultra.inf
+catalog = d3, Ultra.cat
+
+[HardwareIds.scsi.Ultra33_nt5]
+id = "PCI\VEN_105A&DEV_4D33&SUBSYS_00000000","Ultra"
+
+[Files.scsi.Ultra133TX2_xp]
+driver = d4, Ultra.sys, Ultra
+inf    = d4, Ultra.inf
+catalog = d4, Ultra.cat
+
+[HardwareIds.scsi.Ultra133TX2_xp]
+id = "PCI\VEN_105A&DEV_4D69","Ultra"
+
+[Files.scsi.Ultra100TX2_xp]
+driver = d4, Ultra.sys, Ultra
+inf    = d4, Ultra.inf
+catalog = d4, Ultra.cat
+
+[HardwareIds.scsi.Ultra100TX2_xp]
+id = "PCI\VEN_105A&DEV_4D68","Ultra"
+
+[Files.scsi.Ultra100_xp]
+driver = d4, Ultra.sys, Ultra
+inf    = d4, Ultra.inf
+catalog = d4, Ultra.cat
+
+[HardwareIds.scsi.Ultra100_xp]
+id = "PCI\VEN_105A&DEV_4D30&SUBSYS_4D33105A","Ultra"
+
+[Files.scsi.Ultra100_xp_2]
+driver = d4, Ultra.sys, Ultra
+inf    = d4, Ultra.inf
+catalog = d4, Ultra.cat
+
+[HardwareIds.scsi.Ultra100_xp_2]
+id = "PCI\VEN_105A&DEV_0D30&SUBSYS_4D33105A","Ultra"
+
+[Files.scsi.Ultra66_xp]
+driver = d4, Ultra.sys, Ultra
+inf    = d4, Ultra.inf
+catalog = d4, Ultra.cat
+
+[HardwareIds.scsi.Ultra66_xp]
+id = "PCI\VEN_105A&DEV_4D38&SUBSYS_4D33105A","Ultra"
+
+[Files.scsi.Ultra33_xp]
+driver = d4, Ultra.sys, Ultra
+inf    = d4, Ultra.inf
+catalog = d4, Ultra.cat
+
+[HardwareIds.scsi.Ultra33_xp]
+id = "PCI\VEN_105A&DEV_4D33&SUBSYS_00000000","Ultra"
+
+[Config.Ultra]
+
+value = "", Tag, REG_DWORD, 1

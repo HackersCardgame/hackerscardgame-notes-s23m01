@@ -1,0 +1,7 @@
+ntfs
+isofs
+scsi_mod
+aic7xxx
+sd_mod
+sr_mod
+sg

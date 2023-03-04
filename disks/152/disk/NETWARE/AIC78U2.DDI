@@ -1,0 +1,80 @@
+;DrIvEr DeScRiPtIoN
+Version: 2.0
+
+SyntaxVersion: 1.00
+
+  ; File: aic78u2.INF
+
+    Driver aic78u2
+    {   
+        PAR:          2.00
+        Description:  $aic78u2_1
+
+        Help:         $aic78u2_2
+
+        File:         aic78u2.ham
+        OFile:        nwpaload.nlm, nwpa.nlm, nbi.nlm, cdrom.nlm
+
+        PROD:'PCI.9005.001f.*.*.*'
+        PROD:'PCI.9005.005f.*.*.*'
+        PROD:'PCI.9005.0050.*.*.*'
+        PROD:'PCI.9005.0051.*.*.*'
+        PROD:'PCI.9005.0010.*.*.*'
+
+        PROMPT SLOT OPTIONAL
+        {
+        }
+    }
+
+
+DLANG:  4
+;English
+    $aic78u2_1 = "Adaptec AIC-7890 ASPI & SCSI Module"
+    $aic78u2_2 = "When you load the driver, you need to tell it which
+              host adapter you are loading the driver for. This is
+              done with the command line option 'slot=x'. If the
+              option is not entered, you will be prompted to manually
+              enter a value. The interrupt level will be determined 
+              from the PCI configuration."
+
+LANG:   6
+;French
+    $aic78u2_1 = "Adaptec AIC-7890 ASPI & SCSI Module"
+    $aic78u2_2 = "When you load the driver, you need to tell it which
+              host adapter you are loading the driver for. This is
+              done with the command line option 'slot=x'. If the
+              option is not entered, you will be prompted to manually
+              enter a value. The interrupt level will be determined 
+              from the PCI configuration."
+
+LANG:   7
+;German
+    $aic78u2_1 = "Adaptec AIC-7890 ASPI & SCSI Module"
+    $aic78u2_2 = "When you load the driver, you need to tell it which
+              host adapter you are loading the driver for. This is
+              done with the command line option 'slot=x'. If the
+              option is not entered, you will be prompted to manually
+              enter a value. The interrupt level will be determined 
+              from the PCI configuration."
+
+LANG:   8
+;Italian
+    $aic78u2_1 = "Adaptec AIC-7890 ASPI & SCSI Module"
+    $aic78u2_2 = "When you load the driver, you need to tell it which
+              host adapter you are loading the driver for. This is
+              done with the command line option 'slot=x'. If the
+              option is not entered, you will be prompted to manually
+              enter a value. The interrupt level will be determined 
+              from the PCI configuration."
+
+LANG:   14
+;Spanish
+    $aic78u2_1 = "Adaptec AIC-7890 ASPI & SCSI Module"
+    $aic78u2_2 = "When you load the driver, you need to tell it which
+              host adapter you are loading the driver for. This is
+              done with the command line option 'slot=x'. If the
+              option is not entered, you will be prompted to manually
+              enter a value. The interrupt level will be determined 
+              from the PCI configuration."
+
+;DrIvEr DeScRiPtIoN EnD

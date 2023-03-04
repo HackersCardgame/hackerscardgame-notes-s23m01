@@ -1,0 +1,29 @@
+@ title "LANDI02"
+@ tempo  120
+@ tpqn  120
+#  9  0 phrase\house\ebdrp100.mid
+#  1  0 phrase\others\fubsf800.mid
+#  9  64 phrase\house\ebdrp102.mid
+#  2  64 phrase\others\ppbrs101.mid
+#  9  128 phrase\house\rvdrp101.mid
+#  2  128 phrase\others\ppbrs101.mid
+#  9  192 phrase\house\rvdrp101.mid
+#  1  192 phrase\others\fkbss101.mid
+#  3  192 phrase\others\fupfa100.mid
+#  2  192 phrase\others\ppbrs101.mid
+#  9  256 phrase\house\rvdrp101.mid
+#  1  256 phrase\others\fkbss100.mid
+#  2  256 phrase\house\hspfa101.mid
+#  9  320 phrase\house\rvdrp101.mid
+#  1  320 phrase\others\fubss100.mid
+#  2  320 phrase\house\hspfa101.mid
+#  9  384 phrase\house\ebdrp100.mid
+#  1  384 phrase\others\fubss100.mid
+#  2  384 phrase\house\hspfa102.mid
+#  9  448 phrase\house\ebdrp102.mid
+#  1  448 phrase\others\fubss100.mid
+#  9  512 phrase\house\rvdrp101.mid
+#  1  512 phrase\others\fubss100.mid
+#  9  576 phrase\house\rvdrp101.mid
+#  2  576 phrase\house\hspfa101.mid
+

@@ -1,0 +1,84 @@
+Release Note 	: 4
+
+Product Name	: ASPIHDRM.SYS/EXE
+Description	: ASPI Harddisk Driver for DOS
+Version		: Ver 4.03
+Release Date	: 12th July, 1996
+
+Enhanced Features:
+
+	. Support for media with 2KB Sector size format
+
+	. For Removable Media Drives, versions hitherto behaved
+	inconsistently with DOS FORMAT command. The command used
+	to terminate abnormally.
+
+	This problem is solved.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Release Note	: 3	Ver 4.02
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Release Note	: 2	Ver 4.01
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Release Note 	: 1				Date 12/1/95
+
+
+Product Name	: ASPIHDRM.SYS/EXE
+Description	: ASPI Harddisk Driver for DOS
+Version		: Ver 4.00
+Release Date	: 12th January, 1995
+
+Features:
+		. Support for media with 1KB Sector size format
+
+		. the "/L:X" (X - start drive letter) switch for specifying
+		  the start drive letter ( only for ASPIHDRM.EXE)
+		Usage:
+		  ASPIHDRM /L:E
+		  indicates to ASPIHDRM to assign drive letters starting from
+		  'E'.
+
+		. By default supports only Shuttle ASPI Managers. The "/ALL"
+		switch is necessary for supporting third party partitions.
+		Usage:
+		  DEVICE = ASPIHDRM.SYS /ALL
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Release Note :   BETA				Date 3/12/94
+
+
+Product Name	: ASPIHDRM.SYS/EXE
+Description	: ASPI Harddisk Driver for DOS
+Version		: Ver 3.99(á)
+Release Date	: 3rd December, 1994
+
+	The device driver has been upgraded to support hard disks and
+	removable media having 1KBytes per sector. We have tested the
+	product with,
+
+		a) by simulating a hard disk with 1K sector size through
+			ASPI manager.
+		b) a INSITE floptical drive.
+
+	The driver has been released a test version.
+
+	We would like to have your feedback on the test.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Release Note 	: 1				Date 12/1/95
+
+
+Product Name	: MAPSHTL.EXE
+Description	: Shuttle Drives Map
+Version		: Ver 1.00
+Release Date	: 12th January, 1995
+
+Features:
+	. Indicates the drives map of Logical Partitions installed through
+	  Shuttle Fixed and Removable Disk Driver for DOS (ASPIHDRM.SYS/EXE).
+
+	. Enables to change the drive letter, disable a partition from DOS
+	  usage and re-enable it.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -1,0 +1,48 @@
+Documentation for Clock/Cal version 1.2
+Copyright (c) 1993-94 by
+Brian Makuch
+
+Introduction
+------------
+
+  This little program is a simple clock that resembles
+  the clock icon seen on the NeXT computers. I hope you
+  enjoy it.
+  
+  Everything is fairly self explanatory, but a few notes
+  may be necessary. 
+  
+  To denote PM time, a small dot appears in the upper
+  right-hand corner of the time display.
+
+  You can select 24 hour display, whether the icon remains
+  the topmost window, and the position on screen via the system
+  menu. These selections are automatically written to the file
+  CLOCKCAL.INI which will reside in the directory in which the
+  program resides.
+
+
+Legal nonsense
+--------------
+
+  This program is Freeware. As such I retain the copyright,
+  but otherwise free distribution of this program is allowed 
+  and encouraged. I hate to include the following, but... 
+
+  THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. 
+  THE AUTHOR WILL NOT BE HELD LIABLE FOR ANY DAMAGES RELATING TO 
+  THIS SOFTWARE. YOUR USE OF THIS SOFTWARE SHOWS YOUR AGREEMENT 
+  WITH THESE TERMS.
+
+  
+Contacting the Author:
+----------------------
+
+  Should you have any problems/suggestions regarding this  
+  program please feel free to contact me.
+
+
+     CIS: 70004,3033
+Internet: 70004.3033@compuserve.com
+
+

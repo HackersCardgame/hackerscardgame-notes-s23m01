@@ -1,0 +1,18 @@
+
+ V7.20 * CDROM-Benchmark eingebaut
+       * erkennt und unterscheidet nun alle zZ verfÅgbaren Cyrix CPUs,
+         einschlie·lich Cx486Ru, Cx486S, Cx486dx
+       * erkennt Novell DOS 7 und Versionsnummern von dessen EMM386
+         und DPMS Server
+       * erkennt 'Advanced Power Managment' Funktionen auf Laptops
+       * erkennt 'Green BIOS' Funktion auf einigen Mainboards
+       * erkennt nun auch die neueren 'GenuineIntel CPUs' zuverlÑssig
+       * Neues .INI Fileformat. Bitte keine alten .INI Files benutzen
+
+ V7.25 * erkennt DAC Chips auf ATI Ultra VGAs
+       * bessere Windows KompatibilitÑt
+       * erkennt Weitek 9000/9100 & S3 864 Chips
+       * erkennt 486DX/2 wenn CPUID Befehl unterstÅtzt wird
+       * erkennt Intel 486SXJ CPU, TI486SXL CPU
+       * gibt Revision von neueren Cyrix CPUs aus
+

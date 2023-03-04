@@ -1,0 +1,13 @@
+
+
+********************
+*  muLinux HELP   *
+********************
+
+Please, use this disk only to create the various muLinux
+floppies. BASE, EXT, X11, etc ...
+
+THIS FLOPPY DISK IS NOT PART OF THE MULINUX DISTRIBUTION SET, BUT ONLY
+A 1.44 DOS FORMATTED DISK, USEFUL TO RUN AN INSTANCE OF LINUX IN
+YOUR MACHINE, ABLE TO COPY THE IMAGES ON A SET OF FLOPPY DISK SUPERFORMATTED
+AT 1722k

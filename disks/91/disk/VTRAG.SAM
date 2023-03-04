@@ -1,0 +1,622 @@
+[ver]
+	4
+[sty]
+	
+[files]
+[charset]
+	82
+	ANSI (Windows, IBM CP 1252)
+[revisions]
+	0
+[prn]
+	HP DeskJet Series v2.1
+[lang]
+	7
+[desc]
+	
+	
+	
+	
+	
+	720924692
+	1
+	720916054
+	141
+	1
+	0
+	0
+	0
+	0
+	
+	
+	
+	
+	
+	
+	0
+[fopts]
+	0
+	1
+	0
+	0
+[lnopts]
+	2
+	Text Abstand
+	1
+[docopts]
+	5
+	2
+[tag]
+	Text
+	2
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Text
+	0
+	0
+[tag]
+	Text Abstand
+	3
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		277
+		2
+		0
+		277
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Text Abstand
+	0
+	0
+[tag]
+	Markierung
+	4
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		0
+		288
+		288
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*0>
+		360
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Markierung
+	0
+	0
+[tag]
+	Markierung 1
+	5
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		288
+		288
+		288
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*5>
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Markierung 1
+	0
+	0
+[tag]
+	Nr. Liste
+	6
+	[fnt]
+		Arial
+		240
+		0
+		49152
+	[algn]
+		1
+		2
+		360
+		360
+		360
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*:>.
+		360
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Nr. Liste
+	0
+	0
+[tag]
+	Unter Titel
+	7
+	[fnt]
+		Arial
+		240
+		0
+		16387
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		2
+		72
+		72
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		2
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Unter Titel
+	0
+	0
+[tag]
+	Titel
+	8
+	[fnt]
+		Arial
+		360
+		0
+		16385
+	[algn]
+		4
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		446
+		2
+		144
+		72
+		2
+		100
+	[brk]
+		16
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		1
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Titel
+	0
+	0
+[lay]
+	Standard
+	516
+	[rght]
+		16839
+		11907
+		2
+		285
+		1440
+		2
+		1440
+		222
+		0
+		1
+		0
+		1
+		0
+		2
+		1
+		285
+		11685
+		12
+		1
+		720
+		1
+		1440
+		1
+		2160
+		1
+		2880
+		1
+		3600
+		1
+		4320
+		1
+		5040
+		1
+		5760
+		1
+		6480
+		1
+		7200
+		1
+		7920
+		1
+		8640
+	[hrght]
+	[lyfrm]
+		1
+		11200
+		0
+		0
+		11907
+		1440
+		0
+		1
+		3
+		1 0 0 0 0 0 0
+		0
+		0
+		1
+	[frmlay]
+		1440
+		11907
+		1
+		1440
+		73
+		2
+		623
+		1440
+		0
+		1
+		0
+		1
+		1
+		0
+		1
+		1440
+		10465
+		1
+		3
+		9360
+	[txt]
+>
+	[frght]
+	[lyfrm]
+		1
+		13248
+		0
+		15399
+		11907
+		16839
+		0
+		1
+		3
+		1 0 0 0 0 0 0
+		0
+		0
+		2
+	[frmlay]
+		16839
+		11907
+		1
+		1440
+		623
+		2
+		15472
+		1440
+		0
+		1
+		0
+		1
+		1
+		0
+		1
+		1440
+		10465
+		2
+		2
+		4680
+		3
+		9360
+	[txt]
+>
+[elay]
+[l1]
+	0
+[pg]
+	1
+	17 0 22 1025 0 0 0 65535 65535 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0
+[edoc]
+<:s><:#283,11400><*:><+#><+!>Mein Hobby ist der Computer<-!><-#>
+
+<:s><:#274,11400>
+
+<:s><:#283,11400><+!>Wie Kam ich dazu?<-!>
+
+<:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#3014,11400>Im Jahre 1985 schenkte mein Onkel meinem Vater einen C64. Einer der ersten Computer der sich jeder normale B<\|>rger leisten konnte. 
+<:f280, Arial,0,0,0><:f320, Arial,0,0,0><:f360, Arial,0,0,0><:f400, Arial,0,0,0><:f440, Arial,0,0,0><:f480, Arial,0,0,0><:f520, Arial,0,0,0><:f560, Arial,0,0,0><:f600, Arial,0,0,0><:f640, Arial,0,0,0><:f680, Arial,0,0,0><:f720, Arial,0,0,0><:f760, Arial,0,0,0>
+<:f800, Arial,0,0,0><:f840, Arial,0,0,0><:f>Mein Vater erkl<\d>rte mir wie der Computer funktioniert. Ich war begeistert, in meiner Freizeit spielte ich oft auf dem Computer, doch mit der Zeit langweilten mich die Spiele. Ich fing an selbst Programme auf de
+m Computer zu schreiben. Am Anfang einfache, dann immer schwierigere Programme. 1987 kaufte sich mein Vater f<\|>r 5000Fr. einen PC 80286'er (Personal Computer) der damals einer der besten Heimcomputer war. Heute ist es einer der langsamsten Computer und ni
+cht einmal mehr 1000Fr. wert. Jetzt war f<\|>r mich der C64 nicht mehr interessant. Ich programmierte nun auf dem PC weil er viel schneller als der C64 war. Ich mu<\_>te nun wider neu beginnen weil es auf dem PC eine ganz andere Programmiersprache als auf d
+em C64 hatte. Die Programmiersprache ist ein Programm zum Programme schreiben. Mit zehn Jahren schenkte mir mein Onkel einen PC 8086'er den er nicht mehr brauchte weil er zu langsam war. Jetzt konnte ich programmieren wann ich wollte.
+
+<:s><:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#274,11400>
+
+<:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#283,11400><+!>Was ist ein Computervirus?<-!>
+
+<:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#3562,11400>Ein Computervirus ist ein kleines Programm, da<\_> sich vervielfacht. Es gibt Viren die an einem bestimmten Tag, z.B. Freitag den 13, Daten d.h. Programme zerst<\v>rt oder andre die um eine bestimmte Uhrzeit eine Melodie spielt. Auf dem PC gibt es 
+<\|>ber 200 Viren. Die Viren werden durch austauschen von Spielen oder Programmen 
+<\|>bertragen ob aus b<\v>sem willen oder aus Unwissenheit. Ich hatte auch schon Viren auf dem Computer. Kipfi gab mir einige Computerspiele, ich fragte ihn ob auf der Diskette kein Virus sei er garantierte mir da<\_> sicher kein Virus auf der Diskette sei.
+ Ich startete das Spiel und es funktionierte. Ich dachte, da<\_> kein Virus auf der Diskette ist. Doch wie erschrak ich, als ich ein Programm von meinem Vater starten wollte und nichts passierte. Es mu<\_> wohl doch einen Virus auf der Diskette sein und der
+ war jetzt im Computer meines Vaters. Als mein Vater von der Arbeit nach Hause kam sagte ich es meinem Vater. Er suchte mit dem Virensuchprogramm nach Viren und fand den Flipp Virus. Dieser Virus kostete meinen Vater ca. 500Fr. Seitdem teste ich jede Disket
+te die ich bekomme zuerst. was sich dann auch bewehrte als mir Evi ein Spiel gab. Ich fand denn Stoned Virus und konnte ihn l<\v>schen ohne da<\_> er schaden anstellen konnte.
+
+<:s><:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#274,11400>
+
+<:s><:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#283,11400><+!>Woher kommt der Computer?<-!>
+
+<:s><:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#274,11400>Die Geschichte des Computers oder der Rechenmaschine reicht zur<\|>ck bi<\_> in das Jahr 1100 v.Chr.
+
+<:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#2466,11400>Ein unbekannter Ingenieur erfand im 1100 v. Chr. den Abakus. 1623 erfand Wilhelm Schickhard eine mechanische Rechenmaschine f<\|>r die vier Grundrechenarten. Dann um 1900 werden die ersten elektrischen Computer gebaut. Einer der ersten ist der ZUSE Z3 der 1
+5 - 20 Additionen pro Sekunde bew<\d>ltigt. 1944 entwickelt der Amerikaner H. Aiken dem MARK 1 der eine Multiplikation in 6 Sekunden mit gro<\_>em Krach rechnen kann. John Bardeen, Walter H. Brattain und William Bradford Shockley erfinden im Jahre 1947 den 
+Transistor ohne den es Heute keinen so schnellen und kleinen Computer g<\d>be. 1955 wird an der ETH in Z<\|>rich der ERMETH Computer entwickelt welcher Heute im Technorama in Wintertur steht. Der erste Chip mit 1000 Transistoren wird 1969 hergestellt. Heute
+ passen rund 1 Mio Transistoren auf einen Chip der 8mm auf 10mm misst.
+
+<:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,>
+
+<:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><+!><+#>Soft- und Hardware<-#><-!>
+
+<:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,>  
+
+<:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><+!><+#>Windows<-#><-!>
+
+<:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,>
+
+<:R1,12,1,720,1,1425,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><+!><+#>Lucasfilmgames<-#><-!>
+
+>
+
+[Embedded]
+00009080

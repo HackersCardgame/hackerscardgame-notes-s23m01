@@ -1,0 +1,27 @@
+PROGRAMMNAME: WINLOGO
+VERSION     : 2.12
+AUTOR       : Dr. A. Olowofoyeku.
+SPRACHE     : E
+RUBRIK      : Tools
+SYSTEM      : Windows
+BESCHREIBUNG: Neues Startuplogo in Windows einbinden
+
+
+
+WinLOGO: to change the Windows startup logo.
+This program is a "bound" Windows and DOS
+program (i.e., it contains both a DOS and
+a Windows module, built into the .EXE file).
+The Windows startup logo is just a bitmap
+file in "RLE 4" format, which is built by
+the Windows setup program into WIN.COM.
+To change the Windows startup logo, all you
+need to do is to create your own bitmap in
+"RLE 4" format, and then select it from the
+Winlogo menu. Winlogo does the rest - it
+takes only about 1 second. Winlogo builds
+a new Windows .COM file called WINCHG.COM.
+Run this, instead of WIN.COM, and you will
+see your new logo. It is as easy as that!
+Winlogo is shareware. Registration costs
+7.50 pounds Sterling; or $10.50 (U.S.).

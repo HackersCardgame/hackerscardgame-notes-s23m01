@@ -1,0 +1,79 @@
+; Filename: connect.001	   CONNECT install files, remote node client files
+BackupPath=SYS:\SYSTEM\BACKUP;
+
+
+NetworkPath=SYS:\SYSTEM;
+
+If (EXIST:NASU.NLM) Message=Warning: If this is a Connect 1.0 to 2.0 update  please reboot the target server after the installation.;
+
+;cleanup Connect 1.0 files that are no longer used
+If (UPDATE) Remove=AIOCON.HLP;
+If (UPDATE) Remove=AIOMON.HLP;
+If (UPDATE) Remove=AIOMON.NLM;
+If (UPDATE) Remove=ARASCON.HLP;
+If (UPDATE) Remove=CSAUDIT.HLP;
+If (UPDATE) Remove=CSINSTAL.HLP;
+If (UPDATE) Remove=NASS.NLM;
+If (UPDATE) Remove=NASU.NLM;
+If (UPDATE) Remove=NCSCNVRT.NLM;
+If (UPDATE) Remove=NCSCON.HLP;
+If (UPDATE) Remove=NWCCLEAN.NLM;
+If (UPDATE) Remove=NWCCNFG.TXT;
+If (UPDATE) Remove=NWCCNVRT.NLM;
+If (UPDATE) Remove=NWCCON.HLP;
+If (UPDATE) Remove=NWCLIC.HLP;
+If (UPDATE) Remove=NWCNCF.HLP;
+If (UPDATE) Remove=NWCNCF.NLM;
+If (UPDATE) Remove=NWCNCFRM.NLM;
+If (UPDATE) Remove=NWCSTAT.HLP;
+If (UPDATE) If (NOTEXIST:RNS.LAN[2.0.0]) Remove=RNS.LAN;
+NetworkPath=SYS:\SYSTEM\CONNECT;
+If (UPDATE) Remove=CSINSTAL.HLP;
+NetworkPath=SYS:\SYSTEM\NCS;
+If (UPDATE) Remove=INT14MGR.CWA;
+If (UPDATE) Remove=INT14MGR.HLP;
+If (UPDATE) Remove=NASIDIAG.HLP;
+If (UPDATE) Remove=SYS_ERR.DTA;
+If (UPDATE) Remove=SYS_HELP.DTA;
+If (UPDATE) Remove=SYS_MSG.DTA;
+
+;NetworkPath=SYS:\SYSTEM\AIO;
+;If (EXIST:AIONAMES.AIO) Ask=Do you want to delete the AIONAMES.AIO file? 'No' may prevent automatic detection of ports.;
+;If (YESResponse) Remove=AIONAMES.AIO;
+
+NetworkPath=SYS:\SYSTEM\CONNECT;
+Copy=PRODUCT.DEF;
+Copy=CONNECT\CONNECT.001;
+Copy=CONNECT.RMV;
+Copy=PIREADME.TXT;
+
+NetworkPath=SYS:\SYSTEM\REMOTE;
+Copy=CMPQ_RUN.OVL;
+Copy=CONNECT.BAT;
+Copy=CONNECT.INS;
+Copy=IBM_RUN.OVL;
+Copy=INS0762.LIB;
+Copy=INSTALL.EXE;
+If (EXIST:INSTALL.MSG) Remove=INSTALL.MSG;
+Copy=NWUNPACK.EXE;
+Copy=PACK.EXE;
+Copy=PACKING.LST;
+Copy=SETUP.EXE;
+Copy=SETUP.INS;
+Copy=TEXTUTIL.IDX;
+Copy=USER.RSP;
+Copy=_RUN.OVL;
+
+NetworkPath=SYS:\SYSTEM\REMOTE\NLS\ENGLISH;
+Copy=NLS\ENGLISH\INSTALL.MSG;
+Copy=NLS\ENGLISH\TEXTUTIL.HEP;
+Copy=NLS\ENGLISH\TEXTUTIL.MSG;
+
+NetworkPath=SYS:\SYSTEM;
+If (NOTEXIST:CSSYSMSG.NLM[1.0.21]{03-07-95})  Copy=CSSYSMSG.NLM, NetworkPath=SYS:SYSTEM\NLS\4, Copy=NLS\4\CSSYSMSG.HLP, Copy=NLS\4\CSSYSMSG.MSG;
+
+NetworkPath=SYS:\SYSTEM\CONNECT\NLS\4;
+Copy=NLS\4\PINSTALL.HLP;
+Copy=NLS\4\PINSTALL.MSG;
+
+

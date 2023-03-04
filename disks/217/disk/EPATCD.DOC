@@ -1,0 +1,222 @@
+///////////////////////////////////////////////////////////////////////
+Release Note	: 11
+Driver name	: EPATCD.SYS/EXE
+Version No.	: 5.23
+Release Date	: 12th July, 1996
+
+Big fixes :
+ 
+	(1) The following bug is fixed :
+
+		(A) "SONY CDU76E nad GoldStar 4X drives do not load
+		as MASTER drives, after a cold boot"
+
+	(2) Drivers (DOS) are validated for SHTLMAN in both MASTER
+	and SLAVE modes.
+
+
+///////////////////////////////////////////////////////////////////////
+;///////////////////////////////////////////////////////////////////////
+; Release Note	: 10
+; Driver name	: EPATCD.SYS/EXE
+; Version No.	: 5.22
+; Release Date	: 15th June, 1996
+;
+; Advances :
+; 
+;	(1) Copyright Message has been changed.
+;
+;	(2) EPAT Plus Chip supported.
+;
+;	(3) With certain CD-ROM drives (eg. Hitachi 6X, Chinon 6X),
+;
+;	In SPP Modes, after loading the driver, when ASPICD
+;	was loaded, the system used to carsh.
+;
+;	This problem is solved.
+;
+;	(4) Under OS/2, in SPP mode, the system generates trap
+;	during booting.
+;
+;	This problem is solved.
+;
+;	(5) Device Reset pulse width increased to approximately 100mS.
+;	This is to support Vertose 2X CD drive. (Switch '/Vx', where 'x'
+;	is drive ID, 0-MASTER, 1-SLAVE, should be used for this drive.)
+;
+;	(6) Shuttle Select/Deselect is made faster, thereby performance
+;	is improved.
+;
+;	(7) Pass-thru junk printing (eg. HP laser jet) problem solved.
+;
+;	(8) Pass-thru printing with '/DI' (under WIN95) is better.
+;
+;///////////////////////////////////////////////////////////////////////
+;///////////////////////////////////////////////////////////////////////
+; Release Note	: 9
+; Driver name	: EPATCD.SYS/EXE
+; Version No.	: 5.20
+; Release Date	: 20th May, 1996
+;
+; New Chipset support :
+;    TPIM Layer updated with changes for new chipset support
+;   and other chipset related issues.
+;
+;    (1) VLSI Eagle Chipset
+;    (2) SMC 93X Chipset
+;    (3) SMC 669 Chipset
+;    (4) Appropriate EPP mode (1.9/1.7) selection, which implements
+;        better hardware characteristics, is provided.
+;
+;    Note: List of NS Chipsets Supported.
+;
+;          NS 87303, NS 87306, NS 87322, NS 87332
+;          NS 87334 (Rev 0) (Will Not init to EPP)
+;          NS 87334 (Rev 2), NS 87336, NS 87338
+;
+; Bug Fixes :
+;
+;   With certain CD-ROM drives (eg. Hitachi 6X, Chinon 6X),
+;
+;	After loading the driver, when ASPICD was loaded, the system
+;	used to carsh.
+;
+;   Under OS/2, the system generates trap during booting.
+;
+;	This problem has been solved for EPP modes. In SPP mode it
+;	still persists.
+;
+;///////////////////////////////////////////////////////////////////////
+;///////////////////////////////////////////////////////////////////////
+; Release Note	: 8
+; Driver name	: EPATCD.SYS/EXE
+; Version No.	: 5.20 DT5
+; Release Date	: 2nd April, 1996
+;
+; Fixes :
+;	During first load after power-on, the driver did not load with certain
+;	drives with SONY 76E, TEAC 6X, GoldStar 6X for the want of more 
+;	post-reset delay. This delay has been increased to 4 seconds.
+;
+;///////////////////////////////////////////////////////////////////////
+;///////////////////////////////////////////////////////////////////////
+; Release Note	: 7
+; Driver name	: EPATCD.SYS/EXE
+; Version No.	: 5.10
+; Release Date	: 25th Jan, 1996
+; Advances and fixes :
+;
+;	(1) Generic EPP Dword support provided.
+;
+;	(2) EPATI and EPEZ adapters now share the same driver.
+;
+;	(3 Support of multiple-parallel-ports even with similar adapters
+;	provided in this version.
+;
+;	(4) The /PORT:, /P: and /IRQ: switches have been added to
+;	enable the forcing of the PortBase and IrqNumber values from
+;	the command-line.
+;
+;///////////////////////////////////////////////////////////////////////
+;///////////////////////////////////////////////////////////////////////
+; Release Note	: 6
+; Driver name	: EPATCD.SYS/EXE
+; Version No.	: 5.00
+; Release Date	: 12th Dec, 1995
+; Advances	:
+;
+;	Updated with the latest	TPIM Library files.
+;
+;///////////////////////////////////////////////////////////////////////
+
+;///////////////////////////////////////////////////////////////////////
+; Release Note	: 5
+; Driver name	: EPATCD.SYS/EXE
+; Version No.	: 4.99 (á10.1)
+; Release Date	: 12th Sept, 1995
+; Observations	:
+; Fix		: SONY CDU55D gives the following sense during ReadSenseAgain
+;		  when the drive is initialising the medium;
+;			Unit Attention + Not Ready.
+;		  This caused missing of 'Medium Change' information.
+;		  This problem is fixed.
+;///////////////////////////////////////////////////////////////////////
+
+;///////////////////////////////////////////////////////////////////////
+; Release Note	: 4
+; Driver name	: EPATCD.SYS/EXE
+; Version No.	: 4.99 (á10)
+; Release Date	: 10th Sept, 1995
+; Changes	:
+;
+;		1. Improper detected mode in Epson 15 Mhz machine.
+;			XOR CheckSum approach for Transfer mode optimization. 
+;
+;		2. Ast Ascentia - crashing problem.
+;
+; Observations	:
+;
+;		: ACER CD-525E Drive is found to behave as MASTER drive ONLY
+;		  when jumper marked 'MA' is closed. Otherwise (ie. if jumper
+;		  marked 'SL' is closed OR both 'MA' and 'SL' are open) the
+;		  drive can be accessed as SLAVE only.
+;
+;		: ECS Vertos 300SSD, Requires a hard reset before sign. read.
+;		  The same was implemented.
+;///////////////////////////////////////////////////////////////////////
+
+;///////////////////////////////////////////////////////////////////////
+; Release Note	: 3
+; Driver name	: EPATCD.SYS/EXE
+; Version No.	: 4.99 (á8.1)
+; Release Date	: 21th Sept, 1995
+; Bugs		:
+;		: Access to Multi-Session CDs creats a hang situation. (20/9)
+;	Status	: Fixed (21/9)
+;	Expln	: Function 'MemCmp' which is required was discarded after
+;		; init.
+;///////////////////////////////////////////////////////////////////////
+
+;///////////////////////////////////////////////////////////////////////
+; Release Note	: 2
+; Driver name	: EPATCD.SYS/EXE
+; Version No.	: 4.99 (á8)
+; Release Date	: 19th Sept, 1995
+; modifications	: Prevent Allow Medium Removable implemented
+;		: Read TOC bug for Slave drives fixed
+;		: cur_off(seg)_ptr saved in ASPICOM during Request Sense
+;		: Xfer mode name display in Shtlman corrected
+;		: Command line R/W mode specifiers rectified
+;		: Forcing EPP switches on IBM PS/2 solved
+;		: If second sense is non-zero, first sense is ignored
+;
+; Known Problems: With Thoshiba Model No. XM5302B -
+;		  After playing CD-I, if an audio CD is played (through
+;		  CDMUSIC,etc.,), it results an error. If the drive is powered
+;		  up again, it works normally.
+;
+;		  With Sony CDU-76E (Quad Speed) -
+;		  When the drive is initializing itself (after inserting the
+;		  medium or otherwise), as indicated by BUSY indicator, if any
+;		  command is attempted, the drive is found to stop responding
+;		  to driver calls. The driver returns 'NOT READY' error after
+;		  a few moments. But the drive regains normalcy, only after
+;		  it is powered up again.
+;
+;		  With Recorded CDs (CD-R) -
+;		  It is our observation that the CD-ROM drives will spend
+;		  longer than normal once a CD-R medium is inserted. The
+;		  reason might be that 'the recovery of TOC' is more time
+;		  consuming.
+;
+; Status	: The testing of the drivers is in progres. Preleminary tests
+;		  with various drives and also Shtlman suggest satisfactory
+;		  behaviour of the drivers.
+;///////////////////////////////////////////////////////////////////////
+
+;///////////////////////////////////////////////////////////////////////
+; Release Note	: 1
+; Driver name	: EPATCD.SYS/EXE
+; Version No.	: 4.99 (á5)
+; Release Date	: 8th Sept, 1995
+;///////////////////////////////////////////////////////////////////////

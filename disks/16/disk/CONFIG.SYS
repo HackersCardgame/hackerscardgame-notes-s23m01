@@ -1,0 +1,46 @@
+[menu]
+menuitem=SETUP_CD, Windows 98 Setup von CD-ROM starten.
+menuitem=CD, Computer mit CD-ROM-UnterstÅtzung starten.
+menuitem=NOCD, Computer ohne CD-ROM-UnterstÅtzung starten.
+menudefault=SETUP_CD,30
+menucolor=7,0
+
+[SETUP_CD]
+device=himem.sys /testmem:off
+device=oakcdrom.sys /D:oemcd001 
+device=btdosm.sys 
+device=flashpt.sys
+device=btcdrom.sys /D:oemcd001
+device=aspi2dos.sys
+device=aspi8dos.sys
+device=aspi4dos.sys
+device=aspi8u2.sys
+device=aspicd.sys /D:oemcd001
+
+[CD]
+device=himem.sys /testmem:off
+device=oakcdrom.sys /D:oemcd001 
+device=btdosm.sys 
+device=flashpt.sys
+device=btcdrom.sys /D:oemcd001
+device=aspi2dos.sys
+device=aspi8dos.sys
+device=aspi4dos.sys
+device=aspi8u2.sys
+device=aspicd.sys /D:oemcd001
+
+[NOCD]
+device=himem.sys /testmem:off
+
+[COMMON]
+device=display.sys con=(ega,,1)
+country=049,850,country.sys
+install=mode.com con cp prepare=((850) ega.cpi)
+install=mode.com con cp select=850
+install=keyb.com gr,,keyboard.sys
+files=60
+buffers=20
+dos=high,umb
+stacks=9,256
+lastdrive=z
+

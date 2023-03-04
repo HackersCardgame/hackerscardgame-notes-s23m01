@@ -1,0 +1,106 @@
+*********************************
+Date   : Fri May 24 07:08:37 2002
+Error Number: (437)
+Message: Aus Datei kann nicht gelesen werden
+Version: 7.00 (Mar 27 2001, Build=245)
+License: XQ199905
+Command line arguments:
+Active Switches :
+       Aufteilen
+ProgMode            : PROG_LOCAL
+PathName            : 
+DumpFile            : D:\STD29090.GHO
+DumpPos             : 163840
+FlagImplode         : 0
+FlagExplode         : 7
+
+Mouse IRQ Status    : Not in IRQ(0)
+Program Call Stack
+main
+sub_main
+AttemptOperation
+CopyMainline
+CopyFileToDisk
+CopyAllPartitions
+ProcessAllPartitions
+CopyPartition
+ReadDumpHeader
+DumpRead
+Generic_Abort
+
+
+Start heap available: 799129600
+Cur   heap available: 731758592
+Total Memory:         802013184
+
+Fat details:
+
+NTFS details:
+----------------
+
+NTFS Global Flags:
+----------------
+	 contiguousWrite=1 forceDiskClusterMapping=0 
+	 inhibitCHKDSK=1 ignoreBadLog=0 ignoreCHKDSKBit=0
+	 enable_cache=0 xfrbuflen=0 
+	 last_attr_type = 0 
+----------------
+
+Disk Info :
+  remote.............0
+  drive..............80
+  sectors_used.......39873204
+  estimated_used.....9619195
+  pemax..............2
+  Version............600
+
+ # RFolge Boot ID Erw Erste    Nr.      Letzte     belegt     NTFS
+ 0   0   80 b  Nein 00000063 11727387 11727450 01440442 Nein
+ 1   1    0 7  Ja  11727513 28145817 39873330 10538048 Ja
+
+Disk Info :
+  remote.............0
+  drive..............80
+  sectors_used.......32772600
+  estimated_used.....0
+  pemax..............2
+  Version............0
+
+ # RFolge Boot ID Erw Erste    Nr.      Letzte     belegt     NTFS
+ 0   0   80 b  Nein 00000063 08193087 08193150 01440442 Nein
+ 1   1    0 7  Ja  08193213 24579387 32772600 10538048 Ja
+
+Drive 128 QUANTUM FIREBALLlct10 20 974004820578
+
+Int 13h
+Total Sectors     16450560
+Bytes per Sector  512
+MB                8032
+Cylinders         1024
+Heads             255
+Sectors per Track 63
+
+Extended Int 13h
+Total Sectors     39876480
+Bytes per Sector  512
+MB                19470
+
+IDE using PIO
+Total Sectors     39876480
+Bytes per Sector  512
+MB                19470
+Cylinders         16383
+Heads             16
+Sectors per Track 63
+
+IDE using UDMA (Active)
+Total Sectors     39876480
+Bytes per Sector  512
+MB                19470
+Cylinders         16383
+Heads             16
+Sectors per Track 63
+
+Remote Drives
+AsyncIo : 0
+*********************************

@@ -1,0 +1,167 @@
+SyntaxVersion: 1.00
+
+	Driver ASPICD_DESCR
+	{
+		Description: $ASPICD_1
+			     
+		Help:	     $ASPICD_2
+
+		ParameterVersion:   1.01
+		File:		    ASPICD.DSK
+
+		LIST ParameterStamp
+		{
+			Description: $ASPICD_3
+
+			Help:	     $ASPICD_4
+
+			ChoiceDescription: $ASPICD_5
+			Choice:		   ''
+
+			Default:	   1
+			OutputFormat:	   '%s'
+		}
+	}
+
+
+
+DLANG:	4
+;English
+	$ASPICD_1 = "Adaptec CD-ROM (ASPI Compatible) Driver"
+	$ASPICD_2 = "Use this driver with AHA154x, AHA164x, 
+			      AHA174X, AIC777x, or AIC787x device driver.
+			      This driver will only register a CD-ROM
+			      device with Netware.\n\n
+
+			      The default options will correct for the Host
+			      Servers with more than 16 Meg of memory.  The
+			      driver has a read ahead buffer that defaults
+			      to 4k, but can be changed to 8K, 16k or 32K.
+			      Use the option listed below to modify the
+			      default read ahead buffer."
+	$ASPICD_3 = "Read ahead buffer"
+	$ASPICD_4 = "Use this option to tune the CD-ROM
+                                      device to obtain the maximum transfer
+                                      rate.  The read ahead buffer defaults
+                                      to 4K bytes.  This default is for
+                                      device that have a built in buffer on
+                                      the device.  The read ahead buffer can
+                                      be changed to allow 8K, 16K, or 32K
+                                      byte buffer to be used for the transfer
+                                      buffer.  Any number can be inserted,
+                                      but that value will be adjusted to one
+                                      of the four values listed above."
+	$ASPICD_5 = "readbuff=xx"
+
+LANG:	6
+;French
+	$ASPICD_1 = "Adaptec CD-ROM (ASPI Compatible) Driver"
+	$ASPICD_2 = "Use this driver with AHA154x, AHA164x, 
+			      AHA174X, AIC777x, or AIC787x device driver.
+			      This driver will only register a CD-ROM
+			      device with Netware.\n\n
+
+			      The default options will correct for the Host
+			      Servers with more than 16 Meg of memory.  The
+			      driver has a read ahead buffer that defaults
+			      to 4k, but can be changed to 8K, 16k or 32K.
+			      Use the option listed below to modify the
+			      default read ahead buffer."
+	$ASPICD_3 = "Read ahead buffer"
+	$ASPICD_4 = "Use this option to tune the CD-ROM
+                                      device to obtain the maximum transfer
+                                      rate.  The read ahead buffer defaults
+                                      to 4K bytes.  This default is for
+                                      device that have a built in buffer on
+                                      the device.  The read ahead buffer can
+                                      be changed to allow 8K, 16K, or 32K
+                                      byte buffer to be used for the transfer
+                                      buffer.  Any number can be inserted,
+                                      but that value will be adjusted to one
+                                      of the four values listed above."
+	$ASPICD_5 = "readbuff=xx"
+
+LANG:	7
+;German
+	$ASPICD_1 = "Adaptec CD-ROM (ASPI Compatible) Driver"
+	$ASPICD_2 = "Use this driver with AHA154x, AHA164x, 
+			      AHA174X, AIC777x, or AIC787x device driver.
+			      This driver will only register a CD-ROM
+			      device with Netware.\n\n
+
+			      The default options will correct for the Host
+			      Servers with more than 16 Meg of memory.  The
+			      driver has a read ahead buffer that defaults
+			      to 4k, but can be changed to 8K, 16k or 32K.
+			      Use the option listed below to modify the
+			      default read ahead buffer."
+	$ASPICD_3 = "Read ahead buffer"
+	$ASPICD_4 = "Use this option to tune the CD-ROM
+                                      device to obtain the maximum transfer
+                                      rate.  The read ahead buffer defaults
+                                      to 4K bytes.  This default is for
+                                      device that have a built in buffer on
+                                      the device.  The read ahead buffer can
+                                      be changed to allow 8K, 16K, or 32K
+                                      byte buffer to be used for the transfer
+                                      buffer.  Any number can be inserted,
+                                      but that value will be adjusted to one
+                                      of the four values listed above."
+	$ASPICD_5 = "readbuff=xx"
+
+LANG:	8
+;Italian
+	$ASPICD_1 = "Adaptec CD-ROM (ASPI Compatible) Driver"
+	$ASPICD_2 = "Use this driver with AHA154x, AHA164x, 
+			      AHA174X, AIC777x, or AIC787x device driver.
+			      This driver will only register a CD-ROM
+			      device with Netware.\n\n
+
+			      The default options will correct for the Host
+			      Servers with more than 16 Meg of memory.  The
+			      driver has a read ahead buffer that defaults
+			      to 4k, but can be changed to 8K, 16k or 32K.
+			      Use the option listed below to modify the
+			      default read ahead buffer."
+	$ASPICD_3 = "Read ahead buffer"
+	$ASPICD_4 = "Use this option to tune the CD-ROM
+                                      device to obtain the maximum transfer
+                                      rate.  The read ahead buffer defaults
+                                      to 4K bytes.  This default is for
+                                      device that have a built in buffer on
+                                      the device.  The read ahead buffer can
+                                      be changed to allow 8K, 16K, or 32K
+                                      byte buffer to be used for the transfer
+                                      buffer.  Any number can be inserted,
+                                      but that value will be adjusted to one
+                                      of the four values listed above."
+	$ASPICD_5 = "readbuff=xx"
+
+LANG:	14
+;Spanish
+	$ASPICD_1 = "Adaptec CD-ROM (ASPI Compatible) Driver"
+	$ASPICD_2 = "Use this driver with AHA154x, AHA164x, 
+			      AHA174X, AIC777x, or AIC787x device driver.
+			      This driver will only register a CD-ROM
+			      device with Netware.\n\n
+
+			      The default options will correct for the Host
+			      Servers with more than 16 Meg of memory.  The
+			      driver has a read ahead buffer that defaults
+			      to 4k, but can be changed to 8K, 16k or 32K.
+			      Use the option listed below to modify the
+			      default read ahead buffer."
+	$ASPICD_3 = "Read ahead buffer"
+	$ASPICD_4 = "Use this option to tune the CD-ROM
+                                      device to obtain the maximum transfer
+                                      rate.  The read ahead buffer defaults
+                                      to 4K bytes.  This default is for
+                                      device that have a built in buffer on
+                                      the device.  The read ahead buffer can
+                                      be changed to allow 8K, 16K, or 32K
+                                      byte buffer to be used for the transfer
+                                      buffer.  Any number can be inserted,
+                                      but that value will be adjusted to one
+                                      of the four values listed above."
+	$ASPICD_5 = "readbuff=xx"
+

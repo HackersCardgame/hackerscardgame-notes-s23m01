@@ -1,0 +1,96 @@
+[ver]
+	4
+[sty]
+	_DEFAULT.STY
+[files]
+[charset]
+	82
+	ANSI (Windows, IBM CP 1252)
+[revisions]
+	0
+[prn]
+	HP LaserJet IIIP
+[port]
+	LPT1:
+[lang]
+	7
+[desc]
+	
+	
+	
+	
+	
+	787031725
+	3
+	787021164
+	90
+	1
+	0
+	0
+	0
+	0
+	
+	
+	
+	
+	
+	
+	1
+[fopts]
+	0
+	1
+	0
+	0
+[lnopts]
+	2
+	Text Abstand
+	1
+[docopts]
+	5
+	2
+[GramStyle]
+	
+[l1]
+	0
+[pg]
+	1
+	16 0 11 1025 0 0 0 65535 2 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0 0
+[edoc]
+<:#442,9025><:f400,BArial,><+#>Le petite prince<-#><:f>
+
+<:#360,9025><:f320,BArial,>
+
+<+@><:S+-1><:f280,BArial,>Quelques chauses tu vois avec les yeux des auters avec le<:f280,,><:f280,BArial,> c</\><:>ur. J'ai pris cette philosophie (f) parce que je pense aussi qu'on ne peut pas voire tous avec les yeux. 
+<:f280,,><:f280,BArial,>Quelques chauses on peut voire seulement avec le c<:f280,,><:f280,BArial,></\><:>ur. 
+<:f280,,><:f280,BArial,0,0,0>
+
+<+@><:S+-1><:f280,BArial,><:f280,,>
+
+<+@><:S+-1><:f280,BArial,>
+
+<+@><:S+-1><:f280,BArial,>
+
+<+@><:S+-1><:f280,BArial,><:f280,,><:f280,BArial,>
+
+<+@><:S+-1><:f280,BArial,>
+
+<+@><:S+-1><:f280,BArial,><:f280,,><:f280,BArial,>
+
+<+@><:S+-1><:f280,BArial,>
+
+<+@><:S+-1><:f280,BArial,>
+
+<+@><:S+-1><:f280,BArial,>
+
+<+@><:S+-1><:f280,BArial,>
+
+<+@><:S+-1><:f280,BArial,>
+
+<+@><:S+-1><:f280,BArial,><:f280,,><:f280,BArial,><:f><:f280,,>
+
+<+@><:S+-1><:#274,9025><:f,BArial,>
+
+>
+
+[Embedded]
+00001421

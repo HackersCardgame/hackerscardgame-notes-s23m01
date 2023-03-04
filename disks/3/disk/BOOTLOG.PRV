@@ -1,0 +1,11 @@
+[000815C6] Loading Device = HIMEM.SYS
+(Logo disabled)
+[00081609] LoadSuccess    = HIMEM.SYS
+[00081621] Loading Device = OAKCDROM.SYS
+[0008167A] LoadSuccess    = OAKCDROM.SYS
+[000816BD] Loading Device = EMM386.EXE
+[0008172C] LoadSuccess    = EMM386.EXE
+[0008175A] Loading Device = RAMDRIVE.SYS
+[0008177A] LoadSuccess    = RAMDRIVE.SYS
+[0008181E] Loading Device = IFSHLP.SYS
+[00081849] LoadSuccess    = IFSHLP.SYS

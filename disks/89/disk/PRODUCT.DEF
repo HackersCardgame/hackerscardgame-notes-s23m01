@@ -1,0 +1,20 @@
+; Filename: product.def
+ProductId=CONNECT;
+ProductName="NetWare Connect";
+ProductDirectory=sys:system;
+InstallDirectory=sys:system\connect;
+RunNLM=NWCSU.NLM;
+ConfigNLM=nwccon.nlm;
+Version=V2.0.18;
+PrimaryAgent=0258;    NetWare Connect product
+;SecondaryAgent=0252;  Ports
+;SecondaryAgent=0253;  Port groups
+SecondaryAgent=0257;  service agents
+Rscript=CONNECT.RMV;
+CantInstallIfRunning=AIO.NLM;
+CantInstallIfRunning=NWCSU.NLM;
+RequiredDiskSpace=26000000;
+;Incompatibility with Connect 2.0.X is to be removed when shipped
+;IncompatibleWith=CONNECT V2.0;
+
+

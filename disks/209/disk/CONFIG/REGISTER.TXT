@@ -1,0 +1,91 @@
+    Bis 30.09.94 an:                      Ab 01.10.94 an:
+
+    Michael Holin                         Michael Holin
+    Postfach 1146                         Buchrainweg 61
+
+    D-38669 Clausthal                     D-63069 Offenbach
+
+    Fax 05323/3380                        Fax 069/845242
+
+    R E G I S T R I E R U N G :
+    ===========================
+    JA, ich habe Ihr Programm CONFIG getestet und mîchte mich registrieren
+    lassen. Bitte schicken Sie mir umgehend die aktuelle Vollversion zu.
+
+    Preise:
+    Studentenversion     (Inland) :  27 DM     (Ausland) :  30 DM /  19 US$
+    Private Version      (Inland) :  55 DM     (Ausland) :  55 DM /  35 US$
+    Kommerzielle Version (Inland) : 159 DM     (Ausland) : 165 DM / 105 US$
+
+    Die Studentenversion erhalten SchÅler, Studenten, Azubis, Wehrpflichtige
+    und Ersatzdienstleistende bis Geburtsjahrgang 1966 bei Einsendung einer
+    entsprechenden Bescheinigung.
+    Diese Preise gelten bei Vorkasse! Ansonsten addieren Sie bitte DM 3,-
+    Versandkosten. Lieferung ins Ausland nur gegen Vorkasse oder bei
+    Bezahlung mit Kreditkarte.
+
+    Ich mîchte (   ) StÅck auf 3.5" Disk, (  ) deutsch, (  ) englisch fÅr
+
+    (  )  SchÅler/Studenten/Azubis (nicht Ñlter als Jahrgang 1966)
+    (  )  private Anwender
+    (  )  kommerzielle Anwender (die erweiterte Version, siehe CONFIG.TXT)
+    (  )  Das Geld liegt als Scheck bei. Ich spare dadurch die Versandkosten
+    (  )  Ich zahle nach Erhalt einer Rechnung zzgl. Versandkosten
+    (  )  Ich zahle per ( ) Visa, ( ) EURO/Master, ( ) Amex, ( ) Diners Card
+
+    Kartennummer: ................................. Ablaufdatum: .............
+
+    Name des Karteninhabers: .................................................
+
+    Unterschrift des Karteninhabers: .........................................
+
+
+    Ich habe CONFIG bekommen von: !..........................................!
+
+                                  !..........................................!
+
+
+    Name/Firma: ..............................................................
+
+    Adresse:    ..............................................................
+
+                ..............................................................
+
+    Telefon:    ..........................  Fax (24h): .......................
+
+    E-Mail      ..............................................................
+
+
+                ..............................................................
+                     Datum                            Unterschrift
+
+
+---------------------------------schnipp--------------------------------------
+
+
+Bitte folgende Punkte beachten:
+
+* Wer diesen Bogen handschriftlich ausfÅllt, mîge bitte leserlich schreiben.
+
+* Die kommerzielle Version wird nicht auf Rechnung versandt. Bezahlung nur
+  per Vorkasse, Nachnahme oder Kreditkarte.
+
+* Wer telefonisch auf Rechnung bestellt und anschlie·end nicht bezahlt,
+  lÑuft Gefahr, da· bei ihm in Zukunft keine Updates mehr laufen werden.
+
+* Wer eine Raubkopie der registrierten Version sieht und mir das dazuge-
+  hîrige CONFIG.REG File sendet, erhÑlt als Dank eine kostenlose kommerzielle
+  Vollversion.
+
+* Wer eine ermÑ·igte Version haben mîchte, lege bitte eine entsprechende
+  Bescheinigung bei, da· er Student etc. ist. Bestellungen nur mit Scheck
+  Åber DM 27,- ohne Bescheinigung nach dem Motto: "er wird's schon schicken",
+  wandern in Zukunft in den MÅll (incl. Scheck).
+
+* Wer ein Problem mit dem Programm hat, was er selbst nicht lîsen kann,
+  oder wer gern sonstigen Rat haben mîchte, der mîge bitte ANRUFEN!!!
+  Gern auch abends bis 20¯¯ Uhr. Bei schriftlichen Anfragen kann man leicht
+  10-14 Tage auf Antwort warten.
+
+* Einige Sanyo FAX-GerÑte haben Probleme einen Connect mit meinem Sharp
+  FAX-GerÑt herzustellen.

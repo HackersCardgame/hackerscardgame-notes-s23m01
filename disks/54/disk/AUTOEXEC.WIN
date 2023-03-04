@@ -1,0 +1,26 @@
+C:\WINDOWS\SMARTDRV.EXE
+C:\WINDOWS\net start
+@ECHO OFF
+PROMPT $p$g
+PATH C:\WINDOWS;c:\nwlite;C:\DOS;C:\NWLITE;c:\nc;c:\scheiss;
+SET TEMP=C:\temp
+IF NOT EXIST %TEMP%\NUL MD %TEMP%
+
+goto %CONFIG%
+
+:Normal
+
+c:
+c:\
+cd\nwlite
+call STARTNET
+
+goto end
+
+:small
+
+
+
+:end
+
+

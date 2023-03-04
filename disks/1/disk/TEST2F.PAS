@@ -1,0 +1,19 @@
+program Test2fix;
+var
+  A,B: Integer;
+  Ratio: Real;
+begin
+  repeat
+    Write('Enter two numbers:  ');
+    Readln (A,B);
+    if B = 0 then
+      Writeln('The ratio is undefinded')
+    else
+    begin
+      Ratio := A / B;
+      Writeln('The ratio is ',Ratio:8:2);
+    end;
+    Write('Press <Enter>...');
+    Readln;
+  until B = 0;
+end.

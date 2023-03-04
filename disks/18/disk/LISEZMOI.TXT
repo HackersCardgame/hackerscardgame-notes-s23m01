@@ -1,0 +1,495 @@
+			LISEZMOI.TXT
+
+       Notes de derniŠre minute concernant le clavier
+		 Microsoft Natural Keyboard
+      et le logiciel Microsoft IntelliType version 1.1
+
+	 (C) Copyright Microsoft Corporation, 1995
+
+Ce document contient des informations qui viennent en compl‚ment
+du Guide de l'utilisateur de Microsoft Natural Keyboard et du
+Guide utilisateur IntelliType en ligne.
+
+--------------------------
+ Affichage de ce document
+--------------------------
+Ce document a ‚t‚ con‡u pour ˆtre lu dans l'‚diteur MS-DOS.
+Pour imprimer son contenu … partir de ces applications,
+dans le menu Fichier choisissez Imprimer.
+
+******************************************************************
+SOMMAIRE
+
+   I.   Notes g‚n‚rales concernant diff‚rents systŠmes d'exploitation
+	1.  Installation d'IntelliType impossible sur un lecteur r‚seau
+	2.  Possibilit‚ de conflit entre IntelliType et certains pilotes
+	    de clavier
+	3.  Utilisation d'un utilitaire d'ant‚m‚moire lors de l'installation
+	4.  Ex‚cution d'IntelliType sur un ordinateur dot‚ de plusieurs
+	    systŠmes d'exploitation
+	5.  Protection de votre adaptateur clavier
+	6.  Utilisation d'un BIOS non standard
+	7.  Connexion d'un p‚riph‚rique d'entr‚e … un ordinateur portatif
+	    lors d'une mise en veille
+	8.  Lancement du Gestionnaire de tƒches … l'aide des touches
+	    portant le logo Windows
+	9.  Utilisation des touches souris avec l'option Renvoi du pointeur
+	10. Utilisation de Microsoft IntelliType avec la puce TI 710
+	11. D‚marrage … partir d'une disquette
+	12. Utilisation du pav‚ num‚rique pour dessiner dans Paintbrush
+	13. Utilisation de la s‚curit‚ accrue dans Microsoft Mail
+	14. R‚p‚tition sans fin du son affect‚ au clavier
+	15. D‚sactivation de l'option Magn‚tique dans CorelDraw
+	16. Indisponibilit‚ de l'option Pointeur masqu‚ dans les tableurs
+
+  II.   Notes destin‚es aux utilisateurs de Windows 95
+	1.  Utilisation d'IntelliType sans le clavier Microsoft
+	    Natural Keyboard
+	2.  Ex‚cution d'IntelliType sur un ordinateur g‚rant plusieurs
+	    profils d'utilisateurs
+	3.  Certains onglets des Propri‚t‚s pour Clavier sont issus
+	    du systŠme d'exploitation
+	4.  Option Haut-parleur du systŠme inactive avec une carte son
+	5.  Masquage de la Barre de tƒches avec l'option Renvoi du pointeur
+	6.  Possibilit‚ de conflit entre les paramŠtres CMOS et IntelliType
+	    pour activer VERR.NUM au d‚marrage
+
+ III.   Notes destin‚es aux utilisateurs de Windows 3.1x
+	1.  D‚sactivation de la touche VERR.MAJ. dans une fenˆtre MS-DOS
+	2.  M‚moire insuffisante pour lancer le Gestionnaire de tƒches
+	3.  Remplacement du Gestionnaire de tƒches par la Liste des tƒches
+
+  IV.   Notes destin‚es aux utilisateurs de Windows NT
+	1.  Gestion d'IntelliType pas les systŠmes x86 uniquement
+	2.  Ouverture de la Liste des tƒches de Windows NT
+	3.  Fermeture d'IntelliType … partir du Gestionnaire de tƒches
+
+   V.   Notes destin‚es aux utilisateurs de MS-DOS uniquement
+	1.  Utilisation d'options de ligne de commande sous MS-DOS
+
+  VI.   Informations relatives … la r‚glementation
+	1.  RŠglement sur le brouillage radio‚lectrique aux Etats-Unis
+	2.  RŠglement canadien sur les mat‚riels provoquant des brouillages
+	    radio‚lectriques
+
+
+=========================================================================
+Section I.  Notes g‚n‚rales concernant diff‚rents systŠmes d'exploitation
+=========================================================================
+
+1. Installation d'IntelliType impossible sur un lecteur r‚seau
+
+   L'installation sur un lecteur r‚seau n'est plus prise en charge par
+   IntelliType. Les utilisateurs ayant install‚ IntelliType version 1.0
+   sur un serveur r‚seau seront dans l'impossibilit‚ de mettre … niveau
+   le logiciel sur ce lecteur.
+
+
+2. Possibilit‚ de conflit entre IntelliType et certains pilotes de clavier
+
+   Lorsque vous installez Microsoft IntelliType sous Windows 3.1x ou
+   Windows NT, le programme d'installation remplace le pilote de clavier
+   courant par celui du clavier Microsoft Natural Keyboard, qui permet de
+   g‚rer les trois touches suppl‚mentaires.
+   C'est pourquoi vous rencontrerez peut-ˆtre des problŠmes avec des
+   logiciels n‚cessitant des pilotes de clavier sp‚cialis‚s. Ces derniers
+   comprennent des applications de commande … distance (telles que pcANYWHERE
+   ou Carbon Copy) et des versions de Windows en diff‚rentes langues (telles
+   que l'arabe, le grec ou l'h‚breu).
+
+   Il est possible d'utiliser un logiciel de commande … distance avec le
+   clavier Microsoft Natural Keyboard, mais sans le logiciel Microsoft
+   IntelliType. Pour ce faire, d‚sinstallez Microsoft IntelliType (pour
+   plus d'informations, consultez le Guide utilisateur IntelliType en ligne).
+   Ensuite, r‚installez le logiciel de commande … distance afin de r‚tablir
+   le bon pilote de clavier.
+
+   Si vous utilisez une version de Windows dans une langue qui n‚cessite
+   un pilote de clavier sp‚cialis‚, vous pouvez utiliser le clavier
+   Microsoft Natural Keyboard comme un clavier AT 101/102 touches standard.
+   Si vous d‚sinstallez IntelliType, le pilote fourni par votre systŠme
+   d'exploitation sera r‚tabli.
+
+   REMARQUE : Cette partie ne s'applique pas … Windows 95, car IntelliType
+   n'ajoute aucun pilote de clavier lorsque vous l'installez sous Windows 95.
+
+
+3. Utilisation d'un utilitaire d'ant‚m‚moire MS-DOS lors de l'installation
+
+   Si vous utilisez un utilitaire d'ant‚m‚moire pour MS-DOS diff‚rent de
+   Microsoft SMARTDrive, ne cliquez pas sur le bouton Red‚marrer … la fin
+   de l'installation. Cliquez sur Quitter pour revenir … Windows, puis
+   effectuez un red‚marrage manuel de votre machine. Certains utilitaires
+   d'ant‚m‚moire MS-DOS emploient une technique d'‚criture en diff‚r‚.
+   Si le cache n'est pas vid‚ avant le red‚marrage, des erreurs disque
+   peuvent se produire.
+
+   Une autre m‚thode consiste … d‚sactiver temporairement votre utilitaire
+   d'ant‚m‚moire avant d'installer Microsoft IntelliType. Pour cela, dans
+   votre fichier AUTOEXEC.BAT, faites pr‚c‚der d'un REM la ligne o— il se
+   trouve. Vous le r‚activerez (en supprimant le REM) une fois l'installation
+   termin‚e.
+
+
+4.  Ex‚cution d'IntelliType sur un ordinateur dot‚ de
+    plusieurs systŠmes d'exploitation
+
+   Si vous avez install‚ Windows NT et Windows 95 sur le mˆme ordinateur et
+   que Microsoft IntelliType fonctionne sur les deux systŠmes d'exploitation,
+   prenez garde si vous le d‚sinstallez de l'un des systŠmes : cela peut
+   effacer les fichiers utilis‚s par la version d'IntelliType de l'autre
+   systŠme d'exploitation. Si vous rencontrez des problŠmes avec IntelliType
+   sur le second systŠme, r‚installez-le sur ce systŠme.
+
+
+5.  Protection de votre adaptateur clavier
+
+    Assurez-vous que l'espace situ‚ entre la partie arriŠre de votre
+    ordinateur et le mur est suffisant, afin d'‚viter que les adaptateurs
+    qui y sont enfich‚s subissent une trop grande pression. Si cela se
+    produisait (notamment sur l'adaptateur PS/2 - 5 broches du clavier
+    Microsoft Natural Keyboard), cela pourrait endommager de maniŠre
+    permanente la carte mŠre de l'ordinateur lors du d‚marrage.
+    Ces pr‚cautions s'appliquent … tout adaptateur que vous pourriez
+    installer. Ne branchez et ne d‚branchez jamais de p‚riph‚rique lorsque
+    l'ordinateur est sous tension : ‚teignez-le, installez le p‚riph‚rique,
+    effectuez le cƒblage n‚cessaire, puis rallumez-le.
+
+
+6.  Utilisation d'un BIOS non standard
+
+    Certains types de BIOS, non-standard, entrent en conflit avec le clavier
+    Microsoft Natural Keyboard. Ils peuvent provoquer des dysfonctionnements
+    ou des erreurs systŠme lors du d‚marrage.
+    Si vous rencontrez ce genre de problŠmes, vous devrez peut-ˆtre changer
+    de BIOS, en acqu‚rant soit une version plus r‚cente, soit un BIOS plus
+    courant (comme celui d'American Megatrends (AMI) ou de Phoenix).
+    Si vous ‚prouvez des difficult‚s … d‚marrer votre machine aprŠs
+    installation du clavier Microsoft Natural Keyboard, contactez le
+    revendeur du BIOS ou de votre ordinateur.
+
+
+7.  Connexion d'un p‚riph‚rique d'entr‚e … un ordinateur portatif
+    lors d'une mise en veille
+
+    De nombreux ordinateurs portatifs d‚sactivent les ports souris et
+    clavier aprŠs une p‚riode d'inactivit‚ d‚termin‚e, afin d'‚conomiser
+    de l'‚nergie. Si, aprŠs avoir r‚activ‚ la machine pass‚e en mode
+    Veille, votre p‚riph‚rique d'entr‚e (souris ou clavier) ne fonctionne
+    plus, r‚f‚rez-vous aux options d'‚conomie d'‚nergie d‚crites dans la
+    documentation de votre ordinateur.
+
+
+8.  Lancement du Gestionnaire de tƒches … l'aide des touches
+    portant le logo Windows
+
+    Sous Windows 3.x et Windows 95, IntelliType associe aux touches
+    portant le logo Windows le lancement du Gestionnaire de tƒches.
+    Attention : certains interpr‚teurs de commandes d‚tournent ces touches
+    et leur attribuent de nouvelles fonctions, ou simplement ne les
+    reconnaissent pas. Dans de tels cas, appuyez sur CTRL+ECHAP ou
+    cliquez deux fois sur le bureau pour lancer le Gestionnaire de tƒches.
+
+
+9.  Utilisation des touches souris avec l'option Renvoi du pointeur
+
+    Si vous avez activ‚ … la fois Renvoi du pointeur et Touches souris,
+    il est possible que le pointeur reste bloqu‚ sur l'un des bords de
+    l'‚cran si vous maintenez une touche de direction enfonc‚e pendant un
+    certain temps. Si cela se produisait, r‚glez le paramŠtre Vitesse maximum
+    du pointeur (dans l'onglet Touches souris) sur une valeur inf‚rieure.
+    L'option Renvoi du pointeur est disponible sous Windows 95 et
+    Windows 3.1x uniquement.
+    Sous Windows 95, l'option Touches souris fait partie des options
+    d'Accessibilit‚ du Panneau de configuration.
+
+
+10.  Utilisation de Microsoft IntelliType avec la puce TI 710
+
+    Microsoft IntelliType gŠre le port 8042 utilis‚ sur la plupart des
+    ordinateurs portatifs. Cependant, l'installation du logiciel sur un
+    portatif Texas Instrument utilisant le composant 710 peut occasionner
+    des problŠmes. Sous Windows NT, notamment, la souris de votre portatif
+    ne fonctionnera pas.
+
+
+11.  D‚marrage … partir d'une disquette
+
+    Lorsque vous installez Microsoft IntelliType, le programme
+    d'installation modifie le fichier AUTOEXEC.BAT de votre disque dur
+    par d‚faut (en g‚n‚ral, c:).
+    Si, pour une raison quelconque, vous d‚marrez Microsoft Windows
+    … partir d'une disquette, vous devrez copier manuellement sur votre
+    disque de d‚marrage les deux lignes suivantes, qui ont ‚t‚ ajout‚es
+    au fichier AUTOEXEC.BAT de votre disque dur :
+
+	 SET MSINPUT=C:\MSINPUT
+	 C:\MSINPUT\KEYBOARD\ITYPE.EXE /S
+
+    (Le r‚pertoire de destination est diff‚rent si vous
+    avez install‚ Microsoft IntelliType … un autre endroit.)
+
+
+12. Utilisation du pav‚ num‚rique pour dessiner dans Microsoft Paintbrush
+
+    Si vous activez l'option Touches souris (onglet Touches souris),
+    vous pouvez utiliser le pav‚ num‚rique pour dessiner dans Microsoft
+    Paintbrush. Pour dessiner (ou gommer), appuyez sur la touche "0" du
+    pav‚ num‚rique. Pour revenir du mode dessin au mode pointeur normal,
+    appuyez sur la touche "." du pav‚ num‚rique.
+
+    IMPORTANT : Si vous travaillez avec Paintbrush en utilisant le pav‚
+    num‚rique, revenez en mode pointeur avant d'ouvrir le Gestionnaire de
+    tƒches. Si vous l'ouvrez tandis que vous ˆtes en mode dessin, cela peut
+    bloquer votre systŠme, et vous devrez relancer Paintbrush.
+
+
+13.  Utilisation de la s‚curit‚ accrue dans Microsoft Mail
+
+    Microsoft Mail vous permet de s‚curiser votre courrier ‚lectronique.
+    Si vous activez cette fonctionnalit‚, Microsoft Mail vous demandera
+    d'entrer votre mot de passe lorsque vous restaurez Mail … partir d'une
+    ic“ne r‚duite. Cependant, cette fonctionnalit‚ ne vous permet pas
+    d'utiliser le Gestionnaire de tƒches pour basculer vers Microsoft Mail
+    quand il est sous forme d'ic“ne.
+    Pour ce faire, appuyez sur ALT+TAB ou cliquez deux fois sur l'ic“ne Mail.
+
+
+14.  R‚p‚tition sans fin du son affect‚ au clavier
+
+    Si vous avez affect‚ un son aux touches du clavier et que ce son est
+    ‚mis continuellement aprŠs l'appui sur une touche, cela est certainement
+    d– … un conflit d'interruptions (IRQ).
+    Pour r‚soudre ce problŠme, vous pouvez soit d‚sactiver l'effet sonore
+    (choisissez l'option Aucun son dans l'onglet Options), soit modifier
+    le paramŠtre IRQ de votre carte son.
+
+
+15.  D‚sactivation de l'option Magn‚tique dans CorelDraw
+
+    Si vous utilisez la fonction Zoom avant de CorelDraw, assurez-vous
+    d'avoir d‚sactiv‚ l'option Magn‚tique dans l'onglet Activit‚ du
+    pointeur. En effet, Zoom avant ne fonctionnera pas si l'option
+    Magn‚tique est activ‚e.
+
+
+16.  Indisponibilit‚ de l'option Pointeur masqu‚ dans les tableurs
+
+   La fonctionnalit‚ de masquage du pointeur lors de la frappe ne
+   fonctionne pas dans des applications telles que les tableurs.
+
+
+
+===========================================================
+Section II.  Notes destin‚es aux utilisateurs de Windows 95
+===========================================================
+
+1.  Utilisation d'IntelliType sans le clavier Microsoft Natural Keyboard
+
+   Le logiciel IntelliType a ‚t‚ con‡u pour fonctionner avec le clavier
+   Microsoft Natural Keyboard. Si vous l'installez sous Windows 95 mais
+   connectez … votre ordinateur un clavier diff‚rent, il est possible que
+   certaines fonctionnalit‚s d'IntelliType ne soient plus disponibles.
+
+
+2.  Ex‚cution d'IntelliType sur un ordinateur g‚rant plusieurs
+    profils d'utilisateurs
+
+   Il est d‚conseill‚ de d‚sinstaller Microsoft IntelliType sous Windows 95
+   lorsque plusieurs profils d'utilisateurs sont g‚r‚s par le systŠme.
+   Sa d‚sinstallation pourrait cr‚er une instabilit‚ pour les autres
+   utilisateurs qui se connectent … l'ordinateur, et pourrait ‚galement 
+   rendre leurs paramŠtres non valides.
+
+
+3.  Certains onglets des Propri‚t‚s pour Clavier sont issus
+    du systŠme d'exploitation
+
+   Sous Windows 95, les onglets Vitesse, Langue et G‚n‚ral font partie
+   int‚grante du systŠme d'exploitation Windows 95, et non d'IntelliType.
+   Seuls les onglets dot‚s du logo Microsoft IntelliType, y compris
+   Activit‚ du pointeur et Options, sont install‚s par le logiciel.
+
+
+4.  Option Haut-parleur du systŠme inactive avec une carte son
+
+   Si vous poss‚dez une carte son, choisissez dans la fonctionnalit‚ 
+   Sons une option diff‚rente de Haut-parleur du systŠme, sinon aucun
+   son ne sera ‚mis lorsque vous appuyez sur une touche du clavier.
+   L'option Haut-parleur du systŠme est destin‚e aux ordinateurs qui ne
+   sont pas ‚quip‚s de cartes son.
+
+5.  Masquage de la Barre de tƒches avec l'option Renvoi du pointeur
+
+   Si vous utilisez l'option Renvoi du pointeur d'IntelliType en mˆme
+   temps que le paramŠtre Masquer automatiquement (la Barre de tƒches)
+   de Windows 95, vous ‚prouverez peut-ˆtre des difficult‚s … saisir la
+   bordure de la Barre de tƒches.
+   Si cela se produisait, affichez la barre en cliquant sur le bouton
+   D‚marrer, en pointant sur ParamŠtres, puis en cliquant sur Barre de tƒches.
+   Cliquez enfin sur Masquer automatiquement pour d‚sactiver l'option.
+
+
+6.  Possibilit‚ de conflit entre les paramŠtres CMOS et IntelliType
+    pour activer VERR.NUM au d‚marrage
+
+   Si vous avez d‚fini vos paramŠtres CMOS afin que votre ordinateur
+   verrouille ou d‚verrouille automatiquement la touche VERR.NUM au
+   d‚marrage, il se peut que le paramŠtre VERR.NUM d'IntelliType ne
+   fonctionne pas correctement.
+   Si vous constatez que VERR.NUM n'est pas dans l'‚tat appropri‚
+   lorsque vous d‚marrez votre ordinateur, v‚rifiez vos paramŠtres CMOS
+   et d‚sactivez VERR.NUM.
+
+
+
+==============================================================
+Section III.  Notes destin‚es aux utilisateurs de Windows 3.1x
+==============================================================
+
+1.  D‚sactivation de la touche VERR.MAJ dans une fenˆtre MS-DOS
+
+    Sous Microsoft Windows 3.1x, la fonctionnalit‚ D‚sactiver VERR.MAJ,
+    dans l'onglet Options, n'a plus aucun effet lorsque vous travaillez
+    dans une fenˆtre MS-DOS.
+
+
+2.  M‚moire insuffisante pour lancer le Gestionnaire de tƒches
+
+    Si vous essayez de lancer le Gestionnaire de tƒches et que rien ne
+    se produit, fermez une ou plusieurs applications afin de lib‚rer de
+    la m‚moire, puis essayez … nouveau.
+
+3.  Remplacement du Gestionnaire de tƒches par la Liste des tƒches
+
+    Lorsque vous installez Microsoft IntelliType sous Windows 3.1x,
+    la Liste des tƒches par d‚faut est remplac‚e par le Gestionnaire
+    de tƒches. Si vous pr‚f‚rez, cependant, utiliser la Liste des tƒches,
+    proc‚dez comme suit :
+
+    1.  Dans la section [boot] du fichier SYSTEM.INI (situ‚ dans votre
+	r‚pertoire Windows), rep‚rez la ligne suivante :
+  
+	taskman.exe=tasksw16.exe
+
+    2.  Modifiez-la comme suit :
+
+	taskman.exe=taskman.exe
+
+
+
+===========================================================
+Section IV.  Notes destin‚es aux utilisateurs de Windows NT
+===========================================================
+
+1.  IntelliType gŠre les systŠmes x86 uniquement
+
+   Cette version de Microsoft IntelliType gŠre uniquement les
+   systŠmes d'exploitation compatibles avec les x86 d'Intel.
+   Vous ne pouvez donc pas l'installer sur un autre systŠme, comme
+   MIPS ou Alpha. Cependant, le clavier Microsoft Natural Keyboard
+   est utilisable avec ces systŠmes, bien que les touches portant
+   le logo Windows et la touche Application ne soient pas g‚r‚es.
+
+
+2.  Ouverture de la Liste des tƒches de Windows NT
+
+    Pour ouvrir la Liste des tƒches de Microsoft Windows NT, appuyez
+    sur CTRL+ECHAP ou cliquez deux fois sur le bureau. Si vous pr‚f‚rez
+    ouvrir le Gestionnaire de tƒches, appuyez sur la touche Windows
+    gauche ou droite. Cependant, vous ne pouvez pas ouvrir le
+    Gestionnaire de tƒches … partir d'une fenˆtre MS-DOS.
+
+
+3.  Fermeture d'IntelliType … partir du Gestionnaire de tƒches
+
+    Si vous travaillez sous Windows NT version 3.51, n'utilisez pas le
+    bouton Fin de tƒche du Gestionnaire de tƒches afin de fermer
+    IntelliType. Si vous le faites, il ne fonctionnera plus tant que
+    vous n'aurez pas relanc‚ Windows.
+
+
+
+=================================================================
+Section V.  Notes destin‚es aux utilisateurs de MS-DOS uniquement
+=================================================================
+
+1.  Utilisation d'options de ligne de commande sous MS-DOS
+
+    Si vous utilisez la version pour MS-DOS du logiciel, vous pouvez
+    taper la commande suivante … partir de l'invite, afin d'afficher
+    la liste des options de ligne de commande disponibles :
+
+	itype.exe /?
+
+
+
+=======================================================
+Section VI.  Informations relatives … la r‚glementation
+=======================================================
+
+1.  RŠglement sur le brouillage radio‚lectrique aux Etats-Unis
+
+    Cet appareil est conforme … l'article 15 des rŠglements de la FCC
+    (Federal Communications Commission) am‚ricaine. Son fonctionnement
+    r‚pond aux deux conditions suivantes :
+    (1) cet ‚quipement ne doit pas provoquer d'interf‚rences gˆnantes et
+    (2) doit accepter toutes les interf‚rences re‡ues, y compris celles
+    qui risquent d'alt‚rer son fonctionnement.
+
+    Le p‚riph‚rique Microsoft qui accompagne ce logiciel est susceptible
+    d'‚mettre une ‚nergie basse fr‚quence (BF). S'il n'est pas install‚ et
+    utilis‚ dans la stricte observance des instructions de l'Aide-m‚moire,
+    le p‚riph‚rique peut provoquer des interf‚rences susceptibles de
+    brouiller la r‚ception des signaux de radio et de t‚l‚vision. Ce
+    p‚riph‚rique ne peut ˆtre raccord‚ qu'au moyen d'un cƒble blind‚ reli‚
+    … la masse.
+
+    Votre p‚riph‚rique Microsoft a ‚t‚ test‚ et d‚clar‚ conforme aux
+    normes relatives au mat‚riel informatique de la classe B, selon les
+    prescriptions de l'article 15 des rŠglements de la FCC (Federal
+    Communications Commission) am‚ricaine. Ces normes assurent une protection
+    suffisante contre les interf‚rences BF gˆnantes dans une installation
+    r‚sidentielle. Toutefois, rien ne garantit que de telles interf‚rences
+    ne se produiront pas dans une installation donn‚e.
+
+    Pour d‚terminer si votre p‚riph‚rique engendre des interf‚rences,
+    d‚branchez-le de votre ordinateur. Si les interf‚rences disparaissent,
+    votre p‚riph‚rique en ‚tait probablement la cause. Si les interf‚rences
+    persistent alors que votre p‚riph‚rique est d‚branch‚, ‚teignez, puis
+    rallumez votre ordinateur. Si les interf‚rences disparaissent lorsque
+    votre ordinateur est hors tension, v‚rifiez si le problŠme n'est pas
+    provoqu‚ par un des p‚riph‚riques d'entr‚e/sortie (E/S) ou une des cartes
+    d'accessoires install‚es … l'int‚rieur de votre ordinateur. D‚branchez
+    un … un les p‚riph‚riques d'E/S pour v‚rifier si les interf‚rences
+    disparaissent.
+
+    Si les interf‚rences sont provoqu‚es par votre ordinateur, voici quelques
+    suggestions qui devraient vous aider … r‚soudre le problŠme :
+
+    *  D‚placez la radio ou l'antenne TV jusqu'… ce que les interf‚rences
+       disparaissent.
+    *  Eloignez l'ordinateur de la radio ou du t‚l‚viseur, ou placez-le
+       d'un c“t‚ ou l'autre de la radio ou du t‚l‚viseur.
+    *  Branchez l'ordinateur sur une prise secteur diff‚rente afin que
+       l'ordinateur d'une part, la radio ou le t‚l‚viseur d'autre part,
+       soient raccord‚s … des circuits diff‚rents, command‚s par des
+       coupe-circuit ou des fusibles distincts.
+    *  Si n‚cessaire, demandez conseil … votre revendeur ou … un technicien
+       radio-TV qualifi‚.
+       Il se peut que vous trouviez d'autres informations utiles dans la
+       brochure ®The Interference Handbook¯ (1993), publi‚e par la FCC.
+       Cette brochure est disponible auprŠs du U.S. Government Printing
+       Office, Washington, D.C. 20402 (Etats-Unis). Son num‚ro de r‚f‚rence
+       est 004-000-00493-1.
+
+    Remarque :  Tout changement ou modification qui ne serait pas
+    explicitement autoris‚ par Microsoft risque d'annuler le droit de
+    l'utilisateur … faire fonctionner ce p‚riph‚rique.
+
+
+2.  RŠglement canadien sur les mat‚riels provoquant des brouillages
+    radio‚lectriques
+
+    Cet appareil num‚rique de la classe B respecte toutes les exigences 
+    du rŠglement sur le mat‚riel brouilleur du Canada.

@@ -1,0 +1,257 @@
+Release Note No. 15
+Product Name    : ASPICD.SYS/EXE
+		  DOS ASPI Module for CD-ROM Devices
+
+Version No.     : 3.51
+
+Changes :
+	The following message :
+	"CD-ROM Drive(s) connected:" has been changed to :
+	"CD Drive(s) connected:", as wanted by CMS.
+----------------------------------------------------------------------------
+Release Note No. 14
+Product Name    : ASPICD.SYS/EXE
+		  DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.50a,b
+a. Release Date: 3rd February, 1996
+b. Release Date: 9th February, 1996
+
+Advanced feature :
+	Multi-session support for HP recorder Model C4324/C4325
+Problems corrected :        
+	CD-i support for NEC CD Changer
+	Selection time error processing.
+
+Note : Has been tested with HP CDR Model C4324/C4325 Fw Ver. 1.14.
+
+       But HP CDR Model C4324/C4325 Fw Ver. 1.20 does not support
+       multi-session Photo CDs. It consistently reports "Not Ready
+       (Sense code 02)" error. However it is found to support
+       single-session photo CDs.
+
+----------------------------------------------------------------------------
+Release Note No. 13
+Product Name    : ASPICD.SYS/EXE
+		  DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.50
+Release Date: 2nd February, 1996
+
+Advanced feature : LUN SUPPORT.
+		. Tested with NEC CD changer MultiSpin 4Xc Model CDR-C302.
+	. Track number display mismatch among CDMUSIC, CDPLAYER, and MUSICBOX
+	  has been corrected.
+	. To be used with CDMUSIC V2.20
+
+Preleminary tests indicate a problem with using Kodak Photo CDs in NEC 4Xc
+    CD changer. A deeper study is underway.
+
+A remainder : To enable audio playback feature of more than one device,
+		ASPICD shall be loaded with "/a" switch.
+
+----------------------------------------------------------------------------
+Release Note No. 12
+Product Name    : ASPICD.SYS/EXE
+		  DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.49(test)
+Release Date    : 23rd January, 1996
+
+	Test Driver for LUN SUPPORT.
+
+----------------------------------------------------------------------------
+Release Note No. 11
+Product Name    : ASPICD.SYS/EXE
+		  DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.48
+Release Date    : 16th November, 1995
+
+Current version fixes the following bug:
+
+With MPC BATTLE CHESS CD-Game, when the audio option is on, the previous
+releases of the driver (V3.47 and below) caused Windows to get locked-up
+completely requiring reboot. 
+
+This problem should not be confused with the one solved in V3.46. The former
+game runs on DOS and MPC Battle Chess runs on Windows. These two are
+different as for as ASPICD was concerned. This necessitated changes in
+ASPICD. 
+
+This solution might render the movie jerky in the following case:
+Wearnes CDD-110 8-Bit (Not ATAPI ) CD-ROM Drive, EPCD Adapter, EPCD Driver.
+
+A solution to satisfy both the requirements can not be provided. For the
+case of Wearnes ASPICD V3.41a through V3.47 is suggested.
+
+----------------------------------------------------------------------------
+Release Note No. 10
+Product Name    : ASPICD.SYS/EXE
+		  DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.47
+Release Date    : 5th August, 1995
+
+Additional Feature :
+
+This revision of the CD ROM driver supports PANASONIC PD drives. This
+requires the drive to be configured (through jumpers) for LUN mode
+operation. The driver does not need any command line switch to enable this
+feature.
+
+----------------------------------------------------------------------------
+
+Release Note No. 9
+Product Name    : ASPICD.SYS/EXE
+		  DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.46
+Release Date    : 20th July, 1995
+
+Description of the bug fixed in this release:
+
+With BATTLE CHESS CD-Game (both Rev. 1 and 4), the previous releases of the
+driver (V3.45 and below) caused the system to get locked-up completely
+requiring reboot.
+
+	The current version fixes this problem.
+
+OBSERVATIONS: Please confirm them from your end.
+
+(a). Although SOUND OFF option was enabled, BATTLE CHESS Game was found to
+play audio tracks when two pieces fight.
+
+(b). We also made the following observations regarding Adaptec's ASPICD.SYS
+V3.01 when loaded with EPSA.SYS V4.25:
+
+	(1). The audio was muted except during when two pieces fight
+	[Obs. (a)] and fight animation was observed to be less.
+
+	(2). Resulted in the display of a garbled screen, when CDMUSIC was
+	invoked.
+
+----------------------------------------------------------------------------
+
+Release Note No. 8
+Product Name    : ASPICD.SYS/EXE
+		  DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.45
+Release Date    : 7th July, 1995
+
+Description of the bug fixed in this release:
+
+With TOSHIBA ATAPI CD-ROM drives, the previous releases of the driver (upto
+V3.44) resulted in the display of a garbled screen, when CDMUSIC was
+invoked. 
+
+	The current version fixes this problem.
+
+-----------------------------------------------------------------------------
+--------------------------- RELEASE HISTORY ---------------------------------
+Release Note No. 2
+Product Name    : ASPICD.SYS/EXE
+			DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.41
+Release Date    : 26th Sept, 1994
+
+File Details    :
+
+	ASPICD.SYS  11,760  09-26-94  11:30a
+	ASPICD.EXE  12,914  09-26-94  11:30a
+
+Release Highlights:
+	After the CD-i feature was added, a shortcoming was found in reading 
+	Multi-session discs. This problem was fixed.
+
+
+Release Note No. 3
+Product Name    : ASPICD.SYS/EXE
+			DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.41a (Test Release)
+Release Date    : 10th Oct, 1994
+
+File Details    :
+	ASPICD.SYS     11751 10-10-94   4:25p
+	ASPICD.EXE     12905 10-10-94   4:25p
+
+Enhancements    :
+	The 'Return Audio Status' call does not any more call 'Read Sub-Q
+	channel Info' (SCSI) function. It is not found to be necessary.
+	It also slows down the system eg. when Wearnes CDD-110 R. T. ZORK.
+
+----------------------------------------------------------------------------
+Release Note No. 4
+Product Name    : ASPICD.SYS/EXE
+				  DOS ASPI Module for CD-ROM Devices
+Version No.             : 3.42
+Release Date    : 21th Oct, 1994
+
+File Details    :
+
+	ASPICD.SYS  11,804  10-21-94  11:00a
+	ASPICD.EXE  12,958  10-21-94  11:00a
+
+Enhancements    :
+	- during initialisation, displays only the names of the devices
+		(as required Wearnes)
+	- other information such as, host adapter number, SCSI ID and multi-media
+	  details are available when '/V' switch is specified on the command line.
+----------------------------------------------------------------------------
+Release Note No. 5
+Product Name    : ASPICD.SYS/EXE
+		  DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.43
+Release Date    : 3rd January, 1995
+
+File Details    :
+
+	ASPICD.SYS   11,992   01-03-95   3:43a
+	ASPICD.EXE   13,146   01-03-95   3:43a
+
+Enhancements    :
+	- Multi-session support for TEAC ATAPI drives.
+	Remarks: This feature should be validated with TEAC SCSI drives.
+----------------------------------------------------------------------------
+Release Note No. 6
+Product Name    : ASPICD.SYS/EXE
+		  DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.43(test)
+Release Date    : 4th April, 1995
+
+Release Features:
+	- This version restricts the number of sectors in one ASPI read
+	command to less than or equal to 16.
+
+----------------------------------------------------------------------------
+Release Note No. 7
+Product Name    : ASPICD.SYS/EXE
+		  DOS ASPI Module for CD-ROM Devices
+Version No.     : 3.44
+Release Date    : 28th April, 1995
+
+Release Features:
+	- Multi-session disc support for NEC 3xi, 3xp, 3xpplus, 4xe
+	CD-ROM drives.
+
+		This functionality has been tested in Shuttle India with
+		NEC 3xi (500 type).
+		It needs to be validated with other models.
+
+	- This version restricts the number of sectors in one ASPI read
+	command to less than or equal to 16. This feature was found
+	to be required with NEC 3xp, 3xpplus drives, for reliable
+	operation in slow modes.
+	
+
+	- The number of sectors in one read command can now be set
+	through the command-line.
+
+	Eg.
+		DEVICE = ASPICD.SYS /S:10
+
+	sets the no. of sectors read in one read command to 10. This
+	is rarely used.
+
+	Valid range : 1 - 32.
+
+	- During CDi play-back, the driver was not compatible
+	with third party ASPI Managers.
+
+	The current version fixes this problem.
+
+----------------------------------------------------------------------------

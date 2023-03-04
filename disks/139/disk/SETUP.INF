@@ -1,0 +1,59 @@
+[Application]
+;Application global information
+AppName=CONDOR 3.2 - Installation
+DefDir=C:\condor
+SpaceNeeded=3600
+DefPMGroup=CONDOR.GRP, CONDOR-CAD
+
+[Disks]
+;List of diskettes needed to install the product and the name
+;of each diskette.
+1=CONDOR Setup Diskette 1/2
+2=CONDOR Setup Diskette 2/2
+
+[Dirs]
+;lists of directories that must be created from the destination directory
+;files to be copied are in the same directory structure on the
+;floppy (by default)
+1=.
+
+[Files]
+;description, name, (dir #), (diskette #), (Compressed)
+Initialisierung: condor.ini, condor.ini       ,1,1,Y
+Initialisierung: hl_api.dll, hl_api.dll       ,1,1,Y
+Initialisierung: liesmich.txt, liesmich.txt   ,1,1,N
+Initialisierung: condor.snr, condor.snr       ,1,1,N
+Initialisierung: bwcc.dll, bwcc.dll 	      ,1,1,Y
+CAD-Programm: CONDOR.EXE   , condor.exe       ,1,1,Y
+Hilfe-System: condor.hlp   , condor.hlp       ,1,1,Y
+Zeichensätze: cgdina.chr   , cgdina.chr       ,1,1,Y
+Zeichensätze: cgdinb.chr  , cgdinb.chr        ,1,1,Y
+Zeichensätze: cgeuro.chr  , cgeuro.chr        ,1,1,Y
+Zeichensätze: cglcom.chr  , cglcom.chr        ,1,1,Y
+Zeichensätze: cggoth.chr  , cggoth.chr        ,1,1,Y
+variable Elemente: standvar.dll,standvar.dll  ,1,1,Y
+variable Elemente: cndvarob.dll,cndvarob.dll  ,1,1,Y
+variable Elemente: cndvarob.lib,cndvarob.lib  ,1,1,Y
+variable Elemente: vardemoc.dll,vardemoc.dll  ,1,1,Y
+variable Elemente: vardemoc.c  ,vardemoc.c    ,1,1,Y
+variable Elemente: vardemoc.def,vardemoc.def  ,1,1,Y
+Bibliotheken: din391.lib  , din391.lib        ,1,1,Y
+Bibliotheken: sanitaer.lib  , sanitaer.lib    ,1,1,Y
+Bibliotheken: elektro.lib  , elektro.lib      ,1,1,Y
+
+CAD-Programm: CONDOR.EXE   , condore.exe      ,1,2,Y
+CAD-Programm: regcard.dll  , regcard.dll      ,1,2,Y
+CAD-Programm: cndvarob.h   , cndvarob.h       ,1,2,Y
+Zeichnungen: kupplung.drw  , kupplung.drw     ,1,2,Y
+Zeichnungen: getriebe.drw  , getriebe.drw     ,1,2,Y
+Zeichnungen: s_getr.drw    , s_getr.drw       ,1,2,Y
+Zeichnungen: s_kuppl.drw   , s_kuppl.drw      ,1,2,Y
+Zeichnungen: spannrol.drw  , spannrol.drw     ,1,2,Y
+
+[PM Info]
+;File Name, App Description, Icon file #, Icon #
+CONDOR.EXE,    CONDOR-CAD
+notepad.exe liesmich.txt,liesmich
+
+[End]
+

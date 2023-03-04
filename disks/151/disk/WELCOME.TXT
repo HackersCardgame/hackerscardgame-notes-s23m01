@@ -1,0 +1,41 @@
+ Installation:
+ 컴컴컴컴컴컴�
+ Im folgenden werden Ihnen einige Fragen zur Installation gestellt.
+
+ Zuerst einmal geben Sie bitte an, in welchem Verzeichnis VoiceConnect
+ installiert werden soll. Vorgeschlagen wird Ihnen C:\VC.
+
+ Haben Sie bereits eine 꼕ter Version installiert und m봠hten Sie diese
+ updaten, so geben Sie bitte das Verzeichnis an, in welchem sich die
+ alte Version befindet. Ihre alte Konfiguration wird dann ausgelesen und
+ weiterverwendet. W꼑rend des Installationsvorganges werden sie dann ge-
+ fragt, ob bereits vorhandene Sprachdateien 갶erschreiben werden d걊fen.
+ ACHTUNG: Es werden allerdings in jedem Fall einige Konfigurationsdateien
+ 갶erschrieben. Machen Sie ggf. ein Backup des alten Verzeichnisses.
+
+ Sollten Sie das Installationsprogramm bereits einmal durchgef갿rt haben
+ und befinden Sie sich gerade im Verzeichnis von VoiceConnect, so wird
+ nicht mehr nach einem Verzeichnis gefragt.
+
+ Nachdem dann die erforderlich Dateien installiert worden sind, werden
+ Sie nach Ihrer Konfiguration gefragt. Sollte eine alte Konfiguration
+ gefunden worden sein, so wird diese 갶ernommen und Sie k봭nen Sie
+ 꼗dern.
+
+ Haben Sie Probleme mit den Farbeinstellungen haben, so rufen Sie die
+ Programme bitte wie folgt auf: INSTALL /N /C /B, bzw. VC /N /C /B
+
+ ----------------------------  Hinweis  -------------------------------
+
+  Durch die Taste F1 erhalten Sie an JEDER Stelle der Programms eine
+   ausf갿rliche Hilfe zum aktuellen Thema. Diese gilt nicht nur f걊
+     VoiceConnect, sondern auch f걊 dieses Installationsprogramm.
+
+ ----------------------------------------------------------------------
+
+ Die Installation kann an jeder Stelle durch die Taste ESC abgebrochen
+ werden.
+
+ Wenn Sie VoiceConnect nun installieren wollen, so dr갷ken Sie die
+ >ENTER<-Taste, wenn nicht, dann die ESC-Taste.
+

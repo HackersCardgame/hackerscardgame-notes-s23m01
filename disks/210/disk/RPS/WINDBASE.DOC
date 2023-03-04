@@ -1,0 +1,469 @@
+
+
+                             WindBase Ver. 1.0
+                               by Nickleware
+
+
+                                INTRODUCTION
+
+     Windbase is an application that was designed to help simplify data 
+collection, storage and retrieval.  With the help of Windbase, you can 
+design custom data entry forms and at the same time create the database 
+to match it.  Windbase will also allow you to index and reindex your data 
+by a single field or multiple fields.  This enables you to organize and 
+retrieve your data much more easily and faster as well.  WindBase also 
+allows you to create, store and view multiple database files all at the 
+same time.  Then when you are ready to print your data, WindBase will 
+print it in the same custom layout or let you reorganize the data to best 
+fit your needs.
+
+
+                               REGISTRATION
+
+     WindBase is not public domain, nor is it free software.  You are 
+granted a limited license to use this product on a trial basis.  You are 
+also granted a license to copy WindBase, along with the documentation, for 
+the trial use by other users.  If you wish to continue using the product, 
+you must send $25 to:
+
+                               NickleWare
+                             P.O. Box 59823
+                          Renton, Wa.  98058  USA
+
+     We encourage you to copy WindBase and share it with anyone who might 
+be interested in an easier way to gather, store and retrieve information.
+
+
+
+                            GETTING STARTED
+
+          REQUIREMENTS -
+               Microsoft Windows 3.0 or higher
+               IBM compatible PC 286, 386 or 486
+
+     Before proceeding, make sure that you have Microsoft Windows correctly 
+installed.  Next create a directory called WINDBASE and copy the WindBase 
+software (WINDBASE.EXE) into this directory.  WindBase is ready to be 
+started.  Simply start WindBase from the RUN... menu selection of the 
+Windows Program Manager or add it to a Program Manager group by following 
+the directions for creating a group item in the Windows 3.0 User's Guide.
+
+
+                            WHAT IS A DATABASE
+
+     A database is a collection of similar data records stored in a common 
+file or collection of files.  A database management system such as WindBase 
+provides a means by which a user can easily store and retrieve this data.
+
+
+     CREATING A NEW DATABASE
+
+     To create a WindBase database first select NEW from the FILE pulldown 
+menu.  WindBase will create a blank database definition window and ungray 
+the following menu selections:
+
+     FILE Menu:
+        
+        SAVE DEFINITION - Create or save a database definition and data files.
+        
+     DEFINE Menu:
+
+        TEXT - This option creates a static text field in the current 
+               database definition window.
+        
+        EDIT - This option creates an entry/edit field in the current 
+               database definition window.
+        
+        CHECKBOX - This option creates a checkbox in the current database 
+                   definition window.
+        
+        STYLES - This option displays a popup window that allows the user 
+                 to modify the attributes of the currently selected TEXT, 
+                 EDIT or CHECKBOX field. 
+        
+        DELETE - This option deletes the currently selected TEXT, EDIT or 
+                 CHECKBOX field.
+        
+        TITLE - This option modifies the database title that appears in the 
+                database window.
+        
+        
+     Layout the database by selecting database fields from the DEFINE 
+pulldown menu as described in the CREATING A DATABASE FIELD section.  Each 
+of the newly created fields can be resized and placed in the database 
+definition window where desired.
+     After all of the database fields have been created and defined, the 
+database layout can be save and the database files created.  To do this, 
+simply select SAVE DEFINITION from the FILE pulldown menu.  A SAVE FILE 
+popup window will appear prompting the user to enter a path and file name 
+where the database files and associated layout files will be stored.  The 
+user only needs to enter the primary part of the file name (file name 
+without the extension).  WindBase will add the extension of .WB for the 
+database layout file, .DB for the database file and .IDX for the index file.  Once the file name has been entered and the user has selected the SAVE pushbutton, the database definition and field layout files will be created.  If the database files already exist in the specified path, Windbase will notify the user that the database already exists and the path or file name must to be changed.  Once a database definition has been saved and the database created, WindBase will only allow the database fields to b
+e resized or repositioned.  No new database fields can be created.
+
+CREATING A DATABASE FIELD
+
+     By selecting the TEXT, EDIT or CHECKBOX options from the DEFINE 
+pulldown menu, the corresponding field will be created in the currently 
+selected database definition window.  The new field will be created in the 
+upper left hand corner of the database definition window.  A style popup 
+window will be displayed prompting the user to enter a name to identify the 
+newly created field and modify any of the field attributes if desired.  
+After the database field has been created, it can be moved and resized 
+as explained in the MOVE AND RESIZEING A DATABASE FIELD section.
+
+SETTING ATTRIBUTES OF A DATABASE FIELD
+
+     Each TEXT, EDIT and CHECKBOX field defaults to a specific set of 
+attributes.  These attributes may be modified through the STYLES option in 
+the DEFINE pulldown menu.  When the STYLES option is selected a popup 
+window is presented that corresponds to the selected database field.  The 
+EDIT and CHECKBOX fields require a field name that is later used in the 
+creation of the database.  All other attributes in the styles dialog boxes 
+are optional.
+
+MOVING AND RESIZING A DATABASE FIELD
+
+     Once a database field has been created, it can be moved or resized to 
+the desired position and size by dragging and dropping with the mouse 
+pointer or grabbing the field border and stretching it.
+     To move the field, simply place the mouse pointer over the top of it 
+and click the mouse button once.  A dotted line will appear around the field 
+to indicate that it is now the currently selected field.  The mouse pointer 
+will also change to a four direction pointer to indicate that the field 
+may be moved.  With the four direction pointer over the top of the selected 
+field, press and hold the left mouse button down and while hold down the 
+button, move the mouse pointer to the desired position.  A database field 
+may also be moved by using the arrow keys on the keyboard.  To do this 
+first select the database field with the mouse as described above.  Then 
+use the arrow keys to move the database field in the desired direction.
+     To resize a database field, select the field as described above, then 
+move the mouse pointer over the top of the border of the selected field.  
+As this is done, the mouse pointer will change from a four direction pointer 
+to a two direction horizontal, vertical or diagonal pointer depending on 
+the direction in which the field may be resized.  Then simply hold the left 
+mouse button down and move the mouse in the direction indicated by the two 
+direction pointer until the field is resized to the desired size.
+
+DELETING A DATABASE FIELD
+
+     Once a TEXT, EDIT and CHECKBOX field has been created, it may be 
+deleted.  To delete a field, simply select it by placing the mouse pointer 
+over it and pressing the left mouse button.  Once the field has been 
+selected, a dotted line border will appear around it.  Then select DELETE 
+from the DEFINE pulldown menu.  A confirmation dialog box will appear 
+asking that the user to confirm the operation.  Selecting the YES 
+pushbutton, will delete the field.
+
+CHANGING THE DATABASE TITLE
+
+     To change the title that appears in the database window title bar, 
+select the TITLE option from the DEFINE pulldown menu.  After making this 
+selection a dialog box will be displayed allowing the user to enter a 
+database title.  After entering the database title, select the OK pushbutton 
+and the database window title will change.
+
+OPENING A DATABASE
+
+     To open an existing database the user must select OPEN from the FILE 
+pulldown menu.  An open file popup window will be displayed.  This popup 
+window allows the user to change directories and select database files.  
+There are four types of files that WindBase creates.  The primary name of 
+each of the four files of a database is the name specified by the user when 
+the database was originally created.  The extensions for each of these 
+files are as follows:
+
+     .WB - WindBase database layout file.
+     .DB - Database file.
+     .IDX -Database index file.
+     .PRN -WindBase page layout file.
+
+     When opening a database, any one of these files can be selected.  
+Once the database has been selected, a database window will appear with 
+the current database layout.
+     The open file dialog also allows the user to open a database 
+definition window for modification.  This is done by checking  the 
+DATABASE DEFINITION checkbox before clicking on the OPEN pushbutton.  A 
+database definition that has been opened for modification can not have 
+new database fields created.  The only modifications that are allowed 
+are resizing and repositioning of existing database fields.  Once all of 
+the modifications have been completed, select SAVE DEFINITION from the 
+FILE pulldown menu.
+
+DELETING A DATABASE
+     To delete a database the user must open the database as described 
+in the OPENING A DATABASE section.  Once the database has been opened and 
+selected, pull down the FILE menu and select DELETE.  A confirmation popup 
+window will appear allowing the user to confirm the action.  If the OK 
+pushbutton is selected, the database along with its associated files will 
+be deleted.
+
+ENTERING AND EDITING DATA
+
+     To enter and edit a record within a database the user must first open 
+the database as described in the OPENING A DATABASE section.  Data can be 
+entered into any of the EDIT fields or CHECKBOXes.  Once the desired data 
+has been entered, select ADD from the RECORD pulldown menu.  This will add 
+the record to the database.
+     Modifying a record can be done in the same manner.  After the data 
+has been completely modified, select MODIFY from the RECORD pulldown menu.  
+
+MOVING AROUND A DATABASE
+
+     Searching and browsing through the records of a database can be done 
+by selecting SEARCH, PREVIOUS and NEXT from the RECORD pulldown menu.  To 
+search for a specific record, simply enter in the data or part of the data 
+into the field by which the database has been indexed.  Then select SEARCH 
+from the RECORD pulldown menu.  WindBase will search the database for the 
+first record that exactly matches or is the closest match the data entered.  
+By selecting the NEXT or PREVIOUS options from the RECORD pulldown menu, 
+the user will be able to step through each record one by one forward or 
+backward.
+
+DELETING A RECORD FROM THE DATABASE
+
+     To delete a record from the database, simply select the record in the 
+same manor as described in the MOVING THROUGH THE DATA RECORDS section.  
+Once the desired record has been selected pull down the RECORD menu and 
+click on the DELETE option.  A confirmation popup window will appear 
+allowing the user to confirm or reject the action.  If the user clicks on 
+the YES pushbutton, the record will be deleted from the databases.
+
+DEFINING AN INDEX
+
+     One of the selections under the FILE pulldown menu is the option to 
+define or set a new default INDEX for a database.  After selecting this 
+option, a popup window will appear that contains two list boxes.  The first 
+list box on the left contains a list of the currently defined indexes for 
+the selected database.  By highlighting one of the index names in the list 
+box, the name will appear in the entry field at the top right-hand side of 
+the popup window.  The second list box will display a list of the fields 
+currently defined in the selected database with the selected index 
+definition fields highlighted.
+     A new index can be created by first entering in a new index name into 
+the INDEX NAME entry field above the INDEX DEFINITION list box.  Then by 
+dragging and placing the database field names within the INDEX DEFINITION 
+list box into the desired order and highlighting them by click on them with 
+the mouse, the user is able to define a new index definition.  After the 
+new index has been defined, click on the DEFINE pushbutton beneath the 
+INDEX DEFINITION list box and the index will be created and added to the 
+current database index list.  Once an index has been defined, it can not 
+be modified or deleted.  The only way to remove index definitions is by 
+selecting the REINDEX option from the FILE/INDEX cascade menu.  This option 
+will remove all of the defined indexes and recreate the PHYSICAL and PRIMARY 
+indexes.
+
+REINDEXING A DATABASE
+
+     To reindex a database, first open the database as described in the 
+OPENING A DATABASE section.  Once the database has been opened and the 
+database window selected, pulldown the FILE menu and select REINDEX from 
+the INDEX cascade menu.  This will remove all of the currently defined 
+indexes for the selected database and restore the base PHYSICAL and PRIMARY 
+indexes.  
+
+LAYING OUT A PRINTER PAGE
+
+     WindBase allows the user to print a database record in a different 
+format than what was originally laid out.  Creating a printer page layout 
+is similar to creating a laying out a database.  Select PAGE SETUP from 
+the FILE pulldown menu.  A database window will appear with the current 
+page layout.  When the page layout window is created, the working area is 
+adjusted to reflect the current size of a physical printer page according 
+to the printer definition.  The working area can be scrolled within the 
+page layout window by using the scroll bars along the sides of the window.  
+If the printer page layout has not already been created, it will default 
+to the current database layout.  The database fields can be moved and 
+resized as described in the MOVING AND RESIZING A DATABASE FIELD section.  
+While in the printer page layout mode the user will not be able to create 
+new EDIT or CHECKBOX fields, but the user may create new TEXT fields.  The 
+user is also allowed to change the text of a CHECKBOX or any previously 
+exiting TEXT field.    Once the printer page has been laid out as desired, 
+select SAVE DEFINITION from the FILE pulldown menu.  The printer page 
+layout will be saved and used whenever a record is printed from the 
+corresponding database.
+
+PRINTING A RECORD
+
+     To print a record, first select the desired record as described in the 
+MOVING AROUND THE DATABASE section.  After the desired record has be 
+selected, pulldown the FILE menu and select PRINT.  The current record 
+will be printed using the previously defined printer page layout.  (The 
+printer page layout must have been previously defined as described in the 
+LAYING OUT A PRINTER PAGE section.).
+
+VIEWING A MANIPULATING MULTIPLE DATABASES
+
+     Because WindBase was implemented as a multiple document interface 
+application, it allows the user to open, maintain and view more the one 
+database at a time.  As each database file is opened, WindBase creates a 
+new database window and lays out the database on the working area.  
+Switching from one database to another is as simple as placing the mouse 
+cursor over the desired window and clicking the left mouse button.  This 
+will select that database and window as the current database.  All of the 
+WindBase menu options will then apply to that database.  Each of the 
+database windows can also be minimized to avoid cluttering up the desktop 
+with too many windows.  Then, as desired, each database window can be 
+restored or minimized as the user moves from one database file to another.
+
+MENU OPTIONS
+
+     FILE MENU
+          NEW - Create an empty database layout window.
+          OPEN - Open an existing database for user or modification.
+          SAVE DEFINITION - Save the currently selected database layout or 
+                            printer page layout.
+          DELETE - Delete the currently selected database and the associated 
+                   files.
+          INDEX
+               DEFINE/SET DEFAULT - Define and set the default indexes for 
+                                    the currently selected database.
+               REINDEX - Reindex the currently selected database.
+          PAGE SETUP - Create or modify the printer page layout for the 
+                       currently selected database.
+          PRINT - Print the active record from the currently selected 
+                  database.
+          PRINTER SETUP - Change the printer attributes
+          EXIT - Close all open databases and exit WindBase.
+     EDIT MENU
+          UNDO - Undo the last entry field action.
+          CUT - Cut the currently selected entry field text to the clipboard.
+          COPY - Copy the currently selected entry field text to the 
+                 clipboard.
+          PASTE - Page the clipboard contents to the currently selected 
+                  entry field.
+          CLEAR - Clear the currently selected entry field text.
+          SELECT ALL - Select all of the text in the currently selected 
+                       entry field.
+     RECORD MENU
+          ADD - Add a record to the currently selected database.
+          MODIFY - Modify a record in the currently selected database.
+          DELETE - Delete a record from the currently selected database.
+          CLEAR - Clear all fields in the currently selected database window.
+          SEARCH - Search for a record in the currently selected database 
+                   based on the selected index.
+          NEXT - Display the next record in the currently selected database 
+                 based on the selected index.
+          PREVIOUS - Display the previous record in the currently selected 
+                     database based on the selected index.
+          FIRST - Display the first record in the currently selected 
+                  database based on the selected index.
+          LAST - Display the last record in the currently selected database 
+                 based on the selected index.
+     DEFINE MENU
+          TEXT - Create a Text field in the currently selected database 
+                 window.
+          EDIT - Create an edit field in the currently selected database 
+                 window.
+          CHECKBOX - Create a checkbox field in the currently selected 
+                     database window.
+          STYLES - Modify the attributes of the selected field in the 
+                   currently selected database window.
+          DELETE - Delete the selected field in the currently selected 
+                   database window.
+          TITLE - Modify the title of the currently selected database window.
+     WINDOW MENU
+          TILE - Tile all open database windows within the WindBase main window.
+          CASCADE - Cascade all open database windows within the WindBase main window.
+          ARRANGE ICONS - Arrange all database window icons within the WindBase main window.
+          CLOSE ALL - Close all open database windows.
+     HELP MENU
+          INDEX - Display the WindBase help file.
+          ABOUT - Display the WindBase About Box.
+
+                               SPECIAL FEATURES
+
+     DRAG AND DROP - Whenever an item such as a database field is being 
+repositioned within a database definition window , the item may be dragged 
+and dropped.  This means that an item can be selected with the mouse 
+pointer, and while holding the mouse button down, move the pointer to a 
+new position.  When the mouse button is released the selected item will 
+be placed at the mouse pointer position.
+
+     CLIPBOARD - The clipboard is a convenient way of transferring data 
+between WindBase and other Windows applications or between different 
+Windbase databases or records.  To use the clipboard functions simply 
+highlight any text that is displayed in an entry field, pull down the 
+EDIT menu and choose COPY or CUT.  The COPY function will place a copy 
+of the highlighted text in the Windows clipboard.  The CUT function also 
+places the highlighted text in the clipboard but also removes it from the 
+entry field.  To retrieve text from the clipboard, place the cursor at the 
+position inside an entry field where the clipboard text should be inserted 
+or appended.  Then pull down the EDIT menu and choose PASTE.  The clipboard 
+text will be placed in the entry field at the cursor position.
+
+
+                                   EXITING
+
+     When you have finished using WindBase, you should exit via the EXIT 
+selection from the main window's FILE menu.  If you forget and turn your 
+computer off before exiting, WindBase can not guarantee that your database 
+files have been saved completely.  It is very important that you always 
+exit WindBase via this selection.
+
+
+NickleWare
+Copyright (C) 1990,91 Bradley Nicholes
+CompuServe: 72730,1002
+
+
+___________________________________THE_END______________________________________
+
+                        ษอออออออออออออออออออออออป
+                        บ  PD-SERVICE-LAGE-INFO บ
+                        ศอออออออออออออออออออออออผ
+ 
+ 
+Verehrter Kunde
+อออออออออออออออ
+Bitte beachten Sie die folgenden Hinweise:
+1) Wir sind nicht der/die Autor(n) dieses Programms.
+ 
+2)Der Preis den Sie fr den Erwerb dieser Diskette/Progamms an uns gezahlt
+haben,bezieht sich lediglich auf unseren Kopierservice sowie Porto und an-
+fallende Unkosten.
+ 
+3)Der Service des PD-SERVICE-LAGE beschrnkt sich lediglich auf den Vertrieb
+der von uns angebotenen Programme,nach den allgemein gltigen Regeln der
+SHAREWARE-Vertriebsform.
+ 
+4)Wenn Sie dieses Programm nach abgeschlossener Test/Prfphase weiter benutzen,
+dann mssen Sie sich beim Autoren des Programmes registrieren lassen,und die
+flligen Registriergebhren an den Programmautoren berweisen.
+ 
+5)Bitte senden Sie Ihre Registrierungsgebhr sowie eventuelle Fragen die sich
+auf das Programm beziehen,direkt an den Programmautoren und nicht an
+den PD-SERVICE-LAGE.
+ 
+6)Alle Programme die Sie vom PD-SERVICE-LAGE beziehen sind von uns sorgfltig,
+auf Funktion-,Lauffhigkeit- und evtl.Virenbefall berprft worden.
+ 
+7)Alle von uns angebotenen Programmdisketten/SHAREWARE-Programme,werden in
+regelmssigen Abstnden neu "upgedatet"  und gegen die allerneuesten Programm-
+versionen ausgewechselt,d.h. wenn Sie dieses Programm nicht direkt vom
+PD-SERVICE-LAGE erhalten haben,dann mssen Sie evtl.davon ausgehen,das Sie
+vielleicht nicht die allerneueste,aktuelle Prg.Version in Ihren Hnden haben.
+ 
+8)Gegen eine Schutzgebhr von 3,00 DM senden wir Ihnen gerne unseren aktuellen
+Programmkatalog ( alle 10 Tage wird unser Katalog aktualisiert )
+mit ber 8000+ aktuellen deutschen & internationalen Programmen.
+ 
+ 
+9)Bitte richten Sie Ihre Programm/Katalog Bestellungen an :
+ 
+            ษออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+            ฬออออออออออออออออออออออออออออออออออออออออออออออออออออออน
+            บ                                                      บ
+            บ             PD-SERVICE-LAGE                          บ
+            บ             Postfach 1743                            บ
+            บ             4973 Lage/Lippe                          บ
+            บ             Tel. 05232-66912  von 10-14 Uhr          บ
+            บ             Fax  05232-4039                          บ
+            บ             BTX: *PD SERVICE#                        บ                                                      บ
+            ศออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+ 
+! Wir bieten Ihnen Programme,die Sie bei anderen Hndlern, vergeblich suchen !
+
+
+

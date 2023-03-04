@@ -1,0 +1,214 @@
+BEGIN_MODULES  # This must be the command line in the file
+
+	A_MODULE n[Common] c[15] s[693190] w[165792] x[62535] 
+	COMPONENT n[Common] c[15] s[693190] w[165792] x[62535] 
+  
+	A_MODULE n[DOS Remote Client] c[9] s[880005] w[0] x[0] 
+	COMPONENT n[Dialer] c[9] s[880005] w[0] x[0] 
+
+	A_MODULE n[Windows Remote Client] c[12] s[1302851] w[21648] x[0] 
+	COMPONENT n[Dialer] c[12] s[1302851] w[21648] x[0] 
+
+	A_MODULE n[Install TCPIP] c[5] s[135098] w[0] x[0] 
+	COMPONENT n[TCPIP] c[5] s[135098] w[0] x[0] 
+
+	A_MODULE n[Install IPX] c[3] s[40151] w[0] x[0] 
+	COMPONENT n[IPX] c[3] s[40151] w[0] x[0] 
+
+	A_MODULE n[NetWare Utilities (LOGIN, NLIST, MAP, CX)] c[30] s[1602608] w[0] x[1602608] 
+	COMPONENT n[Utilities] c[30] s[1602608] w[0] x[1602608] 
+
+#	A_MODULE n[Clear Dialer Databases] c[0] s[0] 
+#	COMPONENT n[Clear] c[0] s[0] 
+END_MODULES
+
+
+BEGIN_GROUP n[Common]
+
+  BEGIN_SET n[Common]
+    A_RULE r[CreateDir]  f[windows]
+    A_RULE r[CreateDir]  f[nwclient]
+    A_RULE r[CreateDir]  f[install]
+    A_RULE r[CreateDir]  f[bin]
+    A_RULE r[CreateDir]  f[hstacc]
+    A_RULE r[CreateDir]  f[script]
+    A_RULE r[CreateDir]  f[tcp]
+    A_RULE r[CreateDir]  f[profile]
+
+    A_RULE r[BackupFile] f[windows\system.ini]
+    A_RULE r[BackupFile] f[windows\lwp.ini]
+    A_RULE r[BackupFile] f[nwclient\net.cfg]
+    A_RULE r[BackupFile] f[nwclient\startnet.bat]
+    A_RULE r[BackupFile] f[\autoexec.bat]
+
+	AN_ENTRY p[bin\netwarn.com] f[2] s[2431] c[1956] v[] t[752186412] w[] x[] 
+	AN_ENTRY p[bin\verread.exe] f[2] s[21017] c[12648] v[1.00] t[797256000] w[] x[] 
+	AN_ENTRY p[bin\yesno.exe] f[2] s[8903] c[6508] v[5.00.100] t[797256000] w[] x[] 
+	AN_ENTRY p[bin\yesno.msg] f[2] s[183] c[163] v[] t[797256000] w[] x[] 
+# common files for both dialers
+	AN_ENTRY p[hstacc\codes.dlr] f[2] s[6317] c[4173] v[] t[797256000] w[] x[] 
+	AN_ENTRY p[hstacc\aiomdms.mdc] f[2] s[339894] c[48435] v[] t[798335478] w[] x[] 
+	AN_ENTRY p[hstacc\modems.inf] f[2] s[2558] c[865] v[] t[794258404] w[] x[] 
+	AN_ENTRY p[hstacc\driver.lst] f[2] s[7] c[47] v[] t[783906952] w[] x[] 
+	AN_ENTRY p[bin\slpmon.exe] f[2] s[38448] c[17173] v[5.1.13] t[800580998] w[] x[] 
+	AN_ENTRY p[nwclient\nwremote.com] f[2] s[25303] c[13302] v[2.12] t[800580236] w[] x[25303] 
+	AN_ENTRY p[nwclient\ncomx.com] f[2] s[22565] c[11509] v[2.12] t[800587032] w[] x[22565] 
+	AN_ENTRY p[nwclient\vncomx.386] f[2] s[14667] c[3709] v[1.10] t[800587016] w[] x[14667] 
+	AN_ENTRY p[bin\setrempw.exe] f[2] s[43761] c[26039] v[1.0.03] t[798845368] w[] x[] 
+	AN_ENTRY p[bin\nls\english\setrempw.msg] f[2] s[1344] c[725] v[] t[798845280] w[] x[] 
+	AN_ENTRY p[windows\system\netware.drv] f[2] s[165792] c[77737] v[3.03] t[793575864] w[165792] x[] 
+# Create a file to automatically load remote client
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Prepend] s[:LoadNet]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[goto Exit]
+
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Prepend] s[goto LoadRem]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Prepend] s[if errorlevel 1 goto LoadNet]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Prepend] s[%target%bin\yesno.exe "Do you want to load the remote client software? (y/n) "]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Prepend] s[echo off]
+
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[:LoadRem]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[%loadhi%%nwclient%lsl.com /C=%nwclient%net.cfg]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[%loadhi%%nwclient%nesl.com]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[%loadhi%%nwclient%ncomx.com]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[%loadhi%%nwclient%nwremote.com]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[REM **DO NOT DELETE**]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[REM Load IPX]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[REM **DO NOT DELETE**]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[REM Load TCPIP]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[%nwclient%vlm.exe /C=%nwclient%net.cfg]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[@ SET NWLANGUAGE=ENGLISH]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[:Exit]
+    A_RULE r[ModFile] f[nwclient\startnet.bat] o[Append] s[echo on]
+
+    A_RULE r[DeleteFile] f[nwclient\connect.bat]
+    A_RULE r[ModFile] f[nwclient\connect.bat] o[Append] s[%nwclient%lsl.com /u]
+# Add line into autoexec.bat to run the startup batch file
+    A_RULE r[ModFile] f[\autoexec.bat] o[Append] s[PATH %target%bin;%path%]
+# Modify NET.CFG parameters
+    A_RULE r[ModNetCfg] f[nwclient\net.cfg] s[Protocol TCPIP] k[PATH TCP_CFG] v[%target%tcp]
+#update INI (used by both DOS & Windows)
+    A_RULE r[AddToIni] f[windows\lwp.ini] s[Paths] k[SCRIPT] v[%target%SCRIPT]
+    A_RULE r[AddToIni] f[windows\lwp.ini] s[Paths] k[LWP_CFG] v[%target%HSTACC]
+    A_RULE r[AddToIni] f[windows\lwp.ini] s[Paths] k[PROFILE] v[%target%PROFILE]
+    A_RULE r[AddToIni] f[windows\lwp.ini] s[Paths] k[TCP_CFG] v[%target%TCP]
+END_SET [Common]
+
+END_GROUP [Common]
+
+BEGIN_GROUP n[DOS Remote Client]
+  BEGIN_SET n[Dialer]
+	AN_ENTRY p[bin\dosdial.exe] f[2] s[697344] c[235943] v[5.1.14] t[800656574] w[] x[] 
+	AN_ENTRY p[bin\nls\english\dosdial.msg] f[2] s[28174] c[11726] v[] t[800650744] w[] x[] 
+	AN_ENTRY p[bin\nls\english\dosdial.hep] f[2] s[95371] c[28755] v[] t[800143260] w[] x[] 
+#DOS Utility Files
+	AN_ENTRY p[bin\textutil.idx] f[2] s[9170] c[4027] v[] t[660865044] w[] x[] 
+	AN_ENTRY p[bin\nls\english\textutil.hep] f[2] s[11771] c[4424] v[4.02] t[778290084] w[] x[] 
+	AN_ENTRY p[bin\nls\english\textutil.msg] f[2] s[29730] c[10962] v[4.10] t[778290124] w[] x[] 
+	AN_ENTRY p[bin\ibm_run.ovl] f[2] s[2815] c[1805] v[] t[760120430] w[] x[] 
+	AN_ENTRY p[bin\cmpq_run.ovl] f[2] s[2815] c[1805] v[] t[760120430] w[] x[] 
+	AN_ENTRY p[bin\_run.ovl] f[2] s[2815] c[1805] v[] t[760120430] w[] x[] 
+  END_SET n[Dialer]
+  
+END_GROUP n[DOS Remote Client]
+
+BEGIN_GROUP n[Windows Remote Client]
+  BEGIN_SET n[Dialer]
+#Windows Support Files
+	AN_ENTRY p[bin\dialer.exe] f[2] s[360448] c[197872] v[5.1.14] t[800585628] w[] x[] 
+	AN_ENTRY p[bin\dialer.hlp] f[2] s[446401] c[142309] v[] t[800587236] w[] x[] 
+	AN_ENTRY p[bin\dial_cfg.exe] f[2] s[160176] c[89218] v[5.1.13] t[800586552] w[] x[] 
+	AN_ENTRY p[bin\dial_cfg.hlp] f[2] s[28312] c[16828] v[] t[800587268] w[] x[] 
+	AN_ENTRY p[bin\slpapi.dll] f[2] s[65392] c[33945] v[5.1.14] t[800580854] w[] x[] 
+	AN_ENTRY p[bin\mdmapi.dll] f[2] s[54496] c[32536] v[5.1.13] t[800580484] w[] x[] 
+	AN_ENTRY p[bin\lwputil.dll] f[2] s[46832] c[21511] v[5.00.100] t[797256000] w[] x[] 
+	AN_ENTRY p[bin\lwpicon.dll] f[2] s[32288] c[6796] v[5.00.100] t[797256000] w[] x[] 
+	AN_ENTRY p[bin\winsock.dll] f[2] s[35632] c[18049] v[5.00.100] t[797256000] w[] x[] 
+	AN_ENTRY p[bin\novasync.exe] f[2] s[4960] c[3122] v[5.00.100] t[797256000] w[] x[] 
+	AN_ENTRY p[bin\wlibsock.dll] f[2] s[46266] c[21896] v[5.00.100] t[797256000] w[] x[] 
+	AN_ENTRY p[windows\system\ctl3dv2.dll] f[2] s[21648] c[11334] v[] t[745543366] w[21648] x[] 
+#  Windows
+    A_RULE r[AddIcon] t[NetWare Remote Client 2.0] g[remclnt.grp] n[Remote Client Dialer] c[bin\dialer.exe] i[0]
+    A_RULE r[AddToIni] f[windows\lwp.ini] s[Slpmon] k[Visible] v[TRUE]
+    A_RULE r[ModIni] f[windows\lwp.ini] s[Dialer] k[ConfigRun] v[0]
+  END_SET n[Dialer]
+  
+END_GROUP n[Windows Remote Client]
+
+
+BEGIN_GROUP n[Install TCPIP]
+  BEGIN_SET n[TCPIP]
+	AN_ENTRY p[bin\tcpip.exe] f[2] s[70961] c[34673] v[5.00.100] t[797256000] w[] x[] 
+	AN_ENTRY p[bin\vtcpip.386] f[2] s[10993] c[4195] v[5.00.100] t[797256000] w[] x[] 
+# PING Stuff
+	AN_ENTRY p[bin\ping.exe] f[2] s[50112] c[31855] v[5.00.100] t[797256000] w[] x[] 
+	AN_ENTRY p[bin\ping.msg] f[2] s[2487] c[1218] v[] t[797256000] w[] x[] 
+	AN_ENTRY p[bin\ping.pif] f[2] s[545] c[196] v[] t[797256000] w[] x[] 
+    A_RULE r[ModNetCfg] f[nwclient\startnet.bat] s[REM Load TCPIP] k[@] v[%target%bin\tcpip.exe]
+    A_RULE r[AddIcon] t[NetWare Remote Client 2.0] g[remclnt.grp] n[PING] c[bin\ping.pif] f[bin\lwpicon.dll] i[9]
+  END_SET n[TCPIP]
+END_GROUP n[Install TCPIP]
+
+BEGIN_GROUP n[Install IPX]
+  BEGIN_SET n[IPX]
+# IPXPING Stuff
+	AN_ENTRY p[bin\ipxping.exe] f[2] s[37883] c[22080] v[1.0.4] t[800659744] w[] x[] 
+	AN_ENTRY p[bin\ipxping.pif] f[2] s[545] c[200] v[] t[793658748] w[] x[] 
+	AN_ENTRY p[bin\nls\english\ipxping.msg] f[2] s[1723] c[995] v[] t[800659688] w[] x[] 
+    A_RULE r[AddIcon] t[NetWare Remote Client 2.0] g[remclnt.grp] n[IPXPING] c[bin\ipxping.pif] f[bin\lwpicon.dll] i[9]
+    A_RULE r[ModNetCfg] f[nwclient\startnet.bat] s[REM Load IPX] k[@] v[%loadhi%%nwclient%ipxodi.com]
+  END_SET n[IPX]
+END_GROUP n[Install IPX]
+
+#BEGIN_GROUP n[Clear Dialer Databases]
+#  BEGIN_SET n[Clear]
+#    A_RULE r[BackupFile] f[hstacc\hostdir.dlr]
+#    A_RULE r[BackupFile] f[hstacc\phonedir.dlr]
+#    A_RULE r[BackupFile] f[script\scrptidx.dlr]
+#    A_RULE r[DeleteFile] f[hstacc\hostdir.dlr]
+#    A_RULE r[DeleteFile] f[hstacc\phonedir.dlr]
+#    A_RULE r[DeleteFile] f[script\scrptidx.dlr]
+#    A_RULE r[AddToIni] f[windows\lwp.ini] s[Dialer] k[ConfigRun] v[0]
+#  END_SET n[Clear]
+#END_GROUP n[Clear Dialer Databases]
+
+
+
+
+BEGIN_GROUP n[NetWare Utilities (LOGIN, NLIST, MAP, CX)]
+  BEGIN_SET n[Utilities]
+	AN_ENTRY p[nwclient\cmpq_run.ovl] f[2] s[2815] c[1805] v[] t[760120430] w[] x[2815] 
+	AN_ENTRY p[nwclient\cx.exe] f[3] s[214059] c[104425] v[4.20] t[782692060] w[] x[214059] 
+	AN_ENTRY p[nwclient\dosv_run.ovl] f[3] s[3568] c[2319] v[] t[734369946] w[] x[3568] 
+	AN_ENTRY p[nwclient\ibm_run.ovl] f[3] s[2815] c[1805] v[] t[760120430] w[] x[2815] 
+	AN_ENTRY p[nwclient\login.exe] f[3] s[314945] c[159670] v[4.12] t[782685002] w[] x[314945] 
+	AN_ENTRY p[nwclient\logout.exe] f[3] s[224021] c[111697] v[4.12] t[782698262] w[] x[224021] 
+	AN_ENTRY p[nwclient\nlist.exe] f[3] s[395955] c[187420] v[4.19] t[782695548] w[] x[395955] 
+	AN_ENTRY p[nwclient\slist.bat] f[3] s[26] c[74] v[] t[717360526] w[] x[26] 
+	AN_ENTRY p[nwclient\textutil.idx] f[3] s[9170] c[4027] v[] t[660865044] w[] x[9170] 
+	AN_ENTRY p[nwclient\typemsg.exe] f[3] s[43595] c[23632] v[4.05] t[783713110] w[] x[43595] 
+	AN_ENTRY p[nwclient\_run.ovl] f[3] s[2815] c[1805] v[] t[760120430] w[] x[2815] 
+	AN_ENTRY p[nwclient\attach.bat] f[3] s[27] c[76] v[] t[717360526] w[] x[27] 
+	AN_ENTRY p[nwclient\map.exe] f[3] s[273579] c[134757] v[4.12] t[782685136] w[] x[273579] 
+	AN_ENTRY p[nwclient\nls\1252_uni.001] f[3] s[727] c[-1] v[2.00] t[770413186] w[] x[727] 
+	AN_ENTRY p[nwclient\nls\437_uni.001] f[3] s[727] c[-1] v[2.00] t[765487340] w[] x[727] 
+	AN_ENTRY p[nwclient\nls\850_uni.001] f[3] s[727] c[-1] v[2.00] t[765487344] w[] x[727] 
+	AN_ENTRY p[nwclient\nls\uni_850.001] f[3] s[2776] c[-1] v[2.00] t[765487348] w[] x[2776] 
+	AN_ENTRY p[nwclient\nls\uni_1252.001] f[3] s[2264] c[-1] v[2.00] t[770413188] w[] x[2264] 
+	AN_ENTRY p[nwclient\nls\uni_437.001] f[3] s[2904] c[-1] v[2.00] t[765487344] w[] x[2904] 
+	AN_ENTRY p[nwclient\nls\uni_col.001] f[3] s[1752] c[-1] v[2.00] t[765487338] w[] x[1752] 
+	AN_ENTRY p[nwclient\nls\uni_mon.001] f[3] s[4312] c[-1] v[2.00] t[765487338] w[] x[4312] 
+	AN_ENTRY p[nwclient\nls\english\cx.msg] f[3] s[4093] c[1965] v[4.12] t[778373290] w[] x[4093] 
+	AN_ENTRY p[nwclient\nls\english\login.msg] f[3] s[11333] c[5030] v[4.1] t[780271146] w[] x[11333] 
+	AN_ENTRY p[nwclient\nls\english\logout.msg] f[3] s[3198] c[1502] v[4.1] t[780267846] w[] x[3198] 
+	AN_ENTRY p[nwclient\nls\english\map.msg] f[3] s[8083] c[3467] v[4.1] t[780271362] w[] x[8083] 
+	AN_ENTRY p[nwclient\nls\english\nlist.msg] f[3] s[19859] c[7269] v[4.1] t[780252886] w[] x[19859] 
+	AN_ENTRY p[nwclient\nls\english\schema.xlt] f[3] s[8216] c[2953] v[4.12] t[782417440] w[] x[8216] 
+	AN_ENTRY p[nwclient\nls\english\textutil.hep] f[3] s[11859] c[4485] v[4.11] t[781227518] w[] x[11859] 
+	AN_ENTRY p[nwclient\nls\english\textutil.msg] f[3] s[29740] c[10972] v[4.11] t[781394894] w[] x[29740] 
+	AN_ENTRY p[nwclient\nls\english\typemsg.msg] f[3] s[2648] c[1412] v[4.04] t[775519134] w[] x[2648] 
+  END_SET n[Utilities]
+  
+END_GROUP n[NetWare Utilities (LOGIN, NLIST, MAP, CX)]
+
+
+

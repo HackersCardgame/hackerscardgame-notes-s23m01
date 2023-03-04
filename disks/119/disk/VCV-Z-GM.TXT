@@ -1,0 +1,10 @@
+  Sprachdateien fÅr VoiceConnect Version 2.1
+  -------------------------------------------------------------------------
+  Typ     : ZyXEL
+  Sprache : Deutsch, mÑnnlich
+  -------------------------------------------------------------------------
+  Dieses Archiv enthÑlt die Voicedateien, die fÅr den Betrieb von
+  VoiceConnect mit einem ZyXEL-Modem benîtigt werden. Bitte kopieren
+  Sie die Datei "VCVOICES.LZH" vor der Installation in das Verzeichnis,
+  in welchem sich auch das Programm INSTALL befindet.
+  -------------------------------------------------------------------------

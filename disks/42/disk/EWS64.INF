@@ -1,0 +1,595 @@
+[Version]
+Signature="$CHICAGO$"
+Class=TerraTecMedia
+Provider=%MSFT%
+LayoutFile=layout.inf
+
+[ClassInstall]
+AddReg=Class.AddReg
+
+[Class.AddReg]
+HKR,,,,%MediaClassName%
+HKR,,Icon,,"0"
+HKR,,Installer,,mmci.dll
+
+[Manufacturer]
+%EWS64_Manufacturer_Desc%=TERRATEC
+
+[TERRATEC]
+%*CSC0000.DeviceDesc%=CSC0000_Device, *CSCA800
+%*CSC0001.DeviceDesc%=CSC0001_Device, *CSCA801
+%*CSC0010.DeviceDesc%=CSC0010_Device, *CSCA810
+%*CSC0003.DeviceDesc%=CSC0003_Device, *CSCA803
+%*CSC1A00.DeviceDesc%=CSC000F_Device, *CSCA8A0
+%*CSC1A01.DeviceDesc%=CSC000F_Device, *CSCA8A1
+%*CSC1A03.DeviceDesc%=CSC000F_Device, *CSCA8A3
+%EWS64_Synth_Desc0%=EWS64_Synth_Device,*CSC9407
+%EWS64_Synth_Desc1%=EWS64_Disabled_Synth,*CSCA8A4
+%EWS64_Control_Desc%=EWS64_Control_Device,*CSCA805
+%EWS64_Control_Desc1%=EWS64_Control_Device,*CSCA8A5
+
+
+
+;--EWS 64 Synthesizer--------------------------------------------------------
+[EWS64_Disabled_Synth]
+CopyFiles=EWS64_Synth.CopyList,WinDir.CopyList
+
+
+[EWS64_Synth_Device]
+DelFiles =EWS64_Synth.DelList
+CopyFiles=EWS64_Synth.CopyList
+AddReg   =EWS64_Synth.AddReg
+
+
+[EWS64_Synth.DelList]
+ewsaudio.drv,,,1
+ewsaudio.vxd,,,1
+dll9407.dll,,,1
+
+[WinDir.Copylist]
+ews64_os.bin,,
+ewssetp1.exe,,
+ewssetup.exe,,
+ewssetup.ini,,
+ttsetup.dll,,
+lang031.dll,,
+lang033.dll,,
+lang034.dll,,
+lang039.dll,,
+lang044.dll,,
+lang049.dll,,
+
+[EWS64_Synth.CopyList]
+ewsaudio.drv,,,2
+ewsaudio.vxd,,,2
+dll9407.dll,,,2
+
+
+[EWS64_Synth.AddReg]
+HKR,,DevLoader,,mmdevldr.vxd
+HKR,,Driver,,ewsaudio.vxd
+HKR,Drivers,MIGRATED,,0
+HKR,Drivers,SubClasses,,"wave,midi"
+HKR,Drivers\wave,,,
+HKR,Drivers\wave\ewsaudio.drv,Driver,,ewsaudio.drv
+HKR,Drivers\wave\ewsaudio.drv,Description,,%EWS64_WaveSynth_Desc%
+HKR,Drivers\midi,,,
+HKR,Drivers\midi\ewsaudio.drv,Driver,,ewsaudio.drv
+HKR,Drivers\midi\ewsaudio.drv,Internal,1,01,00,00,00
+HKR,Drivers\midi\ewsaudio.drv,Description,0,%EWS64_Synth_Desc0%
+HKR,,EnumPropPages,,"ewsaudio.drv,DrvEnumPropPages"
+HKLM,System\CurrentControlSet\Control\MediaResources\Dream,Firmware,0,""
+HKLM,System\CurrentControlSet\Control\MediaResources\Dream,Sound,0,""
+HKCU,Software\Microsoft\Multimedia\Audio,DefaultFormat,0,CD quality
+HKCU,Software\Microsoft\Multimedia\Audio\WaveFormats,CDquality,1,01,00,02,00,44,ac,00,00,10,b1,02,00,04,00,10,00
+
+
+;--EWS 64 Feature Port-------------------------------------------------------
+[EWS64_Control_Device]
+DelFiles=EWS64_Control.DelList
+CopyFiles=EWS64_Control.CopyList
+AddReg=EWS64_Control.AddReg
+
+
+[EWS64_Control.DelList]
+ewsctrl.vxd,,,1
+
+
+[EWS64_Control.CopyList]
+ewsctrl.vxd,,
+
+
+[EWS64_Control.AddReg]
+HKR,,DevLoader,,mmdevldr.vxd
+HKR,,Driver,,ewsctrl.vxd
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce,TerraTec EWS,,"ewssetp1.exe"
+
+;--INF General settings------------------------------------------------------
+[CSC0000_Device]
+DelFiles    =WSS.DelList
+CopyFiles   =WSS.CopyList,Windir.CopyList,Power.CopyList,WSTREAM.CopyDriver
+AddReg      =WAVE.AddReg, MIXER.AddReg, CSC0000.AddReg, WSS.AddReg, Power.AddReg
+UpdateInis  =WSS.UpdateInis
+UpdateCfgSys=CS4232C.UpdateCfgSys
+
+[WSS.UpdateInis]
+system.ini,386Enh,"device=vsndsys.386"
+system.ini,drivers,"wave*=sndsys.drv",,1
+system.ini,drivers,"wave*=cs31ba11.drv",,1
+system.ini,drivers,"wave*=cs32ba11.drv",,1
+system.ini,drivers,"midi*=sndsys.drv",,1
+system.ini,drivers,"aux*=sndsys.drv",,1
+system.ini,drivers,"aux*=cs31ba11.drv",,1
+system.ini,drivers,"aux*=cs32ba11.drv",,1
+system.ini,drivers,"mixer*=sndsys.drv",,1
+system.ini,drivers,"mixer*=cs31ba11.drv",,1
+system.ini,drivers,"mixer*=cs32ba11.drv",,1
+
+[WSS.CopyList]
+cwaudio.vxd,,
+cs32ba11.drv,,
+csfm.drv,,
+cs4232ld.vxd,,
+
+[Windir.CopyList]
+
+[WSTREAM.CopyDriver]
+wstream.dll,,
+vwstream.vxd,,
+msgloop.exe,,
+
+[WSS.DelList]
+vsndsys.386,,,1
+sndsys.drv,,,1
+vaudiod.386,,,1
+cpqaudio.drv,,,1
+vsbd.386,,,1
+vadlibd.386,,,1
+nullwave.drv,,,1
+mssndsys.drv,,,1
+mssndsys.vxd,,,1
+
+[WSS.AddReg]
+HKR,,Driver,,"cwaudio.vxd vwstream.vxd"
+HKR,,EnumPropPages,,"cs32ba11.drv,DrvEnumPropPages"
+HKR,Drivers,SubClasses,,"wave,midi,aux,mixer"
+HKR,Drivers\wave\cs32ba11.drv,Driver,,cs32ba11.drv
+HKR,Drivers\mixer\cs32ba11.drv,Driver,,cs32ba11.drv
+HKR,Drivers\aux\cs32ba11.drv,Driver,,cs32ba11.drv
+HKR,Drivers\midi\cs32ba11.drv,Description,,%WSTREAM.DeviceDesc%
+HKR,Drivers\midi\cs32ba11.drv,Driver,,cs32ba11.drv
+HKR,Drivers\midi\csfm.drv,,,
+HKR,Drivers\midi\csfm.drv,Driver,,csfm.drv
+HKLM,%KEY_FIL%\fl.UpdateInis,device.vsndsys,,"system.ini,386Enh,""device=vsndsys.386"",,"
+
+
+[CSC0000.AddReg]
+HKR,Drivers\wave\cs32ba11.drv,Description,,%*CSC0000.DeviceDesc%
+HKR,Drivers\mixer\cs32ba11.drv,Description,,%*CSC0000.DeviceDesc%
+HKR,Drivers\aux\cs32ba11.drv,Description,,%*CSC0000.DeviceDesc%
+HKR,Drivers\midi\csfm.drv,Description,,%EWS_64_FMSYNTH%
+HKR,Drivers,SubClasses,,"wave,midi,aux,mixer"
+HKR,Config\DRIVER,Interp8,,Linear
+HKR,Config\DRIVER,Interp16,,Linear
+HKR,Config\DRIVER,SaveSettingsOnExit,,ON
+HKR,Config\DRIVER,DMATimingMode,,1
+HKR,Config\DRIVER,4232ADPCMEnable,,1
+HKR,Config\MIXER,WaveVolumeOffset,,48
+HKR,Config\MIXER,lLineVolume,,0
+HKR,Config\MIXER,rLineVolume,,0
+HKR,Config\MIXER,LineGang,,ON
+HKR,Config\MIXER,lMicVolume,,0
+HKR,Config\MIXER,rMicVolume,,0
+HKR,Config\MIXER,MicGang,,ON
+HKR,Config\MIXER,lAuxInVolume,,0
+HKR,Config\MIXER,rAuxInVolume,,0
+HKR,Config\MIXER,AuxInGang,,ON
+HKR,Config\MIXER,lLoopBackInputVolume,,0
+HKR,Config\MIXER,rLoopBackInputVolume,,0
+HKR,Config\MIXER,LoopBackInputGang,,ON
+HKR,Config\MIXER,MonitorVolume,,0
+HKR,Config\MIXER,MonitorMute,,ON
+HKR,Config\MIXER,MonitorMode,,Recording
+HKR,Config\MIXER,lMasterVolume,,65535
+HKR,Config\MIXER,rMasterVolume,,65535
+HKR,Config\MIXER,MasterMute,,OFF
+HKR,Config\MIXER,MasterGang,,ON
+HKR,Config\MIXER,lAuxVolume,,49087
+HKR,Config\MIXER,rAuxVolume,,49087
+HKR,Config\MIXER,AuxMute,,OFF
+HKR,Config\MIXER,AuxGang,,ON
+HKR,Config\MIXER,lAux2Volume,,49087
+HKR,Config\MIXER,rAux2Volume,,49087
+HKR,Config\MIXER,Aux2Mute,,OFF
+HKR,Config\MIXER,Aux2Gang,,ON
+HKR,Config\MIXER,lLineMixVolume,,49087
+HKR,Config\MIXER,rLineMixVolume,,49087
+HKR,Config\MIXER,LineMixMute,,OFF
+HKR,Config\MIXER,LineMixGang,,ON
+HKR,Config\MIXER,MonoVolume,,0
+HKR,Config\MIXER,MonoMute,,ON
+HKR,Config\MIXER,MonoOutMute,,ON
+HKR,Config\MIXER,MicBoost,,OFF
+HKR,Config\MIXER,HWMUTE,,"0,1,E"
+HKR,Config\MIXER,lVirtMaster,,65535
+HKR,Config\MIXER,rVirtMaster,,65535
+HKR,Config\MIXER,lLowPriMicVolume,,0
+HKR,Config\MIXER,rLowPriMicVolume,,0
+HKR,Config\MIXER,LowPriMicMute,,ON
+HKR,Config\MIXER,LowPriMicBoost,,ON
+HKR,Config\MIXER,lLowPriLineVolume,,0
+HKR,Config\MIXER,rLowPriLineVolume,,0
+HKR,Config\MIXER,lLowPriLoopBackInputVolume,,0
+HKR,Config\MIXER,rLowPriLoopBackInputVolume,,0
+HKR,Config\MIXER,lLowPriAuxInVolume,,0
+HKR,Config\MIXER,rLowPriAuxInVolume,,0
+HKR,Config\MIXER,VirtMasterMute,,OFF
+HKR,Config\MIXER,VirtMasterGang,,ON
+HKR,Config\MIXER,MicAGC,,OFF
+HKR,Config\MIXER,DisableKaraokeMode,,ON
+HKR,Config\MIXER,KaraokeMode,,OFF
+HKR,Config\MIXER,UseHWMasterVolume,,OFF
+HKR,Config\MIXER,SmartKaraokeMode,,ON
+HKR,Config\MIXER,InputSelection,,Loop
+HKR,Config\MIXER,LowPriInputSelection,,Loop
+HKR,Config\MIXER,lDacSERVolume,,0
+HKR,Config\MIXER,rDacSERVolume,,0
+HKR,Config\MIXER,DacSERMute,,ON
+HKR,Config\MIXER,lLine-inVolume,,0
+HKR,Config\MIXER,rLine-inVolume,,0
+HKR,Config\MIXER,Line-inInputMute,,OFF
+HKR,Config\MIXER,Line-inOutputMute,,OFF
+HKR,Config\MIXER,3DSpace,,65535
+HKR,Config\MIXER,3DCenter,,65535
+HKR,Config\MIXER,3DMute,,OFF
+HKR,Config\MIXER,Aux2InputMute,,OFF
+HKR,Config\MIXER,Aux1InputMute,,OFF
+HKR,Config\MIXER,LineInputMute,,OFF
+HKR,Config\MIXER,MicInputMute,,ON
+HKR,Config\MIXER,MicOutputMute,,ON
+HKR,Config\MIXER,lWaveOutVolume,,65535
+HKR,Config\MIXER,rWaveOutVolume,,65535
+HKR,Config\MIXER,WaveOutMute,,OFF
+HKR,Config\MIXER,lSysVol,,65535
+HKR,Config\MIXER,rSysVol,,65535
+HKR,Config\MIXER,lWaveinMasterVolume,,65535
+HKR,Config\MIXER,rWaveinMasterVolume,,65535
+HKR,Config\MIXER,AnalogGainTable,,%AnalogGainTable%
+HKR,Config\MIXER,DigitalGainTable,,%DigitalGainTable1%%DigitalGainTable2%
+HKR,Config\MIXER,MicGainTable,,%MicGainTable%
+HKR,Config\MIXER,MonoGainTable,,%MonoGainTable%
+HKR,Config\MIXER,DACGainTable,,%DACGainTable1%%DACGainTable2%
+HKR,Config\MIXER,MasterInGainTable,,%MasterInGainTable%
+HKR,Config\MIXER,MasterOutGainTable,,%MasterOutGainTable%
+HKR,Config\MIXER,BramsMasterOutGainTable,,%BramsMasterOutGainTable%
+HKR,Config\RECORD,HighPassFilter,,Off
+HKR,Config\RECORD,Dither,,ON
+HKR,Config\CONTROLS,ShortNameLine,,%SMixCtrlSynth%
+HKR,Config\CONTROLS,LongNameLine,,%LMixCtrlSynth%
+HKR,Config\CONTROLS,ShortNameAux2,,%SMixCtrlCD%
+HKR,Config\CONTROLS,LongNameAux2,,%LMixCtrlCD%
+HKR,Config\CONTROLS,ShortNameMono,,%SMixCtrlSpkr%
+HKR,Config\CONTROLS,LongNameMono,,%LMixCtrlSpkr%
+HKR,Config\CONTROLS,ShortNameMic,,%SMixCtrlMic%
+HKR,Config\CONTROLS,LongNameMic,,%LMixCtrlMic%
+HKR,Config\CONTROLS,ShortNameLoopback,,%SMixCtrlLoop%
+HKR,Config\CONTROLS,LongNameLoopback,,%LMixCtrlLoop%
+HKR,Config\CONTROLS,SourceForLine,,Synthesizer
+HKR,Config\CONTROLS,SourceForAux1,,Auxiliary
+HKR,Config\CONTROLS,SourceForAux2,,CompactDisc
+HKR,Config\CONTROLS,SourceForMono,,PCSpeaker
+HKR,Config\CONTROLS,SourceForMic,,Microphone
+HKR,Config\CONTROLS,LongNameLineOut,,%LMixCtrlMaster%
+HKR,Config\CONTROLS,ShortNameLineOut,,%SMixCtrlMaster%
+HKR,Config\CONTROLS,LongNameMuxOut,,%LMixCtrlMux%
+HKR,Config\CONTROLS,ShortNameMuxOut,,%SMixCtrlMux%
+HKR,Config\CONTROLS,LongNameLowPriMuxOut,,%LMixCtrlLowPri%
+HKR,Config\CONTROLS,ShortNameLowPriMuxOut,,%SMixCtrlLowPri%
+HKR,Config\CONTROLS,ShortNameWave,,%SMixCtrlWave%
+HKR,Config\CONTROLS,LongNameWave,,%LMixCtrlWave%
+HKR,Config\CONTROLS,ShortNameMonitor,,%SMixCtrlMonitor%
+HKR,Config\CONTROLS,LongNameMonitor,,%LMixCtrlMonitor%
+HKR,Config\CONTROLS,LongNameKaraoke,,%LMixCtrlKaraoke%
+HKR,Config\CONTROLS,ShortNameKaraoke,,%SMixCtrlKaraoke%
+HKR,Config\CONTROLS,LongNameSysVol,,%LCtrlSysVol%
+HKR,Config\CONTROLS,ShortNameSysVol,,%SCtrlSysVol%
+HKR,Config\CONTROLS,LongNameMicBoost,,%LMixCtrlMicBoost%
+HKR,Config\CONTROLS,ShortNameMicBoost,,%SMixCtrlMicBoost%
+HKR,Config\CONTROLS,DisableIf3DXCTL0,,OFF
+HKR,Config\CONTROLS,DisableIf3DXCTL1,,OFF
+HKR,Config\CONTROLS,ShortNameAux1,,%SMixCtrlLine%
+HKR,Config\CONTROLS,LongNameAux1,,%LMixCtrlLine%
+HKR,Config\CONTROLS,MixerSources,,"Wave,Line,Aux1,Aux2,Mono,Monitor"
+HKR,Config\CONTROLS,InputSources,,"Loop,Line,Aux1,Mic"
+HKR,Config\CONTROLS,Mode3MixerSources,,"111111011"
+HKR,Config\CONTROLS,Mode3InputSources,,"x1111101x"
+HKR,Config\CONTROLS,ShortName3DSpace,,%SMixCtrl3DSpace%
+HKR,Config\CONTROLS,LongName3DSpace,,%LMixCtrl3DSpace%
+HKR,Config\CONTROLS,ShortName3DCenter,,%SMixCtrl3DCenter%
+HKR,Config\CONTROLS,LongName3DCenter,,%LMixCtrl3DCenter%
+HKR,Config\CONTROLS,ShortName3DMute,,%SMixCtrl3DMute%
+HKR,Config\CONTROLS,LongName3DMute,,%LMixCtrl3DMute%
+HKR,Config\CONTROLS,ShortNameDacSER,,%SMixCtrlDacSer%
+HKR,Config\CONTROLS,LongNameDacSER,,%LMixCtrlDacSER%
+HKR,Config\CONTROLS,ShortNameLine-in,,%SMixCtrlLine%
+HKR,Config\CONTROLS,LongNameLine-in,,%LMixCtrlLine%
+HKR,Config\CONTROLS,ShortNameMonoOutMute,,%SMixCtrlMonoOutMute%
+HKR,Config\CONTROLS,LongNameMonoOutMute,,%LMixCtrlMonoOutMute%
+HKR,Config\SNDSYS.DRV,SingleModeDMA,,0
+HKR,Config\SNDSYS.DRV,MsftHardware,,0
+HKR,Config\SNDSYS.DRV,MsftSupport,,1
+HKR,Config\SNDSYS.DRV,AutoSelect,,0
+HKR,Config\SNDSYS.DRV,MidiPlay,,1
+HKR,Config\SNDSYS.DRV,OldMSDosGameCompatibility,,1
+HKR,Config\SNDSYS.DRV,BlasterSupport,,CS4232
+HKR,Config\SNDSYS.DRV,Duplex,,Full
+HKR,Config\SNDSYS.DRV,OEMHardware,,
+HKR,Config\SNDSYS.DRV,FMMixer,,Line
+HKR,Config\SNDSYS.DRV,CDMixer,,Aux2
+HKR,Config\SNDSYS.DRV,LineMixer,,Aux1
+HKR,Config\SNDSYS.DRV,UseTypeFDMA,,ON
+HKR,Config\SNDSYS.DRV,SBInitMixerSettings,,OFF
+HKR,Config\SNDSYS.DRV,SBVoiceVolumeLeft,,9
+HKR,Config\SNDSYS.DRV,SBVoiceVolumeRight,,9
+HKR,Config\SNDSYS.DRV,SBMasterVolumeLeft,,9
+HKR,Config\SNDSYS.DRV,SBMasterVolumeRight,,9
+HKR,Config\SNDSYS.DRV,SBFMVolumeLeft,,9
+HKR,Config\SNDSYS.DRV,SBFMVolumeRight,,9
+HKR,Config\SNDSYS.DRV,SBCDVolumeLeft,,1
+HKR,Config\SNDSYS.DRV,SBCDVolumeRight,,1
+HKR,Config\SNDSYS.DRV,SBLineInVolumeLeft,,1
+HKR,Config\SNDSYS.DRV,SBLineInVolumeRight,,1
+HKR,Config\SNDSYS.DRV,SBMicMixing,,0
+HKR,Config\SNDSYS.DRV,SBInputSelect,,0
+HKR,Config\SNDSYS.DRV,SBVSTC,,0
+HKR,Config\SNDSYS.DRV,RestoreWSSOnDosExit,,OFF
+HKR,Config\SNDSYS.DRV,MuteWhenDOSBoxLoosesFocus,,ON
+HKR,Config\SNDSYS.DRV,WriteConfigurationFile,,ON
+;HKR,Config\DRIVER,UseAllFs,,0
+[MIXER.AddReg]
+;HKLM,%KEY_IOC%\Vol,,,
+
+[WAVE.AddReg]
+HKR,,DevLoader,,cs4232ld.vxd
+HKR,Drivers,MIGRATED,,0
+HKR,Drivers\midi,,,
+HKR,Drivers\wave,,,
+HKR,Drivers\mixer,,,
+HKR,Drivers\aux,,,
+HKLM,%KEY_IOC%\acm,,,
+HKLM,%KEY_IOC%\Rec,,,
+HKLM,%KEY_IOC%\MPlay,,,
+
+[CS4232C.UpdateCfgSys]
+
+[*CSC0000.KnownDrivers]
+sndsys.drv
+cpqaudio.drv
+cs31ba11.drv
+nmcmssnd.drv
+mssndsys.drv
+
+[Power.CopyList]
+cspcple.dll,,
+
+[Power.AddReg]
+HKCR,"CLSID\{21838CA5-6877-11cf-9228-00A02407A140}",,,%PowerCPLName%
+HKCR,"CLSID\{21838CA5-6877-11cf-9228-00A02407A140}\InProcServer32",,,cspcple.dll
+HKCR,"CLSID\{21838CA5-6877-11cf-9228-00A02407A140}\InProcServer32","ThreadingModel",,"Apartment"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Controls Folder\Power\shellex\PropertySheetHandlers\Crystal Semiconductor Power Control Panel Extension",,,{21838CA5-6877-11cf-9228-00A02407A140}
+
+[CSC0001_Device]
+CopyFiles=CSC0001.CopyList
+AddReg=CSC0001.AddReg
+UpdateInis=CSC0001.UpdateInis
+
+[CSC0001.CopyList]
+vjoyd.vxd,,
+msjstick.drv,,
+
+[CSC0001.AddReg]
+HKR,,DevLoader,,mmdevldr.vxd
+HKR,Drivers,MIGRATED,,0
+HKR,Drivers\joystick,,,
+HKR,,Driver,,vjoyd.vxd
+HKR,Drivers\joystick\msjstick.drv,Description,,%*CSC0001.DeviceDesc%
+HKR,Drivers\joystick\msjstick.drv,Driver,,msjstick.drv
+HKR,Drivers,SubClasses,,"joystick"
+
+[CSC0001.UpdateInis]
+system.ini,drivers,"joystick="
+
+;--------------------------------------------------------------------------
+
+[CSC0010_Device]
+DelFiles=ControlPort.DelList
+CopyFiles=ControlPort.CopyList
+AddReg=ControlPort.AddReg
+
+[ControlPort.AddReg]
+HKR,,DevLoader,,cs4232ld.vxd
+
+[ControlPort.DelList]
+cs4232ld.vxd,,,1
+
+[ControlPort.CopyList]
+cs4232ld.vxd,,
+
+;--------------------------------------------------------------------------
+
+[CSC0003_Device]
+DelFiles=MPU401.DelList
+CopyFiles=MPU401.CopyList
+AddReg=MIDI.AddReg, MPU401.AddReg, CSC0003.AddReg
+UpdateInis=MPU401.UpdateInis
+
+[MPU401.CopyList]
+csmidi.vxd,,
+csmidi.drv,,
+cs4232ld.vxd,,
+
+[MIDI.AddReg]
+HKR,,Devloader,,cs4232ld.vxd
+HKR,Drivers,MIGRATED,,0
+HKR,Drivers\midi,,,
+
+[MPU401.AddReg]
+HKR,,Driver,,"csmidi.vxd vwstream.vxd"
+HKR,Drivers\midi\csmidi.drv,Driver,,csmidi.drv
+HKR,Drivers\midi\csmidi.drv,External,1,01,00,00,00
+HKR,Drivers,SubClasses,,"midi"
+
+[CSC0003.AddReg]
+HKR,Drivers\midi\csmidi.drv,Description,,%*CSC0003.DeviceDesc%
+
+[MPU401.UpdateInis]
+system.ini,drivers,"midi*=mpu401.drv",,1
+
+[MPU401.DelList]
+msmpu401.vxd,,,1
+msmpu401.drv,,,1
+mpu401.drv,,,1
+
+;--------------------------------------------------------------------------
+[CSC000F_Device]
+
+;--------------------------------------------------------------------------
+
+[DestinationDirs]
+;9407
+DefaultDestDir = 11
+EWS64_Synth.CopyList = 11
+EWS64_Synth.DelList = 11
+;4236
+WSS.CopyList = 11
+WSS.DelList = 11
+Windir.CopyList = 10
+WSTREAM.CopyDriver = 11
+DefaultDestDir = 11	; LDID_SYS
+
+[SourceDisksNames]
+1=%SourceDiskName%,, 0001
+
+[SourceDisksFiles]
+ewssetup.exe=1
+ewssetup.ini=1
+ttsetup.dll=1
+lang031.dll=1
+lang033.dll=1
+lang034.dll=1
+lang039.dll=1
+lang044.dll=1
+lang049.dll=1
+ewsaudio.vxd=1
+ewsaudio.drv=1
+ewsctrl.vxd=1
+dll9407.dll=1
+cwaudio.vxd=1
+cs32ba11.drv=1
+cs4232ld.vxd=1
+csfm.drv=1
+cspcple.dll=1
+msgloop.exe=1
+wstream.dll=1
+vwstream.vxd=1
+csmidi.vxd=1
+csmidi.drv=1
+
+[Strings]
+MSFT=TerraTec
+
+KEY_WARNVER="SYSTEM\CurrentControlSet\Control\SessionManager\WarnVerDLLs"
+KEY_CHKVER ="SYSTEM\CurrentControlSet\Control\SessionManager\CheckVerDLLs"
+KEY_FIL    ="SYSTEM\CurrentControlSet\Control\MediaResources\FilterList"
+KEY_IOC    ="SYSTEM\CurrentControlSet\Control\MediaResources\InstallOptionalComponents"
+
+MediaClassName          ="TerraTec Audio Devices"
+EWS64_Manufacturer_Desc ="TerraTec Electronic GmbH"
+EWS64_WaveSynth_Desc    ="TerraTec EWS64 XL Synth"
+EWS64_Synth_Desc0       ="TerraTec EWS64 XL Synthesizer"
+EWS64_Synth_Desc1       ="Disabled[EWS64 XL Synthesizer]"
+EWS64_Aux_Desc          ="TerraTec EWS64 XL Auxiliary Device"
+EWS64_Mixer_Desc        ="TerraTec EWS64 XL Mixer"
+EWS64_Control_Desc      ="TerraTec EWS64 XL Digital Control"
+EWS64_Control_Desc1     ="Disabled[EWS64 XL Digital Control]"
+EWS64_Desc              ="TerraTec EWS64 XL"
+
+SourceDiskName          ="TerraTec EWS64 XL Driver Disk"
+PowerCPLName            ="TerraTec EWS64 XL Power Control Panel Extension"
+
+*CSC0000.DeviceDesc="TerraTec EWS64 XL Codec"
+*CSC1A00.DeviceDesc="Disabled[EWS64 XL Codec]"
+*CSC0001.DeviceDesc="TerraTec EWS64 XL Game Port"
+*CSC1A01.DeviceDesc="Disabled[EWS64 XL Game Port]"
+*CSC0010.DeviceDesc="TerraTec EWS64 XL Control Port"
+*CSC0003.DeviceDesc="TerraTec EWS64 XL MIDI-2"
+*CSC1A03.DeviceDesc="Disabled[EWS64 XL MIDI-2]"
+WSTREAM.DeviceDesc ="WaveStream Music Synthesizer"
+*CSC000F.DeviceDesc="Disabled Device"
+
+
+
+EWS_64_FMSYNTH     ="TerraTec EWS64 XL FM Synthesis"
+V_CLSWAVEFORM      ="Audio"
+V_CLSMIDI          ="MIDI"
+V_CLSMIXER         ="Mixer"
+V_CLSAUX           ="Auxiliary"
+V_EXTERNAL         ="External MIDI Port"
+SMixCtrlSynth      ="Synth"
+LMixCtrlSynth      ="Synth"
+SMixCtrlLine       ="IN-1"
+LMixCtrlLine       ="Line IN-1"
+SMixCtrlCD         ="CD"
+LMixCtrlCD         ="CD Audio"
+SMixCtrlSpkr       ="Beeper"
+LMixCtrlSpkr       ="Beeper In"
+SMixCtrlMic        ="Mic"
+LMixCtrlMic        ="Mic"
+SMixCtrlLoop       ="MixOut"
+LMixCtrlLoop       ="MixOut"
+SMixCtrlMaster     ="Master"
+LMixCtrlMaster     ="Master Out"
+SMixCtrlMux        ="Record"
+LMixCtrlMux        ="Master Record"
+SMixCtrlLowPri     ="LowPriIn"
+LMixCtrlLowPri     ="Low Priority Input"
+SMixCtrlKaraoke    ="Karaoke"
+LMixCtrlKaraoke    ="Karaoke Mode"
+SMixCtrlX0         ="XCTL 0"
+LMixCtrlX0         ="XControl 0"
+SMixCtrlX1         ="XCTL 1"
+LMixCtrlX1         ="XControl 1"
+SCtrlSysVol        ="SystemVol"
+LCtrlSysVol        ="System Volume"
+SMixCtrlWave       ="Wave"
+LMixCtrlWave       ="Wave"
+SMixCtrlMonitor    ="Monitor"
+LMixCtrlMonitor    ="Monitor"
+SMixCtrlMicBoost   ="Mic Boost"
+LMixCtrlMicBoost   ="Microphone Boost"
+SMixCtrl3DCenter   ="Center"
+LMixCtrl3DCenter   ="3D Center"
+SMixCtrl3DSpace    ="Space"
+LMixCtrl3DSpace    ="3D Space"
+SMixCtrl3DMute     ="Mute"
+LMixCtrl3DMute     ="3D Mute"
+SMixCtrl3D         ="3D Effects"
+LMixCtrl3D         ="3D Effects"
+SMixCtrlAux1       ="IN-1"
+LMixCtrlAux1       ="Line IN-1"
+SMixCtrlMonoOutMute="Beeper Mute"
+LMixCtrlMonoOutMute="PC Speaker Mute"
+SMixCtrlDacSER     ="Serial"
+LMixCtrlDacSER     ="Serial In"
+SMixCtrlLine-in    ="Line"
+LMixCtrlLine-in    ="Line In"
+AnalogGainTable    ="31,20,17,15,14,13,12,11,10,10,9,9,8,7,7,6,6,6,6,5,5,5,4,4,4,3,3,3,2,2,1,1"
+DigitalGainTable1  ="63,40,26,20,17,16,14,13,12,11,10,10,9,9,8,8,8,7,7,7,6,6,6,6,5,5,5,5,5,4,4,4,"
+DigitalGainTable2  ="4,4,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0"
+MicGainTable       ="31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0"
+DacGainTable1      ="63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,"
+DacGainTable2      ="31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0"
+MonoGainTable      ="13,11,8,6,5,5,4,4,3,3,2,2,1,1,0,0"
+MasterInGainTable  ="0,3,4,5,6,6,6,7"
+MasterOutGainTable ="0,7,10,11,12,13,14,14,15,15,16,17,17,18,19,20"
+BramsMasterOutGainTable="0,7,10,11,12,13,14,14,15,15,16,17,17,18,19,20"

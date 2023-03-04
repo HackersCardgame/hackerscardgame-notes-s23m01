@@ -1,0 +1,36 @@
+[Group List]
+Waves=1
+Dial Tones=1
+Effects=1
+Noise=1
+
+[Waves]
+Triangle, f is freq=1-2*abs(1-2*f*t%2)
+Sine, f is freq in Hz=sin(2*pi*f*t)
+Square, f is freq=cos(pi*int(2*f*t))
+Sweep=sin( pi*300*t^2 )
+
+[Dial Tones]
+1=(sin(4417*t)+sin(7609*t))/2
+2=(sin(4417*t)+sin(8394*t))/2
+3=(sin(4417*t)+sin(9374*t))/2
+4=(sin(4856*t)+sin(7609*t))/2
+5=(sin(4856*t)+sin(8394*t))/2
+6=(sin(4856*t)+sin(9374*t))/2
+7=(sin(5397*t)+sin(7609*t))/2
+8=(sin(5397*t)+sin(8394*t))/2
+9=(sin(5397*t)+sin(9374*t))/2
+*=(sin(5937*t)+sin(7609*t))/2
+0=(sin(5937*t)+sin(8394*t))/2
+#=(sin(5937*t)+sin(9374*t))/2
+
+[Effects]
+Tremolo, try f < 10=wave(n) * (0.6 + 0.4 * sin(2*pi*f*t))
+Lowpass 75%, see B.6=0.323523*(wave1(n)+wave1(n-4)) +1.294092*(wave1(n-1)+wave1(n-3)) +1.941138*wave1(n-2) -1.850945*wave2(n-1) -1.665275*wave2(n-2) -0.6644473*wave2(n-3) -0.146853*wave2(n-4)
+Bandstop 25-50%, see B.6=0.569035593728*(wave1(n)+wave1(n-4)) -0.94280904158*(wave1(n-1)+wave1(n-3)) +1.52859547920897*wave1(n-2) +1.21895141649746*wave2(n-1) -1.33333333333333*wave2(n-2) +0.66666666666667*wave2(n-3) -0.33333333333333*wave2(n-4)
+Bandpass 5-75%, see B.6=0.505001029045*(wave1(n)+wave1(n-4)) -1.01000205809176*wave1(n-2) +0.85234035663816*wave2(n-1) +0.50481774561250*wave2(n-2) -0.13842025426635*wave2(n-3) -0.27221493792501*wave2(n-4)
+
+[Noise]
+Brown=wave1(n-1)+rand(0.5)-0.25
+White=rand(2)-1
+

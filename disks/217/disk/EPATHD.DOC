@@ -1,0 +1,92 @@
+
+    Release notes of EPATHD.EXE/SYS/ADD and EPATSYQ.EXE/SYS
+    -------------------------------------------------------
+
+    Release Date    : 12th Jul 1996
+    Release Version : 5.23
+
+    Release Notes - 
+    (Changes include those made from driver version 5.22)
+
+    1.  In the 5.21 version of the driver, access of illegal
+        memory areas was being done in the driver.
+
+        This caused a GP when our drivers were used under OS/2.
+        This problem occurs only with the 5.21 Version of the
+        driver.
+
+        This has been fixed.
+
+    2. Driver can now handle HD capacities of upto 8Gb.
+
+        Earlier, capacities more than 1.5Gb were not
+        feasible with our drivers.
+
+    3. EPAT Plus Support provided in this version.
+
+    4. Pass thru printers like Canon, Deskjet and HP-4L can
+       now peacefully co-exist with our drivers.
+
+    5. Junk printing problems have been fixed in this release.
+
+        Connecting a printer to the parallel port and
+        initialising the EPATHD driver, will NOT result
+        in the printing of junk characters.
+
+    6. Timer based EJECT command for AVATAR drives
+    has been implemented in this version of the driver.
+    (For DOS Drivers Only)
+
+        This polls for the GET MEDIA STATUS information
+        returned from the drive, once in every two seconds
+        and issues a DRIVE EJECT command, if a MEDIA CHANGE
+        had been requested. 
+
+        Hence the EJECT button will be operational after
+        our EPATHD driver is installed.
+
+    7. Format Termination problem, observed with SyQuest
+    drives, have been solved in this version of the driver.
+
+        Formatting SyQuest drives with EPATHD/ASPIHDRM
+
+        (a) using HDPREP's FORMAT WITH VERIFY &
+        (b) using DOS FORMAT.COM 
+
+        was tested at development level to be fine.
+
+        For this changes have been made in the EPATHD
+        driver and in ASPIHDRM.
+
+        This format problem will be solved with any
+        combination of EPATHD drivers 5.23 and up
+        and ASPIHDRM 4.03 and up.
+
+    8. Ejecting the medium of AVATAR drives, immediately
+    after the insertion of a medium, was not possible.
+    The medium could however be ejected after doing an
+    operation on the drive after reinserting the medium and
+    by ejecting for a second time, after operation ceases.
+    (For DOS Drivers Only)
+
+        This problem has been corrected.
+
+        Now, the medium can be ejected, as soon as it
+        is inserted. However, pressing the eject button
+        WILL HAVE NO EFFECT, when there is ongoing operation
+        on the drive.
+
+    9. Translation of MEDIA STATUS related error codes
+    to SCSI error codes was not proper.
+
+        Proper translation of these error codes
+        have been implemented.
+
+    10. Some of the earlier drivers, have problems if apps.
+    like SHTLMAN/HDPREP etc. dynamically load the drivers
+    when a copy of the ASPI Manager is loaded already.
+    (For DOS Drivers Only)
+
+        This has been fixed in this version of the driver.
+
+    -- End Of file --

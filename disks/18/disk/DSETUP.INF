@@ -1,0 +1,9 @@
+[files]               
+ITYPE.EX_      ITYPE.EXE      DISK1    93696   CPANEL
+readme.txt      readmeK.txt     DISK1    11776   README
+ITYPE.la_      ITYPE.lan      DISK1    4000    LANGUAGE
+setup.ini       keyboard.pid    DISK1    500     CPANEL
+;
+[data]
+defdir = C:\MSINPUT
+

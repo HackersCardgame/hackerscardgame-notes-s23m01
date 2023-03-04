@@ -1,0 +1,50 @@
+
+ Die Installation von VoiceConnect ist nun beendet. Ich wÅnsche Ihnen
+ viel Spa· und Freude mit dem Programm. Bitte seien Sie etwas nach-
+ sichtig, falls das Programm Fehler enthalten sollte. Der Quelltext
+ von VoiceConnect umfa·t mittlerweile mehr als 80.000 Zeilen, hinzu-
+ kommen ca. 300 kByte Hilfetexte und eine etwa 1500 Zeilen gro·e Re-
+ sourcedatei mit allen von VoiceConnect verwendeten Meldungen.
+
+ Nun werden Sie verstehen, da· ich nicht mehr alles immer wieder testen
+ kann und nicht alle Fehler selber finde. Schreiben, faxen oder rufen
+ Sie mich an, wenn Sie einen Fehler gefunden haben. Ich werde es no-
+ tieren und in einer spÑteren Version beseitigen.
+
+ Noch ein paar Hinweise:
+
+  - öber die Taste F1 bekommen im ganzen Programm immer eine ausfÅhr-
+    liche Hilfestellung zum aktuellen Thema.
+
+  - Falls ein Problem auftaucht und Sie keine Lîsung finden, so schauen
+    Sie bitte als erstes in die mittgelieferte Datei VC.FAQ. Die am
+    hÑufigsten gestellten Fragen sind dort beantwortet.
+
+  - Beachten Sie die Makrobefehle bei den Tooleinstellungen. Es bieten
+    sich hier ungeahnte Mîglichkeiten. Beispielsweise ist es damit kein
+    Problem, die Sprachdateien auf dem PC-Lautsprecher auszugeben, falls
+    Sie keine Soundblasterkarte besitzen. Die erforderlichen Programme
+    hierzu finden Sie in meiner Mailbox (Telefonnumer siehe unten).
+
+    Sollten Sie selber interessante Anwendungen gefunden haben, so tei-
+    len Sie es mir bitte mit, ich werde es dann den anderen Benutzer
+    zugÑnglich machen.
+
+ BezÅglich meiner Erreichbarkeit:
+
+ STC Kommunikationstechnik
+ Inh. Dipl.-Inf. Thomas Haukap
+
+ SÅlldorfer Kirchenweg 195
+ 22589 Hamburg
+
+ Tel (Mo - Fr, 10.00-17.00 Uhr)   (040) 870 28 63
+ Fax & Mailbox                    (040) 870 53 78
+
+ E-Mail: Fido    2:240/5065
+         Classic 2:241/2114.2
+
+                                       Viel Spa· und Freude weiterhin,
+
+                                                   Tom, Februar 1994
+

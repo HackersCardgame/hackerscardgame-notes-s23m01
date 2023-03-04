@@ -1,0 +1,45 @@
+;SetupMgrTag
+[Data]
+    AutoPartition=1
+    MsDosInitiated="0"
+    UnattendedInstall="Yes"
+
+[Unattended]
+    UnattendMode=FullUnattended
+    OemSkipEula=Yes
+    OemPreinstall=No
+    TargetPath=\WINDOWS
+    Repartition=Yes
+
+[GuiUnattended]
+    AdminPassword="abbts.2008"
+    EncryptedAdminPassword=NO
+    OEMSkipRegional=1
+    TimeZone=110
+    OemSkipWelcome=1
+
+[UserData]
+    ProductKey=PBTDW-Y4TF2-4VF7C-WFDCX-GFPJ6
+    FullName="ABB"
+    OrgName="ABBTS"
+    ComputerName=C6-PC12
+
+[Display]
+    BitsPerPel=32
+    Xresolution=1024
+    YResolution=768
+    Vrefresh=60
+
+[TapiLocation]
+    CountryCode=41
+
+[RegionalSettings]
+    LanguageGroup=1
+    Language=00000807
+
+[Identification]
+    JoinWorkgroup=ARBEITSGRUPPE
+
+[Networking]
+    InstallDefaultComponents=Yes
+

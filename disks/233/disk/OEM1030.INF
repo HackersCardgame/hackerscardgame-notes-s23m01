@@ -1,0 +1,671 @@
+[version]
+signature="$WINDOWS 95$"
+ver=00.00.00
+Class=printer
+Provider="Brother"
+
+[SourceDisksNames]
+1="Printer Driver/TrueType Fonts Disk 1 of 2",,0001
+2="Printer Driver/TrueType Fonts Disk 2 of 2",,0001
+
+[Manufacturer]
+Brother PnP=PnP2
+Brother[Français]=French2
+Brother[Nederlands]=Dutch2
+Brother[Deutsch]=German2
+;Brother[Norsk]=Norway2
+;Brother[Svenska]=Swedish2
+;Brother[Italiano]=Italy2
+;Brother[Español]=Spain2
+Brother(English)=English2
+;Brother_Ver400 English=English2
+;Brother_Ver400 Français=French2
+;Brother_Ver400 Nederlands=Dutch2
+;Brother_Ver400 Deutsch=German2
+;Brother_Ver400 Norsk=Norway2
+;Brother_Ver400 Svenska=Swedish2
+;Brother_Ver400 Italiano=Italy2
+;Brother_Ver400 Español=Spain2
+Brother_Win31 English=English
+Brother_Win31 Français=French
+Brother_Win31 Nederlands=Dutch
+Brother_Win31 Deutsch=German
+;Brother_Win31 Norsk=Norway
+;Brother_Win31 Svenska=Swedish
+;Brother_Win31 Italiano=Italy
+;Brother_Win31 Español=Spain
+
+[PnP]
+"Brother HL-1030 series"=PrinterPnP,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[PrinterPnP]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=brohl99e.drv,CopyEnglish
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,InstDrv
+;UpdateInis=UpdateIniEng
+
+[PnP2]
+"Brother HL-1030 series"=PrinterPnP_2,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[PrinterPnP_2]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=8rohl99e.drv,CopyEnglish2
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,InstDrv
+;UpdateInis=UpdateIniEng
+
+[English]
+"Brother HL-1030 series"=Printer1,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer1]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=brohl99e.drv,CopyEnglish
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniEng,UpdateIntHelp
+
+[system]
+system.ini,386Enh,,"device=bi-di.386"
+
+[brohl99e.drv]
+brohl99e.drv
+brstats8.exe
+bi-di.386
+brsetup.dll
+lpt.bz
+brdiag2.exe
+brdiag.hlp
+brqikmon.exe
+brqikmon.hlp
+brhl1030.ini
+;disk brinthlp.dll
+
+[brohl99e.drv31]
+brohl99e.drv
+brstats8.exe
+bi-di.386
+brdiag2.exe
+brdiag.hlp
+;disk brinthlp.dll
+
+[8rohl99e.drv]
+brstats8.exe
+bi-di.386
+brsetup.dll
+lpt.bz
+brdiag2.exe
+brdiag.hlp
+brqikmon.exe
+brqikmon.hlp
+brhl1030.ini
+;disk brinthlp.dll
+
+[8rohl99e.drv31]
+brohl99e.drv
+brstats8.exe
+bi-di.386
+brdiag2.exe
+brdiag.hlp
+;disk brinthlp.dll
+
+[CopyEnglish]
+brlangzl.dll
+brstlan8.dll
+brohl99e.hlp
+brwmark.ini
+
+[CopyEnglish31]
+brlangzl.dll
+brstlan8.dll
+brohl99e.hlp
+brwmark.ini
+
+[English2]
+"Brother HL-1030 series"=Printer1_2,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer1_2]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=8rohl99e.drv,CopyEnglish2
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniEng,UpdateIntHelp
+
+[CopyEnglish2]
+brlangzl.dll,brlangzl.dll
+brstlan8.dll,brstlan8.dll
+brohl99e.hlp,brohl99e.hlp
+brohl99e.drv,8rohl99e.drv
+brwmark.ini,brwmark.ini
+
+[CopyEnglish231]
+brlangzl.dll
+brstlan8.dll
+brohl99e.hlp
+brwmark.ini
+
+[SourceDisksFiles]
+brstats8.exe=1
+bi-di.386=1
+brohl99e.drv=1
+brlangzl.dll=1
+brstlan8.dll=1
+brohl99e.hlp=1
+1rlangzl.dll=1
+1rstlan8.dll=1
+1rohl99e.hlp=1
+2rlangzl.dll=1
+2rstlan8.dll=1
+2rohl99e.hlp=1
+3rlangzl.dll=1
+3rstlan8.dll=1
+3rohl99e.hlp=1
+4rlangzl.dll=1
+4rstlan8.dll=1
+4rohl99e.hlp=1
+5rlangzl.dll=1
+5rstlan8.dll=1
+5rohl99e.hlp=1
+6rlangzl.dll=1
+6rstlan8.dll=1
+6rohl99e.hlp=1
+7rlangzl.dll=1
+7rstlan8.dll=1
+7rohl99e.hlp=1
+brsetup.dll=1
+brsbmpl3.dll=1
+lpt.bz=1
+brdiag2.exe=1
+brdiag.hlp=1
+8rohl99e.drv=1
+brqikmon.exe=1
+brqikmon.hlp=1
+brhl1030.ini=1
+brwmark.ini=1
+1rwmark.ini=1
+2rwmark.ini=1
+3rwmark.ini=1
+4rwmark.ini=1
+5rwmark.ini=1
+6rwmark.ini=1
+7rwmark.ini=1
+;disk brinthlp.dll=1
+
+[French]
+"Brother HL-1030 series"=Printer2,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer2]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=brohl99e.drv,RenameFrench
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniFre,UpdateIntHelp
+
+[RenameFrench]
+brlangzl.dll,2rlangzl.dll
+brstlan8.dll,2rstlan8.dll
+brohl99e.hlp,2rohl99e.hlp
+brwmark.ini,2rwmark.ini
+
+[RenameFrench31]
+brlangzl.dll,2rlangzl.dll
+brstlan8.dll,2rstlan8.dll
+brohl99e.hlp,2rohl99e.hlp
+brwmark.ini,2rwmark.ini
+
+[French2]
+"Brother HL-1030 series"=Printer2_2,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer2_2]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=8rohl99e.drv,RenameFrench2
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniFre,UpdateIntHelp
+
+[RenameFrench2]
+brlangzl.dll,2rlangzl.dll
+brstlan8.dll,2rstlan8.dll
+brohl99e.hlp,2rohl99e.hlp
+brohl99e.drv,8rohl99e.drv
+brwmark.ini,2rwmark.ini
+
+[RenameFrench231]
+brlangzl.dll,2rlangzl.dll
+brstlan8.dll,2rstlan8.dll
+brohl99e.hlp,2rohl99e.hlp
+brwmark.ini,2rwmark.ini
+
+[Dutch]
+"Brother HL-1030 series"=Printer3,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer3]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=brohl99e.drv,RenameDutch
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniDut,UpdateIntHelp
+
+[RenameDutch]
+brlangzl.dll,1rlangzl.dll
+brstlan8.dll,1rstlan8.dll
+brohl99e.hlp,1rohl99e.hlp
+brwmark.ini,1rwmark.ini
+
+[RenameDutch31]
+brlangzl.dll,1rlangzl.dll
+brstlan8.dll,1rstlan8.dll
+brohl99e.hlp,1rohl99e.hlp
+brwmark.ini,1rwmark.ini
+
+[Dutch2]
+"Brother HL-1030 series"=Printer3_2,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer3_2]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=8rohl99e.drv,RenameDutch2
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniDut,UpdateIntHelp
+
+[RenameDutch2]
+brlangzl.dll,1rlangzl.dll
+brstlan8.dll,1rstlan8.dll
+brohl99e.hlp,1rohl99e.hlp
+brohl99e.drv,8rohl99e.drv
+brwmark.ini,1rwmark.ini
+
+[RenameDutch231]
+brlangzl.dll,1rlangzl.dll
+brstlan8.dll,1rstlan8.dll
+brohl99e.hlp,1rohl99e.hlp
+brwmark.ini,1rwmark.ini
+
+[German]
+"Brother HL-1030 series"=Printer4,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer4]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=brohl99e.drv,RenameGerman
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniGer,UpdateIntHelp
+
+[RenameGerman]
+brlangzl.dll,3rlangzl.dll
+brstlan8.dll,3rstlan8.dll
+brohl99e.hlp,3rohl99e.hlp
+brwmark.ini,3rwmark.ini
+
+[RenameGerman31]
+brlangzl.dll,3rlangzl.dll
+brstlan8.dll,3rstlan8.dll
+brohl99e.hlp,3rohl99e.hlp
+brwmark.ini,3rwmark.ini
+
+[German2]
+"Brother HL-1030 series"=Printer4_2,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer4_2]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=8rohl99e.drv,RenameGerman2
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniGer,UpdateIntHelp
+
+[RenameGerman2]
+brlangzl.dll,3rlangzl.dll
+brstlan8.dll,3rstlan8.dll
+brohl99e.hlp,3rohl99e.hlp
+brohl99e.drv,8rohl99e.drv
+brwmark.ini,3rwmark.ini
+
+[RenameGerman231]
+brlangzl.dll,3rlangzl.dll
+brstlan8.dll,3rstlan8.dll
+brohl99e.hlp,3rohl99e.hlp
+brwmark.ini,3rwmark.ini
+
+[Norway]
+"Brother HL-1030 series"=Printer5,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer5]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=brohl99e.drv,RenameNorway
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniNor,UpdateIntHelp
+
+[RenameNorway]
+brlangzl.dll,4rlangzl.dll
+brstlan8.dll,4rstlan8.dll
+brohl99e.hlp,4rohl99e.hlp
+brwmark.ini,4rwmark.ini
+
+[RenameNorway31]
+brlangzl.dll,4rlangzl.dll
+brstlan8.dll,4rstlan8.dll
+brohl99e.hlp,4rohl99e.hlp
+brwmark.ini,4rwmark.ini
+
+[Norway2]
+"Brother HL-1030 series"=Printer5_2,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer5_2]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=8rohl99e.drv,RenameNorway2
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniNor,UpdateIntHelp
+
+[RenameNorway2]
+brlangzl.dll,4rlangzl.dll
+brstlan8.dll,4rstlan8.dll
+brohl99e.hlp,4rohl99e.hlp
+brohl99e.drv,8rohl99e.drv
+brwmark.ini,4rwmark.ini
+
+[RenameNorway231]
+brlangzl.dll,4rlangzl.dll
+brstlan8.dll,4rstlan8.dll
+brohl99e.hlp,4rohl99e.hlp
+brwmark.ini,4rwmark.ini
+
+[Swedish]
+"Brother HL-1030 series"=Printer6,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer6]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=brohl99e.drv,RenameSwedish
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniSwe,UpdateIntHelp
+
+[RenameSwedish]
+brlangzl.dll,5rlangzl.dll
+brstlan8.dll,5rstlan8.dll
+brohl99e.hlp,5rohl99e.hlp
+brwmark.ini,5rwmark.ini
+
+[RenameSwedish31]
+brlangzl.dll,5rlangzl.dll
+brstlan8.dll,5rstlan8.dll
+brohl99e.hlp,5rohl99e.hlp
+brwmark.ini,5rwmark.ini
+
+[Swedish2]
+"Brother HL-1030 series"=Printer6_2,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer6_2]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=8rohl99e.drv,RenameSwedish2
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniSwe,UpdateIntHelp
+
+[RenameSwedish2]
+brlangzl.dll,5rlangzl.dll
+brstlan8.dll,5rstlan8.dll
+brohl99e.hlp,5rohl99e.hlp
+brohl99e.drv,8rohl99e.drv
+brwmark.ini,5rwmark.ini
+
+[RenameSwedish231]
+brlangzl.dll,5rlangzl.dll
+brstlan8.dll,5rstlan8.dll
+brohl99e.hlp,5rohl99e.hlp
+brwmark.ini,5rwmark.ini
+
+[Italy]
+"Brother HL-1030 series"=Printer7,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer7]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=brohl99e.drv,RenameItaly
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniIta,UpdateIntHelp
+
+[RenameItaly]
+brlangzl.dll,6rlangzl.dll
+brstlan8.dll,6rstlan8.dll
+brohl99e.hlp,6rohl99e.hlp
+brwmark.ini,6rwmark.ini
+
+[RenameItaly31]
+brlangzl.dll,6rlangzl.dll
+brstlan8.dll,6rstlan8.dll
+brohl99e.hlp,6rohl99e.hlp
+brwmark.ini,6rwmark.ini
+
+[Italy2]
+"Brother HL-1030 series"=Printer7_2,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer7_2]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=8rohl99e.drv,RenameItaly2
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniIta,UpdateIntHelp
+
+[RenameItaly2]
+brlangzl.dll,6rlangzl.dll
+brstlan8.dll,6rstlan8.dll
+brohl99e.hlp,6rohl99e.hlp
+brohl99e.drv,8rohl99e.drv
+brwmark.ini,6rwmark.ini
+
+[RenameItaly231]
+brlangzl.dll,6rlangzl.dll
+brstlan8.dll,6rstlan8.dll
+brohl99e.hlp,6rohl99e.hlp
+brwmark.ini,6rwmark.ini
+
+[Spain]
+"Brother HL-1030 series"=Printer8,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer8]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=brohl99e.drv,RenameSpain
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniSpa,UpdateIntHelp
+
+[RenameSpain]
+brlangzl.dll,7rlangzl.dll
+brstlan8.dll,7rstlan8.dll
+brohl99e.hlp,7rohl99e.hlp
+brwmark.ini,7rwmark.ini
+
+[RenameSpain31]
+brlangzl.dll,7rlangzl.dll
+brstlan8.dll,7rstlan8.dll
+brohl99e.hlp,7rohl99e.hlp
+brwmark.ini,7rwmark.ini
+
+[Spain2]
+"Brother HL-1030 series"=Printer8_2,LPTENUM\BrotherHL-1030_serie2ECF,BrotherHL-1030_serie2ECF
+
+[Printer8_2]
+DriverFile=brohl99e.drv
+DataFile=brohl99e.drv
+CopyFiles=8rohl99e.drv,RenameSpain2
+DefaultDataType=EMF
+VendorSetup = brsetup.dll,BrSetupProc
+UpdateInis=UpdateIniSpa,UpdateIntHelp
+
+[RenameSpain2]
+brlangzl.dll,7rlangzl.dll
+brstlan8.dll,7rstlan8.dll
+brohl99e.hlp,7rohl99e.hlp
+brohl99e.drv,8rohl99e.drv
+brwmark.ini,7rwmark.ini
+
+[RenameSpain231]
+brlangzl.dll,7rlangzl.dll
+brstlan8.dll,7rstlan8.dll
+brohl99e.hlp,7rohl99e.hlp
+brwmark.ini,7rwmark.ini
+
+[DestinationDirs]
+DefaultDestDir=11
+
+[UpdateIniEng]
+brsetup.ini,install,,"Language=0"
+hl1030.ini,install,,"Language=0"
+
+[UpdateIniDut]
+brsetup.ini,install,,"Language=3"
+hl1030.ini,install,,"Language=3"
+
+[UpdateIniFre]
+brsetup.ini,install,,"Language=1"
+hl1030.ini,install,,"Language=1"
+
+[UpdateIniGer]
+brsetup.ini,install,,"Language=2"
+hl1030.ini,install,,"Language=2"
+
+[UpdateIniNor]
+brsetup.ini,install,,"Language=4"
+hl1030.ini,install,,"Language=4"
+
+[UpdateIniSwe]
+brsetup.ini,install,,"Language=5"
+hl1030.ini,install,,"Language=5"
+
+[UpdateIniIta]
+brsetup.ini,install,,"Language=6"
+hl1030.ini,install,,"Language=6"
+
+[UpdateIniSpa]
+brsetup.ini,install,,"Language=7"
+hl1030.ini,install,,"Language=7"
+
+[UpdateIntHelp]
+;disk brvideo.ini,HL-1240,,"HelpFile=inthlp.hlp"
+;disk brvideo.ini,HL-1240,,"CDDir=intrcv\"
+;disk brvideo.ini,HL-1240,,"SecondWin=>zlhlp"
+;disk brvideo.ini,HL-1240,,"13=50"
+;disk brvideo.ini,HL-1240,,"12=3"
+;disk brvideo.ini,HL-1240,,"15=3"
+;disk brvideo.ini,HL-1240,,"10=4"
+;disk brvideo.ini,HL-1240,,"23=5"
+;disk brvideo.ini,HL-1240,,"25=-1"
+;disk brvideo.ini,HL-1240,,"26=18"
+;disk brvideo.ini,HL-1240,,"27=4"
+;disk brvideo.ini,HL-1240,,"28=4"
+;disk brvideo.ini,HL-1240,,"29=4"
+;disk brvideo.ini,HL-1030,,"Alias=HL-1240"
+brwmark.ini,:brwatermark:,,"Update=1"
+win.ini,"Brother Diagnostics",,"brohl99e=1"
+
+
+[PROGMAN.GROUPS.ENU]
+  Brother_HL-1030_Series.ENU, BrHL1030.GRP
+
+[PROGMAN.GROUPS.FRC]
+  Brother_HL-1030_Series.FRC, BrHL1030.GRP
+
+[PROGMAN.GROUPS.DEU]
+  Brother_HL-1030_Series.DEU, BrHL1030.GRP
+
+[PROGMAN.GROUPS.NLD]
+  Brother_HL-1030_Series.NLD, BrHL1030.GRP
+
+[PROGMAN.GROUPS.NOR]
+  Brother_HL-1030_Series.NOR, BrHL1030.GRP
+
+[PROGMAN.GROUPS.SVE]
+  Brother_HL-1030_Series.SVE, BrHL1030.GRP
+
+[PROGMAN.GROUPS.ITA]
+  Brother_HL-1030_Series.ITA, BrHL1030.GRP
+
+[PROGMAN.GROUPS.SPA]
+  Brother_HL-1030_Series.SPA, BrHL1030.GRP
+
+[PROGMAN.GROUPS.DAN]
+  Brother_HL-1030_Series.DAN, BrHL1030.GRP
+
+
+[Brother_HL-1030_Series.ENU]
+"Diagnostics"                                               , 5103:Brdiag2.EXE , 7103:x100100     , 5103:Brdiag2.EXE , 0
+"Printer Information"                                       , 5103:Brdiag2.EXE , 7103:x100102     , 5103:Brdiag2.EXE , 1
+"Troubleshooting for Printer won't print"                   , 5103:Brdiag2.EXE , 7103:x100104     , 5103:Brdiag2.EXE , 2
+"Driver Help file"                                          , 5103:Brohl99e.HLP,                 , 5103:Brohl99e.HLP, 0
+"Uninstall"                                                 , 6103:Brinst32.EXE, 2103:HL1030.ini , 6103:Brinst32.EXE, 1
+
+[Brother_HL-1030_Series.FRC]
+"Diagnostic"                                                , 5103:Brdiag2.EXE , 7103:x100110     , 5103:Brdiag2.EXE , 0
+"Infos imprimante"                                          , 5103:Brdiag2.EXE , 7103:x100112     , 5103:Brdiag2.EXE , 1
+"Dépistage des pannes pour ''L'imprimante n'imprime pas''." , 5103:Brdiag2.EXE , 7103:x100114     , 5103:Brdiag2.EXE , 2
+"Fichier d'aide du pilote"                                  , 5103:Brohl99e.HLP,                 , 5103:Brohl99e.HLP, 0
+"Désinstaller"                                              , 6103:Brinst32.EXE, 2103:HL1030.ini , 6103:Brinst32.EXE, 1
+
+[Brother_HL-1030_Series.DEU]
+"Diagnostik"                                                , 5103:Brdiag2.EXE , 7103:x100120     , 5103:Brdiag2.EXE , 0
+"Druckerinformation"                                        , 5103:Brdiag2.EXE , 7103:x100122     , 5103:Brdiag2.EXE , 1
+"Problemlösung wenn der Drucker nicht druckt"               , 5103:Brdiag2.EXE , 7103:x100124     , 5103:Brdiag2.EXE , 2
+"Treiber-Hilfedatei"                                        , 5103:Brohl99e.HLP,                 , 5103:Brohl99e.HLP, 0
+"Deinstallieren"                                            , 6103:Brinst32.EXE, 2103:HL1030.ini , 6103:Brinst32.EXE, 1
+
+[Brother_HL-1030_Series.NLD]
+"Diagnostiek"                                               , 5103:Brdiag2.EXE , 7103:x100130     , 5103:Brdiag2.EXE , 0
+"Printerinformatie"                                         , 5103:Brdiag2.EXE , 7103:x100132     , 5103:Brdiag2.EXE , 1
+"Problemen oplossen - Printer drukt niet af"                , 5103:Brdiag2.EXE , 7103:x100134     , 5103:Brdiag2.EXE , 2
+"Driver Help-bestand"                                       , 5103:Brohl99e.HLP,                 , 5103:Brohl99e.HLP, 0
+"Installatie ongedaan maken"                                , 6103:Brinst32.EXE, 2103:HL1030.ini , 6103:Brinst32.EXE, 1
+
+[Brother_HL-1030_Series.NOR]
+"Vedlikehold"                                               , 5103:Brdiag2.EXE , 7103:x100140     , 5103:Brdiag2.EXE , 0
+"Skriver informasjon"                                       , 5103:Brdiag2.EXE , 7103:x100142     , 5103:Brdiag2.EXE , 1
+"Feilsøking når skriveren ikke vil skrive ut."              , 5103:Brdiag2.EXE , 7103:x100144     , 5103:Brdiag2.EXE , 2
+"Hjelpefil for driver"                                      , 5103:Brohl99e.HLP,                 , 5103:Brohl99e.HLP, 0
+"Avinstallering"                                            , 6103:Brinst32.EXE, 2103:HL1030.ini , 6103:Brinst32.EXE, 1
+ 
+[Brother_HL-1030_Series.SVE]
+"Diagnos"                                                   , 5103:Brdiag2.EXE , 7103:x100150     , 5103:Brdiag2.EXE , 0
+"Skrivarinformation"                                        , 5103:Brdiag2.EXE , 7103:x100152     , 5103:Brdiag2.EXE , 1
+"Felsökning när skrivaren inte vill skriva ut"              , 5103:Brdiag2.EXE , 7103:x100154     , 5103:Brdiag2.EXE , 2
+"Hjälpfil för drivrutin"                                    , 5103:Brohl99e.HLP,                 , 5103:Brohl99e.HLP, 0
+"Avinstallering"                                            , 6103:Brinst32.EXE, 2103:HL1030.ini , 6103:Brinst32.EXE, 1
+
+[Brother_HL-1030_Series.ITA]
+"Diagnostica"                                               , 5103:Brdiag2.EXE , 7103:x100160     , 5103:Brdiag2.EXE , 0
+"Informazioni sulla stampante"                              , 5103:Brdiag2.EXE , 7103:x100162     , 5103:Brdiag2.EXE , 1
+"Risoluzione dei problemi ''La stampante non stampa''"      , 5103:Brdiag2.EXE , 7103:x100164     , 5103:Brdiag2.EXE , 2
+"File della Guida del driver"                               , 5103:Brohl99e.HLP,                 , 5103:Brohl99e.HLP, 0
+"Disinstalla"                                               , 6103:Brinst32.EXE, 2103:HL1030.ini , 6103:Brinst32.EXE, 1
+
+[Brother_HL-1030_Series.SPA]
+"Diagnóstico"                                               , 5103:Brdiag2.EXE , 7103:x100170     , 5103:Brdiag2.EXE , 0
+"Información de la impresora"                               , 5103:Brdiag2.EXE , 7103:x100172     , 5103:Brdiag2.EXE , 1
+"Solución de problemas si la impresora no imprime"          , 5103:Brdiag2.EXE , 7103:x100174     , 5103:Brdiag2.EXE , 2
+"Archivo de ayuda del controlador"                          , 5103:Brohl99e.HLP,                 , 5103:Brohl99e.HLP, 0
+"Desinstalar"                                               , 6103:Brinst32.EXE, 2103:HL1030.ini , 6103:Brinst32.EXE, 1
+
+[Brother_HL-1030_Series.DAN]
+"Diagnostics"                                               , 5103:Brdiag2.EXE , 7103:x100180     , 5103:Brdiag2.EXE , 0
+"Printer Information"                                       , 5103:Brdiag2.EXE , 7103:x100182     , 5103:Brdiag2.EXE , 1
+"Fejlsøgning for Printer vil ikke udskrive"                 , 5103:Brdiag2.EXE , 7103:x100184     , 5103:Brdiag2.EXE , 2
+"Driver Hjælpefil"                                          , 5103:Brohl99e.HLP,                 , 5103:Brohl99e.HLP, 0
+"Afinstallér"                                               , 6103:Brinst32.EXE, 2103:HL1030.ini , 6103:Brinst32.EXE, 1
+

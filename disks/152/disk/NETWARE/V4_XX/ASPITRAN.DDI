@@ -1,0 +1,32 @@
+
+SyntaxVersion: 1.00
+
+	Driver ASPITRAN
+	{
+		Description:			$ASPITRAN_1
+		File:					ASPITRAN.DSK
+	}
+
+
+
+
+DLANG:	4
+;English
+	$ASPITRAN_1 = "Adaptec NetWare ASPI Transport Layer"
+
+LANG:	6
+;French
+	$ASPITRAN_1 = "Adaptec NetWare ASPI Transport Layer"
+
+LANG:	7
+;German
+	$ASPITRAN_1 = "Adaptec NetWare ASPI Transport Layer"
+
+LANG:	8
+;Italian
+	$ASPITRAN_1 = "Adaptec NetWare ASPI Transport Layer"
+
+LANG:	14
+;Spanish
+	$ASPITRAN_1 = "Adaptec NetWare ASPI Transport Layer"
+

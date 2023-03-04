@@ -1,0 +1,1 @@
+debug.exe < boot.txt

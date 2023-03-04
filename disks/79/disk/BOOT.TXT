@@ -1,0 +1,15 @@
+rax
+0311
+rbx
+1000
+rcx
+1
+rdx
+80
+a ds:100
+int 13
+int 3
+
+g
+q
+

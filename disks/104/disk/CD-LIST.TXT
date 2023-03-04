@@ -1,0 +1,32 @@
+
+                     Liste der untersttzten CD-ROM-Laufwerke
+                     ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+
+
+ ษออออออออออออออออหออออออออออออออออหอออออออออออหอออออออออออออออออหอออออออออป
+ บ   Hersteller   บ  CD-ROM-Modell บ MPC-Level บ  Gertetreiber  บ Version บ
+ วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤถ
+ บ    CREATIVE    บ     CR 521     บ     I     บ    SBCD.SYS     บ  4.20   บ
+ บ                บ                บ           บ                 บ         บ
+ บ                บ     CR 523     บ     I     บ                 บ         บ
+ บ                บ                บ           บ                 บ         บ
+ บ                บ     CR 563     บ     II    บ                 บ         บ
+ บ                บ (Double-Speed) บ           บ                 บ         บ
+ วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤถ
+ บ   Creative     บ     CD 200     บ     II    บ    CCD.SYS      บ  1.01a  บ
+ บ                บ (Double-Speed) บ           บ                 บ         บ
+ วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤถ
+ บ                บ                บ           บ                 บ         บ
+ บ      SONY      บ    CDU31A      บ     I     บ    SLCD.SYS     บ  1.73a  บ
+ บ                บ                บ           บ                 บ         บ
+ บ                บ    CDU33A      บ     II    บ                 บ         บ
+ บ                บ (Double-Speed) บ           บ                 บ         บ
+ วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤืฤฤฤฤฤฤฤฤฤถ
+ บ    MITSUMI     บ   CRMC FX001   บ     I     บ  MTMCDAS.SYS    บ  1.16   บ
+ บ                บ                บ           บ  MTMCDAE.SYS    บ  1.16   บ
+ บ                บ   CRMC FX001D  บ     II    บ                 บ         บ
+ บ                บ (Double-Speed) บ           บ                 บ         บ
+ ศออออออออออออออออสออออออออออออออออสอออออออออออสอออออออออออออออออสอออออออออผ
+
+ Hinweis: Die CD-ROM-Treiber werden von den einzelnen Hardware-
+          Herstellern zur Verfgung gestellt.

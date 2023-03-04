@@ -1,0 +1,69 @@
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º                                                                             º
+º      ÜÜÜÜÜ     ÜÜÜ     ÜÜÜÜÜ                 Geschrieben von: Oliver Wegen  º
+º     Û     ß  Üß   ßÜ  Û     ß                            am:  1.8.1992      º
+º     Û ÜÜÜÜÜ  ÛÜÜÜÜÜÛ  Û ÜÜÜÜÜ  ÜÜÜÜÜ                     fr: alle PC-User  º
+º     Û     Û  Û     Û  Û     Û                            mit: QuickBasic    º
+º      ßßßßßÛ  ß     ß   ßßßßßÛ                                               º
+º                                                                             º
+º     ÜÜÜÜÜÜÜ  ÜÜÜÜÜÜ    Ü  ÜÜÜÜÜÜÜ  Ü   ÜÜÜÜÜ   Ü      Ü                     º
+º     Û        Û     ßÜ  Û     Û     Û  Û     Û  ÛßÜ    Û                     º
+º     ÛÜÜÜÜ    Û      Û  Û     Û     Û  Û     Û  Û  ßÜ  Û                     º
+º     Û        Û     Üß  Û     Û     Û  Û     Û  Û    ßÜÛ                     º
+º     ßßßßßßß  ßßßßßß    ß     ß     ß   ßßßßß   ß      ß                     º
+º                                                                             º
+º     Ü      Ü  ÜÜÜÜÜ            Ü                                            º
+º     ÛßÜ    Û  Û    Û         ÜßÛ     Diese Edition ist Freeware !           º
+º     Û  ßÜ  Û  ÛßÛßß         ß  Û     ßßßßßßßßßßßßßßßßßßßßßßßßßßßß           º
+º     Û    ßÜÛ  Û  ßÜ            Û     Verbesserte Version 1.2                º
+º     ß      ß  ß    ß   ß       ß     10.10.1992                             º
+º                                                                             º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍWichtige Hinweise:ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+Die Programme erfordern folgende Konfiguration:
+
+* beliebigen IBM oder kompatiblen PC mit min. MS-DOS 3.21 oder DR-DOS 5.0
+* min. 512 KB Arbeitspeicher
+* fr WCGAG.EXE und GOTYOU!.EXE ist eine Farbgrafikarte und ein Farbmonitor
+  erforderlich
+* eine Festplatte mit Kennung 'C:' (sehr wichtig!!)
+
+Hier noch einige Hinweise:
+
+* Die Programme richten normalerweise keinen Schaden an, dies k”nnte jedoch
+  durch Ver„nderung des Programms geschehen.
+
+* Die Programme sind beim Versand an die Shareware-H„ndler vorher auf Viren
+  geprft worden und sind Virenfrei.
+
+* Manche Programme erzeugen w„hrend der Ausfhrung eine Datei namens "DUMMY"
+  auf der Festplatte mit der Kennung 'C:'.
+  Diese Datei wird normalerweise immer bei Beendigung gel”scht. Es k”nnte aber
+  durch einen Systemabsturz passieren, das diese Datei sich noch auf Festplatte
+  befindet. Sie k”nnen diese Datei einfach mit 'DEL DUMMY' l”schen.
+
+!                                                                             !
+! Hier noch die Freeware-Hinweise:                                            !
+! ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ                                            !
+!                                                                             !
+! Alle fnf Programme sind Freeware und drfen kostenlos weitergegeben werden,!
+! jedoch nur wenn alle fnf Programme und die Dateien ANLEIT.UNG FILES.TXT und!
+! HINWEIS.TXT zusammenkopiert werden. Es kann eine Kopiergebhr bis zu 15 DM  !
+! erhoben werden.                                                             !
+!                                                                             !
+! Die Programme und die Hinweis-Dateien drfen nicht ver„ndert oder gekrzt   !
+! werden.                                                                     !
+!                                                                             !
+
+
+  So, das wars!
+
+                             Mit besten Gráen:
+                             ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+
+                                Oliver Wegen
+
+Fr Verbesserungs-Vorschl„ge schreiben Sie an: Oliver Wegen
+                                               Noldestr. 25
+                                               W-5210 Troisdorf 16
+

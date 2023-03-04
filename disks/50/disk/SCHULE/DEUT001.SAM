@@ -1,0 +1,642 @@
+[ver]
+	4
+[sty]
+	
+[files]
+[charset]
+	82
+	ANSI (Windows, IBM CP 1252)
+[revisions]
+	0
+[prn]
+	HP LaserJet IIIP
+[lang]
+	7
+[desc]
+	
+	
+	
+	
+	
+	755537073
+	1
+	755534604
+	40
+	1
+	0
+	0
+	0
+	0
+	
+	
+	
+	
+	
+	
+	0
+[fopts]
+	0
+	1
+	0
+	0
+[lnopts]
+	2
+	Text Abstand
+	1
+[docopts]
+	5
+	2
+[tag]
+	Text
+	2
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Text
+	0
+	0
+[tag]
+	Text Abstand
+	3
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		277
+		2
+		0
+		277
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Text Abstand
+	0
+	0
+[tag]
+	Markierung
+	4
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		0
+		288
+		288
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*0>
+		360
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Markierung
+	0
+	0
+[tag]
+	Markierung 1
+	5
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		288
+		288
+		288
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*5>
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Markierung 1
+	0
+	0
+[tag]
+	Nr. Liste
+	6
+	[fnt]
+		Arial
+		240
+		0
+		49152
+	[algn]
+		1
+		2
+		360
+		360
+		360
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*:>.
+		360
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Nr. Liste
+	0
+	0
+[tag]
+	Unter Titel
+	7
+	[fnt]
+		Arial
+		240
+		0
+		16387
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		2
+		72
+		72
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		2
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Unter Titel
+	0
+	0
+[tag]
+	Titel
+	8
+	[fnt]
+		Arial
+		360
+		0
+		16385
+	[algn]
+		4
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		446
+		2
+		144
+		72
+		2
+		100
+	[brk]
+		16
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		1
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Titel
+	0
+	0
+[lay]
+	Standard
+	516
+	[rght]
+		16839
+		11907
+		2
+		1440
+		1440
+		2
+		1440
+		1440
+		0
+		1
+		0
+		1
+		0
+		2
+		1
+		1440
+		10465
+		12
+		1
+		720
+		1
+		1440
+		1
+		2160
+		1
+		2880
+		1
+		3600
+		1
+		4320
+		1
+		5040
+		1
+		5760
+		1
+		6480
+		1
+		7200
+		1
+		7920
+		1
+		8640
+	[hrght]
+	[lyfrm]
+		1
+		11200
+		0
+		0
+		11907
+		1440
+		0
+		1
+		3
+		1 0 0 0 0 0 0
+		0
+		0
+		1
+	[frmlay]
+		1440
+		11907
+		1
+		1440
+		73
+		2
+		623
+		1440
+		0
+		1
+		0
+		1
+		1
+		0
+		1
+		1440
+		10465
+		1
+		3
+		9360
+	[txt]
+>
+	[frght]
+	[lyfrm]
+		1
+		13248
+		0
+		15399
+		11907
+		16839
+		0
+		1
+		3
+		1 0 0 0 0 0 0
+		0
+		0
+		2
+	[frmlay]
+		16839
+		11907
+		1
+		1440
+		623
+		2
+		15472
+		1440
+		0
+		1
+		0
+		1
+		1
+		0
+		1
+		1440
+		10465
+		2
+		2
+		4680
+		3
+		9360
+	[txt]
+>
+[elay]
+[l1]
+	0
+[pg]
+	1
+	34 0 21 1025 0 0 0 65535 65535 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0
+[edoc]
+<*:>Aargauer Tagblatt:
+
+Zeitungsverlag
+
+Zeitschriften
+
+Kalender
+
+Buchverlag
+
+Akzidenz: Trauerkarten, Vereinskarten
+
+
+Zeitung: 1321  Kunde, Mitteilung, Nachricht
+
+Gutenberg: Buchdruck
+
+Abbo: Foto-, Nachrichtenagentur
+
+SDA: Schweizerische Depeschen Agentur
+
+AFD: Anonce France Presse
+
+Reuter: Englische Presseagentur
+
+DPA: Deutsche Depeschen Agentur
+
+Leitartickel, Editorial  <;>  Pers<\v>hnliche meinungen: <+">kursiv<-">
+
+Korrespondenten: Ausland
+
+Ressort: Gebiet
+
+Hard Factes: Tatsachen
+
+Leserbrief: Stimme der Volkes
+
+Eingesant: (Werbung(Veranstaltungen))
+
+PR: Public Relations
+
+PR-Artickel: Jubil<\d>um =<;> 1 Seite Firmengeschichte=Werbung
+
+Boulevard Zeitung: Blick, Bild und so
+
+Boulevardseiten: Sex and crime
+
+Freie Mitarbeiter: Leute die pro Zeile bezahlt werden
+
+					(nicht fest angestellt)
+
+Mantel: was bei allen Zeitungen gleich ist
+
+			(nicht der Regionalteil)
+
+Zeitungs Kopf: Redaktion, Inserate
+
+Gesamtauflage: 57 338 (notarel best<\d>tigt)
+
+<\\>bertitel=Spitzmarke
+
+Titel(Schlagzeile)
+
+Vorspann=Lied
+
+Legende=Bilderkl<\d>rung
+
+>
+
+[Embedded]
+00004786

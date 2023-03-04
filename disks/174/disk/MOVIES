@@ -1,0 +1,8 @@
+humbird.gif -l8 -t fadeout
+tides.fli -l2 -t fadein fadeout
+bosstalk.fli -l3 -t fadein fadeout
+jabber.fli -l1 -t fadein fadeout
+bball.fli -l5 -t fadein fadeout
+glass.fli -l4 -t fadein 
+loop 999
+

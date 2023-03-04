@@ -1,0 +1,101 @@
+Sehr geehrter TerraTec-Kunde,
+
+wie Sie bereits dem beiliegenden Anschreiben entnehmen konnten, stehen einige Teile der Software und damit Funktionen der Karte noch nicht vollständig zur Verfügung. Damit eine "Fehlersuche" ggfs. nicht unnötig ist, finden Sie hier die geplanten Funktionen noch einmal im Detail.
+
+- Treiber für die Betriebssysteme DOS / Windows 3.1x und Windows NT 4.0 sind in Vorbereitung.
+
+- Die Software Cubasis AV liegt noch nicht vor. Diese wird vorr. ab August zur Verfügung gestellt.
+
+- Wie im Prospekt, auf der Webseite und in der Presse bereits verlautet, wird Ed!son, der Instrumenten-Editor erst einige Wochen nach der Auslieferung der Karte fertiggestellt werden können.
+
+- Die Effektalgorithmen zur 3D-Positionierung von Audiomaterial (AudioRendering) wird noch implementiert.
+
+- Das Wavetable- und MIDI-Handbuch berücksichtigt in einer Neuauflage auch die Möglichkeiten der EWS. Bis dahin finden Sie einen Grossteil der MIDI-Parameter auf dem beiliegendem Datenblatt.
+
+
+
+Zu DirectSound / DigitalAudio.
+
+- Die Microsoft DirectSound-Unterstützung ist nur für den Codec-Treiber implementiert. Wenn Sie eine DirectSound-Applikation installieren wollen, müssen Sie die Anzahl der EWS-Wavetreiber auf höchstens 7 reduzieren, den EWS-Codec-Play Treiber im Wave-Mapper aktivieren und den Schalter "Nur bevorzugte Geräte verwenden"
+einschalten. 
+
+
+
+Dinge, die noch nicht in den Handbüchern berücksichtigt werden konnten. 
+
+
+- Standardmässig wird beim Initialisieren der EWS das Soundset "GSSET320.94b" geladen. Möchten Sie ein anderes oder keines verwenden, so kann in der AUTOEXEC.BAT der Eintrag "[PFAD]\EWSINIT f v b xxxxxxxx.94b" geändert werden. "b xxxxxxxx.94b" lädt ein Set - fehlt dieser letzte Anhang (steht dort also nur noch "[PFAD]\EWSINIT f v" ist der Speicher komplett frei.
+
+
+- Wenn Sie bereits vorhandene Soundkartentreiber entfernen wollen, gehen Sie bitte folgendermaßen vor:
+
+
+1. Klicken Sie auf START waehlen Sie EINSTELLUNGEN und dann SYSTEMSTEUERUNG.
+2. Klicken Sie doppelt auf SYSTEM und wechseln Sie in den GERAETEMANAGER.
+3. In dem nun angezeigten Fenster ueberpruefen Sie bitte ob Sie die Geraetegruppe
+    ANDERE KOMPONENTEN finden. Wenn nicht, fahren Sie bitte mit Punkt 5 fort.
+4. Loeschen Sie alle "Geraete" die auf eine Soundkarte hinweisen. z. B.
+    "AdLib-", "Soundblaster-" oder "MPU-401-kompatibles Geraet".
+5. Loeschen Sie alle Geraete unter AUDIO-, VIDEO- UND GAME-CONTROLLER.
+6. Oeffnen Sie den EXPLORER und wechseln Sie in Ihr Windows 95-Installationsverzeichnis.
+7. Finden Sie hier ein Unterverzeichnis INF, fahren Sie bitte mit Punkt 9. fort.
+8. Klicken Sie im Menue des Explorers auf den Punkt ANSICHT. Waehlen Sie OPTIONEN,
+    markieren Sie in der Registerkarte ANSICHT das Feld ALLE DATEIEN ANZEIGEN und 
+    klicken Sie auf OK.
+9. Wechseln Sie in das Verzeichnis INF
+
+-   Finden Sie hier ein Unterverzeichnis OTHER (nur Windows 95 B-Version), waechseln Sie bitte
+    in dieses Verzeichnis. Loeschen Sie hier die Datei "TerraTecEWS64.INF". Fahren Sie bitte mit
+    Punkt 13 fort. Finden Sie hier weitere Dateien, die auf eine vorhergegangene Soundkarten-
+    installation eines anderen Herstellers vermuten lassen, loeschen Sie bitte auch diese.
+
+-   Ist kein weiteres Unterverzeichnis vorhanden, suchen Sie nach Dateien mit dem Praefix OEM.
+    Z. B. OEM0.INF oder OEM1.INF und fahren Sie mit Punkt 10 fort.
+
+10. Hier koennen Ihnen sehr viele Dateien angezeigt werden. Bitte oeffnen Sie jede dieser
+     Datein (hierzu wird standardmaessig das Windows 95 NOTEPAD.EXE verwendet) und 
+     suchen Sie nach folgender Eintragung, die sich ziemlich am Anfang dieser Datei befinden
+     kann:
+
+     CLASS=MEDIA
+
+11. Ist in der OEMx.INF-Datei dieser Eintrag enthalten, schliessen Sie bitte die geoeffnete 
+     Datei und loeschen Sie diese.
+12. Verfahren Sie mit allen OEMx.INF-Dateien nach dem oben beschriebenen Verfahren.
+13. Starten Sie den Rechner neu. Nun wird die Windows 95 Datenbank fuer Treiberinformationen
+     neu erstellt und Windows 95 findet auch keine Eintragungen ueber eine zuvor installierte
+     Soundkarte.
+
+Nach erneutem Start wird die Windows Datenbank fuer Treiberinformation neu erstellt. Jetzt sollte
+die Soundkarte gefunden werden. 
+
+Wenn Sie mit der internen Eigenschaften von Windows 95 nicht so sehr vertraut sind, moechten
+wir Sie bitten, zu den oben aufgefuehrten Schritten einen Fachmann hinzuzuziehen.
+
+
+
+Wir danken Ihnen für Ihr Verständnis und würden uns darüber hinaus über alle Tips und Vorschläge zu künftigen Softwareversionen von Ihnen freuen.
+
+Mit schönen Grüssen aus Nettetal,
+
+
+... Ihr TerraTecTeam!
+
+
+
+
+23/07/1997
+
+>>>TerraTec Electronic GmbH
+|  Herrenpfad 38
+|  41334 Nettetal
+|  GERMANY
+| 
+|  tel:                            +49-2157-81790
+|  fax:                            +49-2157-817922
+|  bbs 28.8:                       +49-2157-817924
+|  bbs isdn:                       +49-2157-817942
+|  www:                            http://www.terratec.net
+|  ftp:                            ftp://ftp.terratec.de
+|  email:                          briefkasten@terratec.de
+|__________________________________________________________________

@@ -1,0 +1,3 @@
+DEVICE=\net\protman.dos /I:\net
+DEVICE=\net\dis_pkt.dos
+DEVICE=\net\rtsnd.dos

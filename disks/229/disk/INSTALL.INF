@@ -1,0 +1,145 @@
+[Installation]
+program=Total Commander 6.01
+progname=Total Commander
+copyright=Copyright © 1993-2003 by Christian Ghisler, All Rights reserved
+
+[auto]
+auto=0
+lang=1
+alllang=1
+iniloc=
+iniall=0
+mkgroup=1
+mkdesktop=1
+
+[Versioncheck]
+Vernum=2
+
+[Not running]
+1=WINDOWSCMD,Windows Commander
+2=TTOTAL_CMD,Total Commander
+3=TAPPLICATION,Windows Commander,Windows Commander
+4=TAPPLICATION,Total Commander,Total Commander
+
+[Destination]
+Dir=c:\totalcmd
+Ini=wincmd.ini,Configuration,InstallDir
+
+[Languages]
+Count=14
+Default=1
+1=English
+2=Deutsch (German),d
+3=Français (French),f
+4=Nederlands (Dutch),n
+5=Dansk (Danish),k
+6=Norsk (Norwegian),o
+7=Italiano (Italian),i
+8=Svenska (Swedish),s
+9=Español (Spanish),e
+10=Èeský (Czech),z
+11=Polski (Polish),p
+12=Magyar (Hungarian),h
+13=Slovenský (Slovak),y
+14=Slovenski (Slovene),l
+
+[LangName]
+langdir=language
+0=wcmd_eng
+d=wcmd_deu
+f=wcmd_fra
+n=wcmd_dut
+k=wcmd_dan
+o=wcmd_nor
+i=wcmd_ita
+s=wcmd_swe
+e=wcmd_esp
+z=wcmd_cz
+p=wcmd_pol
+h=wcmd_hun
+y=wcmd_sk
+l=wcmd_svn
+
+;Save data the user may have changed!
+[Backup data]
+1=default.bar
+2=no.bar
+
+[Install]
+1=wincmd.key
+2=install.cab,c
+
+[Installd]
+1=wincmd.key
+2=install.cab,c
+
+[Desktop]
+1=totalcmd.exe","Total Commander.lnk
+
+[Group]
+Groupname=Total Commander
+1=totalcmd.exe","Total Commander 32
+2=totalcmd.hlp","Total Commander Help
+3=tcuninst.exe","Uninstall or Repair Total Commander
+
+[Groupd]
+Groupname=Total Commander
+1=totalcmd.exe","Total Commander 32
+2=totalcmd.hlp","Total Commander Hilfe
+3=tcuninst.exe","Total Commander Entfernen oder Reparieren
+
+[ini]
+1=wincmd.ini,configuration,languageini
+2=wincmd.ini,configuration,Mainmenu
+
+[inid]
+1=wincmd.ini,configuration,languageini,wcmd_deu.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_deu.mnu
+
+[inif]
+1=wincmd.ini,configuration,languageini,wcmd_fra.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_fra.mnu
+
+[inin]
+1=wincmd.ini,configuration,languageini,wcmd_dut.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_dut.mnu
+
+[inik]
+1=wincmd.ini,configuration,languageini,wcmd_dan.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_dan.mnu
+
+[inio]
+1=wincmd.ini,configuration,languageini,wcmd_nor.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_nor.mnu
+
+[inii]
+1=wincmd.ini,configuration,languageini,wcmd_ita.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_ita.mnu
+
+[inis]
+1=wincmd.ini,configuration,languageini,wcmd_swe.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_swe.mnu
+
+[inie]
+1=wincmd.ini,configuration,languageini,wcmd_esp.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_esp.mnu
+
+[iniz]
+1=wincmd.ini,configuration,languageini,wcmd_cz.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_cz.mnu
+
+[inip]
+1=wincmd.ini,configuration,languageini,wcmd_pol.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_pol.mnu
+
+[inih]
+1=wincmd.ini,configuration,languageini,wcmd_hun.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_hun.mnu
+
+[iniy]
+1=wincmd.ini,configuration,languageini,wcmd_sk.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_sk.mnu
+
+[inil]
+1=wincmd.ini,configuration,languageini,wcmd_svn.lng
+2=wincmd.ini,configuration,Mainmenu,wcmd_svn.mnu

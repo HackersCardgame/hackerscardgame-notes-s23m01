@@ -1,0 +1,95 @@
+---
+
+For more information contact:
+
+MICROSOFT CORPORATION                        
+Liz Sidnam/Marty Taucher                                         
+206/882-8080                                                      
+                                                     
+ZIFF-DAVIS PUBLISHING PUBLIC RELATIONS
+Greg Jarboe
+617/393-3313
+
+WAGGENER EDSTROM
+Catherine Richardson/Claire Lematta
+503/245-0905
+
+ 
+Microsoft and PC Magazine Develop Winstone Hardware Benchmark
+
+        San Francisco, Calif., March 2, 1992.  Microsoft 
+Corporation and Ziff-Davis Publishing Company today 
+announced plans to create the Winstone benchmark, a software 
+test designed to measure the performance of Microsoft 
+Windows-compatible personal computers.  The benchmark will be jointly 
+developed by Microsoft and Ziff-Davis, publisher of PC Magazine,  with input
+from industry sources.  The test will be distributed widely to 
+personal computer manufacturers and others conducting 
+independent tests.
+
+The Winstone announcement was made at the Microsoft Windows 
+Hardware Engineering Conference being held here March 1-3, 
+attended by over 400 engineers representing nearly two 
+hundred PC and accessory board manufacturers from around the 
+world.  The conference focuses on techniques and components 
+for optimizing personal computer designs for better 
+performance running the Windows operating system.  
+
+Strong customer demand for the Windows operating system has 
+created a need for a test offering a single, reliable 
+indicator of overall PC performance under Windows.  "End 
+users will get a more accurate measure of total system 
+performance, allowing an objective comparison of various 
+systems before making a purchase decision," said Jonathan 
+Lazarus, general manager of systems software marketing at 
+Microsoft.  "Winstone gives consumers a big advantage 
+because it's a real-world benchmark."
+
+The Winstone benchmark will test the overall performance of 
+PCs running the Microsoft Windows 3.X operating system and 
+related applications by precisely reproducing the demands 
+that the software environment places on hardware by 
+emulating typical application usage scenarios.  The 
+Winstone benchmark will be based on a range of spreadsheets, 
+word processors and other software manipulating data files 
+of different sizes and types that reflects the mix of tasks 
+undertaken by the typical PC user. 
+
+Ziff-Davis, as publisher of several widely-read computer 
+industry periodicals, will help select applications 
+scenarios reflective of the broadest segment of the Windows 
+computing market and  develop models of user activity.  
+"Ziff-Davis and PC Magazine Labs will work to define a 
+benchmark that responds to the needs of users as accurately 
+as possible," said Michael Miller, Editor-in-Chief of PC 
+Magazine.  Microsoft and Ziff-Davis will also consult with 
+others in the PC industry, including Intel Corporation of 
+Santa Clara, CA, to ensure the accuracy of the benchmark.  
+
+The Winstone benchmark will complement other measures of 
+computer performance, including PC Magazine Labs Winbench and other tests, and 
+suites developed by the Business Application Performance 
+Company (BAPCo).  Intel, Microsoft and Ziff-Davis are active 
+members of BAPCo, a consortium of hardware and software 
+vendors that is focused on developing application-based 
+benchmarks that accurately reflect the performance of 
+computing systems.
+
+        Microsoft Corporation (NASDAQ MSFT) develops, 
+markets and supports a wide range of microcomputer software 
+for business and professional use, including operating 
+systems, network products, languages and applications, as 
+well as books, hardware and CD-ROM products for the 
+microcomputer marketplace.
+
+      In addition to PC Magazine, Ziff-Davis Publishing 
+Company publishes PC Week, PC/Computing, Computer Shopper, 
+PC Sources, MacUser and MacWeek in the U.S. and a variety of 
+sister publications in Europe.  Ziff-Davis Publishing, a 
+division of Ziff Communications Company, also produces trade 
+shows, conferences and newsletters though its Interop and 
+Seybold operations.
+ 
+
+
+###

@@ -1,0 +1,72 @@
+                          CheckIt 3.0 Activity Log
+
+                          Serial Number: 00-090602
+                             10/6/1992 12:05:13
+
+                                        
+                                          
+
+
+Batch Pass 1 of 99
+
+                         === FLOPPY DISK 0 (A:) ===
+
+Test Configuration:
+     Maximum Capacity: 1.2MB
+    Currently Testing: 1.2MB
+
+Test Results:
+    Random Read.................................................Passed
+    Random Write................................................Passed
+
+                         === FLOPPY DISK 1 (B:) ===
+
+Test Configuration:
+     Maximum Capacity: 1.44MB
+    Currently Testing: 1.44MB
+
+Test Results:
+    Random Read.................................................Passed
+    Random Write................................................Passed
+
+
+Batch Pass 2 of 99
+
+                         === FLOPPY DISK 0 (A:) ===
+
+Test Configuration:
+     Maximum Capacity: 1.2MB
+    Currently Testing: 1.2MB
+
+Test Results:
+    Random Read.................................................Passed
+    Random Write................................................Passed
+
+                         === FLOPPY DISK 1 (B:) ===
+
+Test Configuration:
+     Maximum Capacity: 1.44MB
+    Currently Testing: 1.44MB
+
+Test Results:
+    Random Read.................................................Passed
+    Random Write................................................Passed
+
+
+Batch Pass 3 of 99
+
+                         === FLOPPY DISK 0 (A:) ===
+
+Test Configuration:
+     Maximum Capacity: 1.2MB
+    Currently Testing: 1.2MB
+
+Test Results:
+    Random Read.................................................Passed
+    Random Write................................................Aborted
+
+
+Batch Cancelled
+
+                  *** END TESTS: NO ERRORS ENCOUNTERED ***
+

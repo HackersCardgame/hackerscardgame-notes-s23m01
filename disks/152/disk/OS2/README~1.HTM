@@ -1,0 +1,1161 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Eric Rutlin">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (WinNT; I) [Netscape]">
+   <title>sample readme html</title>
+</head>
+<body>
+<font face="Times New Roman,Times"></font>&nbsp;
+<br>
+<hr WIDTH="100%">
+<center><b><i><font face="Times New Roman,Times"><font size=+2>Adaptec
+7800 Family Manager Set v3.02.2</font></font></i></b><font face="Times New Roman,Times"></font>
+<p><b><i><font face="Times New Roman,Times"><font size=+2>README for IBM
+OS/2</font></font></i></b></center>
+
+<hr WIDTH="100%"><font face="Times New Roman,Times"></font>
+<p><b><font face="Times New Roman,Times">The following information is available
+in this README file:</font></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Supported Hardware">Supported
+Hardware</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Changes From Prior Release">Changes
+From Prior Release</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Installation Instructions">Installation
+Instructions</a></font>
+<blockquote><u><font face="Times New Roman,Times"><a href="#Installing a New Driver or Updating an Existing os2 2.1x">Installing
+a New Driver or Updating an Existing Driver for OS/2 2.1X/Warp/Server</a></font></u>
+<br><u><font face="Times New Roman,Times"><a href="#First-Time Installation of OS/2 2.1X/Warp/Server FDD">First-Time
+Installation of OS/2 2.1X/Warp/Server From Floppy Diskette</a></font></u>
+<br><u><font face="Times New Roman,Times"><a href="#First-Time Installation of OS/2 2.1X From CD">First-Time
+Installation of OS/2 2.1X From CD-ROM</a></font></u>
+<br><u><font face="Times New Roman,Times"><a href="#First-Time Installation of OS/2 Warp 3.x, 4.0 or CD">First-Time
+Installation of OS/2 Warp 3.x, 4.0 or 4.0 Server From CD-ROM</a></font></u></blockquote>
+<font face="Times New Roman,Times"><a href="#Known Issues">Known Issues</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Additional Notes">Additional
+Notes</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Command Line Options">Command
+Line Options</a></font>
+<blockquote><u><font face="Times New Roman,Times"><a href="#Universal parameters">Universal
+Parameters</a></font></u>
+<br><u><font face="Times New Roman,Times"><a href="#General Unit param">General
+Unit Parameters</a></font></u>
+<br><u><font face="Times New Roman,Times"><a href="#Special Unit param">Special
+Unit Parameters</a></font></u></blockquote>
+<font face="Times New Roman,Times"><a href="#Diskette Contents">Diskette
+Contents</a></font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><a href="#Contacting Adaptec">Contacting
+Adaptec</a></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Supported Hardware"></a><b><u><font face="Times New Roman,Times"><font size=+1>Supported
+Hardware</font></font></u></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">The following Adaptec SCSI Host Adapters
+are supported by the 7800 FMS v3.02.2.&nbsp; The first list (Fast/Ultra
+Adapters) is supported by the AIC78xx.MPD driver, while the second list
+(Ultra2 Adapters) is supported by the AIC78U2.MPD driver.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><u>Fast/Ultra Adapters</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<u>Description</u></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="75%" >
+<tr>
+<td><font face="Times New Roman,Times">AHA-2910C</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast SCSI (non-bootable)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2915C</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast SCSI (non-bootable)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2920C</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2930C</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Single-ended SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940W</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast and Wide Single-ended
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940AU</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Single-ended SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940U</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Single-ended SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940U Dual</font></td>
+
+<td><font face="Times New Roman,Times">DualChannel PCI-to-Ultra Wide Internal
+Single-ended SCSI with 50-pin external connector</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940UW</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Wide Single-ended SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940UW Pro</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Wide Single-ended SCSI
+(See Changes From Prior Release Section)</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940UW Dual</font></td>
+
+<td><font face="Times New Roman,Times">DualChannel PCI-to-Ultra Wide Single-ended
+SCSI with 68-pin external connector</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2944W</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Fast and Wide Differential
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2944UW</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra Wide Differential SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940W</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Fast and Wide
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940U</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940UW</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940UWD</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide SCSI
+with dual external VHD connectors</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3944UWD</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide Differential
+SCSI with dual external VHD connectors</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940AU</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940AUW</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3940AUWD</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide SCSI
+with dual VHD external connectors</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3944AUWD</font></td>
+
+<td><font face="Times New Roman,Times">MultiChannel PCI-to-Ultra Wide Differential
+SCSI with dual external VHD connectors</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-4944W</font></td>
+
+<td><font face="Times New Roman,Times">Quad Channel PCI-to-Fast and Wide
+Differential SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-4944UW</font></td>
+
+<td><font face="Times New Roman,Times">Quad Channel PCI-to-Ultra Wide Differential
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times"></font></td>
+
+<td><font face="Times New Roman,Times"></font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">APA-1480</font></td>
+
+<td><font face="Times New Roman,Times">CardBus-to-Ultra Single-ended SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times"></font></td>
+
+<td><font face="Times New Roman,Times"></font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7850</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7855</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7856</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Fast SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7860</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Ultra SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7870</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Fast and Wide
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7880</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Ultra Wide SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7895</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-MultiChannel
+Ultra Wide SCSI</font></td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><u>Ultra2 Adapters</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<u>Description</u></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="75%" >
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940U2 OEM</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra2 Wide LVD/Single-ended
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940U2B</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra2 Wide LVD SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2940U2W</font></td>
+
+<td><font face="Times New Roman,Times">PCI-to-Ultra2 Wide LVD/Single-ended
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-2950U2B</font></td>
+
+<td><font face="Times New Roman,Times">64-bit PCI-to-Ultra2 Wide LVD SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3950U2B</font></td>
+
+<td><font face="Times New Roman,Times">64-bit PCI-to-MultiChannel Ultra2
+Wide LVD SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AHA-3950U2D</font></td>
+
+<td><font face="Times New Roman,Times">64-bit PCI-to-MultiChannel Ultra2
+Wide LVD SCSI with dual external VHD connectors</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times"></font></td>
+
+<td><font face="Times New Roman,Times"></font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7890</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-Ultra2 SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7891</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip 64-bit PCI-to-Ultra2
+SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7896</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip PCI-to-MultiChannel
+Ultra2 SCSI</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">AIC-7897</font></td>
+
+<td><font face="Times New Roman,Times">Single-chip 64-bit PCI-to-MultiChannel
+Ultra2 SCSI</font></td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<p><a NAME="Changes From Prior Release"></a><b><font face="Times New Roman,Times"><font size=+1>Changes
+From Prior Release</font></font></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">This release of the Adaptec 7800
+Family Manager Set v3.02.2 adds the following support from the previous
+v3.02 release:</font>
+<blockquote><font face="Times New Roman,Times">- Support for the AHA-2940UW
+Pro</font>
+<blockquote><font face="Times New Roman,Times">1) Adds the ability to use
+all three connectors at the same time</font>
+<br><font face="Times New Roman,Times">2) Current Sensing Circuit checks
+for improper termination</font></blockquote>
+<font face="Times New Roman,Times">- Support for the AHA-3950U2D</font>
+<blockquote><font face="Times New Roman,Times">1) Adds two external VHD
+connectors instead of one wide external connector</font></blockquote>
+</blockquote>
+<font face="Times New Roman,Times"></font>
+<p><br><a NAME="Installation Instructions"></a><b><font face="Times New Roman,Times"><font size=+1>Installation
+Instructions</font></font></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">The AIC78U2.ADD Ultra2SCSI driver
+only supports OS/2 Warp 3.x, 4.0 and 4.0 Server. The AIC7870.ADD UltraSCSI
+or earlier driver also supports OS/2 version 2.1x in addition to versions
+3.x, 4.0 and 4.0 Server.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Installing a New Driver or Updating an Existing os2 2.1x"></a><u><font face="Times New Roman,Times">Installing
+a New Driver or Updating an Existing Driver for OS/2 2.1X/Warp/Server</font></u><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: When installing a new host
+adapter, make sure it is inserted in the system before installing the driver.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. Open the OS/2 System Folder, then
+open the System Setup folder.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. If running OS/2 Warp 4.0, open
+the Install/Remove Folder.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">3. Double-click on Device Driver
+Install.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">4. Insert the Adaptec 7800 Family
+Manager Set v3.02.2 floppy in the appropriate drive.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">5. Change to the directory where
+the driver is located.</font>
+<blockquote><font face="Times New Roman,Times">a. For Ultra2SCSI host adapters,
+the driver will be located in \OS2\AIC78U2 (for OS/2 Warp or Server only)</font>
+<br><font face="Times New Roman,Times">b. For UltraSCSI or earlier host
+adapters, the driver will be located in \OS2\AIC7870</font></blockquote>
+<font face="Times New Roman,Times">6a. For Ultra2SCSI host adapters, when
+you find the driver (AIC78U2.ADD), select INSTALL.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">6b. For UltraSCSI or earlier host
+adapters, when you find the driver (AIC7870.ADD), select INSTALL.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">7. After the installation finishes,
+be sure to check the C:\ directory and delete any previous versions of
+the AIC78U2.ADD and/or AIC7870.ADD drivers before rebooting the system.&nbsp;
+If you do not remove those drivers, OS/2 will load them instead of the
+new drivers that you have just installed.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">8. Select EXIT and reboot the computer.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: You may also install the
+driver manually:</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. For Ultra2SCSI host adapters:
+Copy AIC78U2.ADD to C:\OS2\BOOT.&nbsp; Add a line to your CONFIG.SYS that
+says BASEDEV=AIC78U2.ADD /V.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. For UltraSCSI or earlier host
+adapters:&nbsp; Copy AIC7870.ADD to C:\OS2\BOOT.&nbsp; Add a line to your
+config.sys that says BASEDEV=AIC7870.ADD /V.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="First-Time Installation of OS/2 2.1X/Warp/Server FDD"></a><u><font face="Times New Roman,Times">First-Time
+Installation of OS/2 2.1X/Warp/Server From Floppy Diskette</font></u><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE:&nbsp; To install the driver,
+it is necessary to copy the driver from the Adaptec 7800 Family Manager
+Set v3.02.2 diskette for OS/2 on to the OS/2 Diskette 1. However, before
+you can copy the driver, you must first remove various files from the OS/2
+Diskette 1, as explained in step 2 below.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. Make backup copies of the Installation
+Diskette and Diskette 1.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. Delete some of the existing files
+on the backup copy of the OS/2 Diskette 1 so that approximately 140 KB
+of disk space is available on the diskette. Use the following information
+to help you decide which files to delete.</font>
+<blockquote><font face="Times New Roman,Times">a. If the Adaptec 7800 Family
+host adapter is the only Adaptec host adapter installed in your system,
+delete all other Adaptec drivers (aha152x.add, aha154x.add, aha164x.add,
+aha174x.add, aic7770.add, aic7870.add, and fd16-700.add).</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">b. If you have an Adaptec
+host adapter that is not part of the 7800 Family, delete all of the Adaptec
+drivers not used by that particular host adapter. For example, if you have
+an Adaptec AHA-1540CP host adapter installed in your computer, delete all
+Adaptec drivers except for the aha154x.add driver.</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">c. If you have deleted the
+suggested Adaptec drivers above, and you still do not have approximately
+140 KB of disk space available on the diskette, delete the file: CDINST.EXE
+(for OS/2 Warp or Server only).</font></blockquote>
+<font face="Times New Roman,Times"></font>
+<p><br><font face="Times New Roman,Times">3. If you are installing OS/2
+2.1X, use the backup copies of the Installation Diskette and Diskette 1
+to do the following:</font>
+<blockquote><font face="Times New Roman,Times">a. Copy OS2LDR from the
+Adaptec 7800 Family Manager Set v3.02.2 diskette onto the OS/2 Installation
+Diskette.</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">b. Copy IBMINT13.I13 from
+the Adaptec 7800 Family Manager Set v3.02.2 diskette onto the OS/2 Diskette
+1.</font></blockquote>
+<i><font face="Times New Roman,Times">NOTE: You do not need these files
+when installing OS/2 Warp or Server.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">4. Add the following lines to the
+config.sys file on OS/2 Diskette 1:</font>
+<blockquote><font face="Times New Roman,Times">a. For Ultra2SCSI host adapters:</font></blockquote>
+
+<blockquote>
+<blockquote><font face="Times New Roman,Times">BASEDEV=AIC78U2.ADD</font>
+<br><font face="Times New Roman,Times">Set CopyFromFloppy=1</font></blockquote>
+<font face="Times New Roman,Times">b. For UltraSCSI or earlier host adapters:</font>
+<blockquote><font face="Times New Roman,Times">BASEDEV=AIC7870.ADD</font>
+<br><font face="Times New Roman,Times">Set CopyFromFloppy=1</font></blockquote>
+</blockquote>
+<font face="Times New Roman,Times">5. Install OS/2 using the backup diskettes
+and the remainder of the standard OS/2 diskettes.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">6. When installation has completed,
+reboot the system.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="First-Time Installation of OS/2 2.1X From CD"></a><u><font face="Times New Roman,Times">First-Time
+Installation of OS/2 2.1X From CD-ROM</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">Only the AIC7870.ADD driver is supported
+under OS/2 2.1X . The Ultra2SCSI AIC78U2.ADD driver is not supported under
+OS/2 2.1X.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE:&nbsp; To install the AIC7870.ADD
+driver, it is necessary to copy the driver from the Adaptec 7800 Family
+Manager Set v3.02.2 diskette for OS/2 on to the OS/2 Diskette 1. However,
+before you can copy the driver, you must first remove various files from
+the OS/2 Diskette 1, as explained in step 2 below.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. Use diskcopy to make backup copies
+of all IBM OS/2 and Adaptec supplied diskettes. Use the backup copies as
+your working diskettes.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. Delete some of the existing files
+on the backup copy of the OS/2 Diskette 1 so that approximately 140 KB
+of disk space is available on the diskette. Use the following information
+to help you decide which files to delete.</font>
+<blockquote><font face="Times New Roman,Times">a. If the Adaptec 7800 Family
+host adapter is the only Adaptec host adapter installed in your system,
+delete all other Adaptec drivers (aha152x.add, aha154x.add, aha164x.add,
+aha174x.add, aic7770.add and fd16-700.add).</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">b. If you have an Adaptec
+host adapter that is not part of the 7800 Family, delete all of the Adaptec
+drivers not used by that particular host adapter. For example, if you have
+an Adaptec AHA-1540CP host adapter installed in your computer, delete all
+Adaptec drivers except for the aha154x.add driver.</font></blockquote>
+<font face="Times New Roman,Times"></font>
+<p><br><font face="Times New Roman,Times">3. Copy the OS2LDR file from
+the Adaptec 7800 Family Manager Set v3.02.2 diskette (i.e., \OS2\AIC7870\OS2LDR)
+onto the OS/2 installation diskette. This overwrites the existing OS/2
+loader on the diskette.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">4. Copy the IBMINT13.I13 driver from
+the Adaptec 7800 Family Manager Set v3.02.2 diskette (i.e.,\OS2\AIC7870\IBMINT13.I13)
+onto the OS/2 Diskette 1. This overwrites any existing version of the driver
+included on Diskette 1.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">5. Copy the AIC7870.ADD driver from
+the Adaptec 7800 Family Manager Set v3.02.2 diskette (i.e., \OS2\AIC7870\AIC7870.ADD)
+onto the OS/2 Diskette 1. This overwrites any existing version of the driver
+included on Diskette 1.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">6. Modify the CONFIG.SYS file on
+Diskette 1 to include the following line:</font>
+<blockquote><font face="Times New Roman,Times">BASEDEV=AIC7870.ADD</font></blockquote>
+<font face="Times New Roman,Times">7. Run the OS/2 installation program;
+follow the instructions in your OS/2 documentation.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">8. At the end of the installation
+process, follow the on screen instructions to remove the last OS/2 distribution
+diskette and reboot the computer.&nbsp; If the computer fails to boot up,
+and locks up while displaying the OS/2 logo screen, you may use one of
+the following options to get to the command prompt:</font>
+<blockquote><font face="Times New Roman,Times">a. If you installed OS/2
+using the FAT Filesystem, boot up MS-DOS to get to the command prompt.</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">b. If you installed OS/2
+using the HPFS Filesystem, insert the Installation Diskette and boot up
+the computer from this diskette.&nbsp; When the IBM screen is displayed,
+remove the Installation diskette and insert Diskette 1 as instructed to
+do so. After a while, a screen will be displayed asking which installation
+method you wish to choose.&nbsp; At this point, press the F3 key to get
+to the command prompt.</font></blockquote>
+<font face="Times New Roman,Times">Once you get to the command prompt,
+change to the drive where the OS/2 system files are located (usually Drive
+C:).&nbsp; You may now use a text editor to again modify the OS/2 CONFIG.SYS
+file on the hard drive to add the /!PCIHW switch to the BASEDEV=AIC7870.ADD
+line. OS/2 should then boot normally from the hard disk.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">9. After the computer has restarted,
+OS/2 displays a screen. You have the option to view online information
+while the OS/2 desktop is building.&nbsp; Allow OS/2 to finish building,
+and follow the on screen instructions to restart the computer. Again, if
+the computer fails to boot up, and locks up while displaying the OS/2 logo
+screen, repeat the process specified in step 8 to correct the problem.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE:&nbsp; The CONFIG.SYS, IBMINT13.I13,
+and OS2LDR files may be overwritten by equivalent files from the CD-ROM.
+If this occurs, follow step 8 above to recover those files.</font></i>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="First-Time Installation of OS/2 Warp 3.x, 4.0 or CD"></a><u><font face="Times New Roman,Times">First-Time
+Installation of OS/2 Warp 3.x, 4.0 or 4.0 Server From CD-ROM</font></u><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE:&nbsp; To install the driver,
+it is necessary to copy the driver from the Adaptec 7800 Family Manager
+Set v3.02.2 diskette for OS/2 on to the OS/2 Diskette 1. However, before
+you can copy the driver, you must first remove various files from the OS/2
+Diskette 1, as explained in step 2 below.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">1. Type CDINST from CD-ROM drive
+to create the boot diskettes from OS/2 CD.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">2. Delete some of the existing files
+on the OS/2 Diskette 1 so that approximately 140 KB of disk space is available
+on the diskette.&nbsp; Use the following information to help you decide
+which files to delete.</font>
+<blockquote><font face="Times New Roman,Times">a. If the Adaptec 7800 Family
+host adapter is the only Adaptec host adapter installed in your system,
+delete all other Adaptec drivers (aha152x.add, aha154x.add, aha164x.add,
+aha174x.add, aic7770.add, and fd16-700.add).</font></blockquote>
+<i><font face="Times New Roman,Times">NOTE: If you are installing the Ultra2SCSI
+host adapter, delete the AIC7870.add driver as well.</font></i>
+<blockquote><font face="Times New Roman,Times">b. If you have an Adaptec
+host adapter that is not part of the 7800 Family, delete all of the Adaptec
+drivers not used by that particular host adapter. For example, if you have
+an Adaptec AHA-1540CP host adapter installed in your computer, delete all
+Adaptec drivers except for the aha154x.add driver.</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">c. If you have deleted the
+suggested Adaptec drivers above, and you still do not have approximately
+140 KB of disk space available on the diskette, delete the file: CDINST.EXE.</font></blockquote>
+<font face="Times New Roman,Times">***************************************************************</font>
+<br><i><font face="Times New Roman,Times">NOTE:&nbsp; The following files
+MUST NOT BE DELETED from Diskette 1:</font></i>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CLOCK01.SYS</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CLOCK02.SYS</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+IBM1S506.ADD</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+IBM1FLPY.ADD</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+IBM2FLPY.ADD</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+IBM2ADSK.ADD</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+IBM2SCSI.ADD</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+IBMINT13.I13</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+IBMKBD.SYS</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+KBDBASE.SYS</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+OS2LOGO</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+OS2DASD.DMD</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PNP.SYS</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+RESERVE.SYS</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+RESOURCE.SYS</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+SCREEN01.SYS</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+SCREEN02.SYS</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+XDFLOPPY.FLT</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*.SNP&nbsp;&nbsp; (all files with the extension of SNP)</font>
+<br><font face="Times New Roman,Times">****************************************************************</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">3. Copy the driver from the Adaptec
+7800 Family Manager Set diskette for OS/2 onto the OS/2 Diskette 1.</font>
+<blockquote><font face="Times New Roman,Times">a. For Ultra2SCSI host adapters,
+the driver (AIC78U2.ADD) will be located in \OS2\AIC78U2 directory.</font>
+<br><font face="Times New Roman,Times">b. For UltraSCSI or earlier host
+adapters, the driver (AIC7870.ADD) will be located in \OS2\AIC7870 directory.</font></blockquote>
+<font face="Times New Roman,Times">4. For each driver removed from the
+OS/2 Diskette 1, remove its corresponding line in the config.sys file (also
+on OS/2 Diskette 1).&nbsp; For example, if you deleted all Adaptec drivers,
+as explained in step 2a, above, remove the following lines from config.sys:</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+rem basedev=aha152x.add</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+rem basedev=aha154x.add</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+rem basedev=aha164x.add</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+rem basedev=aha174x.add</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+rem basedev=aic7770.add</font>
+<br><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+rem basedev=fd16-700.add</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE: If you are installing the
+Ultra2SCSI host adapter, then remove the basedev=aic7870.add statement
+as well.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">5. In the config.sys file on OS/2
+Diskette 1, add the line "set copyfromfloppy=1".&nbsp; This line should
+be added so that the install process copies the AIC78U2.ADD or AIC7870.ADD
+driver from the OS/2 Diskette 1, rather than the driver included on the
+OS/2 CD-ROM.</font>
+<blockquote><font face="Times New Roman,Times">a. For Ultra2SCSI host adapters,
+Add "BASEDEV=aic78U2.add" to the top line of config.sys on OS/2 Diskette
+1. This may result in two "BASEDEV=aic78U2.add" statements in the config.sys
+file.</font>
+<br><font face="Times New Roman,Times">b. For UltraSCSI or earlier host
+adapters, add "BASEDEV=aic7870.add" to the top line of config.sys on OS/2
+Diskette 1.&nbsp; This will result in two "BASEDEV=aic7870.add" statements
+in the config.sys file.</font></blockquote>
+<font face="Times New Roman,Times">6. Run the OS/2 installation program;
+follow the instructions in your OS/2 documentation, until you reach the
+System Configuration window.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">7. In the System Configuration window,
+click the SCSI Adapter Support icon.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">8. Deselect any highlighted adapters
+(including the Adaptec 294x, 394x, AIC7870 PCI SCSI), and click OK.&nbsp;
+The text box for SCSI Adapter Support should say "None".</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">NOTE: If these adapters are not deselected,
+the driver included on the CD-ROM will be copied over the driver being
+installed.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">9. Follow the instructions in your
+OS/2 documentation to complete the installation.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE:&nbsp; After installation
+is complete, verify that only one "BASEDEV=aic78U2.add" or "BASEDEV=aic7870.add"
+statement exists in your config.sys file on your hard drive.&nbsp; Remove
+other instances if more than one is found.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times"><i>NOTE:&nbsp; There is also another
+procedure posted on the IBM web site that does not require the "SET COPYFROMFLOPPY=1"
+flag in CONFIG.SYS.&nbsp; This procedure can be found on </i><a href="http://service.software.ibm.com/os2ddpak/html/">http://service.software.ibm.com/os2ddpak/html/</a>.&nbsp;&nbsp;&nbsp;
+(Go to this URL, select OS/2 Component Updates, then Installation Diskette
+Updates, then Adaptec 7870 Hardfile Controller Support)</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Known Issues"></a><b><font face="Times New Roman,Times"><font size=+1>Known
+Issues</font></font></b>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<ul>
+<li>
+<font face="Times New Roman,Times">This version of the Adaptec 7800 Family
+Manager Set v3.02.2 driver added a new switch named /!PCIHW which enables
+the driver to skip accessing the PCI hardware registers directly, and use
+PCI BIOS instead. This switch could be useful for users having problems
+loading the driver included with OS/2 Warp or Server. Modify the CONFIG.SYS
+file to include the following line:</font></li>
+</ul>
+
+<ul><font face="Times New Roman,Times">a. For Ultra2SCSI host adapters:&nbsp;
+BASEDEV=AIC78U2.ADD /!PCIHW</font>
+<br><font face="Times New Roman,Times">b. For UltraSCSI or earlier host
+adapters:&nbsp; BASEDEV=AIC7870.ADD /!PCIHW</font></ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">Intel Errata #8511 lists known data
+integrity issues with the processor cache on the Saturn-1 chipset (82424TX).&nbsp;
+For this reason, Adaptec recommends that processor cache be disabled via
+the CMOS setup to avoid data corruption.&nbsp; For more information, see
+Intel Errata #8511.&nbsp; You may get this from Intel's FaxBack system
+at 800.628.2283 or 916.356.3105.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">There are installation problems when
+installing on the maximum hard disk drive partition size supported by OS/2
+v3.0. On OS/2 v3.0 it is a known problem. Refer to IBM for further info.
+IBM's APARs PJ15988 and PJ 6151 deal with this issue.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">There are known installation problems
+installing OS/2 Warp v4.0 on a Micron (LSI chipset) 64 bit PCI system.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">There are known installation problems
+installing OS/2 Warp with 8MB of RAM unless all the third-party basedev
+statements are removed from config.sys.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">There are known installation problems
+installing OS/2 using two SCSI host adapters on Marl mother board.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">Whenever you have a LVD HDD on one Ultra2SCSI
+host adapter and a HDD, CD-ROM, and removable Syjet on another UltraSCSI
+host adapter, Syjet conflicts with the CD-ROM and the system is unable
+to access the CD-ROM.</font></li>
+</ul>
+<a NAME="Additional Notes"></a><b><font face="Times New Roman,Times"><font size=+1>Additional
+Notes</font></font></b>
+<ul>
+<li>
+<font face="Times New Roman,Times">This version of the Adaptec 7800 Family
+Manager Set v3.02.2 driver supports the AIC-7800 Family of Host Adapters.&nbsp;
+Adapter numbers are first assigned to boards with their BIOS enabled.&nbsp;
+The numbers are assigned from lowest BIOS address to highest address.&nbsp;
+Any remaining boards are assigned numbers by scanning slots.&nbsp; Each
+slot is a combination of a bus number and a device number pair starting
+from lowest to highest numbers, and the adapters are assigned a number
+in the order they are found.</font></li>
+</ul>
+
+<blockquote><font face="Times New Roman,Times">Example: Bus 0, device 0
+assigned as adapter 0; Bus 1, device 1 assigned as adapter 1, etc.</font></blockquote>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">On some PCI systems, users may sometimes
+have problems loading the driver when the host adapter board is seated
+in a particular slot.&nbsp; Moving the host adapter board to another slot
+may solve the problem. If the problem still persists, it may be occurring
+because the Adaptec 7800 Family Manager Set v3.02.2 driver is unable to
+access the PCI hardware registers directly. To overcome this, users should
+use the /!PCIHW switch. Modify the CONFIG.SYS file to include the following
+line:</font></li>
+</ul>
+
+<blockquote><font face="Times New Roman,Times">a. For Ultra2SCSI host adapters:&nbsp;
+BASEDEV=AIC78U2.ADD /!PCIHW</font>
+<br><font face="Times New Roman,Times">b. For UltraSCSI or earlier host
+adapters:&nbsp; BASEDEV=AIC7870.ADD /!PCIHW</font></blockquote>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">There are no switches for controlling
+OS2ASPI.DMD directly. IBM did not define them in their specification and
+we cannot be sure that other host adapters will have the same switches.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">OS2SCSI.DMD will only allocate devices
+when a device driver requests it, but this will prevent OS2ASPI from accessing
+it. There is nothing in the ASPI specification regarding device allocation
+so OS2ASPI must rely on other managers to fairly share targets. This should
+only be a problem if you have two drivers that use different managers and
+you want them both to access the same target at the same time.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">Do NOT disable DASD manager access to
+target 0 if you are booting from your SCSI host adapter. This will prevent
+the system from booting!</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">Fault Tolerance is supported in the
+driver. However, ABORT and SCSI BUS RESET will only work for targets that
+are properly behaved.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">IBM does not support installing the
+operating system onto magneto optical devices.&nbsp; Additionally, OPTICAL.SYS
+(OS/2 V3.0) or OPTICAL.DMD (OS/2 V4.0) allows magneto optical devices to
+be supported as though they were large floppy devices.&nbsp; LOCKDRV.FLT
+allows removable media such as MO's to be supported as though they were
+fixed hard drives.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">It is not possible to install OS/2 3.0
+on drives with capacity greater than 8 GB, nor in a partition greater than
+4 GB.&nbsp; The following is the suggestion from IBM on this problem:</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">Problems with large partitions and installation
+or booting:&nbsp; There is a BIOS restriction that installable (startable)
+or bootable partitions must be contained within the first 1024 physical
+cylinders of the disk.&nbsp; FDISK does not enforce this limitation.&nbsp;
+If you have installation or boot failures this could be the reason.&nbsp;
+Use FDISK to reduce the size of your startable or bootable partition by
+sufficient MBytes.&nbsp; One way to calculate the correct size partitions
+to do the following:</font></li>
+</ul>
+
+<blockquote><font face="Times New Roman,Times">1. Edit your CONFIG.SYS
+and add the following parameter to the BASEDEV=IBM1S506.ADD line as below:</font>
+<br><font face="Times New Roman,Times">BASEDEV=IBM1S506.ADD /V</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">2. Save this change.</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">3. Reboot your system.</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">4. At initialization, record
+the far left hand column of number of the Geometry information under the
+ACT heading.&nbsp; Example:&nbsp; ACT Cyl 1027 Head 63 Sec 128 (head x
+sec) /2 = bootable partition must be contained within this boundary in
+MBytes (round down).&nbsp; This is the maximum size of a bootable partition
+in MBytes.&nbsp; Any bootable partition must also be contained from the
+beginning of the drive to this number of MBytes.&nbsp; A bootable partition
+may be smaller than the maximum size but still must be contained within
+this boundary.&nbsp; In this example the bootable partition must be contained
+in the first 4032 MBbytes of the disk and cannot exceed a single partition
+size of 4032 MBytes within this area.&nbsp; No bootable partition may extend
+beyond the first 4032 MBytes.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">Use this information when configuring
+your bootable partition with FDISK.</font></blockquote>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">OS/2 will allocate the SCSI devices
+as the order in CONFIG.SYS if two drivers (AIC7870.ADD and AIC78U2.ADD)
+are loaded.</font></li>
+</ul>
+
+<ul>
+<li>
+<font face="Times New Roman,Times">OS/2 will assign drive letters for SCSI
+devices first then IDE devices.</font></li>
+</ul>
+<font face="Times New Roman,Times"></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Command Line Options"></a><b><font face="Times New Roman,Times"><font size=+1>Command
+Line Options</font></font></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">OS/2 adapter device drivers (.ADD
+files) are normally installed automatically and require no further information
+from the user. However, in certain situations the user may wish to modify
+the behavior of the driver to meet their specific needs.</font><font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">NOTE:&nbsp; Please proceed cautiously
+with the following information.</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">The standard format for command line
+switches is :</font>
+<blockquote><font face="Times New Roman,Times">a. For Ultra2SCSI host adapter:&nbsp;
+BASEDEV=AIC78U2.ADD [Universal Parameter][Adapter ID][Unit Parameter]{[SCSI
+Target ID]}</font>
+<br><font face="Times New Roman,Times">b. For UltraSCSI or earlier host
+adapters:&nbsp; BASEDEV=AIC7870.ADD [Universal Parameter][Adapter ID][Unit
+Parameter]{[SCSI Target ID]}</font></blockquote>
+<font face="Times New Roman,Times">[Universal Parameter] - An option that
+applies to all adapters</font>
+<br><font face="Times New Roman,Times">controlled by the driver.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">[Adapter ID] - /A:n, where n is the
+number (zero relative) of the adapter installed in the system. The adapter
+ID is determined when the driver is loaded based on the order that adapters
+are found in the system. (Refer to the Configuration Examples in the "General
+Unit Parameters" section below for information on how to use this option.)</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">[Unit Parameter] - Modifies the behavior
+of the selected host adapter.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">[SCSI Target ID] - The targets to
+which the Unit Parameter will be applied. This parameter may be a single
+ID (d) or list of IDs (d,d,d).</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Universal parameters"></a><u><font face="Times New Roman,Times">Universal
+Parameters</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/ET -- Allow embedded targets.&nbsp;
+This parameter indicates that the ADD should assume that all targets have
+more than one logical unit (LUN) defined.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/!ET -- Do not allow embedded targets
+(DEFAULT). This parameter indicates</font>
+<br><font face="Times New Roman,Times">that the ADD should assume that
+all targets have only one logical</font>
+<br><font face="Times New Roman,Times">unit (LUN) defined.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/V -- Load driver verbosely. This
+parameter will display the driver name as well as the version number and
+Adaptec copyright if the driver loads successfully. Information on all
+targets found in the system will also be displayed.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/PCIHW -- Enables driver to access
+PCI configuration hardware registers.&nbsp; This switch is implemented
+because in some PCI systems, accessing PCI configuration space through
+PCI BIOS function calls causes problems. This switch is enabled by default.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/!PCIHW -- Disables the PCIHW switch.
+This parameter will cause the driver to access the PCI configuration space
+through PCI BIOS function calls.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="General Unit param"></a><u><font face="Times New Roman,Times">General
+Unit Parameters</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/I -- Ignore the specified adapter.
+This allows another driver to share the adapters that the ADD would normally
+use.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/DM -- Enable DASD manager support
+(DEFAULT). This parameter allows OS2DASD.DMD to control the specified target(s)
+if they are identified as DASD (hard disk) devices.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/!DM -- Disable DASD manager support.
+This parameter prevents OS2DASD.DMD from controlling the specified target(s).</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/SM -- Enable SCSI manager support
+(DEFAULT). This parameter allows OS2SCSI.DMD to control the specified target(s)
+if they are identified as NON-DASD SCSI devices. All SCSI hard drives will
+be controlled by OS2DASD.DMD.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/!SM -- Disable SCSI manager support.
+This parameter prevents OS2SCSI.DMD from controlling the specified target(s).</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/TAG -- Specifies the maximum number
+of tagged commands for all target devices on the host adapter (1-16).&nbsp;
+A value of 1 disables tagged queuing.&nbsp; The maximum number allowed
+is 16.&nbsp; (The default is 8.)</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/UR -- Enables reporting of under
+runs (DEFAULT).</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/!UR -- Disables reporting of under
+runs.</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><i><font face="Times New Roman,Times">Configuration Examples:</font></i><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">Example 1:</font>
+<blockquote><font face="Times New Roman,Times">Suppose that you had a removable
+hard drive as target 3 and you wanted to control the hard drive with an
+ASPI application and driver.&nbsp; Normally OS2DASD will allocate this
+device, treat it as a large floppy and prevent you from sending any SCSI
+commands via ASPI.</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">The following command line
+will prevent OS2DASD.DMD from accessing the target and still allow OS2SCSI.DMD
+and OS2ASPI.DMD to share access to it.</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">BASEDEV=AIC78U2.ADD /A:0
+/!DM:3</font></blockquote>
+<font face="Times New Roman,Times"></font>
+<p><br><font face="Times New Roman,Times">Example 2:</font>
+<blockquote><font face="Times New Roman,Times">Suppose that you had a multi-disk
+CD-ROM as target 4 on host adapter 0 and two DASD devices as targets 1
+and 5 on host adapter 1.</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">The following command line
+will prevent OS2SCSI.DMD from accessing the CD-ROM and prevent OS2DASD.DMD
+from controlling the DASD devices.&nbsp; The driver will also search for
+multiple LUNs on all host adapters.</font></blockquote>
+
+<blockquote><font face="Times New Roman,Times">BASEDEV=AIC7870.ADD /ET
+/A:0 /!SM:4 /A:1 /!DM:1,5</font></blockquote>
+<a NAME="Special Unit param"></a><u><font face="Times New Roman,Times">Special
+Unit Parameters:</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/TAG: -- Sets the number (1-16) of
+tagged commands for all target devices on the host adapter. A value of
+one disables tagged queuing.&nbsp; Sixteen is the maximum number allowed
+and 8 is the default value.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">/TAG:1 -- Disables tagged queuing
+for all target devices on a given host adapter. The driver maintains a
+maximum of 2 non-tagged commands per target internally. The driver treats
+all target devices as non-tagged devices, and sends only one command at
+a time per target to the host adapter.</font><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">Example:</font>
+<blockquote><font face="Times New Roman,Times">BASEDEV=AIC78U2.ADD /A:0
+/TAG:8 will set the number of tagged commands for all target devices on
+the first host adapter to 8.</font></blockquote>
+<a NAME="Diskette Contents"></a><b><font face="Times New Roman,Times"><font size=+1>Diskette
+Contents</font></font></b><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">The following files are included
+in this diskette:</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="100%" >
+<tr>
+<td><font face="Times New Roman,Times">\OS2\README.TXT</font></td>
+
+<td><font face="Times New Roman,Times">Readme file for OS/2</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">\OS2\README.HTM</font></td>
+
+<td><font face="Times New Roman,Times">HTML version of README.TXT (this
+file)</font></td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">For Ultra2SCSI host adapters:</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="100%" >
+<tr>
+<td><font face="Times New Roman,Times">\OS2\AIC78U2\AIC78U2.ADD</font></td>
+
+<td><font face="Times New Roman,Times">The Adaptec Ultra2SCSI driver for
+the 7800 Family Manager Set</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">\OS2\AIC78U2\AIC78U2.DDP</font></td>
+
+<td><font face="Times New Roman,Times">Install script used by the OS/2
+Install utility</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">\OS2\AIC78U2\78U2PRES.EXE</font></td>
+
+<td><font face="Times New Roman,Times">Adapter Presence Check program used
+by the Install script</font></td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">For UltraSCSI or earlier host adapters:</font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+<table BORDER WIDTH="100%" >
+<tr>
+<td><font face="Times New Roman,Times">\OS2\AIC7870\AIC7870.ADD</font></td>
+
+<td><font face="Times New Roman,Times">The UltraSCSI Adaptec driver for
+the 7800 Family Manager Set</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">\OS2\AIC7870\AIC7870.DDP</font></td>
+
+<td><font face="Times New Roman,Times">Install script used by the OS/2
+Install utility</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">\OS2\AIC7870\7870PRES.EXE</font></td>
+
+<td><font face="Times New Roman,Times">Adapter Presence Check program used
+by the Install script</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">\OS2\AIC7870\IBMINT13.I13</font></td>
+
+<td><font face="Times New Roman,Times">Used for a first time install of
+OS/2 2.1x</font></td>
+</tr>
+
+<tr>
+<td><font face="Times New Roman,Times">\OS2\AIC7870\OS2LDR</font></td>
+
+<td><font face="Times New Roman,Times">Used for a first time install of
+OS/2 2.1x</font></td>
+</tr>
+</table>
+<font face="Times New Roman,Times"></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;<font face="Times New Roman,Times"></font>
+<p><a NAME="Contacting Adaptec"></a><b><font face="Times New Roman,Times"><font size=+1>Contacting
+Adaptec</font></font></b><font face="Times New Roman,Times"></font>
+<p><u><font face="Times New Roman,Times">Electronic Support</font></u><font face="Times New Roman,Times"></font>
+<p><font face="Times New Roman,Times">Technical information, including
+product literature, answers to commonly asked questions, information on
+software upgrades and other topics is available electronically through
+the following:</font>
+<ul>
+<li>
+<font face="Times New Roman,Times">Adaptec World Wide Web (WWW) site at
+<a href="http://www.adaptec.com">http://www.adaptec.com</a>.</font></li>
+
+<li>
+<font face="Times New Roman,Times">File Transfer Protocol (FTP) server
+at <a href="ftp://ftp.adaptec.com">ftp://ftp.adaptec.com</a>.</font></li>
+
+<li>
+<font face="Times New Roman,Times">To submit your electronic mail message
+to Adaptec Technical Support use the product support information Webmail
+form at: <a href="http://www.adaptec.com/support/webmail.html">http://www.adaptec.com/support/webmail.html</a>.</font></li>
+
+<li>
+<font face="Times New Roman,Times">Adaptec USA Bulletin Board Service (BBS)
+at 408-945-7727; supports up to 28,800 bps (bits per second), 8 data bits,
+1 stop bit, no parity. No product literature is available on the Adaptec
+BBS.</font></li>
+
+<li>
+<font face="Times New Roman,Times">Interactive Fax System at 303-684-3400;
+available 23 hours a day, 7 days a week. The fax system is out of service
+1 hour each day.</font></li>
+</ul>
+<u><font face="Times New Roman,Times">Technical and Product Support</font></u>
+<ul>
+<li>
+<font face="Times New Roman,Times">To speak with a product support representative,
+call 408-934-SCSI (7274), M-F, 6:00 a.m. to 5:00 p.m., Pacific Time. After
+hours, on weekends, and on holidays, product support is also available
+for a fee at 800-416-8066.</font></li>
+
+<li>
+<font face="Times New Roman,Times">For electronic technical support and
+information about many of Adaptec's other electronic support services,
+or to use the Adaptec Interactive Support System call 800-959-SCSI (7274)
+or 408-945-2550, 24 hours a day, 7 days a week.&nbsp; The system prompts
+you with questions regarding your problem and then provides step-by-step
+troubleshooting instructions.</font></li>
+</ul>
+<u><font face="Times New Roman,Times">Sales and Ordering Information</font></u>
+<ul>
+<li>
+<font face="Times New Roman,Times">For sales information, call 800-442-SCSI
+(7274), M-F, 6:00 a.m. to 5:00 p.m., Pacific Time, or 408-945-8600 and
+ask for Inside Sales, M-F, 8:00 a.m. to 5:00 p.m., Pacific Time.</font></li>
+
+<li>
+<font face="Times New Roman,Times">To order Adaptec software and SCSI cables,
+call 800-442-SCSI (7274), M-F, 6:00 a.m. to 5:00 p.m., Pacific Time.</font></li>
+
+<li>
+<font face="Times New Roman,Times">To request additional documentation
+for Adaptec products, call 800-934-2766 or 510-732-3829, M-F, 6:00 a.m.
+to 5:00 p.m., Pacific Time.</font></li>
+</ul>
+<font face="Times New Roman,Times"></font>
+<br><font face="Times New Roman,Times"></font>&nbsp;
+</body>
+</html>

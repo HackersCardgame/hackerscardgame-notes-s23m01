@@ -1,0 +1,236 @@
+Physik					Physikbuch: 	Physik fr Techniker
+							ISBN 3.582.01126.7
+								    ^^^^
+			1.  K  I  N  E  T  I  K
+			=_=_=_=_=_=_=_=_=_=_=_=
+
+	Pysikalische Gr”ssen (S.9)
+	==========================
+
+	 -messbare Eigenschaften (z.B. L„nge)
+	 -Zahlenwert und Einheit (z.B. 1,3 m)
+	Internationales Einheitssystem (SI, 1960)
+
+	Gr”sse		Einheit		Symbol
+	--------------------------------------
+	L„nge		Meter		m
+	Masse		Kilogramm	kg
+	Zeit		Sekunde		s
+
+
+	Grundlagen fr Definitionen
+	---------------------------
+	 -Astronomie
+	 -Atomphysik
+	 -Musterk”rper
+
+	Dezimale Vielfache
+	------------------
+	
+			1000 = 10^3	Kilo	k
+		     1000000 = 10^6	Mega	M
+		  1000000000 = 10^9	Giga	G
+		       0,001 = 10^-3	Milli	m
+		    0,000001 = 10^-6	Mikro	æ
+
+	
+	Beschleunigung (geradlinige Bewegung)
+	=====================================
+	
+	a= delta v / delta t
+					Beschleunigung ist Geschwindigkeits-
+					„nderung pro Zeit
+
+	delta v > 0 ===> a > 0  : Geschwindigkeits zunahme
+	delta v < 0 ===> a < 0  : Geschwindigkeits abnahme
+
+		(-a > 0 nennt man Verz”gerung)
+
+	why Symbol "a" ?	engl.: acceleration
+	why Symbol "v" ?	engl.: velocity (Tempo)	
+	why Szmbol "t" ?	engl.: time
+
+	Einheit [a] = [v] / [t] = m/s^2
+
+	Spezialfall: a = konstant --> 	gleichf”rmig
+					beschleunigte Bewegung
+
+	Beispiel : Anfahren eines Autos : Annahme : a = 2 m/s^2 = konstant
+
+		t,s		v,m/s		v,km/h
+		--------------------------------------
+		0		0		0
+		1		2		7,2
+		2		4		14,4
+		5		10		36
+		10		20		72
+		15		30		108
+
+
+	Ú-------------------------------------------------------¿
+	³							³
+	³							³
+	³			PICTURE				³
+	³							³
+	³							³
+	³		v-t - Diagramm				³
+	³							³							³
+	³							³
+	³							³
+	À-------------------------------------------------------Ù
+
+
+	Weitere Typische Werte :
+	------------------------
+	Anfahren :	Zug		0,25	m/s^2
+		     Schnellbahn	1	m/s^2
+		     Auto		2	m/s^2
+		     Lift		2,5	m/s^2
+		     Motorrad		4	m/s^2
+		     Rennwagen		8	m/s^2
+		     Abschuss Rakekte	50	m/s^2
+
+
+	Experiment : Schiefe Ebene (verz”gerter Fall)
+
+	
+	Picture: kleines W„gelchen auf Schiefer Ebene
+	Ú---------------------------------------¿
+	³					³
+	³	Picture: kleines W„gelchen	³
+	³	auf Schiefer Ebene		³
+	³					³
+	À---------------------------------------Ù
+	
+	Galilei's šberlegung (um 1600)
+	------------------------------
+     1.	Die Strecken verhalten sich wie die Quadrate
+	der Zeit (s ÷ t)
+     2.	Die Geschwindigkeit nimmt zu
+     3.	Wieso nicht m”glichst einfach ?
+     4.	Annahme : Vermehrung der Geschwindigkeit
+	"der Zeit entsprechend" d.H.   v = at
+
+     5.	PICTURE 	a v t Diagramm
+     
+     6. Zurckgelegter Weg s = vt = «at*t=«at^2
+     7.	Da s÷t^2, ist v=at richtig --> gleichf”rmig
+	beschleunigte Bewegung
+     8.	Neigungswinkel --> 90ø entspricht freiem Fall
+
+	Freier Fall
+	-----------
+		     /-> Blatt Papier
+     1.	Vergleich : <
+		     \-> zerknlltes Blatt Papier
+		--> es kommt nicht auf die Masse an.
+
+     2.	Vakuumr”hre
+		--> ohne Luftwiderstand fallen alle K”rper gleich schnell
+
+     3.	Messung der Fallzeit
+		--> Fallbeschleunigung	g=9,81 m/s^2 (in Mitteleuropa)
+
+	Gleichf”rmig beschleunigte Bewegung mit Anfangsgeschwindigkeit Va
+	=================================================================
+
+	Das v-t-Diagramm
+	----------------
+
+	Ú----------------------------------------¿	Zurckgelegter Weg
+	³					 ³	entspricht der
+	³     Picture: 	v-t-Diagramm mit 	 ³	Fl„che unter der
+	³		Anfangsgeschwindigkeit	 ³	Geschwindigkeits-
+	³					 ³	kurve.
+	À----------------------------------------Ù
+	
+	s1 = v1*t			  }	
+					  } } s = v1*t + «at^2 = (v1+v2)/2*t
+	s2 = (v2-v1)/2*t = «t*at = «at^2  }
+	
+	v = a*t + v0		; v = Geschwindigkeit ; a = Beschleunigung
+				; t = Zeit	; v0 = Anfangsgeschwindigkeit
+
+	s = v0*t ñ «at^2	; + = Beschleunigung
+		^^^		; - = Verz”gerung
+
+  EVENTUELL NOCH WEITERE FORMELT ZUR BESCHLEUNIGUNG EINTRAGEN !!!!!!!!!!!!!!!
+
+
+			2.  D  Y  N  A  M  i  K
+			=_=_=_=_=_=_=_=_=_=_=_=
+
+	
+	2.1	Masse:	Materienmenge (S 14, 38)
+		^^^^^^
+	     Eigenschaften
+
+		-unabh„ngig vom Ort
+		-schwer (Erdanziehungskraft)	
+		-tr„ge (Widerstand gegen Žnderung der Geschwindigkeit)
+
+	Experimentelle Tatsache : gleich schwere Massen
+				  sind gleich tr„ge
+
+	--> es gengt EINE physikalische Masse ; Einheit [m] = kg
+
+	
+	F = ma (Kraft gleich Masse mal Beschleunigung)
+		---->  1 kgm/s^2 = 1 N (Newton)
+
+	2.2	Kraft (S 38-42)
+		^^^^^
+		-Tr„gheitsgesets : resultierende Kraft = 0
+		 ---> Geschwindigkeit konstant
+		 (Betrag und Geschwindigkeit)
+		oder : Eine Masse hat das Bestreben, seinen
+		       Geschwindigkeitszustand beizubehalten.
+PRINtER :	  ^
+DON't PRINt	  ^--> laut Sterchi (Bez. Lehreh) "Jeder Objekt beh„lt
+tHESE 3 LINES!					   gern sein Schwung!"
+
+		-Grundgesetz der Dynamik
+		 Kraft = (tr„ge) Masse mal Beschleunigung (F=ma)[F]=kgm/s^2 = N
+
+
+			EXPERIMENT
+			----------
+
+		
+	Ú----------------------------------------¿
+	³					 ³
+	³ one more Picture: w„geli mit Rolle und ³
+	³		doofem g'wicht		 ³
+	³					 ³
+	À----------------------------------------Ù
+
+	s = 0,6m
+  delta s = 13mm
+
+
+	Resultatetabelle
+	----------------
+
+	m2	m1+m2,kg	delta t		v=s/t	a exp	a math 
+	ms	kg		s		m/s	m/s^2	m/s^2
+	--------------------------------------------------------------
+	0,05	0,65		15		0,867	0,64	0,75
+	0,15	0,75		9,1		1,43	1,7	1,96
+	0,25	0,85		7,3		1,78	2,64	2,89
+	0,45	1,05		5,9		2,20	4,03	4,2
+	0,65	1,25		5,3		2,45	5,00	5,1
+	1,15	1,75		4,6		2,83	6,67	6,35
+
+
+	Ú----------------------------------------¿
+	³					 ³
+	³ Picture: Grafische Darstellung der	 ³
+	³	   der Tabelle			 ³
+	³					 ³
+	À----------------------------------------Ù
+
+FederKraft	
+
+
+
+

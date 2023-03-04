@@ -1,0 +1,228 @@
+
+;
+;	INSTALL.INF --- Printer driver install information file
+;		Copyright BROTHER INDUSTRIES,LTD. 1995
+;
+
+[DISKS]
+  1=.,  "the installation disk 1"
+
+[Printer Driver]
+  Path=
+
+[NEEDED.DiskSpace]
+  1200
+
+[PRIVATE.INI]
+  hl1030.ini
+
+[OEM.INF]
+  oem1030.inf
+
+[VxD]
+  1:BI-DI.386
+
+[LanguageMonitor]
+1
+
+;[DIAGNOSTIC]
+;brdiag.exe
+
+[WRITEPRIVATE.INI]
+;brtest1.ini, install, key, value
+;disk brvideo.ini, HL-1240, HelpFile, inthlp.hlp
+;disk brvideo.ini, HL-1240, CDDir, intrcv\
+;disk brvideo.ini, HL-1240, SecondWin, >zlhlp
+;disk brvideo.ini, HL-1240, 13, 50
+;disk brvideo.ini, HL-1240, 12, 3
+;disk brvideo.ini, HL-1240, 15, 3
+;disk brvideo.ini, HL-1240, 10, 4
+;disk brvideo.ini, HL-1240, 23, 5
+;disk brvideo.ini, HL-1240, 25, -1
+;disk brvideo.ini, HL-1240, 26, 18
+;disk brvideo.ini, HL-1240, 27, 4
+;disk brvideo.ini, HL-1240, 28, 4
+;disk brvideo.ini, HL-1240, 29, 4
+;disk brvideo.ini, HL-1030, Alias, HL-1240
+brwmark.ini, :brwatermark:, Update, 1
+win.ini, "Brother Diagnostics", brohl99e, 1
+
+
+;[Disable.Win95]
+;Deutsch=1
+;Français=1
+;English=1
+;Nederlands=1
+;Norsk=1
+;Svenska=1
+;Italiano=1
+;Español=1
+
+[WIN.INI]
+  windows,      device, "Brother HL-1030 series,BROHL99E,LPT1:"
+  PrinterPorts, "Brother HL-1030 series", "BROHL99E,LPT1:,15,45"
+  devices,      "Brother HL-1030 series", "BROHL99E,LPT1:"
+
+[DEL.WIN.INI]
+  windows,      device, "Brother HL-1030 series,BROHL99E,LPT1:"
+  PrinterPorts, "Brother HL-1030 series"
+  devices,      "Brother HL-1030 series"
+  "Brother HL-1030 series,LPT1"
+  "Brother HL-1030 series,Paper"
+  "Brother HL-1030 series,FILE"
+
+[DISK2]
+  "disk #2", BRALARC0.TT_
+
+;disk [TrueType fonts]
+;disk   FONTLIST=Alaska,Antique_Oakland,PC_Brussels,Cleveland_Condensed,Connecticut,Guatemala,Letter_Gothic,Maryland,Oklahoma,PC_Tennessee,Utah,Utah_Condensed
+
+[Alaska.TrueType]
+  2:BRALARC0.TTF, "0:Alaska"
+  2:BRALABC0.TTF, "0:Alaska Extrabold"
+
+[Antique_Oakland.TrueType]
+  2:BRANORC0.TTF, "0:Antique Oakland"
+  2:BRANOIC0.TTF, "0:Antique Oakland Oblique"
+  2:BRANOBC0.TTF, "0:Antique Oakland Bold"
+
+[PC_Brussels.TrueType]
+  2:BRBRURC0.TTF, "0:PC Brussels Light"
+  2:BRBRUIC0.TTF, "0:PC Brussels LightItalic"
+  2:BRBRUBC0.TTF, "0:PC Brussels Demi"
+  2:BRBRUVC0.TTF, "0:PC Brussels DemiItalic"
+
+[Cleveland_Condensed.TrueType]
+  2:BRCLCRC0.TTF, "0:Cleveland Condensed"
+
+[Connecticut.TrueType]
+  2:BRCONRC0.TTF, "0:Connecticut"
+
+[Guatemala.TrueType]
+  2:BRGUARC0.TTF, "0:Guatemala Antique"
+  2:BRGUAIC0.TTF, "0:Guatemala Italic"
+  2:BRGUABC0.TTF, "0:Guatemala Bold"
+  2:BRGUAVC0.TTF, "0:Guatemala BoldItalic"
+
+[Letter_Gothic.TrueType]
+  2:BRLGORC0.TTF, "0:Letter Gothic"
+  2:BRLGOIC0.TTF, "0:Letter Gothic Oblique"
+  2:BRLGOBC0.TTF, "0:Letter Gothic Bold"
+
+[Maryland.TrueType]
+  2:BRMARRC0.TTF, "0:Maryland"
+
+[Oklahoma.TrueType]
+  2:BROKLRC0.TTF, "0:Oklahoma"
+  2:BROKLIC0.TTF, "0:Oklahoma Oblique"
+  2:BROKLBC0.TTF, "0:Oklahoma Bold"
+  2:BROKLVC0.TTF, "0:Oklahoma BoldOblique"
+
+[PC_Tennessee.TrueType]
+  2:BRTENRC0.TTF, "0:PC Tennessee Roman"
+  2:BRTENIC0.TTF, "0:PC Tennessee Italic"
+  2:BRTENBC0.TTF, "0:PC Tennessee Bold"
+  2:BRTENVC0.TTF, "0:PC Tennessee BoldItalic"
+
+[Utah.TrueType]
+  2:BRUTARC0.TTF, "0:Utah"
+  2:BRUTAIC0.TTF, "0:Utah Oblique"
+  2:BRUTABC0.TTF, "0:Utah Bold"
+  2:BRUTAVC0.TTF, "0:Utah BoldOblique"
+
+[Utah_Condensed.TrueType]
+  2:BRUTCRC0.TTF, "0:Utah Condensed"
+  2:BRUTCIC0.TTF, "0:Utah Condensed Oblique"
+  2:BRUTCBC0.TTF, "0:Utah Condensed Bold"
+  2:BRUTCVC0.TTF, "0:Utah Condensed BoldOblique"
+
+[NEEDED.SPACE]
+  Alaska              = 100,0
+  Antique_Oakland     = 150,0
+  PC_Brussels         = 230,0
+  Cleveland_Condensed =  60,0
+  Connecticut         =  60,0
+  Guatemala           = 250,0
+  Letter_Gothic       = 120,0
+  Maryland            =  60,0
+  Oklahoma            = 200,0
+  PC_Tennessee        = 220,0
+  Utah                = 150,0
+  Utah_Condensed      = 150,0
+  Intrcv              = 1500,0
+  
+[DeleteIni]
+;Microsoft Windows Printing System
+  "5:HP LaserJet Series or LEXMARK WinWriter 200"
+  21:WIN.INI,    windows,      run,                       0:WPSIOMON,     "Removed by HL-700 series Setup:"
+  21:WIN.INI,    spooler,      QP.LPT1,                   0:wpslbqp.dll,  "Removed by HL-700 series Setup:"
+  21:WIN.INI,    spooler,      QP.LPT1,                   0:wpsljqp.dll,  "Removed by HL-700 series Setup:"
+  21:WIN.INI,    spooler,      QP.LPT1,                   0:HPLJ4QP.DLL,  "Removed by HL-700 series Setup:"
+  21:WIN.INI,    spooler,      QP.LPT1,                   0:hp16cqp.dll,  "Removed by HL-700 series Setup:"
+  21:WIN.INI,    spooler,      QP.LPT1,                   0:HPWQP.DLL,  "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "Lexmark WinWriter 200",   1:WPSLB,        "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "Windows Printing System", 1:WPSLJ,        "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "Lexmark WinWriter 200",   1:WPSLB,        "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "Windows Printing System", 1:WPSLJ,        "Removed by HL-700 series Setup:"
+  21:WIN.INI,    windows,      load,                       0:hpsw.exe,     "Removed by HL-700 series Setup:"
+  21:WIN.INI,    windows,      load,                       0:hpljsw.exe,     "Removed by HL-700 series Setup:"
+  21:WIN.INI,    windows,      load,						0:hpsrdman,     "Removed by HL-700 series Setup:"
+  21:WIN.INI,    windows,      load,						0:hpdjsw,     "Removed by HL-700 series Setup:"
+  21:WIN.INI,    windows,      load,						0:HPWHRC.EXE,     "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "HP DeskJet 1600C ColorSmart", 1:HPSPR_A,     "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "HP DeskJet 1600C ColorSmart", 1:HPSPR_A,     "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "HP LaserJet 5L", 1:HPW,     "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "HP LaserJet 5L", 1:HPW,     "Removed by HL-700 series Setup:"
+  20:SYSTEM.INI, 386Enh,        device,                   0:vwpscomd.386, "Removed by HL-700 series Setup:"
+  20:SYSTEM.INI, 386Enh,        device,                   0:wpsljvpd.386, "Removed by HL-700 series Setup:"
+  20:SYSTEM.INI, 386Enh,        WPSLPT1,                  1:1,            "Removed by HL-700 series Setup:"
+  20:SYSTEM.INI, 386Enh,        WPSLPTE,                  1:1,            "Removed by HL-700 series Setup:"
+  20:SYSTEM.INI, 386Enh,        device,                  0:vhpvd.386,            "Removed by HL-700 series Setup:"
+
+;Epson or NEC
+  "5:EPSON ActionLaser 1100/1400 or NEC Silentwriter SuperScript 610/660"
+  21:WIN.INI,    windows,      run,                       0:WSWPD.EXE,    "Removed by HL-700 series Setup:"
+  20:SYSTEM.INI, 386Enh,       device,                    0:SUMOVMI.386,  "Removed by HL-700 series Setup:"
+  20:SYSTEM.INI, 386Enh,       device,                    0:WEMU387.386,  "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "NEC SuperScript 610 GDI", 1:SUMOGDI,      "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "NEC SuperScript 610 GDI", 1:SUMOGDI,      "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "NEC SuperScript 660 GDI", 1:SUMOGDI,      "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "NEC SuperScript 660 GDI", 1:SUMOGDI,      "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "NEC SuperScript 610 PCL", 1:NECPCL,       "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "NEC SuperScript 610 PCL", 1:NECPCL,       "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "NEC SuperScript 660 PCL", 1:NECPCL,       "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "NEC SuperScript 660 PCL", 1:NECPCL,       "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "EPSON ActionLaser 1100",  1:EPPCL5A,      "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "EPSON ActionLaser 1100",  1:EPPCL5A,      "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "EPSON ActionLaser 1400",  1:EPPCL5A,      "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "EPSON ActionLaser 1400",  1:EPPCL5A,      "Removed by HL-700 series Setup:"
+;
+; Canon
+  "5:Canon BJC-610 or LBP-460"
+  21:WIN.INI,    windows,      load,                       0:WPSLOAD.EXE,     "Removed by HL-700 series Setup:"
+  21:WIN.INI,    spooler,      QP.LPTE,                   0:WPSRQP.DLL,  "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "Canon BJC-610",			  1:WPSCR,  "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "Canon BJC-610",			  1:WPSCR,  "Removed by HL-700 series Setup:"
+  21:WIN.INI,    windows,      load,                       0:WPSHRC.EXE,     "Removed by HL-700 series Setup:"
+  21:WIN.INI,    spooler,      QP.LPT1,                   0:WPSQPR.DLL,  "Removed by HL-700 series Setup:"
+  21:WIN.INI,    PrinterPorts, "Canon LBP-460",			  1:WPSC1,  "Removed by HL-700 series Setup:"
+  21:WIN.INI,    Devices,      "Canon LBP-460",			  1:WPSC1,  "Removed by HL-700 series Setup:"
+
+;disk [Interactive]
+;disk FILELIST=Intrcv
+;disk Device=HL-1240
+;disk Win31=1
+
+;disk [DISK3]
+;disk   "disk #3", Inthlp.hl_
+
+;disk [Intrcv.Interactive]
+;disk  3:Inthlp.hlp
+;disk  3:Inthlp.cnt
+;disk  3:missfeed.exe
+;disk  3:notoner.exe
+;disk  3:jam1.exe
+;disk  3:jam2.exe
+;disk  3:jam3.exe
+;disk  3:toner3.exe
+

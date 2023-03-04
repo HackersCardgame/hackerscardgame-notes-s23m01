@@ -1,0 +1,19 @@
+*********************************************************
+*                                                       *
+*      AIC-7870 device driver profile for OS/2 2.0      *
+*                                                       *
+*********************************************************
+
+:PRESENCECHECK
+7870PRES.EXE
+ 
+:TITLE
+Adaptec AIC-7870 OS/2 2.0 Adapter Device Driver
+	     
+:CONFIG                 * Add the following lines to CONFIG.SYS
+BASEDEV=AIC7870.ADD
+	    
+:FILES                  * Copy the driver into \OS2 on the boot drive
+AIC7870.ADD \OS2\BOOT\AIC7870.ADD
+    		     
+

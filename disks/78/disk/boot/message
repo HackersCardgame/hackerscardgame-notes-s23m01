@@ -1,0 +1,4 @@
+Press <return> (or wait 10 seconds) to boot your Red Hat Linux system from
+/dev/hda1. You may override the default linux kernel parameters by typing
+"linux <params>", followed by <return> if you like.
+

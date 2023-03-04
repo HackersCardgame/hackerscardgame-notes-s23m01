@@ -1,0 +1,617 @@
+[ver]
+	4
+[sty]
+	
+[files]
+[charset]
+	82
+	ANSI (Windows, IBM CP 1252)
+[revisions]
+	0
+[prn]
+	HP LaserJet IIIP
+[lang]
+	7
+[desc]
+	Klassenfete 2F 8.5.1993
+	
+	
+	
+	
+	736489287
+	4
+	736286380
+	151
+	1
+	0
+	0
+	0
+	0
+	
+	
+	
+	
+	
+	
+	0
+[fopts]
+	0
+	1
+	0
+	0
+[lnopts]
+	2
+	Text Abstand
+	1
+[docopts]
+	5
+	2
+[tag]
+	Text
+	2
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Text
+	0
+	0
+[tag]
+	Text Abstand
+	3
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		277
+		2
+		0
+		277
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Text Abstand
+	0
+	0
+[tag]
+	Markierung
+	4
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		0
+		288
+		288
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*0>
+		360
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Markierung
+	0
+	0
+[tag]
+	Markierung 1
+	5
+	[fnt]
+		Arial
+		240
+		0
+		16384
+	[algn]
+		1
+		2
+		288
+		288
+		288
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*5>
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		280
+		1
+		2
+		,
+		.
+		DM
+	Markierung 1
+	0
+	0
+[tag]
+	Nr. Liste
+	6
+	[fnt]
+		Arial
+		240
+		0
+		49152
+	[algn]
+		1
+		2
+		360
+		360
+		360
+	[spc]
+		33
+		273
+		2
+		0
+		0
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		0
+		<*:>.
+		360
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Nr. Liste
+	0
+	0
+[tag]
+	Unter Titel
+	7
+	[fnt]
+		Arial
+		240
+		0
+		16387
+	[algn]
+		1
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		273
+		2
+		72
+		72
+		2
+		100
+	[brk]
+		4
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		2
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Unter Titel
+	0
+	0
+[tag]
+	Titel
+	8
+	[fnt]
+		Arial
+		360
+		0
+		16385
+	[algn]
+		4
+		2
+		0
+		0
+		0
+	[spc]
+		33
+		446
+		2
+		144
+		72
+		2
+		100
+	[brk]
+		16
+	[line]
+		8
+		0
+		2
+		0
+		1
+		1
+		1
+		10
+		10
+		1
+	[spec]
+		0
+		1
+		
+		0
+		2
+		1
+		0
+		0
+		0
+		0
+	[nfmt]
+		272
+		1
+		2
+		,
+		.
+		DM
+	Titel
+	0
+	0
+[lay]
+	Standard
+	516
+	[rght]
+		16839
+		11907
+		2
+		1440
+		1440
+		2
+		1440
+		1440
+		0
+		1
+		0
+		1
+		0
+		2
+		1
+		1440
+		10465
+		12
+		1
+		720
+		1
+		1440
+		1
+		2160
+		1
+		2880
+		1
+		3600
+		1
+		4320
+		1
+		5040
+		1
+		5760
+		1
+		6480
+		1
+		7200
+		1
+		7920
+		1
+		8640
+	[hrght]
+	[lyfrm]
+		1
+		11200
+		0
+		0
+		11907
+		1440
+		0
+		1
+		3
+		1 0 0 0 0 0 0
+		0
+		0
+		1
+	[frmlay]
+		1440
+		11907
+		1
+		1440
+		73
+		2
+		623
+		1440
+		0
+		1
+		0
+		1
+		1
+		0
+		1
+		1440
+		10465
+		1
+		3
+		9360
+	[txt]
+<:R1,2,1,2550,3,9360,><:f400,,>	Partybrief von 1993			
+
+>
+	[frght]
+	[lyfrm]
+		1
+		13248
+		0
+		15399
+		11907
+		16839
+		0
+		1
+		3
+		1 0 0 0 0 0 0
+		0
+		0
+		2
+	[frmlay]
+		16839
+		11907
+		1
+		1440
+		623
+		2
+		15472
+		1440
+		0
+		1
+		0
+		1
+		1
+		0
+		1
+		1440
+		10465
+		2
+		2
+		4680
+		3
+		9360
+	[txt]
+>
+[elay]
+[l1]
+	0
+[pg]
+	1
+	15 0 0 1025 0 0 0 65535 65535 Standard	65535 0 0	0 0 0 0 0 0 0 65535 0 0 65535 0 0 0 0
+[edoc]
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#274,9025><:f240,,><*:>Im Namen Gottes; Amen
+
+<:s><:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#274,9025><:f240,,>
+
+<:s><:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#822,9025><:f240,,>Ein ehrbar Werk ist es und dient dem <\v>ffentlichen Wohl, wenn Feste, die Ruhe und Friede im Land bewahren<:f><:f240,,> sollen, rechtskr<\d>ftig und dauerhaft in feste Form<:f><:f240,,> gebracht werden soll, wie es sich geh<\v>rt.
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#1918,9025><:f240,,>	Es sei daher allen kund und zu wissen, da<\_><:f><:f240,,> die Stockleute von Rombach, die Landgemeinde von Aarau und auch die Gemeinde von Erlinsbach, um in der Arglist der Zeit besser zu bestehen k<\v>nnen, einander Partys<:f><:f240,,> und jegli
+che Vergn<\|>gung mit Leib und Seele zugesagt haben. Innerhalb und ausserhalb ihrer Light-shows<:f><:f240,,> wollen sie einander helfen mit aller Partys und ihrem gesamten<:f><:f240,,> verm<\v>gen gegen jenen und alle, die ihnen Langeweile antun oder Unrech
+t und Schaden an Leib und Schule, Hab und Gut zuf<\|>gen.
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#1370,9025><:f240,,>	Mit dieser Urkunde erneuert dir Partygenossenschaft ihren alten beschworenen Bund. Die Gemeinde<:f><:f240,,> gelobt sich also mit ihren Partys getreulich aufs neue, da<\_> sie einander auf eigene Kosten zu Festen einladen werden, sei es zur Abwehr
+ eines langweiligen Welle und zur Vergeltung<:f><:f240,,> erlittener Langweile. Dabei soll allerdings jeder nach seinem Stande seinem eigenen Willen<-"> dienen, wie es sich geziemt.<-"><-"><-"><-"><-"><-"><-">
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#822,9025><:f240,,>	Einhellig haben wir auch beschlossen, in unseren T<\d>lern keine DJ's anzuerkennen, der sein Amt um Geld oder Geldwert erkauft h<\d>tte oder nicht unser Landsmann oder Einwohner w<\d>re.
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#822,9025><:f240,,>	Entsteht Streit unter 2 Liebesrivalen, so sollen die Einsichtigen unter ihnen schlichten und vermitteln. Weist ein Teil den Spruch dieser Schiedsrichter zur<\|>ck, so haben die 
+<\|>brigen Partygenossen die Widerspenstigen<:f><:f240,,> zur Ordnung anzuhalten.
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#1096,9025><:f240,,>	Wer einen andren<:f><:f240,,> b<\v>swillig t<\v>tet, daf<\|>r vorgesehen Guillotine, Streckbank, soll sein Leben auch verlieren, sofern er nicht seine Unschuld erweisen kann. Ist er entwichen, so darf er nimmermehr an das Fest zur<\|>ckkehren. Wer
+ einen solchen <\\>belt<\d>ter aufnimmt, soll auch aus dem Raum verbannt sein, bis wir ihn zur<\|>ckrufen,.
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#1096,9025><:f240,,>	Schl<\d>gt jemand einen Partygenossen bei hellem Tage oder bei stiller Nacht heimt<\|>ckisch durch Feuer, so gilt er nicht mehr als Landsmann, und wer dem Brandstifter Unterschlupf gew<\d>hrt und ihn schirmt, hat f<\|>r den Brandschaden zu sterben
+.	
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#1370,9025><:f240,,>	Wer einen Eidgenossen beraubt oder ihn auf sonst eine Weise Sch<\d>digt hm hm, der haftet mit seinem gesamten CD-Verm<\v>gen innert den T<\d>lern f<\|>r diesen Schaden. Niemand darf  M<:f60,BArial,0,0,0>     i    r    i    a    m         von      
+ <:f220,BArial,0,0,0><:f240,BArial,0,0,0>K<:f60,BArial,0,0,0>  <\d>    n    e     l<:f240,BArial,0,0,0><:f220,BArial,0,0,0><:f60,BArial,0,0,0><:f240,,><:f><:f120,,> 
+<:f240,,> zum Tanzen auffordern, es sei denn ein unbestrittener Doof Kopf oder offenkundiger Hornochse, und auch dann darf es nur mit der Erlaubnis<:f><:f240,,> des DJ's geschehen.
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#548,9025><:f240,,>	Jedermann hat seinem DJ zu gehorchen und notfalls den Partyrichter, vor dem  er sich zu verantworten hat, auszugeben.
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#822,9025><:f240,,>	Widersetzt sich einer dem Gericht und erw<\d>chst daraus dem Partygenossen ein Nachteil, denn so m<\|>ssen die anderen Genossen den Widerspenstigen<:f><:f240,,> zum Langsamen Tanz mit Musik anhalten.
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#822,9025><:f240,,>	Wenn Krieg zwischen den Partygenossen entsteht und sich ein Teil der Tanzaufforderung nicht<:f><:f240,,> f<\|>gen noch Genugtuung leisten will, so sind die 
+<\|>brigen Partygenossen verpflichtet, den anderen Teil zum Tanzen aufzufordern.
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#1370,9025><:f240,,>	Diese Satzungen, die der Wohlfahrt aller dienen, sollen mit Gottes Willen ewig dauern. Zur Bekr<\d>ftigung<:f><:f240,,> dessen ist auf Verlangen der obengenannten Verb<\|>ndeten dieser Urkunde ausgestellt und mit den Siegeln der drei Landsgemeinde
+n der eingangs erw<\d>hnten Talschaften versehen worden. Und das ist geschehen und rechtskr<\d>ftig geworden im Jahre<:f><:f240,,> des Herrn MCMXCIII zu Beginn des Monats Mai.<:f>
+
+<:R1,12,1,270,1,1440,1,2160,1,2880,1,3600,1,4320,1,5040,1,5760,1,6480,1,7200,1,7920,1,8640,><:#274,9025>
+
+>
+
+[Embedded]
+00009439

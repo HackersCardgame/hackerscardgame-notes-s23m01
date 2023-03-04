@@ -1,0 +1,191 @@
+*********************************
+Date   : Mon May 17 17:18:55 1999
+Error Number: (15170)
+Message: Bad source Bios Parameter Block - unformatted partition
+Version: 5.1c SP1 (Mar 30 1999, Build=73) License: BC1287 [Commercial license]
+ProgMode            : PROG_LOCAL
+PathName            : 
+DumpPos             : 0
+FlagImplode         : 0
+FlagExplode         : 0
+
+Keyboard IRQ Status : Not in IRQ
+Mouse IRQ Status    : Not in IRQ(0)
+Traceback:
+( 0) [main]
+( 1) [AttemptOperation]
+( 2) [CopyMainline]
+( 3) [CopyPartToPart]
+( 4) [PaintDisplayPartData2]
+( 5) [GetPartName]
+( 6) [GetFatPartName]
+( 7) [ReadBiosParameterBlock2]
+( 8) [Abort]
+
+Start heap available: 64667648
+Cur   heap available: 60874752
+Total Memory:         66166784
+
+Maximum conventional allocated: 71224
+Current conventional allocated: 71224
+
+Memory system dump
+__________________
+  length:   580 [ghost.cpp], line = 1623
+  length:    16 [sectors.cpp], line = 1369
+  length: 33000 [sectors.cpp], line = 1380
+  length: 33000 [sectors.cpp], line = 1381
+  length:   508 [aspi.cpp], line = 72
+  length:  4096 [aspi.cpp], line = 82
+Fat details:
+
+NTFS details:
+----------------
+
+NTFS Global Flags:
+----------------
+	 contiguousWrite=1 forceDiskClusterMapping=0 
+	 inhibitCHKDSK=0 ignoreBadLog=0 ignoreCHKDSKBit=0
+	 enable_cache=0 xfrbuflen=0 
+----------------
+	=======================================================
+	NTFS volume 0:
+	----------------
+	initialised..............1
+	read cached..............N
+	Selective caching........N
+	flags....................Volume OK
+	drive....................0x80
+	part order...............0
+	version..................0x0400
+	volsize..................10233341
+	blocksize................512
+	clusterfactor............8
+	clustersize..............4096
+	mftrecordsize............1024
+	indexrecordsize..........4096
+	indexclustperrecord......1
+	bootSectorCopyOffset.....10233341
+	pagefileSys..............1770
+	bootIni..................1734
+	volumeLabel..............[]
+	sectorsInUse.............901112
+	totalNonCopiedBytes......0
+	bytesToCopy..............0
+	bitmapClusters...........40
+	bitmapUsedBytes..........159896
+	estimatedClusters........40
+	estimatedUsedBytes.......159896
+	clustersizeShift.........12
+	blocksizeShift...........9
+	mftrecordsizeShift.......10
+	indexrecordsizeShift.....12
+	sectorsPerLRUShift.......4
+	clustermap failover......N
+	Boot sector details
+		name....................[NTFS    ]
+		blocksize...............512
+		clusterfactor...........8
+		reservedSectorsUnused...0
+		mediaType...............0xf8
+		secPerTrack.............63
+		numHeads................255
+		hiddenSectors...........63
+		volsize_lo..............10233341
+		volsize_hi..............0
+		mftcluster.(lo).........4
+		mftcluster.(hi).........0
+		mftmirrorcluster.(lo)...639583
+		mftmirrorcluster.(hi)...0
+		mftfactor...............246
+		indexfactor.............1
+
+	=======================================================
+
+Bios Parameter Block
+
+  0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 16  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 32  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 48  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 64  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 80  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ 96  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+112  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+128  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+144  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+160  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+176  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+192  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+208  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+224  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+240  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+256  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+272  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+288  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+304  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+320  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+336  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+352  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+368  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+384  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+400  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+416  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+432  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+448  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+464  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+480  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+496  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+Disk Info :
+  remote.............0
+  drive..............80
+  sectors_used.......12273597
+  estimated_used.....2040255
+  pemax..............2
+  Version............0
+
+ # Ord Boot Id Ext First    Num      Last     Used     NTFS
+ 0   0   80 7  No  00000063 10233342 10233405 00901112 Yes
+ 1   1    0 6  No  10233405 02040255 12273660 02040255 No
+
+Disk Info :
+  remote.............0
+  drive..............0
+  sectors_used.......0
+  estimated_used.....0
+  pemax..............0
+  Version............0
+
+ # Ord Boot Id Ext First    Num      Last     Used     NTFS
+
+All Disk Info :
+Remote Drives
+
+Local Drives
+
+Drive 0
+Int13h
+Available
+Cylinders         1023
+Heads             255
+Sectors per Track 63
+Total Sectors     16434495
+MB                8024
+
+Extended Int13h (Active)
+Available
+Cylinders         0
+Heads             0
+Sectors per Track 0
+Total Sectors     19545120
+MB                9543
+
+ASPI
+Unavailable
+
+IDE
+Unavailable
+
+
+*********************************

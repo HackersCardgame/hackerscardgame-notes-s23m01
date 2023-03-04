@@ -1,0 +1,96 @@
+  ; DDI File Version Number 2.0 
+
+SyntaxVersion: 1.00
+
+  ; File: AIC7870.INF
+
+    Driver AIC7870
+    {   
+		PAR:	2.00
+		Description:  $AIC7870_1
+
+		Help:         $AIC7870_2
+
+		File:         AIC7870.DSK
+                OFiles:       ASPITRAN.DSK, NWPALOAD.NLM, NWPA.NLM, NBI.NLM
+
+		PROD:'PCI.9004.8078.*.*.*',
+		     'PCI.9004.8178.*.*.*',
+                     'PCI.9004.8278.*.*.*',
+                     'PCI.9004.8478.*.*.*',
+                     'PCI.9004.8578.*.*.*',
+                     'PCI.9004.8678.*.*.*',
+                     'PCI.9004.7078.*.*.*',
+		     'PCI.9004.7178.*.*.*',
+		     'PCI.9004.7278.*.*.*',
+		     'PCI.9004.7478.*.*.*',
+		     'PCI.9004.7578.*.*.*',
+		     'PCI.9004.7678.*.*.*',
+		     'PCI.9004.6078.*.*.*',
+		     'PCI.9004.6075.*.*.*',
+		     'PCI.9004.6178.*.*.*',
+		     'PCI.9004.6278.*.*.*',
+		     'PCI.9004.6378.*.*.*',
+		     'PCI.9004.5078.*.*.*',
+		     'PCI.9004.5578.*.*.*',
+		     'PCI.9004.7895.*.*.*',
+		     'PCI.9004.7860.*.*.*',
+		     'PCI.9004.8778.*.*.*'
+
+		PROMPT SLOT OPTIONAL
+		{
+
+		}
+    }
+
+
+DLANG:  4
+;English
+	$AIC7870_1 = "Adaptec AIC-7870 ASPI & SCSI Module"
+	$AIC7870_2 = "When you load the driver, you need to tell it which
+		      host adapter you are loading the driver for. This is
+		      done with the command line option 'slot=x'. If the
+		      option is not entered, you will be prompted to manually
+		      enter a value. The interrupt level will be determined 
+		      from the PCI configuration."
+
+LANG:   6
+;French
+	$AIC7870_1 = "Adaptec AIC-7870 ASPI & SCSI Module"
+	$AIC7870_2 = "When you load the driver, you need to tell it which
+		      host adapter you are loading the driver for. This is
+		      done with the command line option 'slot=x'. If the
+		      option is not entered, you will be prompted to manually
+		      enter a value. The interrupt level will be determined 
+		      from the PCI configuration."
+
+LANG:   7
+;German
+	$AIC7870_1 = "Adaptec AIC-7870 ASPI & SCSI Module"
+	$AIC7870_2 = "When you load the driver, you need to tell it which
+		      host adapter you are loading the driver for. This is
+		      done with the command line option 'slot=x'. If the
+		      option is not entered, you will be prompted to manually
+		      enter a value. The interrupt level will be determined 
+		      from the PCI configuration."
+
+LANG:   8
+;Italian
+	$AIC7870_1 = "Adaptec AIC-7870 ASPI & SCSI Module"
+	$AIC7870_2 = "When you load the driver, you need to tell it which
+		      host adapter you are loading the driver for. This is
+		      done with the command line option 'slot=x'. If the
+		      option is not entered, you will be prompted to manually
+		      enter a value. The interrupt level will be determined 
+		      from the PCI configuration."
+
+LANG:   14
+;Spanish
+	$AIC7870_1 = "Adaptec AIC-7870 ASPI & SCSI Module"
+	$AIC7870_2 = "When you load the driver, you need to tell it which
+		      host adapter you are loading the driver for. This is
+		      done with the command line option 'slot=x'. If the
+		      option is not entered, you will be prompted to manually
+		      enter a value. The interrupt level will be determined 
+		      from the PCI configuration."
+

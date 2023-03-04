@@ -1,0 +1,159 @@
+Willkommen bei CONDOR
+                  CAD unter Windows!
+
+----------------------------------------------------------------------------
+
+   Haben Sie eine CONDOR-Version mit Registrierkarte erworben,
+   schicken Sie diese bitte noch heute an den Hersteller zurück.
+   Sie erhalten dann Updates und Upgrades zu Sonderkonditionen,
+   außerdem alle Informationen rund um CONDOR.
+
+-----------------------------------------------------------------------------
+
+   Lassen Sie sich in die Anwenderliste von CONDOR eintragen!
+
+   Welchen Vorteil hat das für Sie ?
+   - SOFA hält Sie auf dem Laufenden über weitere Produkte rund um CONDOR
+      sowie
+   - über neue Programmversionen
+
+   Die Info-Anforderung kann in dem Menue-Eintrag "Anwenderinfo"
+   automatisch und einfach erstellt werden.
+
+-----------------------------------------------------------------------------
+
+   Diese CONDOR-Version ist in ihrer Funktionalität nicht eingeschränkt.
+   Sie kann mehrere Hundert geometrische Elemente in einer Zeichnung
+   abspeichern. Als jeweils ein geometrisches Element gelten z.B. Linien,
+   Kreise, Ellipsen, aber auch komplexe Schraffuren oder Textzeilen.
+
+   CONDOR ist in drei Versionen erhältlich:
+
+     - Schnupperversion (Zeichnungen bis 300 geometrische Elemente)
+           Preis incl. Handbuch: 98 DM
+
+     - Basisversion (Zeichnungen bis 1500 geometrische Elemente)
+           Preis: 640 DM
+
+     - Profi-Version (Zeichnungsgröße unbeschränkt)
+           Preis: 1280 DM
+
+   Diese Versionen werden alle mit Handbuch und Registrierkarte
+   ausgeliefert. CONDOR-Versionen, die direkt bei SOFA bestellt wurden,
+   werden ohne Registrierkarte ausgeliefert, da der Anwender dann
+   bereits registriert ist.
+
+   Alle Versionen bieten den vollen Funktionsumfang!
+      (Preise incl. MWSt, Versandkostenpauschale: 7.50 DM
+        Stand: Januar 1994)
+
+
+   Schicken Sie Ihren Verrechnungsscheck an:
+
+   SOFA Software Fabrikation GmbH
+   Wilhelm-Raabe-Weg 9
+   35039 Marburg
+
+   Wir freuen uns auch über Ihre Kommentare und Anregungen.
+
+-----------------------------------------------------------------------------
+
+   Welche Systemvoraussetzungen gibt es ?
+
+   Für CONDOR brauchen Sie mindestens:
+
+   - einen Rechner, auf dem Windows 3.1 im Standard-Modus läuft
+   - ca. 4 MB auf der Festplatte
+
+   Besser (weil viel schneller) ist es,
+   - wenn es einen mathematischen CoProzessor gibt,
+   - der Rechner möglichst viel Speicher hat
+   - Windows im erweiterten Modus läuft.
+
+-----------------------------------------------------------------------------
+
+   Installation:
+
+   - Legen Sie die Diskette "Setup" in Laufwerk A: oder B:.
+   - Wählen Sie aus dem Menue des Programm-Managers den Eintrag
+     "Datei" und dann "ausführen".
+   - Tippen Sie ein: a:setup
+     oder            b:setup
+   - Folgen Sie dann den Anweisungen des Installationsprogramms.
+
+   Falls die Installation nicht klappen sollte, wenden Sie sich
+   an die Stelle, von der Sie die Disketten bekommen haben, oder an
+   den Hersteller des Programms.
+
+-----------------------------------------------------------------------------
+
+   Kurze Übersicht über die wesentlichsten Funktionen von CONDOR:
+
+   - Zeichenoperationen
+     - 12 verschiedene Grundelemente, von Linie und Kreis(bogen) bis
+       zu Ellipsenbögen und Splines (geglättete Kurven), inklusive
+       Bezier-Kurven, die in Echtzeit auf dem Bildschirm verändert
+       werden können.
+
+     - weitere benutzerspezifische Elemente lassen sich mit einer
+       beliebigen Windows-Programmiersprache erstellen.
+
+     - diverse Fangmodi, mit denen Elemente und auch Elementgruppen
+       auch verzerrt werden können (für perspektivische Darstellungen)
+
+     - Abrunden, Kehlen, Fasen von Ecken
+
+     - Trimmen und Einpassen von Elementen
+
+   - Schraffur
+
+     - kinderleichtes Erstellen von Schraffuren durch Klicken in die
+       zu schraffierende Fläche.
+
+     - einfaches Definieren von Vereinigungs- und Schnittflächen,
+       sowie Auslassen von Inseln, die nicht schraffiert werden sollen.
+
+     - gleiche oder unterschiedliche Attribute (Farbe, Strichart)
+       für nebeneinander liegende Schraffurlinien
+
+     - wahlweise mit Mustern schraffieren, wobei die mitgelieferten
+       Schraffurmuster einfach durch eigene ergänzt werden können.
+
+   - Bemaßung
+
+     - Vielfältige Parameter, die das Aussehen der Bemaßung bestimmen.
+
+     - DIN-gerechte Bemaßung für Punktbemaßung (Außen- oder Innenmaß),
+       Radien-, Winkel-, Durchmesserbemaßung
+
+     - Schnittlinienbemaßung
+
+   - voll integrierter Tischrechner für alle Zahleneingaben. Ergebnisse
+     sind mit der Zwischenablage austauschbar.
+
+   - Funktionen zum Messen von Koordinaten, Längen, Konturzügen und Flächen
+
+   - Ausgabe gerichteter Konturen in eine ASCII-Datei, die dann z.B. zur
+     Ansteuerung von NC-Maschinen weiterverarbeitet werden kann.
+
+   - Umfangreiche Undo-Funktion (letzte Aktion rückgängig machen)
+
+   - frei konfigurierbare Toolboxen am Zeichnungsrand - für jeden
+     Menue-Eintrag ist ein Vorschlag vorhanden, der jederzeit abge-
+     ändert und umdefiniert werden kann. Für höhere Bildschirmauflösungen
+     können die Toolbox-Knöpfe vergrößert werden.
+
+   - Alle Farben frei definierbar. Wahlweise schwarzer oder weißer
+     Bildhintergrund.
+
+   - wahlweise abschaltbare Statuszeile
+
+   - frei konfigurierbare Belegung der Funktionstasten
+
+   - wahlweise Bitmaps statt Text im Menue - erstellen Sie die Vorlage
+     mit CONDOR !
+
+   - Import und Export von DXF-Dateien, sowie Zwischenablage-Formate
+
+
+

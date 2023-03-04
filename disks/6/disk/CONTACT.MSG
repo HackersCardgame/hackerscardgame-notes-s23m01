@@ -1,0 +1,18 @@
+
+
+***********************
+*  muLinux CONTACTS   *
+***********************
+
+Home page:
+
+	http://sunsite.auc.dk/mulinux
+
+Mailing list:
+
+	mulinux@sunsite.auc.dk
+
+Author:
+
+	m.andreoli@tin.it (Michele Andreoli)
+

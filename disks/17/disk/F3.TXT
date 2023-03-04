@@ -1,0 +1,24 @@
+0fBOOT METHODS07
+
+The Rescue disk can be used for system recovery as well as for installation.
+The methods 0flinux07, 0framdisk07, and 0ffloppy07 will boot you into a small standalone 
+root system.  The 0frescue07 method will mount an existing root partition.
+
+0fAvailable boot methods:07
+0flinux07
+  Start the installation -- this is the default.
+0framdisk007 (or 0framdisk107)
+  Start installation, load the ramdisk from the first (or the second)
+  floppy drive.
+0ffloppy007 (or 0ffloppy107)
+  Start installation, mount the floppy in the first (or the second)
+  floppy drive as root.  This uses less memory.
+  If you have only one floppy drive, you cannot load base from
+  0ffloppy007, but you can install from other media (CD, harddisk, etc).
+0frescue07
+  Boot and mount any root filesystem. The root filesystem must be given at
+  the prompt, so e.g., type 0frescue root=/dev/hda107.
+
+Press <09ENTER07> or type boot method, arguments, and <09ENTER07> to boot.
+Press function key <09F107> for the help index.
+

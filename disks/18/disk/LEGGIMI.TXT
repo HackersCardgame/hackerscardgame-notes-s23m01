@@ -1,0 +1,392 @@
+				 
+				 LEGGIMI.TXT
+
+	   Ulteriori informazioni per Microsoft(R) Natural Keyboard(TM)
+		e il software Microsoft IntelliType versione 1.10
+
+
+		   (C) Copyright Microsoft Corporation, 1995
+
+Questo documento include informazioni importanti non incluse nel
+Manuale dell'utente o nella Guida in linea di Microsoft IntelliType.
+
+------------------------------
+Visualizzazione del documento
+------------------------------
+Questo documento Š stato formattato in modo da poter essere letto
+nel Blocco note di Windows o nell'Editor di MS-DOS. Per stampare
+il documento, scegliere Stampa dal menu File.
+
+******************************************************************
+SOMMARIO
+
+   I.   Note relative a diversi sistemi operativi
+	1.  Non installare in un'unit… di rete
+	2.  Alcuni driver di tastiera speciali creano conflitti con IntelliType
+	3.  Utilizzo del software MS-DOS per la gestione della cache del
+	    disco durante l'installazione
+	4.  Esecuzione di IntelliType su un computer con pi— sistemi operativi 
+	5.  Spazio necessario per il connettore della tastiera
+	6.  Utilizzo di una BIOS non standard
+	7.  Collegamento di un dispositivo di input a un computer portatile  
+	    con funzione di risparmio energetico
+	8.  Mancata attivazione di Task Manager con i tasti Windows
+	9.  Utilizzo dei Tasti mouse con l'opzione Schermo continuo
+	10. Utilizzo di IntelliType con il chip TI 710
+	11. Avvio da disco floppy
+	12. Utilizzo del tastierino numerico per disegnare in Microsoft Paintbrush
+	13. Criteri di protezione per l'accesso a Microsoft Mail
+	14. I suoni della tastiera continano a ripetersi ripetuti
+	15. Disattivazione dell'opzione Blocca se si utilizza CorelDRAW
+	16. La funzione Nascondi puntatore non funziona in applicazioni per
+	    fogli di calcolo
+
+  II.   Note per gli utenti di Windows 95
+	1.  Esecuzione di IntelliType senza Microsoft Natural Keyboard
+	2.  Esecuzione di IntelliType in computer con profili utente multipli
+	3.  Alcune schede di propriet… della tastiera sono parte del sistema operativo
+	4.  Se Š disponibile una scheda suono, non selezionare l'opzione Altoparlante
+	    di sistema
+	5.  Disattivazione della barra delle applicazioni quando si utilizza l'opzione
+	    Schermo continuo 
+	6.  L'impostazione di Bloc Num in IntelliType pu• creare conflitti con
+	    l'impostazione CMOS
+
+ III.   Note per gli utenti di Windows 3.1x
+	1.  Disattivazione di BLOC MAIUSC in una finestra MS-DOS
+	2.  Task Manager non viene eseguito se la memoria non Š sufficiente
+	3.  Sostituzione di Task Manager con l'Elenco dei task
+
+  IV.   Note per gli utenti di Windows NT(TM) 
+	1.  IntelliPoint supporta solo sistemi x86 
+	2.  Apertura dell'Elenco dei task di Windows NT
+	3.  Evitare la chiusura di IntelliType da Task Manager
+
+   V.   Note per i soli utenti di MS-DOS
+	1.  Utilizzo dei parametri della riga di comando in MS-DOS 
+
+====================================================
+Sezione I. Note relative a diversi sistemi operativi 
+====================================================
+
+1.  Non installare in un'unit… di rete
+
+    L'installazione di IntelliType in un'unit… di rete non Š supportata.
+    Gli utenti che dispongono di IntelliType versione 1.0 installato in 
+    una unit… di rete non potranno aggiornare il software in tale unit….
+    Occorre quindi che IntelliType venga installato su un disco rigido locale.
+
+
+2.  Alcuni driver di tastiera speciali creano conflitti con IntelliType
+
+    Quando si installa IntelliType in Windows 3.1x o Windows NT, 
+    il programma di installazione sostituisce il driver corrente della
+    tastiera con il driver di Microsoft Natural Keyboard, che include
+    il supporto per i tre tasti aggiuntivi. Ci• pu• comportare problemi con
+    applicazioni che richiedono driver di tastiera speciali, inclusi software per
+    il controllo remoto come pcANYWHERE e Carbon Copy, e con diverse
+    versioni in lingue diverse del sistema operativo Windows, come l'arabo, 
+    il greco e l'ebraico.
+
+    Ô possibile utilizzare software di controllo remoto con Microsoft
+    Natural Keyboard ma non con il software IntelliType. Per utilizzare
+    il software di controllo remoto, disinstallare Microsoft IntelliType
+    come descritto nella Guida in linea di IntelliType. Reinstallare quindi
+    il software di controllo remoto per ripristinare il driver della tastiera.
+
+    Se si utilizza una versione di Windows in una lingua che richiede un
+    driver di tastiera speciale, Š possibile utilizzare Microsoft Natural Keyboard 
+    come tastiera standard 101/102AT. Se si disinstalla IntelliType, verr…
+    ripristinato il driver della tastiera fornito con il sistema operativo.
+
+    NOTA: Questa sezione non riguarda Windows 95, in quanto l'installazione
+    di IntelliType in Windows 95 non prevede l'aggiunta di driver per la tastiera.
+
+
+3.  Utilizzo del software MS-DOS per la gestione della cache del
+    disco durante l'installazione
+
+    Se si utilizza software MS-DOS per la gestione della cache del disco
+    diverso da Microsoft SMARTDrive, non scegliere Riavvia dopo aver 
+    completato il programma di installazione. Scegliere invece Esci e quindi 
+    uscire da Windows e riavviare il computer in modo manuale. Alcuni 
+    programmi DOS di gestione della cache del disco utilizzano 
+    tecniche di scrittura in background. Se la cache non viene svuotata
+    prima di riavviare il computer, possono verificarsi errori di disco.
+
+    In alternativa, Š possibile disattivare temporaneamente il software
+    per la gestione della cache del disco prima di installare IntelliPoint
+    utilizzando l'istruzione REM nel file AUTOEXEC.BAT e quindi
+    riattivarlo al termine dell'installazione di IntelliType.
+
+
+4.  Esecuzione di IntelliType in un computer con pi— sistemi operativi 
+
+    Se nello stesso computer sono installati Windows NT e Windows 95 
+    ed IntelliType Š installato in entrambi i sistemi operativi, la disinstallazione 
+    di IntelliType in un sistema operativo pu• comportare la rimozione di file 
+    utilizzati da IntelliType nell'altro sistema operativo. Se si verificano problemi 
+    nell'esecuzione di IntelliType nel secondo sistema operativo, reinstallare il 
+    software in tale sistema.
+
+
+5.  Spazio necessario per il connettore della tastiera
+
+    Assicurarsi di disporre di spazio sufficiente fra il computer e la
+    parete retrostante in modo da evitare pressioni eccessive sul
+    connettore collegato nella parte posteriore del computer. Se il
+    connettore, ad esempio l'adattatore PS/2 a 5 pin per Microsoft
+    Natural Keyboard, fosse sottoposto a pressioni eccessive, 
+    Š possibile che la scheda madre del computer venga danneggiata
+    quando si avvia il computer. Evitare di rimuovere o collegare
+    qualsiasi dispositivo quando il computer Š acceso. Ô pertanto
+    necessario spegnerlo, installare il dispositivo, inserire tutti i cavi
+    necessari e quindi accendere nuovamente il computer.
+
+
+6.  Utilizzo di una BIOS non standard
+
+    Ô possibile che le marche non standard di BIOS possano entrare
+    in conflitto con Microsoft Natural Keyboard e provocare errori ed
+    eventuali problemi a livello di sistema al momento dell'avvio. Se
+    si verificano problemi, Š necessario procedere all'aggiornamento ad
+    una versione diversa di BIOS. AMI e Phoenix sono BIOS di tipo comune.
+    Rivolgersi al produttore delle BIOS oppure al rivenditore di fiducia se
+    si verificano tali problemi durante l'avvio del computer dopo l'installazione
+    di Microsoft Natural Keyboard.
+
+
+7.  Collegamento di un dispositivo di input a un computer portatile 
+    con funzione di risparmio energetico
+
+    In molti computer portatili Š disponibile una funzione che consente di risparmiare
+    energia mediante la disattivazione delle porte del mouse e della tastiera quando il
+    computer non viene inutilizzato dopo uno specifico intervallo di tempo. Se il dispositivo
+    di input (mouse o tastiera) non funziona dopo un periodo di mancato utilizzo,
+    vedere le sezioni relative alle opzioni di risparmio energetico nella documentazione
+    del computer in uso.
+
+
+8.  Mancata attivazione di Task Manager con i tasti Windows
+
+    In Microsoft Windows 3.x e Windows NT, ai tasti Windows viene assegnata
+    la funzione di avvio di Task Manager. Ô tuttavia possibile che alcuni
+    programmi shell blocchino e modifichino la funzionalit… di tali tasti,
+    oppure non li riconoscano. In questi casi, premere CTRL+ESC oppure fare
+    clic sul desktop per avviare Task Manager.
+
+
+9.  Utilizzo dei tasti mouse con l'opzione Schermo continuo
+
+    Se sono stati attivati i tasti mouse e la funzione Schermo continuo, Š possibile
+    che il puntatore si "blocchi" sui bordi dello schermo quando si tengono premuti
+    i tasti di direzione per lungo tempo. In questi casi, nella scheda Tasti mouse
+    impostare un valore minore per la velocit… massima del puntatore. L'opzione
+    Schermo continuo Š disponibile solo in Windows 95 e Windows 3.1x. In Windows 95
+    la funzione Tasti mouse Š una delle opzioni di accesso facilitato del Pannello di
+    controllo.
+
+
+10. Utilizzo di IntelliType con il chip TI 710
+
+    IntelliType supporta la porta 8042 utilizzata nella maggior parte dei
+    computer portatili. L'installazione di IntelliType in un computer
+    portatile della Texas Instrument che utilizza il chip 710 pu• causare
+    problemi. In particolare, se si esegue Windows NT, il mouse non
+    funzioner….
+
+
+11. Avvio da disco floppy
+
+    Quando si installa IntelliType, il programma di installazione modifica
+    automaticamente il file AUTOEXEC.BAT collocato nell'unit… disco 
+    rigido, (in genere C:\). Se si avvia Microsoft Windows da un disco 
+    floppy Š necessario copiare manualmente nel file AUTOEXEC.BAT 
+    nel disco floppy le informazioni aggiunte al file AUTOEXEC.BAT 
+    nel disco rigido, ovvero:
+
+	 SET MSINPUT=C:\MSINPUT
+	 C:\MSINPUT\KEYBOARD\ITYPE.EXE /S
+
+    La directory di destinazione sar… diversa se IntelliType
+    Š stato installato in una diversa directory.
+
+
+12. Utilizzo del tastierino numerico per disegnare in Microsoft Paintbrush
+
+    Se si attiva l'opzione Tasti mouse nella scheda Tasti mouse, sar… possibile 
+    utilizzare il tastierino numerico per disegnare in Microsoft Paintbrush. 
+    Per disegnare (o cancellare) premere il tasto 0 nel tastierino numerico. 
+    La scelta di questo tasto attiva la modalit… disegno. Per tornare alla modalit… 
+    normale, premere il tasto punto (.) sul tastierino.
+
+    IMPORTANTE: Se si lavora in Paintbrush utilizzando il tastierino
+    numerico, ritornare alla modalit… normale prima di aprire
+    Task Manager. Se si apre Task Manager in modalit… disegno, Š possibile
+    che il sistema si blocchi e che sia necessario riavviare Paintbrush.
+
+
+13. Criteri di protezione per l'accesso a Microsoft Mail
+
+    In Microsoft Mail Š possibile proteggere l'accesso alla posta elettronica
+    assegnando una password per ingrandire Mail ridotto a icona. Se questa 
+    funzione di sicurezza Š attiva, non Š possibile passare a Microsoft Mail 
+    ridotto a icona utilizzando Task manager. Per passare a Microsoft Mail 
+    ridotto a icona, premere ALT+TAB oppure fare doppio clic sull'icona.
+
+
+14. I suoni della tastiera continuano a ripetersi
+
+    Se sono stati attivati effetti sonori per la tastiera ed i suoni
+    si ripetono in modo continuo dopo aver premuto un tasto, Š
+    possibile che si stia verificando un conflitto di interrupt. Per
+    risolvere il problema, Š possibile disattivare gli effetti sonori
+    (selezionare "Suoni disattivati" nella scheda Opzioni) oppure modificare
+    l'impostazione di interrupt della scheda
+
+
+15. Disattivazione dell'opzione Blocca se si utilizza CorelDRAW
+
+    Se si utilizza la funzione di ingrandimento in CorelDRAW, disattivare 
+    la funzione Blocca nella scheda Attivit…. La funzione di ingrandimento non sar…
+    attiva se la funzione Blocca Š attivata.
+
+
+16. La funzione Nascondi puntatore non funziona in applicazioni per
+    fogli di calcolo 
+
+     La funzione Nascondi puntatore non consente di nascondere il puntatore in
+     applicazioni per fogli di calcolo.
+
+
+
+=============================================
+Sezione II. Note per gli utenti di Windows 95
+=============================================
+
+1.  Esecuzione di IntelliType senza Microsoft Natural Keyboard
+
+    Il software IntelliType Š progettato per essere utilizzato con Microsoft
+    Natural Keyboard. Se si installa IntelliType in Windows 95, ma si
+    collega al computer una tastiera diversa, Š possibile che alcune funzioni
+    di IntelliType non siano disponibili.
+
+
+2.  Esecuzione di IntelliType in computer con profili utente multipli
+
+    Ô sconsigliabile disinstallare IntelliType in Windows 95 se vi sono profili
+    utente attivi nel sistema. La disinstallazione pu• causare instabilit… e
+    impostazioni non valide per gli altri utenti che si connettono al computer.
+
+
+3.  Alcune schede di propriet… della tastiera sono parte del sistema operativo
+
+    In Windows 95, le schede Velocit…, Lingua  e Generale sono elementi 
+    standard del sistema operativo Windows 95 e non di IntelliType. Il 
+    software IntelliType prevede solo l'installazione delle schede con logo 
+    Microsoft IntelliType, tra le quali le schede Attivit… puntatore e Opzioni.
+
+
+4.  Se Š disponibile una scheda suono, non selezionare l'opzione Altoparlante
+     di sistema
+
+    Se nel computer Š disponibile una scheda suono, l'opzione "Altoparlante di
+    sistema" non comporter… l'emissione di suoni quando si preme un tasto sullo
+    tastiera. Scegliere uno degli altri suoni disponibili. L'opzione "Altoparlante di
+    sistema" Š prevista per computer senza schede suono.
+
+5.  Disattivazione della barra delle applicazioni quando si utilizza l'opzione
+    Schermo continuo 
+
+    Quando si utilizza la funzione Schermo continuo insieme con l'impostazione
+    di Windows 95 che consente di nascondere la barra delle applicazioni, pu• 
+    risultare difficile selezionare il bordo della barra delle applicazioni. In questi
+    casi, occorre visualizzare la barra delle applicazioni facendo clic sul pulsante Avvio,
+    scegliere Impostazioni e quindi Barra delle applicazioni. Disattivare infine la
+    casella di controllo "Nascondi automaticamente".
+
+6.  L'impostazione di Bloc Num in IntelliType pu• creare conflitti con
+    l'impostazione CMOS
+
+    Se si utilizzano impostazioni CMOS per attivare o disattivare automaticamente
+    il tasto Bloc Num all'avvio del computer, Š possibile che l'impostazione di
+    Bloc Num in IntelliType non funzioni correttamente. Se si nota che il funzionamento
+    del tasto Bloc Num non Š corretto all'avvio del computer, controllare le
+    impostazioni CMOS e disattivare Bloc Num.
+
+
+================================================
+Sezione III. Note per gli utenti di Windows 3.1x
+================================================
+
+1.  Disattivazione di BLOC MAIUSC in una finestra MS-DOS
+
+    In Microsoft Windows 3.x, l'opzione Disattiva Bloc Maiusc nella 
+    scheda Opzioni non consente di disattivare BLOC MAIUSC 
+    all'interno di una finestra MS-DOS.
+
+
+2.  Task Manager non viene eseguito se la memoria non Š sufficiente
+
+    Se si cerca di avviare Task Manager e non si ottiene alcun risultato,
+    chiudere una o pi— applicazioni per liberare memoria e quindi riprovare.
+
+3. Sostituzione di Task Manager con l'Elenco dei task
+
+    Quando si installa IntelliType in Windows 3.1x o Windows NT, 
+    l'Elenco dei task predefinito viene sostituito da Task Manager. Se si desidera
+    utilizzare l'Elenco dei task, seguire questa procedura:
+
+    1. Cercare la seguente riga nella sezione [boot] del file System.ini
+       (collocato nella directory di Windows):
+  
+	  taskman.exe=tasksw16.exe
+
+    2. Modificare la riga nel seguente modo:
+
+	  taskman.exe=taskman.exe
+
+
+==============================================
+Sezione IV.  Note per gli utenti di Windows NT
+==============================================
+
+1.  IntelliPoint supporta solo sistemi x86 
+
+    Questa versione di IntelliPoint supporta solo sistemi x86
+    Intel compatibili. Non Š possibile installare IntelliPoint su
+    altri sistemi, come MIPS o Alpha. Ô comunque possibile
+    utilizzare Microsoft Natural Keyboard con tali sistemi, anche se
+    Š possibile che i tasti Windows ed il tasto Applicazioni non siano
+    supportati.
+
+
+2.  Apertura dell'Elenco dei task di Windows NT
+
+    Per aprire l'Elenco dei task di Microsoft Windows NT, premere
+    CTRL+ESC oppure fare doppio clic sul desktop. Se si desidera
+    invece aprire Task Manager, premere il tasto Windows a sinistra
+    o a destra. Non Š tuttavia possibile aprire Task Manager da una 
+    finestra MS-DOS.
+
+
+3.  Evitare la chiusura di IntelliType da Task Manager
+
+    Se si esegue Windows NT 3.51, non utilizzare il pulsante Fine del task
+    in Task Manager per chiudere IntelliType. Se si utilizza questo pulsante,
+    sar… necessario riavviare Windows per rieseguire IntelliType.
+
+
+===========================================
+Sezione V. Note per i soli utenti di MS-DOS
+===========================================
+
+1.  Utilizzo dei parametri della riga di comando in MS-DOS 
+
+    Se si esegue IntelliType in MS-DOS, Š possibile digitare il seguente
+    comando per visualizzare un elenco dei parametri della riga di comando
+    disponibili:
+
+	   itype.exe /?
+
+

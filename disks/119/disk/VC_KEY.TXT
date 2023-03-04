@@ -1,0 +1,70 @@
+Die Datei VC.KEY
+================
+
+  Dieser Text ist an alle registrierten User gerichtet, die noch ber die
+  vor Version 1.0 verwendeten "VC.KEY"-Files registriert sind. Fr alle
+  anderen User (also die ber Schlssel registrierten und die unregistrier-
+  ten) ist dieser Text bedeutungslos.
+
+  Sie haben vermutlich nie festgestellt, daá ab Version 1.0 von
+  VoiceConnect auch eine andere M”glichkeit der Registrierung verwendet
+  wurde. Die zugeh”rigen Dialogen erscheinen erst, wenn keine gltige
+  VC.KEY-Datei gefunden wird.
+
+  Leider ist folgendes geschehen:
+
+  Jemand (natrlich unbekannt) hat ein Programm geschrieben, welches gltige
+  VC.KEY-Dateien erzeugt. Man nennt ein derartiges Programm einen Key-
+  generator. Dieses Programm ist nun in einigen Mailboxen in Umlauf, so
+  daá jeder beliebige mit diesem Programm VoiceConnect registrieren
+  k”nnte. Dieses ist sehr bedauerlich, und es bringt mir wie Ihnen
+  Arbeit und Kosten.
+
+  Rechtzeitig vor dem Erscheinen der Version 2.1 von VoiceConnect habe
+  ich davon erfahren. Als Folge davon ist die Untersttzung fr die VC.KEY
+  Dateien ab der Version 2.1 weggefallen.
+
+  Das bedeutet fr Sie:
+
+  Ihre VC.KEY-Datei ist fr VoiceConnect ab Version 2.1 nutzlos. Da Sie
+  aber natrlich weiterhin registriert bleiben, mssen Sie also einen
+  neuen Key bekommen. Und das geht so:
+
+    (a) Sie schreiben Sich GENAU auf, was VoiceConnect im Dialog
+        "šber VoiceConnect" (VoiceConnect|ber VoiceConnect) als
+        Ihren Registrierungsnamen ausgibt.
+
+    (b) Sie schreiben Ihre Seriennummer (auf dem Label der Diskette) auf.
+        Es wird die vollst„ndige Nummer ben”tigt.
+
+    (c) Sie w„hlen sich mit Ihrem Modem in die Mailbox "Intuition", welches
+        die VoiceConnect Supportbox ist, ein. Die Telefonnummer ist
+
+                               (040) 870 53 78
+
+    (d) Nachdem Sie sich eingeloggt (Ihren Namen und Ihr Passwort eingegeben
+        haben; falls Sie sich noch nie eingew„hlt haben k”nnen Sie sich
+        ein Passwort aussuchen) haben, w„hlen Sie unter dem Men
+        "Verschiedenes" (engl. Miscellanous) den Punkt "Key updaten" an.
+        Alles weitere wird Ihnen dann genau erkl„rt. Nur soviel: Sie
+        werden nach Ihrem Registrierungsnamen und Ihrer Seriennummer
+        gefragt. Stimmen diese mit meinen Unterlagen berein, so wird Ihnen
+        ein ab der Version 1.0 verwendeter Key angezeigt. Sie sollten vor
+        beginn des Anw„hlens Ihr Terminalprogramm auf mitloggen schalten,
+        damit Sie alle Informationen noch einmal in einer Datei gespeichert
+        haben. Wenn es Ihnen m”glich ist, sollten Sie auch Ihren Drucker
+        einschalten, um zu gegebener Zeit eine Bildschirmhardcopy mit
+        Ihren neuen Daten zu machen.
+
+  Ich kann mich allenfalls dafr entschuldigen, daá die Keyroutinen nicht
+  sicher genug waren, so daá soetwas passieren konnte. Alle anderen Be-
+  schwerden bitte an denjenigen richten, der den Keygenerator geschrieben
+  hat. Offensichtlich fehlt diesem Menschen jegliches Verst„ndnis fr das,
+  war er getan hat, und vielleicht sieht er es als groáe Leistung an, was
+  es nicht ist. Man m”ge ihm wnschen, daá er eine Tages zu einer besseren
+  Einsicht gelangt. Vielleicht wenn einmal eines seiner eigenen Werke
+  sabotiert wird, obwohl ich ihm dieses nicht wnsche.
+
+
+                                                Thomas Haukap, Februar 1994
+

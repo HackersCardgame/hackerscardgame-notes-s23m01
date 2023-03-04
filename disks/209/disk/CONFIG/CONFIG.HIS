@@ -1,0 +1,136 @@
+
+History:
+========
+Punkte in eckigen Klammern wurden in neueren Versionen wieder entfernt.
+
+ V5.5  * Anleitung stark erweitert.
+       * Diskettenlaufwerkserkennung fÅr Ñltere ATs erweitert.
+       * In der .INI-Datei kann die RAM-Disk fÅr die Benchmarks nun
+         angegeben werden, falls sie nicht automatisch erkannt werden sollte.
+       * Testet die Geschwindigkeit eines Åber die .INI-Datei wÑhlbaren
+         DOS-Laufwerkes. Beispielsweise die Festplatte C:.
+       * Erkennt 4DOS, NDOS, SCSI-Controller und dessen Hersteller (Seagate,
+         Adaptec, Future Domain, Perstor, OMTI, u.a.), 2.88 MB Laufwerke.
+ V5.6  * Test auf ESDI-Controller nur noch auf PS2 um Probleme mit OMTI
+         552x-XT-Controller zu vermeiden.
+       * Mehr Info Åber Tseng ET4000 Chip.
+       * Der DOS-Disk-Benchmark erfolgt nun voreingestellt auf dem aktuellen
+         Laufwerk, sofern in der .INI Datei nichts anderes eingestellt wird.
+       * Ermittelt Rotationsgeschwindigkeit der Festplatte(n).
+       * Der Test auf Festplatten-Cacheprogramme kann mittels des Parameters
+         SkipHDCacheTest in der .INI Datei Åbersprungen werden, da diese
+         Erkennung auf einigen Rechnern zum Absturz fÅhrt.
+       * Zeigt Parameter der seriellen Schnittstellen an.
+ V6.00 * Verbesserte Shadow-RAM-Erkennung.
+       * Erkennt Norton-Cache V6, Hyperdisk-Versionsnummer.
+       * Erkennt C&T 80C350-, OPTI- und ELITE-ChipsÑtze auf 386ern.
+       * Gibt zusÑtzliche Informationen zu AT-Bus-Platten aus.
+       * Identifiziert die einzelnen Steckkarten in PS2-Rechnern.
+       * Erkennt das Chipset der VGA-Karte.
+       * Testet Bildwiederholfrequenz der VGA-Karte in den verschiedenen
+         Text- und Grafik-Modi.
+       * Smartdrive und PC-Cache 6 werden zur Bestimmung des Plattendurch-
+         satzes abgeschaltet.
+       * DEMO-MODE lÑ·t sich durch Druck der Taste 'D' starten.
+       * Schwerer Fehler bei der Bestimmung der Festplattenzugriffszeit
+         behoben. Die alten Zugriffszeiten waren u.U. zu klein.
+       * Kommt jetzt besser mit DOS5 UMBs zurecht.
+       * Der Bildschirminhalt lÑ·t sich durch Druck von F10 in die Datei
+         CONFIG.XXX schreiben.
+       * Benîtigt zum Start ca 20 KB weniger Speicher als V5.6
+       * Neue Schalter: USEBIOS, SKIPVGATEST
+ V6.01 * Kleinere Korrekturen, Erweiterungen der MCA-Liste
+       * Neuer Schalter ATBUSINFO in der .INI Datei.
+ V6.10 * Neue Schalter SearchScreenSpeeder, EndeBeiESC
+       * Neuer MenÅpunkt Q: Hardware-Interrupts
+       * erkennt Intel RapidCAD & 486sx CPUs
+       * erkennt weitere ChipsÑtze
+       * erkennt verschiedene GENOA-VGA-Chips
+       * erkennt einige Bildschirmausgabe-Beschleuniger
+       * viele kleine Erweiterungen und Korrekturen
+ V6.11 * erkennt Festplattenrotation auch auf Platten mit bis zu 32 KB Cache
+       * erkennt SR-RAM-Disk 1.3
+ V6.20 * erkennt OPTi 486WB, UMC & Forex ChipsÑtze
+       * VGA-Test jetzt auch in den Tseng Modi 38h und 3Dh und in HiColor-Modi
+       * Kommerzielle Version eingefÅhrt, die Demo-Mode und Auto-Protokoll
+         ermîglicht, jeweils frei konfigurierbar
+       * erkennt QEMM386 Stealth-Mode
+       * erkennt weitere VGA-Chips (Yamaha 6388, Ahead A/B, Chips&Tech 82c45x,
+         OAK 037/067, V7 Modelle, S3)
+       * erkennt Soundblaster-, Adlib- und Roland-Soundkarten
+ V6.21 * verschiedene kleine Korrekturen
+       * neuer Schalter fÅr Soundkarten-Test, welcher mit manchen Netzwerk-
+         karten kollidieren kann
+       * lÑuft jetzt inklusive der Benchmarks unter OS/2 V2.0, wenn fÅr die
+         DOS-Box der Schalter HW_TIMER auf ON gesetzt wird
+       * erkennt einige DELL Rechner Modelle
+       * Festplattenzugriffszeiten auf 0.1 ms genau
+ V6.30 * erkennt VGA-BIOS-Version von einigen ZyMOS und S3 VGAs
+       * erkennt weitere VGA-BIOS-Versionen
+       * gibt Fehlermeldung aus, falls EMS-Mem nicht bestimmt werden kann
+       * neue Benchmark-Zeile: Dhrystones
+       * erkennt DPMI Treiber
+       * erkennt CD-ROM
+       * Testet Bildwiederholfrequenz der VESA-Modi, neuer Schalter HighestMode
+       * erkennt Novell Netzwerk
+       * alle Fenster gleich gro·, kein Exploding & Schatten mehr
+       * erkennt BIOS-Version von ATI-Ultra korrekt
+       * Taktfrequenzbestimmung an 66 Mhz 486 angepa·t
+       * OAK VGA Erkennung verbessert
+       * RAMDisk-Angabe aus .INI Datei hat jetzt immer PrioritÑt
+       * keine CoProTaktfrequenz-Bestimmung auf 386ern mehr
+       * erkennt Cyrix486 CPU
+ V6.31 * erkennt Art des DPMI-Servers (QDPMI, OS2, Windows, 386max)
+       * erkennt 387-Emulator von QuickWare
+       * erkennt Hyperdisk 4.51
+       * erkennt weitere PS/2 Modelle
+       * erkennt weiteren SIS Chipsatz
+ V6.40 * erkennt Intel Pentium
+       * erkennt Details zu UMC Chipsatz
+       * Plattentest 'Lineares Lesen' implementiert
+       * differenziert OPTi 386 ChipsÑtze
+       * erkennt weitere OAK, NCR, Trident, WD, C&T, Cirrus, Primus VGA-Chips
+       * unterscheidet QDPMI V1.00 & V1.01
+ V6.41 * erkennt Smartdrive V4.10 und EMM386 V4.45
+ V6.45 * IDE-Cache wird fÅr den Rotationstest abgeschaltet
+       * erkennt weitere SCSI Controller und Board-ChipsÑtze
+       * erkennt Details zu SIS und Symphony Chipsatz
+       * Chipsatz kann in der .INI Datei direkt angegeben werden
+ V6.50 * erkennt 220 weitere Microchannel-Karten
+ V7.00 * Maussteuerung (na endlich)
+       * MenÅpunkt Logische Laufwerke
+       * erkennt VESA-Local-Bus und PCI Mainboards
+       * erkennt Hyperdisk 4.65, Novel-Lite, NL-Cache
+       * erkennt weitere ChipsÑtze: OPTi, Shasta, PC-CHIPS
+       * testet mehr VESA Grafikmodi auf ihre Wiederholfrequenz
+       * erkennt weitere VGA-Chips
+ V7.05 * erkennt Cyrix 486S CPU, Cirrus 5428 Chip
+       * Fehlerkorrekturen
+ V7.10 * erkennt UART 16C552, Toshiba Chipsatz
+       * differenziert First und Second Level Cache, Cirrus VGA-Chips
+       * zeigt mehr als 2 Festplatten korrekt an
+       * erkennt Details zum Shasta Chipsatz
+       * erkennt einige Soundgalaxy-kompatible Karten
+       * zeigt Details zum Cyrix 486dlc an
+       * erkennt S3 86c805-P & ET4000.W32 Chips
+ V7.15 * erkennt weitere Cirrus, Trident, S3 und TSENG VGA Chips
+       * erkennt weitere DACs auf TSENG VGA Karten
+       * erkennt QDPMI 1.02 & 1.03, DoubleSpace Festplattenkomprimierer
+       * erkennt 12 weitere Microchannel-Karten
+       * erkennt Stacker Versionsnummer, weitere RAM-Disks
+ V7.20 * CDROM-Benchmark eingebaut
+       * erkennt und unterscheidet nun alle zZ verfÅgbaren Cyrix CPUs,
+         einschlie·lich Cx486Ru, Cx486S, Cx486dx
+       * erkennt Novell DOS 7 und Versionsnummern von dessen EMM386
+         und DPMS Server
+       * erkennt 'Advanced Power Managment' Funktionen auf Laptops
+       * erkennt 'Green BIOS' Funktion auf einigen Mainboards
+       * erkennt nun auch die neueren 'GenuineIntel CPUs' zuverlÑssig
+       * Neues .INI Fileformat. Bitte keine alten .INI Files benutzen
+ V7.25 * erkennt DAC Chips auf ATI Ultra VGAs
+       * bessere Windows KompatibilitÑt
+       * erkennt Weitek 9000/9100 & S3 864 Chips
+       * erkennt 486DX/2 wenn CPUID Befehl unterstÅtzt wird
+       * erkennt Intel 486SXJ CPU, TI486SXL CPU
+       * gibt Revision von neueren Cyrix CPUs aus
+

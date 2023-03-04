@@ -1,0 +1,15 @@
+;  +-----------------------------------------------------------------------+
+;  |                                                                       |
+;  |   Brother PCL Laser Printer Intallalation file for Windows 3.1        |
+;  |                                                                       |
+;  +-----------------------------------------------------------------------+
+
+[disks]
+    1 = ., "Brother Printer Driver disk"
+
+[io.device]
+1:brohl99e.drv,1:brohl99e.hlp,"Brother HL-1030 series","DEVICESPECIFIC"
+
+[io.dependent]
+brohl99e.drv=1:brstats8.exe,1:brstlan8.dll,1:bi-di.386,1:brlangzl.dll,1:brdiag2.exe,1:brdiag.hlp
+
